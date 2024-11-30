@@ -9,7 +9,7 @@ module Gemview
         More info:
       PROMPT
 
-      Terminal.choose(prompt, prettify_choices(%w[Readme Changelog Dependencies])) do |choice|
+      Terminal.choose(prompt, %w[Readme Changelog Dependencies]) do |choice|
         case choice
         when "Readme"
           Terminal.page([gem.header_str, gem.fetch_readme].join("\n"))
@@ -32,16 +32,5 @@ module Gemview
         info(gem: gem)
       end
     end
-
-    def self.prettify_choices(choices)
-      choices.to_h do |choice|
-        pretty_choice = <<~CHOICE.chomp
-          ____________________
-            | #{choice}
-        CHOICE
-        [pretty_choice, choice]
-      end
-    end
-    private_class_method :prettify_choices
   end
 end
