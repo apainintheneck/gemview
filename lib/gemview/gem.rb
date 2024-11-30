@@ -30,7 +30,7 @@ module Gemview
       attribute :requirements, Types::Strict::String
 
       def to_str
-        %{gem "#{name}", "#{requirements}"}
+        %(gem "#{name}", "#{requirements}")
       end
     end
 
@@ -141,14 +141,12 @@ module Gemview
     # @return [Gemview::Gem]
     def self.find(name:, version:)
       @find ||= {}
-      @find[[name, version]] ||= begin
-        new case version
-        when String
-          Gems::V2.info(name, version)
-        else
-          Gems.info(name)
-        end
-      end
+      @find[[name, version]] ||= new case version
+                                 when String
+                                   Gems::V2.info(name, version)
+                                 else
+                                   Gems.info(name)
+                                 end
     end
 
     # @param term [String] search term

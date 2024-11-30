@@ -13,7 +13,7 @@ module Gemview
     def self.from_urls(urls:, version:)
       @from_urls ||= {}
       base_url, git_host = nil
-      
+
       urls.each do |url|
         base_url, git_host = parse_base_url(url)
         break if base_url && git_host
@@ -30,7 +30,7 @@ module Gemview
       return [github_base_url, GITHUB] if github_base_url
 
       gitlab_base_url = url[%r{^https://gitlab.com/[^/]+/[^/]+}, 0]
-      return [gitlab_base_url, GITLAB] if gitlab_base_url
+      [gitlab_base_url, GITLAB] if gitlab_base_url
     end
 
     private_class_method :new, :parse_base_url

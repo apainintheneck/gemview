@@ -4,7 +4,7 @@ require_relative "gemview/version"
 
 module Gemview
   class Error < StandardError; end
-  
+
   # Internal
   autoload :Commands, "gemview/commands"
   autoload :Gem, "gemview/gem"
@@ -20,6 +20,7 @@ autoload :Strings, "strings"
 module Net
   autoload :HTTP, "net/http"
 end
+
 module TTY
   autoload :Markdown, "tty-markdown"
   autoload :Pager, "tty-pager"

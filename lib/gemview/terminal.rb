@@ -30,7 +30,7 @@ module Gemview
           quiet: true,
           track_history: false,
           interrupt: :exit,
-          symbols: { marker: ">" },
+          symbols: {marker: ">"},
           enable_color: !ENV["NO_COLOR"]
         )
 
