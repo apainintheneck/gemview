@@ -10,6 +10,17 @@ module Gemview
 
     transform_keys(&:to_sym)
 
+    # resolve default types on nil
+    transform_types do |type|
+      if type.default?
+        type.constructor do |value|
+          value.nil? ? Dry::Types::Undefined : value
+        end
+      else
+        type
+      end
+    end
+
     attribute :name, Types::Strict::String
     attribute :downloads, Types::Strict::Integer
     attribute :version, Types::Strict::String
@@ -17,7 +28,8 @@ module Gemview
     attribute? :version_created_at, Types::Params::Time
     attribute :authors, Types::Strict::String
     attribute :info, Types::Strict::String
-    attribute :licenses, Types::Strict::Array.of(Types::Strict::String)
+    # Note: This is occasionally nil so a default value is required.
+    attribute :licenses, Types::Array.of(Types::Strict::String).default([].freeze)
     attribute :project_uri, Types::Strict::String
     attribute :homepage_uri, Types::String.optional
     attribute :source_code_uri, Types::String.optional
@@ -139,35 +151,48 @@ module Gemview
     # @param name [String]
     # @param version [String|nil] will default to latest if not provided
     # @return [Gemview::Gem]
-    def self.find(name:, version:)
+    def self.find(name:, version: nil)
       @find ||= {}
       @find[[name, version]] ||= new case version
                                  when String
-                                   Gems::V2.info(name, version)
+                                   client_v2.info(name, version)
                                  else
-                                   Gems.info(name)
+                                   client_v1.info(name)
                                  end
     end
 
     # @param term [String] search term
     # @return [Array<Gemview::Gem>]
     def self.search(term:)
-      Gems.search(term).map { |gem_hash| new gem_hash }
+      client_v1.search(term).map { |gem_hash| new gem_hash }
     end
 
     # @return [Array<Gemview::Gem>]
     def self.latest
-      Gems.latest.map { |gem_hash| new gem_hash }
+      client_v1.latest.map { |gem_hash| new gem_hash }
     end
 
     # @return [Array<Gemview::Gem>]
     def self.just_updated
-      Gems.just_updated.map { |gem_hash| new gem_hash }
+      client_v1.just_updated.map { |gem_hash| new gem_hash }
     end
 
-    def self.clear
-      @find = {}
-      nil
+    # Create a client manually so that we don't accidentally pick up credentials.
+    def self.client_v1
+      @client_v1 ||= Gems::V1::Client.new(
+        username: nil,
+        password: nil,
+        key: nil
+      )
+    end
+
+    # Create a client manually so that we don't accidentally pick up credentials.
+    def self.client_v2
+      @client_v2 ||= Gems::V2::Client.new(
+        username: nil,
+        password: nil,
+        key: nil
+      )
     end
   end
 end

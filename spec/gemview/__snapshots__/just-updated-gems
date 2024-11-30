@@ -1,0 +1,2052 @@
+[
+  {
+    "name": "active_model_serializers",
+    "downloads": 102108393,
+    "version": "0.10.15",
+    "version_created_at": "2024-12-01 00:56:35 UTC",
+    "authors": "Steve Klabnik",
+    "info": "ActiveModel::Serializers allows you to generate your JSON in an object-oriented and convention-driven manner.",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/active_model_serializers",
+    "homepage_uri": "https://github.com/rails-api/active_model_serializers",
+    "source_code_uri": "http://github.com/rails-api/active_model_serializers",
+    "changelog_uri": null,
+    "dependencies": {
+      "development": [
+        {
+          "name": "activerecord",
+          "requirements": ">= 4.1"
+        },
+        {
+          "name": "bundler",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "grape",
+          "requirements": ">= 0.13"
+        },
+        {
+          "name": "json_schema",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "kaminari",
+          "requirements": "~> 0.16.3"
+        },
+        {
+          "name": "minitest",
+          "requirements": "~> 5.0, < 5.11"
+        },
+        {
+          "name": "railties",
+          "requirements": ">= 4.1"
+        },
+        {
+          "name": "rake",
+          "requirements": ">= 10.0"
+        },
+        {
+          "name": "timecop",
+          "requirements": "~> 0.7"
+        },
+        {
+          "name": "will_paginate",
+          "requirements": "~> 3.0, >= 3.0.7"
+        }
+      ],
+      "runtime": [
+        {
+          "name": "actionpack",
+          "requirements": ">= 4.1"
+        },
+        {
+          "name": "activemodel",
+          "requirements": ">= 4.1"
+        },
+        {
+          "name": "case_transform",
+          "requirements": ">= 0.2"
+        },
+        {
+          "name": "jsonapi-renderer",
+          "requirements": ">= 0.1.1.beta1, < 0.3"
+        }
+      ]
+    }
+  },
+  {
+    "name": "jipcode",
+    "downloads": 866500,
+    "version": "3.1.6",
+    "version_created_at": "2024-12-01 00:43:21 UTC",
+    "authors": "rinkei",
+    "info": "A gem for Japan Post's official zipcode data search & update.",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/jipcode",
+    "homepage_uri": "https://github.com/rinkei/jipcode",
+    "source_code_uri": null,
+    "changelog_uri": null,
+    "dependencies": {
+      "development": [
+        {
+          "name": "bump",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "bundler",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "rake",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "rspec",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "rubyzip",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "vcr",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "webmock",
+          "requirements": ">= 0"
+        }
+      ],
+      "runtime": [
+        {
+          "name": "csv",
+          "requirements": ">= 0"
+        }
+      ]
+    }
+  },
+  {
+    "name": "foobara-util",
+    "downloads": 1264,
+    "version": "0.0.7",
+    "version_created_at": "2024-12-01 00:40:50 UTC",
+    "authors": "Miles Georgi",
+    "info": "Utility functions used across various Foobara projects",
+    "licenses": [
+      "Apache-2.0",
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/foobara-util",
+    "homepage_uri": "https://github.com/foobara/util",
+    "source_code_uri": "https://github.com/foobara/util",
+    "changelog_uri": "https://github.com/foobara/util/blob/main/CHANGELOG.md",
+    "dependencies": {
+      "development": [],
+      "runtime": []
+    }
+  },
+  {
+    "name": "cocoapods-spm",
+    "downloads": 4560,
+    "version": "0.1.8",
+    "version_created_at": "2024-12-01 00:38:44 UTC",
+    "authors": "Thuyen Trinh",
+    "info": "CocoaPods plugin to add SPM dependencies to CocoaPods targets",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/cocoapods-spm",
+    "homepage_uri": "https://github.com/trinhngocthuyen/cocoapods-spm",
+    "source_code_uri": null,
+    "changelog_uri": null,
+    "dependencies": {
+      "development": [],
+      "runtime": [
+        {
+          "name": "xcodeproj",
+          "requirements": ">= 1.23.0"
+        }
+      ]
+    }
+  },
+  {
+    "name": "email_data",
+    "downloads": 628538,
+    "version": "1733013134.0.0",
+    "version_created_at": "2024-12-01 00:32:39 UTC",
+    "authors": "Nando Vieira",
+    "info": "This project is a compilation of datasets related to emails. Includes disposable emails, disposable domains, and free email services.",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/email_data",
+    "homepage_uri": "https://github.com/fnando/email_data",
+    "source_code_uri": "https://github.com/fnando/email_data/tree/v1733013134.0.0",
+    "changelog_uri": null,
+    "dependencies": {
+      "development": [
+        {
+          "name": "activerecord",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "aitch",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "bundler",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "minitest",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "minitest-utils",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "pg",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "pry-meta",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "rake",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "root_domain",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "rubocop",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "rubocop-fnando",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "simplecov",
+          "requirements": ">= 0"
+        }
+      ],
+      "runtime": []
+    }
+  },
+  {
+    "name": "ding_sdk",
+    "downloads": 14276,
+    "version": "0.10.4",
+    "version_created_at": "2024-12-01 00:26:10 UTC",
+    "authors": "Ding",
+    "info": "Ding Ruby SDK",
+    "licenses": [
+      "Apache-2.0"
+    ],
+    "project_uri": "https://rubygems.org/gems/ding_sdk",
+    "homepage_uri": "https://github.com/ding-live/ding-ruby.git",
+    "source_code_uri": "https://github.com/ding-live/ding-ruby.git",
+    "changelog_uri": null,
+    "dependencies": {
+      "development": [
+        {
+          "name": "minitest",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "rubocop",
+          "requirements": "~> 1.60.2"
+        },
+        {
+          "name": "sorbet",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "tapioca",
+          "requirements": ">= 0"
+        }
+      ],
+      "runtime": [
+        {
+          "name": "faraday",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "faraday-multipart",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "rack",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "rake",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "sorbet-runtime",
+          "requirements": ">= 0"
+        }
+      ]
+    }
+  },
+  {
+    "name": "visualruby",
+    "downloads": 124003,
+    "version": "3.6.9",
+    "version_created_at": "2024-11-30 23:59:25 UTC",
+    "authors": "Eric Cunningham",
+    "info": "Visualruby is a complete IDE for making graphical user interfaces with ruby.  It utilizes glade interface designer to create windows, and uses a library of GUI helpers to make coding GTK+ programs easy.  The IDE really helps you organize your files and your thoughts because it names your ruby files and glade files by a naming convention.  You files take on the names MyClass.rb, and MyClass.glade.  Then you can easily edit the GUI (glade file) by right clicking on your class's file.\n  It also creates .gemspec files for you, then you can right-click on the .gemspec file to install it, or upload it to rubygems.org.  You can also yank your gems with one click.\n\nTo install, get instructions from our github page at https://github.com/Beagle123/visualruby",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/visualruby",
+    "homepage_uri": "",
+    "source_code_uri": "https://github.com/Beagle123/visualruby",
+    "changelog_uri": null,
+    "dependencies": {
+      "development": [],
+      "runtime": [
+        {
+          "name": "gtk3",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "gtksourceview4",
+          "requirements": ">= 0"
+        }
+      ]
+    }
+  },
+  {
+    "name": "historiographer",
+    "downloads": 23081,
+    "version": "4.1.8",
+    "version_created_at": "2024-11-30 23:56:14 UTC",
+    "authors": "brettshollenberger",
+    "info": "Append-only histories + chained snapshots of your ActiveRecord tables",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/historiographer",
+    "homepage_uri": "http://github.com/brettshollenberger/historiographer",
+    "source_code_uri": null,
+    "changelog_uri": null,
+    "dependencies": {
+      "development": [
+        {
+          "name": "bundler",
+          "requirements": "~> 1.0"
+        },
+        {
+          "name": "jeweler",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "mysql2",
+          "requirements": "= 0.5"
+        },
+        {
+          "name": "paranoia",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "pg",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "pry",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "rdoc",
+          "requirements": "~> 3.12"
+        },
+        {
+          "name": "simplecov",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "standalone_migrations",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "timecop",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "zeitwerk",
+          "requirements": ">= 0"
+        }
+      ],
+      "runtime": [
+        {
+          "name": "activerecord",
+          "requirements": ">= 6"
+        },
+        {
+          "name": "activerecord-import",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "activesupport",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "rails",
+          "requirements": ">= 6"
+        },
+        {
+          "name": "rollbar",
+          "requirements": ">= 0"
+        }
+      ]
+    }
+  },
+  {
+    "name": "vagrant_utm",
+    "downloads": 666,
+    "version": "0.1.0",
+    "version_created_at": "2024-11-30 23:54:03 UTC",
+    "authors": "Naveenraj M",
+    "info": "Vagrant UTM provider that allows you to manage UTM virtual machines.",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/vagrant_utm",
+    "homepage_uri": "https://naveenrajm7.github.io/vagrant_utm/",
+    "source_code_uri": "https://github.com/naveenrajm7/vagrant_utm",
+    "changelog_uri": "https://github.com/naveenrajm7/vagrant_utm/blob/main/CHANGELOG.md",
+    "dependencies": {
+      "development": [],
+      "runtime": []
+    }
+  },
+  {
+    "name": "fli_video",
+    "downloads": 1018,
+    "version": "0.1.4",
+    "version_created_at": "2024-11-30 23:02:47 UTC",
+    "authors": "David Cruwys",
+    "info": "    FliVideo - Video Asset Management for Content Creators\n",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/fli_video",
+    "homepage_uri": "http://appydave.com/gems/fli_video",
+    "source_code_uri": "https://github.com/appydave/fli_video",
+    "changelog_uri": "https://github.com/appydave/fli_video/blob/main/CHANGELOG.md",
+    "dependencies": {
+      "development": [],
+      "runtime": [
+        {
+          "name": "k_log",
+          "requirements": "~> 0"
+        }
+      ]
+    }
+  },
+  {
+    "name": "fli_video",
+    "downloads": 1018,
+    "version": "0.1.3",
+    "version_created_at": "2024-11-30 22:58:48 UTC",
+    "authors": "David Cruwys",
+    "info": "    FliVideo - Video Asset Management for Content Creators\n",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/fli_video",
+    "homepage_uri": "http://appydave.com/gems/fli_video",
+    "source_code_uri": "https://github.com/appydave/fli_video",
+    "changelog_uri": "https://github.com/appydave/fli_video/blob/main/CHANGELOG.md",
+    "dependencies": {
+      "development": [],
+      "runtime": [
+        {
+          "name": "k_log",
+          "requirements": "~> 0"
+        }
+      ]
+    }
+  },
+  {
+    "name": "fli_video",
+    "downloads": 1018,
+    "version": "0.1.2",
+    "version_created_at": "2024-11-30 22:50:49 UTC",
+    "authors": "David Cruwys",
+    "info": "    FliVideo - Video Asset Management for Content Creators\n",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/fli_video",
+    "homepage_uri": "http://appydave.com/gems/fli_video",
+    "source_code_uri": "https://github.com/klueless-io/fli_video",
+    "changelog_uri": "https://github.com/klueless-io/fli_video/blob/main/CHANGELOG.md",
+    "dependencies": {
+      "development": [],
+      "runtime": [
+        {
+          "name": "k_log",
+          "requirements": "~> 0"
+        }
+      ]
+    }
+  },
+  {
+    "name": "makit",
+    "downloads": 2487,
+    "version": "0.0.29",
+    "version_created_at": "2024-11-30 22:20:29 UTC",
+    "authors": "Lou Parslow",
+    "info": "CI/CD tools for Ruby developers.",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/makit",
+    "homepage_uri": "https://gitlab.com/gems-rb/makit",
+    "source_code_uri": "https://gitlab.com/gems-rb/makit",
+    "changelog_uri": "https://gitlab.com/gems-rb/makit/CHANGELOG.md",
+    "dependencies": {
+      "development": [],
+      "runtime": [
+        {
+          "name": "clamp",
+          "requirements": "~> 1.3"
+        },
+        {
+          "name": "colorize",
+          "requirements": "~> 1.1"
+        },
+        {
+          "name": "google-protobuf",
+          "requirements": "~> 4.28.3"
+        },
+        {
+          "name": "grpc",
+          "requirements": "~> 1.67"
+        },
+        {
+          "name": "grpc-tools",
+          "requirements": "~> 1.67"
+        },
+        {
+          "name": "logger",
+          "requirements": "~> 1.6.1"
+        },
+        {
+          "name": "rubyzip",
+          "requirements": "~> 2.3"
+        },
+        {
+          "name": "sorted_set",
+          "requirements": "~> 1.0"
+        },
+        {
+          "name": "yaml",
+          "requirements": "~> 0.3"
+        }
+      ]
+    }
+  },
+  {
+    "name": "hotwire_native_rails",
+    "downloads": 207,
+    "version": "0.3.1",
+    "version_created_at": "2024-11-30 22:00:47 UTC",
+    "authors": "Yaro Shm",
+    "info": "Generate Hotwire Native Rails helpers and bridge components",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/hotwire_native_rails",
+    "homepage_uri": "https://github.com/yshmarov/hotwire_native_rails",
+    "source_code_uri": "https://github.com/yshmarov/hotwire_native_rails",
+    "changelog_uri": "https://github.com/yshmarov/hotwire_native_rails/blob/main/CHANGELOG.md",
+    "dependencies": {
+      "development": [],
+      "runtime": []
+    }
+  },
+  {
+    "name": "hotwire_native_rails",
+    "downloads": 207,
+    "version": "0.3.0",
+    "version_created_at": "2024-11-30 21:50:01 UTC",
+    "authors": "Yaro Shm",
+    "info": "Generate Hotwire Native Rails helpers and bridge components",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/hotwire_native_rails",
+    "homepage_uri": "https://github.com/yshmarov/hotwire_native_rails",
+    "source_code_uri": "https://github.com/yshmarov/hotwire_native_rails",
+    "changelog_uri": "https://github.com/yshmarov/hotwire_native_rails/blob/main/CHANGELOG.md",
+    "dependencies": {
+      "development": [],
+      "runtime": []
+    }
+  },
+  {
+    "name": "checkoff",
+    "downloads": 147789,
+    "version": "0.206.0",
+    "version_created_at": "2024-11-30 21:42:46 UTC",
+    "authors": "Vince Broz",
+    "info": "Command-line and gem client for Asana (unofficial)",
+    "licenses": [
+      "MIT license"
+    ],
+    "project_uri": "https://rubygems.org/gems/checkoff",
+    "homepage_uri": "https://github.com/apiology/checkoff",
+    "source_code_uri": null,
+    "changelog_uri": null,
+    "dependencies": {
+      "development": [],
+      "runtime": [
+        {
+          "name": "activesupport",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "asana",
+          "requirements": "> 0.10.0"
+        },
+        {
+          "name": "cache_method",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "gli",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "mime-types",
+          "requirements": ">= 0"
+        }
+      ]
+    }
+  },
+  {
+    "name": "foobara-sh-cli-connector",
+    "downloads": 1513,
+    "version": "0.0.9",
+    "version_created_at": "2024-11-30 21:03:52 UTC",
+    "authors": "Miles Georgi",
+    "info": "Command-line connector for Foobara",
+    "licenses": [
+      "Apache-2.0",
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/foobara-sh-cli-connector",
+    "homepage_uri": "https://github.com/foobara/sh-cli-connector",
+    "source_code_uri": "https://github.com/foobara/sh-cli-connector",
+    "changelog_uri": "https://github.com/foobara/sh-cli-connector/blob/main/CHANGELOG.md",
+    "dependencies": {
+      "development": [],
+      "runtime": [
+        {
+          "name": "foobara",
+          "requirements": ">= 0"
+        }
+      ]
+    }
+  },
+  {
+    "name": "foobara-sh-cli-connector",
+    "downloads": 1513,
+    "version": "0.0.8",
+    "version_created_at": "2024-11-30 20:57:24 UTC",
+    "authors": "Miles Georgi",
+    "info": "Command-line connector for Foobara",
+    "licenses": [
+      "Apache-2.0",
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/foobara-sh-cli-connector",
+    "homepage_uri": "https://github.com/foobara/sh-cli-connector",
+    "source_code_uri": "https://github.com/foobara/sh-cli-connector",
+    "changelog_uri": "https://github.com/foobara/sh-cli-connector/blob/main/CHANGELOG.md",
+    "dependencies": {
+      "development": [],
+      "runtime": [
+        {
+          "name": "foobara",
+          "requirements": ">= 0"
+        }
+      ]
+    }
+  },
+  {
+    "name": "effective_mentorships",
+    "downloads": 601,
+    "version": "0.2.3",
+    "version_created_at": "2024-11-30 20:51:24 UTC",
+    "authors": "Code and Effect",
+    "info": "Mentorship matching for mentors and mentees rails engine",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/effective_mentorships",
+    "homepage_uri": null,
+    "source_code_uri": null,
+    "changelog_uri": null,
+    "dependencies": {
+      "development": [
+        {
+          "name": "devise",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "effective_developer",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "effective_roles",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "haml-rails",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "pry-byebug",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "psych",
+          "requirements": "< 4"
+        },
+        {
+          "name": "sqlite3",
+          "requirements": ">= 0"
+        }
+      ],
+      "runtime": [
+        {
+          "name": "effective_bootstrap",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "effective_datatables",
+          "requirements": ">= 4.0.0"
+        },
+        {
+          "name": "effective_email_templates",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "effective_resources",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "rails",
+          "requirements": ">= 6.0.0"
+        },
+        {
+          "name": "wicked",
+          "requirements": ">= 0"
+        }
+      ]
+    }
+  },
+  {
+    "name": "hotwire_native_rails",
+    "downloads": 207,
+    "version": "0.2.0",
+    "version_created_at": "2024-11-30 20:39:45 UTC",
+    "authors": "Yaro Shm",
+    "info": "Generate Hotwire Native Rails helpers and bridge components",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/hotwire_native_rails",
+    "homepage_uri": "https://github.com/yshmarov/hotwire_native_rails",
+    "source_code_uri": "https://github.com/yshmarov/hotwire_native_rails",
+    "changelog_uri": "https://github.com/yshmarov/hotwire_native_rails/blob/main/CHANGELOG.md",
+    "dependencies": {
+      "development": [],
+      "runtime": []
+    }
+  },
+  {
+    "name": "foobara-sh-cli-connector",
+    "downloads": 1513,
+    "version": "0.0.7",
+    "version_created_at": "2024-11-30 20:33:56 UTC",
+    "authors": "Miles Georgi",
+    "info": "Command-line connector for Foobara",
+    "licenses": [
+      "Apache-2.0",
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/foobara-sh-cli-connector",
+    "homepage_uri": "https://github.com/foobara/sh-cli-connector",
+    "source_code_uri": "https://github.com/foobara/sh-cli-connector",
+    "changelog_uri": "https://github.com/foobara/sh-cli-connector/blob/main/CHANGELOG.md",
+    "dependencies": {
+      "development": [],
+      "runtime": [
+        {
+          "name": "foobara",
+          "requirements": ">= 0"
+        }
+      ]
+    }
+  },
+  {
+    "name": "makit",
+    "downloads": 2487,
+    "version": "0.0.28",
+    "version_created_at": "2024-11-30 20:31:11 UTC",
+    "authors": "Lou Parslow",
+    "info": "CI/CD tools for Ruby developers.",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/makit",
+    "homepage_uri": "https://gitlab.com/gems-rb/makit",
+    "source_code_uri": "https://gitlab.com/gems-rb/makit",
+    "changelog_uri": "https://gitlab.com/gems-rb/makit/CHANGELOG.md",
+    "dependencies": {
+      "development": [],
+      "runtime": [
+        {
+          "name": "clamp",
+          "requirements": "~> 1.3"
+        },
+        {
+          "name": "colorize",
+          "requirements": "~> 1.1"
+        },
+        {
+          "name": "google-protobuf",
+          "requirements": "~> 4.28.3"
+        },
+        {
+          "name": "grpc",
+          "requirements": "~> 1.67"
+        },
+        {
+          "name": "grpc-tools",
+          "requirements": "~> 1.67"
+        },
+        {
+          "name": "logger",
+          "requirements": "~> 1.6.1"
+        },
+        {
+          "name": "rubyzip",
+          "requirements": "~> 2.3"
+        },
+        {
+          "name": "sorted_set",
+          "requirements": "~> 1.0"
+        },
+        {
+          "name": "yaml",
+          "requirements": "~> 0.3"
+        }
+      ]
+    }
+  },
+  {
+    "name": "foobara-rubocop-rules",
+    "downloads": 1026,
+    "version": "0.0.5",
+    "version_created_at": "2024-11-30 20:29:36 UTC",
+    "authors": "Miles Georgi",
+    "info": "Common rubocop rules used in various foobara projects.",
+    "licenses": [
+      "Apache-2.0",
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/foobara-rubocop-rules",
+    "homepage_uri": "https://github.com/foobara/rubocop-rules",
+    "source_code_uri": "https://github.com/foobara/rubocop-rules",
+    "changelog_uri": "https://github.com/foobara/rubocop-rules/blob/main/CHANGELOG.md",
+    "dependencies": {
+      "development": [],
+      "runtime": [
+        {
+          "name": "rubocop",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "rubocop-rspec",
+          "requirements": ">= 0"
+        }
+      ]
+    }
+  },
+  {
+    "name": "checkoff",
+    "downloads": 147789,
+    "version": "0.205.0",
+    "version_created_at": "2024-11-30 20:23:49 UTC",
+    "authors": "Vince Broz",
+    "info": "Command-line and gem client for Asana (unofficial)",
+    "licenses": [
+      "MIT license"
+    ],
+    "project_uri": "https://rubygems.org/gems/checkoff",
+    "homepage_uri": "https://github.com/apiology/checkoff",
+    "source_code_uri": null,
+    "changelog_uri": null,
+    "dependencies": {
+      "development": [],
+      "runtime": [
+        {
+          "name": "activesupport",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "asana",
+          "requirements": "> 0.10.0"
+        },
+        {
+          "name": "cache_method",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "gli",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "mime-types",
+          "requirements": ">= 0"
+        }
+      ]
+    }
+  },
+  {
+    "name": "foobara",
+    "downloads": 3232,
+    "version": "0.0.19",
+    "version_created_at": "2024-11-30 20:21:10 UTC",
+    "authors": "Miles Georgi",
+    "info": "Implements command pattern for encapsulating and managing domain complexity as well as many supporting libraries including entities.",
+    "licenses": [
+      "MPL-2.0"
+    ],
+    "project_uri": "https://rubygems.org/gems/foobara",
+    "homepage_uri": "https://foobara.com",
+    "source_code_uri": "https://foobara.com",
+    "changelog_uri": "https://foobara.com/blob/main/CHANGELOG.md",
+    "dependencies": {
+      "development": [],
+      "runtime": [
+        {
+          "name": "foobara-util",
+          "requirements": ">= 0"
+        }
+      ]
+    }
+  },
+  {
+    "name": "foobara-redis-crud-driver",
+    "downloads": 270,
+    "version": "0.0.3",
+    "version_created_at": "2024-11-30 19:58:13 UTC",
+    "authors": "Miles Georgi",
+    "info": "Provides support for entity CRUD in Redis for Foobara",
+    "licenses": [
+      "MPL-2.0"
+    ],
+    "project_uri": "https://rubygems.org/gems/foobara-redis-crud-driver",
+    "homepage_uri": "https://github.com/foobara/redis-crud-driver",
+    "source_code_uri": "https://github.com/foobara/redis-crud-driver",
+    "changelog_uri": "https://github.com/foobara/redis-crud-driver/blob/main/CHANGELOG.md",
+    "dependencies": {
+      "development": [],
+      "runtime": [
+        {
+          "name": "foobara",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "redis",
+          "requirements": ">= 0"
+        }
+      ]
+    }
+  },
+  {
+    "name": "foobara",
+    "downloads": 3232,
+    "version": "0.0.18",
+    "version_created_at": "2024-11-30 19:50:19 UTC",
+    "authors": "Miles Georgi",
+    "info": "Implements command pattern for encapsulating and managing domain complexity as well as many supporting libraries including entities.",
+    "licenses": [
+      "MPL-2.0"
+    ],
+    "project_uri": "https://rubygems.org/gems/foobara",
+    "homepage_uri": "https://foobara.com",
+    "source_code_uri": "https://foobara.com",
+    "changelog_uri": "https://foobara.com/blob/main/CHANGELOG.md",
+    "dependencies": {
+      "development": [],
+      "runtime": [
+        {
+          "name": "foobara-util",
+          "requirements": ">= 0"
+        }
+      ]
+    }
+  },
+  {
+    "name": "checkoff",
+    "downloads": 147789,
+    "version": "0.204.0",
+    "version_created_at": "2024-11-30 19:38:45 UTC",
+    "authors": "Vince Broz",
+    "info": "Command-line and gem client for Asana (unofficial)",
+    "licenses": [
+      "MIT license"
+    ],
+    "project_uri": "https://rubygems.org/gems/checkoff",
+    "homepage_uri": "https://github.com/apiology/checkoff",
+    "source_code_uri": null,
+    "changelog_uri": null,
+    "dependencies": {
+      "development": [],
+      "runtime": [
+        {
+          "name": "activesupport",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "asana",
+          "requirements": "> 0.10.0"
+        },
+        {
+          "name": "cache_method",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "gli",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "mime-types",
+          "requirements": ">= 0"
+        }
+      ]
+    }
+  },
+  {
+    "name": "checkoff",
+    "downloads": 147789,
+    "version": "0.203.0",
+    "version_created_at": "2024-11-30 19:34:42 UTC",
+    "authors": "Vince Broz",
+    "info": "Command-line and gem client for Asana (unofficial)",
+    "licenses": [
+      "MIT license"
+    ],
+    "project_uri": "https://rubygems.org/gems/checkoff",
+    "homepage_uri": "https://github.com/apiology/checkoff",
+    "source_code_uri": null,
+    "changelog_uri": null,
+    "dependencies": {
+      "development": [],
+      "runtime": [
+        {
+          "name": "activesupport",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "asana",
+          "requirements": "> 0.10.0"
+        },
+        {
+          "name": "cache_method",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "gli",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "mime-types",
+          "requirements": ">= 0"
+        }
+      ]
+    }
+  },
+  {
+    "name": "brick",
+    "downloads": 134789,
+    "version": "1.0.221",
+    "version_created_at": "2024-11-30 19:27:43 UTC",
+    "authors": "Lorin Thwaits",
+    "info": "Auto-create models, views, controllers, and routes with this slick Rails extension\n",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/brick",
+    "homepage_uri": "https://github.com/lorint/brick",
+    "source_code_uri": null,
+    "changelog_uri": null,
+    "dependencies": {
+      "development": [
+        {
+          "name": "appraisal",
+          "requirements": "~> 2.2"
+        },
+        {
+          "name": "ffaker",
+          "requirements": "~> 2.11"
+        },
+        {
+          "name": "generator_spec",
+          "requirements": "~> 0.9.4"
+        },
+        {
+          "name": "memory_profiler",
+          "requirements": "~> 0.9.14"
+        },
+        {
+          "name": "pg",
+          "requirements": ">= 0.18, < 2.0"
+        },
+        {
+          "name": "pry-byebug",
+          "requirements": "~> 3.7.0"
+        },
+        {
+          "name": "rake",
+          "requirements": "~> 13.0"
+        },
+        {
+          "name": "rspec-rails",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "rubocop",
+          "requirements": "~> 0.93"
+        },
+        {
+          "name": "rubocop-rspec",
+          "requirements": "~> 1.42.0"
+        },
+        {
+          "name": "sqlite3",
+          "requirements": "~> 2.3.0"
+        }
+      ],
+      "runtime": [
+        {
+          "name": "activerecord",
+          "requirements": ">= 3.1.1"
+        },
+        {
+          "name": "fancy_gets",
+          "requirements": ">= 0"
+        }
+      ]
+    }
+  },
+  {
+    "name": "playwright-ruby-client",
+    "downloads": 542555,
+    "version": "1.48.1",
+    "version_created_at": "2024-11-30 19:07:44 UTC",
+    "authors": "YusukeIwaki",
+    "info": "The Ruby binding of playwright driver 1.48.2",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/playwright-ruby-client",
+    "homepage_uri": "https://github.com/YusukeIwaki/playwright-ruby-client",
+    "source_code_uri": null,
+    "changelog_uri": null,
+    "dependencies": {
+      "development": [
+        {
+          "name": "bundler",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "chunky_png",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "dry-inflector",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "faye-websocket",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "pry-byebug",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "puma",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "rack",
+          "requirements": "< 3"
+        },
+        {
+          "name": "rake",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "rspec",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "rubocop-rspec",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "sinatra",
+          "requirements": ">= 0"
+        }
+      ],
+      "runtime": [
+        {
+          "name": "concurrent-ruby",
+          "requirements": ">= 1.1.6"
+        },
+        {
+          "name": "mime-types",
+          "requirements": ">= 3.0"
+        }
+      ]
+    }
+  },
+  {
+    "name": "non-digest-assets",
+    "downloads": 925225,
+    "version": "2.5.0",
+    "version_created_at": "2024-11-30 17:42:50 UTC",
+    "authors": "Alex Speller, Matijs van Zuijlen",
+    "info": "    Rails provides no option to generate both digest and non-digest\n    assets. Installing this gem automatically creates both digest and\n    non-digest assets which are useful for many reasons.\n\n    Currently supports sprockets only.\n",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/non-digest-assets",
+    "homepage_uri": "http://github.com/mvz/non-digest-assets",
+    "source_code_uri": null,
+    "changelog_uri": null,
+    "dependencies": {
+      "development": [
+        {
+          "name": "appraisal",
+          "requirements": "~> 2.3"
+        },
+        {
+          "name": "aruba",
+          "requirements": "~> 2.0"
+        },
+        {
+          "name": "rails",
+          "requirements": ">= 6.0, < 8.1"
+        },
+        {
+          "name": "rake",
+          "requirements": "~> 13.0"
+        },
+        {
+          "name": "rspec",
+          "requirements": "~> 3.10"
+        },
+        {
+          "name": "rubocop",
+          "requirements": "~> 1.52"
+        },
+        {
+          "name": "rubocop-packaging",
+          "requirements": "~> 0.5.2"
+        },
+        {
+          "name": "rubocop-performance",
+          "requirements": "~> 1.18"
+        },
+        {
+          "name": "rubocop-rails",
+          "requirements": "~> 2.19"
+        },
+        {
+          "name": "rubocop-rake",
+          "requirements": "~> 0.6.0"
+        },
+        {
+          "name": "rubocop-rspec",
+          "requirements": "~> 3.0"
+        },
+        {
+          "name": "sprockets-rails",
+          "requirements": "~> 3.0"
+        }
+      ],
+      "runtime": [
+        {
+          "name": "activesupport",
+          "requirements": ">= 6.0, < 8.1"
+        },
+        {
+          "name": "sprockets",
+          "requirements": "~> 4.0"
+        }
+      ]
+    }
+  },
+  {
+    "name": "plutonium",
+    "downloads": 11655,
+    "version": "0.15.23",
+    "version_created_at": "2024-11-30 17:17:56 UTC",
+    "authors": "Stefan Froelich",
+    "info": "Plutonium extends Rails' capabilities with a powerful, generator-driven toolkit designed to supercharge your development process. It transforms the way you build applications with Rails, optimizing for rapid application development.",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/plutonium",
+    "homepage_uri": "https://radioactive-labs.github.io/plutonium-core/",
+    "source_code_uri": "https://github.com/radioactive-labs/plutonium-core",
+    "changelog_uri": null,
+    "dependencies": {
+      "development": [
+        {
+          "name": "appraisal",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "brakeman",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "bundle-audit",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "combustion",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "minitest",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "minitest-reporters",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "rake",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "standard",
+          "requirements": ">= 0"
+        }
+      ],
+      "runtime": [
+        {
+          "name": "action_policy",
+          "requirements": "~> 0.7.0"
+        },
+        {
+          "name": "dry-initializer",
+          "requirements": "~> 3.1"
+        },
+        {
+          "name": "listen",
+          "requirements": "~> 3.8"
+        },
+        {
+          "name": "pagy",
+          "requirements": "~> 9.0"
+        },
+        {
+          "name": "phlex",
+          "requirements": "~> 1.11"
+        },
+        {
+          "name": "phlexi-display",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "phlexi-form",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "phlexi-table",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "phlex-rails",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "phlex-slotable",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "phlex-tabler_icons",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "rabl",
+          "requirements": "~> 0.16.1"
+        },
+        {
+          "name": "rails",
+          "requirements": ">= 7.1, < 8.0"
+        },
+        {
+          "name": "redcarpet",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "semantic_range",
+          "requirements": "~> 3.0"
+        },
+        {
+          "name": "simple_form",
+          "requirements": "~> 5.3"
+        },
+        {
+          "name": "tailwind_merge",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "tty-prompt",
+          "requirements": "~> 0.23.1"
+        },
+        {
+          "name": "view_component",
+          "requirements": "~> 3"
+        },
+        {
+          "name": "zeitwerk",
+          "requirements": ">= 0"
+        }
+      ]
+    }
+  },
+  {
+    "name": "zen-engine-ruby",
+    "downloads": 964,
+    "version": "0.0.3",
+    "version_created_at": "2024-11-30 17:07:25 UTC",
+    "authors": "Alex Matchneer",
+    "info": "Ruby FFI bindings for the Zen library",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/zen-engine-ruby",
+    "homepage_uri": null,
+    "source_code_uri": null,
+    "changelog_uri": null,
+    "dependencies": {
+      "development": [
+        {
+          "name": "minitest",
+          "requirements": "~> 5.25"
+        }
+      ],
+      "runtime": [
+        {
+          "name": "ffi",
+          "requirements": "~> 1.17"
+        }
+      ]
+    }
+  },
+  {
+    "name": "zen-engine-ruby",
+    "downloads": 964,
+    "version": "0.0.3",
+    "version_created_at": "2024-11-30 17:07:07 UTC",
+    "authors": "Alex Matchneer",
+    "info": "Ruby FFI bindings for the Zen library",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/zen-engine-ruby",
+    "homepage_uri": null,
+    "source_code_uri": null,
+    "changelog_uri": null,
+    "dependencies": {
+      "development": [
+        {
+          "name": "minitest",
+          "requirements": "~> 5.25"
+        }
+      ],
+      "runtime": [
+        {
+          "name": "ffi",
+          "requirements": "~> 1.17"
+        }
+      ]
+    }
+  },
+  {
+    "name": "zen-engine-ruby",
+    "downloads": 964,
+    "version": "0.0.3",
+    "version_created_at": "2024-11-30 17:06:57 UTC",
+    "authors": "Alex Matchneer",
+    "info": "Ruby FFI bindings for the Zen library",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/zen-engine-ruby",
+    "homepage_uri": null,
+    "source_code_uri": null,
+    "changelog_uri": null,
+    "dependencies": {
+      "development": [
+        {
+          "name": "minitest",
+          "requirements": "~> 5.25"
+        }
+      ],
+      "runtime": [
+        {
+          "name": "ffi",
+          "requirements": "~> 1.17"
+        }
+      ]
+    }
+  },
+  {
+    "name": "zen-engine-ruby",
+    "downloads": 964,
+    "version": "0.0.3",
+    "version_created_at": "2024-11-30 17:06:47 UTC",
+    "authors": "Alex Matchneer",
+    "info": "Ruby FFI bindings for the Zen library",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/zen-engine-ruby",
+    "homepage_uri": null,
+    "source_code_uri": null,
+    "changelog_uri": null,
+    "dependencies": {
+      "development": [
+        {
+          "name": "minitest",
+          "requirements": "~> 5.25"
+        }
+      ],
+      "runtime": [
+        {
+          "name": "ffi",
+          "requirements": "~> 1.17"
+        }
+      ]
+    }
+  },
+  {
+    "name": "zen-engine-ruby",
+    "downloads": 964,
+    "version": "0.0.3",
+    "version_created_at": "2024-11-30 17:06:36 UTC",
+    "authors": "Alex Matchneer",
+    "info": "Ruby FFI bindings for the Zen library",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/zen-engine-ruby",
+    "homepage_uri": null,
+    "source_code_uri": null,
+    "changelog_uri": null,
+    "dependencies": {
+      "development": [
+        {
+          "name": "minitest",
+          "requirements": "~> 5.25"
+        }
+      ],
+      "runtime": [
+        {
+          "name": "ffi",
+          "requirements": "~> 1.17"
+        }
+      ]
+    }
+  },
+  {
+    "name": "zen-engine-ruby",
+    "downloads": 964,
+    "version": "0.0.2",
+    "version_created_at": "2024-11-30 16:52:34 UTC",
+    "authors": "Alex Matchneer",
+    "info": "Ruby FFI bindings for the Zen library",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/zen-engine-ruby",
+    "homepage_uri": null,
+    "source_code_uri": null,
+    "changelog_uri": null,
+    "dependencies": {
+      "development": [
+        {
+          "name": "minitest",
+          "requirements": "~> 5.25"
+        }
+      ],
+      "runtime": [
+        {
+          "name": "ffi",
+          "requirements": "~> 1.17"
+        }
+      ]
+    }
+  },
+  {
+    "name": "zen-engine-ruby",
+    "downloads": 964,
+    "version": "0.0.2",
+    "version_created_at": "2024-11-30 16:52:30 UTC",
+    "authors": "Alex Matchneer",
+    "info": "Ruby FFI bindings for the Zen library",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/zen-engine-ruby",
+    "homepage_uri": null,
+    "source_code_uri": null,
+    "changelog_uri": null,
+    "dependencies": {
+      "development": [
+        {
+          "name": "minitest",
+          "requirements": "~> 5.25"
+        }
+      ],
+      "runtime": [
+        {
+          "name": "ffi",
+          "requirements": "~> 1.17"
+        }
+      ]
+    }
+  },
+  {
+    "name": "zen-engine-ruby",
+    "downloads": 964,
+    "version": "0.0.2",
+    "version_created_at": "2024-11-30 16:52:26 UTC",
+    "authors": "Alex Matchneer",
+    "info": "Ruby FFI bindings for the Zen library",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/zen-engine-ruby",
+    "homepage_uri": null,
+    "source_code_uri": null,
+    "changelog_uri": null,
+    "dependencies": {
+      "development": [
+        {
+          "name": "minitest",
+          "requirements": "~> 5.25"
+        }
+      ],
+      "runtime": [
+        {
+          "name": "ffi",
+          "requirements": "~> 1.17"
+        }
+      ]
+    }
+  },
+  {
+    "name": "zen-engine-ruby",
+    "downloads": 964,
+    "version": "0.0.2",
+    "version_created_at": "2024-11-30 16:52:20 UTC",
+    "authors": "Alex Matchneer",
+    "info": "Ruby FFI bindings for the Zen library",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/zen-engine-ruby",
+    "homepage_uri": null,
+    "source_code_uri": null,
+    "changelog_uri": null,
+    "dependencies": {
+      "development": [
+        {
+          "name": "minitest",
+          "requirements": "~> 5.25"
+        }
+      ],
+      "runtime": [
+        {
+          "name": "ffi",
+          "requirements": "~> 1.17"
+        }
+      ]
+    }
+  },
+  {
+    "name": "zen-engine-ruby",
+    "downloads": 964,
+    "version": "0.0.2",
+    "version_created_at": "2024-11-30 16:52:15 UTC",
+    "authors": "Alex Matchneer",
+    "info": "Ruby FFI bindings for the Zen library",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/zen-engine-ruby",
+    "homepage_uri": null,
+    "source_code_uri": null,
+    "changelog_uri": null,
+    "dependencies": {
+      "development": [
+        {
+          "name": "minitest",
+          "requirements": "~> 5.25"
+        }
+      ],
+      "runtime": [
+        {
+          "name": "ffi",
+          "requirements": "~> 1.17"
+        }
+      ]
+    }
+  },
+  {
+    "name": "phlexi-form",
+    "downloads": 3616,
+    "version": "0.5.11",
+    "version_created_at": "2024-11-30 16:50:31 UTC",
+    "authors": "Stefan Froelich",
+    "info": "A better way to customize and build forms for your Rails application",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/phlexi-form",
+    "homepage_uri": "https://github.com/radioactive-labs/phlexi-form",
+    "source_code_uri": "https://github.com/radioactive-labs/phlexi-form",
+    "changelog_uri": "https://github.com/radioactive-labs/phlexi-form",
+    "dependencies": {
+      "development": [
+        {
+          "name": "appraisal",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "bundle-audit",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "combustion",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "minitest",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "minitest-reporters",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "phlex-testing-capybara",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "rake",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "standard",
+          "requirements": ">= 0"
+        }
+      ],
+      "runtime": [
+        {
+          "name": "activesupport",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "phlex",
+          "requirements": "~> 1.11"
+        },
+        {
+          "name": "phlexi-field",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "zeitwerk",
+          "requirements": ">= 0"
+        }
+      ]
+    }
+  },
+  {
+    "name": "scripref",
+    "downloads": 34474,
+    "version": "1.1.1",
+    "version_created_at": "2024-11-30 16:47:07 UTC",
+    "authors": "Jan Friedrich",
+    "info": "Library for parsing scripture references in real texts.",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/scripref",
+    "homepage_uri": "https://github.com/janfri/scripref",
+    "source_code_uri": "https://github.com/janfri/scripref",
+    "changelog_uri": null,
+    "dependencies": {
+      "development": [
+        {
+          "name": "rake",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "regtest",
+          "requirements": "~> 2"
+        },
+        {
+          "name": "rim",
+          "requirements": "~> 3.0"
+        }
+      ],
+      "runtime": []
+    }
+  },
+  {
+    "name": "hotwire_native_rails",
+    "downloads": 207,
+    "version": "0.1.0",
+    "version_created_at": "2024-11-30 16:36:57 UTC",
+    "authors": "Yaro Shm",
+    "info": "Generate Hotwire Native Rails helpers and bridge components",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/hotwire_native_rails",
+    "homepage_uri": "https://github.com/yshmarov/hotwire_native_rails",
+    "source_code_uri": "https://github.com/yshmarov/hotwire_native_rails",
+    "changelog_uri": "https://github.com/yshmarov/hotwire_native_rails/blob/main/CHANGELOG.md",
+    "dependencies": {
+      "development": [],
+      "runtime": []
+    }
+  },
+  {
+    "name": "phlexi-field",
+    "downloads": 1679,
+    "version": "0.0.11",
+    "version_created_at": "2024-11-30 16:29:33 UTC",
+    "authors": "Stefan Froelich",
+    "info": "Base fields for the Phlexi libraries",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/phlexi-field",
+    "homepage_uri": "https://github.com/radioactive-labs/phlexi-field",
+    "source_code_uri": "https://github.com/radioactive-labs/phlexi-field",
+    "changelog_uri": "https://github.com/radioactive-labs/phlexi-field",
+    "dependencies": {
+      "development": [
+        {
+          "name": "appraisal",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "bundle-audit",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "combustion",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "minitest",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "minitest-reporters",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "phlex-testing-capybara",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "rake",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "standard",
+          "requirements": ">= 0"
+        }
+      ],
+      "runtime": [
+        {
+          "name": "activesupport",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "fiber-local",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "phlex",
+          "requirements": "~> 1.11"
+        },
+        {
+          "name": "zeitwerk",
+          "requirements": ">= 0"
+        }
+      ]
+    }
+  },
+  {
+    "name": "phlexi-form",
+    "downloads": 3616,
+    "version": "0.5.10",
+    "version_created_at": "2024-11-30 16:22:36 UTC",
+    "authors": "Stefan Froelich",
+    "info": "A better way to customize and build forms for your Rails application",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/phlexi-form",
+    "homepage_uri": "https://github.com/radioactive-labs/phlexi-form",
+    "source_code_uri": "https://github.com/radioactive-labs/phlexi-form",
+    "changelog_uri": "https://github.com/radioactive-labs/phlexi-form",
+    "dependencies": {
+      "development": [
+        {
+          "name": "appraisal",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "bundle-audit",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "combustion",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "minitest",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "minitest-reporters",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "phlex-testing-capybara",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "rake",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "standard",
+          "requirements": ">= 0"
+        }
+      ],
+      "runtime": [
+        {
+          "name": "activesupport",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "phlex",
+          "requirements": "~> 1.11"
+        },
+        {
+          "name": "phlexi-field",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "zeitwerk",
+          "requirements": ">= 0"
+        }
+      ]
+    }
+  },
+  {
+    "name": "whisper.cpp",
+    "downloads": 1122,
+    "version": "0.3.4",
+    "version_created_at": "2024-11-30 16:14:02 UTC",
+    "authors": "Braulio Oliveira",
+    "info": "A Ruby gem that provides bindings to the whisper.cpp library for speech transcription.",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/whisper.cpp",
+    "homepage_uri": null,
+    "source_code_uri": null,
+    "changelog_uri": null,
+    "dependencies": {
+      "development": [
+        {
+          "name": "pry",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "rake-compiler",
+          "requirements": ">= 0"
+        }
+      ],
+      "runtime": [
+        {
+          "name": "ffi",
+          "requirements": "~> 1.15"
+        }
+      ]
+    }
+  },
+  {
+    "name": "boba",
+    "downloads": 2320,
+    "version": "0.0.12",
+    "version_created_at": "2024-11-30 15:49:12 UTC",
+    "authors": "Angellist",
+    "info": "Custom Tapioca compilers",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/boba",
+    "homepage_uri": "https://github.com/angellist/boba",
+    "source_code_uri": "https://github.com/angellist/boba/tree/0.0.12",
+    "changelog_uri": "https://github.com/angellist/boba/blob/0.0.12/History.md",
+    "dependencies": {
+      "development": [],
+      "runtime": [
+        {
+          "name": "sorbet-static-and-runtime",
+          "requirements": "~> 0.5"
+        },
+        {
+          "name": "tapioca",
+          "requirements": "<= 0.16.5"
+        }
+      ]
+    }
+  }
+]

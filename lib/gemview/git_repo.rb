@@ -12,28 +12,34 @@ module Gemview
     # @return [Gemview::GitRepo|nil]
     def self.from_urls(urls:, version:)
       @from_urls ||= {}
-      base_url, git_host = nil
 
+      base_url, git_host = nil
       urls.each do |url|
         base_url, git_host = parse_base_url(url)
-        break if base_url && git_host
+        if base_url && git_host
+          return @from_urls[base_url] ||= new(
+            base_url: base_url,
+            git_host: git_host,
+            version: version
+          )
+        end
       end
-      return unless base_url && git_host
-
-      @from_urls[base_url] ||= new(base_url: base_url, git_host: git_host, version: version)
+      nil
     end
 
     # @param [String]
     # @return [base_url as `String` and git_host as `Symbol`] or nil if unsuccessful
     def self.parse_base_url(url)
-      github_base_url = url[%r{^https://github.com/[^/]+/[^/]+}, 0]
+      github_base_url = url[%r{^https?://github\.com/[^/]+/[^/]+}, 0]
       return [github_base_url, GITHUB] if github_base_url
 
-      gitlab_base_url = url[%r{^https://gitlab.com/[^/]+/[^/]+}, 0]
+      gitlab_base_url = url[%r{^https?://gitlab\.com/[^/]+/[^/]+}, 0]
       [gitlab_base_url, GITLAB] if gitlab_base_url
     end
 
     private_class_method :new, :parse_base_url
+
+    attr_reader :base_url, :git_host, :version
 
     # @param base_url [String] base Git repo url for `HOSTS`
     # @param git_host [Symbol] from `HOSTS`
@@ -41,9 +47,9 @@ module Gemview
     def initialize(base_url:, git_host:, version:)
       raise ArgumentError, "Invalid host: #{git_host}" unless HOSTS.include?(git_host)
 
-      @base_url = base_url
+      @base_url = base_url.dup.freeze
       @git_host = git_host
-      @version = version
+      @version = version.dup.freeze
     end
 
     # @return [String|nil]
@@ -76,7 +82,7 @@ module Gemview
     def github_raw_file(filename)
       # From: `https://github.com/charmbracelet/bubbles`
       # To: `https://raw.githubusercontent.com/charmbracelet/bubbles/refs/tags/v0.20.0/README.md`
-      path = @base_url.delete_prefix("https://github.com")
+      path = @base_url.sub(%r{^https?://github\.com}, "")
 
       [
         "https://raw.githubusercontent.com#{path}/refs/tags/v#{@version}/#{filename}",
@@ -93,9 +99,11 @@ module Gemview
     def gitlab_raw_file(filename)
       # From: `https://gitlab.com/gitlab-org/gitlab`
       # To: `https://gitlab.com/gitlab-org/gitlab/-/raw/v17.5.1-ee/README.md?ref_type=tags&inline=false`
+      path = @base_url.sub(%r{^https?://gitlab\.com}, "")
+
       [
-        "#{@base_url}/-/raw/#{@version}/v#{filename}?ref_type=tags&inline=false",
-        "#{@base_url}/-/raw/#{@version}/#{filename}?ref_type=tags&inline=false"
+        "https://gitlab.com#{path}/-/raw/v#{@version}/#{filename}?ref_type=tags&inline=false",
+        "https://gitlab.com#{path}/-/raw/#{@version}/#{filename}?ref_type=tags&inline=false"
       ].each do |url|
         content = fetch(url)
         return content if content

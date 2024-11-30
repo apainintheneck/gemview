@@ -1,0 +1,148 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://gitlab.com/sdalu/ruby-ble/-/raw/v1.0.0/README.md?inline=false&ref_type=tags
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - gitlab.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 01 Dec 2024 00:56:50 GMT
+      Content-Type:
+      - application/octet-stream
+      Content-Length:
+      - '974'
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 8eaf1ea35f13cfac-SJC
+      Cf-Cache-Status:
+      - REVALIDATED
+      Accept-Ranges:
+      - bytes
+      Cache-Control:
+      - max-age=60, public, must-revalidate, stale-while-revalidate=60, stale-if-error=300,
+        s-maxage=60
+      Content-Disposition:
+      - attachment; filename="README.md"; filename*=UTF-8''README.md
+      Etag:
+      - '"a25662db48b1b6072e7f5bf14eabc562"'
+      Strict-Transport-Security:
+      - max-age=31536000
+      Vary:
+      - Accept, Accept-Encoding
+      Content-Security-Policy:
+      - 'base-uri ''self''; child-src https://www.google.com/recaptcha/ https://www.recaptcha.net/
+        https://www.googletagmanager.com/ns.html https://*.zuora.com/apps/PublicHostedPageLite.do
+        https://gitlab.com/admin/ https://gitlab.com/assets/ https://gitlab.com/-/speedscope/index.html
+        https://gitlab.com/-/sandbox/ ''self'' https://gitlab.com/assets/ blob: data:;
+        connect-src ''self'' https://gitlab.com wss://gitlab.com https://sentry.gitlab.net
+        https://new-sentry.gitlab.net https://customers.gitlab.com https://snowplow.trx.gitlab.net
+        https://sourcegraph.com https://collector.prd-278964.gl-product-analytics.com
+        snowplow.trx.gitlab.net; default-src ''self''; font-src ''self''; form-action
+        ''self'' https: http:; frame-ancestors ''self''; frame-src https://www.google.com/recaptcha/
+        https://www.recaptcha.net/ https://www.googletagmanager.com/ns.html https://*.zuora.com/apps/PublicHostedPageLite.do
+        https://gitlab.com/admin/ https://gitlab.com/assets/ https://gitlab.com/-/speedscope/index.html
+        https://gitlab.com/-/sandbox/; img-src ''self'' data: blob: http: https:;
+        manifest-src ''self''; media-src ''self'' data: blob: http: https:; object-src
+        ''none''; report-uri https://new-sentry.gitlab.net/api/4/security/?sentry_key=f5573e26de8f4293b285e556c35dfd6e&sentry_environment=gprd;
+        script-src ''strict-dynamic'' ''self'' ''unsafe-inline'' ''unsafe-eval'' https://www.google.com/recaptcha/
+        https://www.gstatic.com/recaptcha/ https://www.recaptcha.net/ https://apis.google.com
+        https://*.zuora.com/apps/PublicHostedPageLite.do ''nonce-IvPxR6i1NkfrAWH1giCG5A=='';
+        style-src ''self'' ''unsafe-inline''; worker-src ''self'' https://gitlab.com/assets/
+        blob: data:'
+      Gitlab-Lb:
+      - haproxy-main-57-lb-gprd
+      Gitlab-Sv:
+      - web-gke-us-east1-b
+      Permissions-Policy:
+      - interest-cohort=()
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Gitlab-Meta:
+      - '{"correlation_id":"01JDZN5P1ST5XRXXQHK0782961","version":"1"}'
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Request-Id:
+      - 01JDZN5P1ST5XRXXQHK0782961
+      X-Runtime:
+      - '0.073751'
+      X-Ua-Compatible:
+      - IE=edge
+      X-Xss-Protection:
+      - 1; mode=block
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=96QJ6sgmHq0vqyhASWo8vTkWG052bdhQeGyu6NUHacalhu8S%2BmU1b6MfWnkFK%2BavFD7uGQoeGhWLkj9KdrSB60m1X4MsqcHr7widcIkbwt9Y%2FZgsoUyXwegZMFA%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}'
+      Set-Cookie:
+      - _cfuvid=7CGn9BMG3L4qsZxIp93LUdKkpGsGUSmk6DTCeupIgVE-1733014610663-0.0.1.1-604800000;
+        path=/; domain=.gitlab.com; HttpOnly; Secure; SameSite=None
+      Server:
+      - cloudflare
+    body:
+      encoding: UTF-8
+      string: |
+        # ruby-ble
+        Bluetooth Low Energy for Ruby
+        [![Gem Version](https://badge.fury.io/rb/ble.svg)](https://badge.fury.io/rb/ble)
+
+        ## Requirements
+        * ruby >= 2.3
+        * Dbus
+        * bluez >= 5.36 (available on debian testing)
+        * `bluetoothd` started with option `-E` (experimental)
+
+        ## Examples
+        ```ruby
+        # Selecter adapter
+        $a = BLE::Adapter.new('hci0')
+        puts "Info: #{$a.iface} #{$a.address} #{$a.name}"
+
+        # Run discovery
+        $a.start_discovery
+        sleep(2)
+        $a.stop_discovery
+
+        # Get device and connect to it
+        $d = $a['F4:AD:CB:FB:B4:85']
+        $d.connect
+
+        # Get temperature from the environmental sensing service
+        $d[:environmental_sensing, :temperature]
+
+        # Dump device information
+        srv = :device_information
+        $d.characteristics(srv).each {|uuid|
+            info  = BLE::Characteristic[uuid]
+            name  = info.nil? ? uuid : info[:name]
+            value = $d[srv, uuid] rescue '/!\\ not-readable /!\\'
+            puts "%-30s: %s" % [ name, value ]
+        }
+
+        ```
+
+        ## Contributors
+        * Oliver Valls (tramuntanal): Bug fixes / BLE Notification support
+  recorded_at: Sun, 01 Dec 2024 00:56:50 GMT
+recorded_with: VCR 6.3.1

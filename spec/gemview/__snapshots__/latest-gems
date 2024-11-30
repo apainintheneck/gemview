@@ -1,0 +1,1921 @@
+[
+  {
+    "name": "builder-rails_cache",
+    "downloads": 50,
+    "version": "0.1.1",
+    "version_created_at": "2024-11-30 22:19:13 UTC",
+    "authors": "Alistair Davidson",
+    "info": "Provides convenience method `with_cache` for caching API response JSON",
+    "licenses": [],
+    "project_uri": "https://rubygems.org/gems/builder-rails_cache",
+    "homepage_uri": "https://gitlab.builder.ai/cte/alistair-davidson/builder-rails_cache",
+    "source_code_uri": "https://gitlab.builder.ai/cte/alistair-davidson/builder-rails_cache",
+    "changelog_uri": null,
+    "dependencies": {
+      "development": [
+        {
+          "name": "byebug",
+          "requirements": ">= 0"
+        }
+      ],
+      "runtime": [
+        {
+          "name": "rails",
+          "requirements": ">= 4.0"
+        }
+      ]
+    }
+  },
+  {
+    "name": "jekyll-blog",
+    "downloads": 24,
+    "version": "0.1.0",
+    "version_created_at": "2024-11-30 18:16:07 UTC",
+    "authors": "r3dsd",
+    "info": "cli blog tool",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/jekyll-blog",
+    "homepage_uri": "https://github.com/r3dsd?tab=repositories",
+    "source_code_uri": "https://github.com/r3dsd?tab=repositories",
+    "changelog_uri": "https://github.com/r3dsd?tab=repositories",
+    "dependencies": {
+      "development": [],
+      "runtime": []
+    }
+  },
+  {
+    "name": "jekyll-llmstxt",
+    "downloads": 74,
+    "version": "0.1.0",
+    "version_created_at": "2024-11-30 17:44:20 UTC",
+    "authors": "Kyle Gao",
+    "info": "Generate llms.txt for Jekyll site",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/jekyll-llmstxt",
+    "homepage_uri": null,
+    "source_code_uri": null,
+    "changelog_uri": null,
+    "dependencies": {
+      "development": [
+        {
+          "name": "bundler",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "rake",
+          "requirements": ">= 0"
+        }
+      ],
+      "runtime": [
+        {
+          "name": "jekyll",
+          "requirements": ">= 3.7, < 5.0"
+        }
+      ]
+    }
+  },
+  {
+    "name": "hyperactiveform",
+    "downloads": 79,
+    "version": "0.1.0",
+    "version_created_at": "2024-11-30 14:32:26 UTC",
+    "authors": "Adrien Siami",
+    "info": "Encapsulate form logic and validations in a simple object",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/hyperactiveform",
+    "homepage_uri": "https://github.com/Intrepidd/hyperactiveform",
+    "source_code_uri": "https://github.com/Intrepidd/hyperactiveform",
+    "changelog_uri": "https://github.com/Intrepidd/hyperactiveform/blob/main/CHANGELOG.md",
+    "dependencies": {
+      "development": [
+        {
+          "name": "rspec",
+          "requirements": "~> 3.13"
+        }
+      ],
+      "runtime": [
+        {
+          "name": "rails",
+          "requirements": ">= 7.0"
+        }
+      ]
+    }
+  },
+  {
+    "name": "ruby-lsp-rake",
+    "downloads": 83,
+    "version": "0.1.0",
+    "version_created_at": "2024-11-30 09:19:17 UTC",
+    "authors": "Koji NAKAMURA",
+    "info": "A Ruby LSP addon that adds extra editor functionality for Rake",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/ruby-lsp-rake",
+    "homepage_uri": "https://github.com/kozy4324/ruby-lsp-rake",
+    "source_code_uri": "https://github.com/kozy4324/ruby-lsp-rake",
+    "changelog_uri": "https://github.com/kozy4324/ruby-lsp-rake/releases",
+    "dependencies": {
+      "development": [],
+      "runtime": [
+        {
+          "name": "ruby-lsp",
+          "requirements": "~> 0.22.1"
+        }
+      ]
+    }
+  },
+  {
+    "name": "comfortable_media_surfer",
+    "downloads": 99,
+    "version": "3.0.0",
+    "version_created_at": "2024-11-30 03:36:46 UTC",
+    "authors": "Oleg Khabarov, Andrew vonderLuft, ShakaCode",
+    "info": "ComfortableMediaSurfer is a powerful Rails 6.1-7.1+ CMS Engine",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/comfortable_media_surfer",
+    "homepage_uri": null,
+    "source_code_uri": null,
+    "changelog_uri": null,
+    "dependencies": {
+      "development": [
+        {
+          "name": "gem-release",
+          "requirements": ">= 0"
+        }
+      ],
+      "runtime": [
+        {
+          "name": "active_link_to",
+          "requirements": "~> 1.0, >= 1.0.5"
+        },
+        {
+          "name": "comfy_bootstrap_form",
+          "requirements": "~> 4.0, >= 4.0.0"
+        },
+        {
+          "name": "haml-rails",
+          "requirements": "~> 2.1, >= 2.1.0"
+        },
+        {
+          "name": "image_processing",
+          "requirements": "~> 1.2, >= 1.12.2"
+        },
+        {
+          "name": "jquery-rails",
+          "requirements": "~> 4.6, >= 4.6.0"
+        },
+        {
+          "name": "kaminari",
+          "requirements": "~> 1.2, >= 1.2.2"
+        },
+        {
+          "name": "kramdown",
+          "requirements": "~> 2.4, >= 2.4.0"
+        },
+        {
+          "name": "mimemagic",
+          "requirements": "~> 0.4, >= 0.4.3"
+        },
+        {
+          "name": "mini_magick",
+          "requirements": "~> 4.12, >= 4.12.0"
+        },
+        {
+          "name": "rails",
+          "requirements": ">= 6.1.0"
+        },
+        {
+          "name": "rails-i18n",
+          "requirements": ">= 6.0.0"
+        },
+        {
+          "name": "sassc-rails",
+          "requirements": "~> 2.1, >= 2.1.2"
+        },
+        {
+          "name": "sprockets-rails",
+          "requirements": "~> 3.4, >= 3.4.2"
+        }
+      ]
+    }
+  },
+  {
+    "name": "faraday-aws-xray",
+    "downloads": 105,
+    "version": "0.1.0",
+    "version_created_at": "2024-11-29 22:48:35 UTC",
+    "authors": "Jay Zeschin",
+    "info": "Faraday middleware to instrument spans for AWS X-Ray.\n",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/faraday-aws-xray",
+    "homepage_uri": "https://github.com/ajayzes/faraday-aws-xray/faraday-aws-xray",
+    "source_code_uri": "https://github.com/ajayzes/faraday-aws-xray/faraday-aws-xray",
+    "changelog_uri": "https://github.com/ajayzes/faraday-aws-xray/faraday-aws-xray/blob/v0.1.0/CHANGELOG.md",
+    "dependencies": {
+      "development": [],
+      "runtime": [
+        {
+          "name": "aws-xray-sdk",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "faraday",
+          "requirements": ">= 2.9, < 3"
+        }
+      ]
+    }
+  },
+  {
+    "name": "ruby_json_parser",
+    "downloads": 96,
+    "version": "0.1.0",
+    "version_created_at": "2024-11-29 21:22:32 UTC",
+    "authors": "Mateusz Drewniak",
+    "info": "A JSON parser written in pure Ruby. Built for educational purposes.",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/ruby_json_parser",
+    "homepage_uri": "https://github.com/Verseth/ruby_json_parser",
+    "source_code_uri": "https://github.com/Verseth/ruby_json_parser",
+    "changelog_uri": null,
+    "dependencies": {
+      "development": [],
+      "runtime": [
+        {
+          "name": "sorbet-runtime",
+          "requirements": "~> 0.5"
+        }
+      ]
+    }
+  },
+  {
+    "name": "rbnum2persian",
+    "downloads": 104,
+    "version": "0.1.0",
+    "version_created_at": "2024-11-29 17:53:43 UTC",
+    "authors": "fadedreams7",
+    "info": "This gem provides methods to convert numbers to Persian text, handling both cardinal and ordinal numbers.",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/rbnum2persian",
+    "homepage_uri": "https://github.com/fadedreams/rbnum2persian",
+    "source_code_uri": "https://github.com/fadedreams/rbnum2persian",
+    "changelog_uri": null,
+    "dependencies": {
+      "development": [],
+      "runtime": []
+    }
+  },
+  {
+    "name": "scalar_ruby",
+    "downloads": 105,
+    "version": "1.0.0",
+    "version_created_at": "2024-11-29 14:23:08 UTC",
+    "authors": "Dmytro Shevchuk, Serhii Ponomarov",
+    "info": "A gem to automate using Scalar with Ruby apps",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/scalar_ruby",
+    "homepage_uri": "https://github.com/dmytroshevchuk/scalar_ruby",
+    "source_code_uri": "https://github.com/dmytroshevchuk/scalar_ruby",
+    "changelog_uri": null,
+    "dependencies": {
+      "development": [],
+      "runtime": []
+    }
+  },
+  {
+    "name": "kubetailrb",
+    "downloads": 108,
+    "version": "0.1.0",
+    "version_created_at": "2024-11-29 10:08:53 UTC",
+    "authors": "Louis Lin",
+    "info": "Tail Kubernetes pod logs at the same time.\n\nProject used for learning Ruby and Rails.\n",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/kubetailrb",
+    "homepage_uri": "https://github.com/l-lin/kubetailrb",
+    "source_code_uri": "https://github.com/l-lin/kubetailrb",
+    "changelog_uri": "https://github.com/l-lin/kubetailrb/blob/main/CHANGELOG.md",
+    "dependencies": {
+      "development": [
+        {
+          "name": "aruba",
+          "requirements": "~> 2.2.0"
+        },
+        {
+          "name": "cucumber",
+          "requirements": "~> 9.2.0"
+        },
+        {
+          "name": "guard",
+          "requirements": "~> 2.19.0"
+        },
+        {
+          "name": "guard-cucumber",
+          "requirements": "~> 3.0.0"
+        },
+        {
+          "name": "guard-minitest",
+          "requirements": "~> 2.4.6"
+        },
+        {
+          "name": "minitest",
+          "requirements": "~> 5.16"
+        },
+        {
+          "name": "pry",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "pry-byebug",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "rake",
+          "requirements": "~> 13.0"
+        },
+        {
+          "name": "rubocop",
+          "requirements": "~> 1.21"
+        },
+        {
+          "name": "rubocop-minitest",
+          "requirements": "~> 0.36.0"
+        },
+        {
+          "name": "rubocop-rake",
+          "requirements": "~> 0.6.0"
+        },
+        {
+          "name": "ruby-lsp",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "webmock",
+          "requirements": "~> 3.0"
+        }
+      ],
+      "runtime": [
+        {
+          "name": "kubeclient",
+          "requirements": "~> 4.12.0"
+        }
+      ]
+    }
+  },
+  {
+    "name": "exsys",
+    "downloads": 109,
+    "version": "0.5",
+    "version_created_at": "2024-11-29 09:59:10 UTC",
+    "authors": "Stéphane D'Alu",
+    "info": "\nProvide command support to control ExSYS Managed USB hub.\n\n",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/exsys",
+    "homepage_uri": null,
+    "source_code_uri": null,
+    "changelog_uri": null,
+    "dependencies": {
+      "development": [
+        {
+          "name": "rake",
+          "requirements": "~> 13"
+        },
+        {
+          "name": "yard",
+          "requirements": "~> 0"
+        }
+      ],
+      "runtime": [
+        {
+          "name": "uart",
+          "requirements": ">= 0"
+        }
+      ]
+    }
+  },
+  {
+    "name": "activerecord-full_text_search",
+    "downloads": 125,
+    "version": "0.1.0",
+    "version_created_at": "2024-11-29 07:46:58 UTC",
+    "authors": "Codeur SAS",
+    "info": "Integrate PostgreSQL's Full Text Search configurations with Rails",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/activerecord-full_text_search",
+    "homepage_uri": null,
+    "source_code_uri": null,
+    "changelog_uri": "https://github.com/codeur/activerecord-full_text_search/blob/master/CHANGELOG.md",
+    "dependencies": {
+      "development": [],
+      "runtime": [
+        {
+          "name": "activerecord",
+          "requirements": ">= 7.2.0"
+        },
+        {
+          "name": "activesupport",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "pg",
+          "requirements": ">= 0"
+        }
+      ]
+    }
+  },
+  {
+    "name": "wechat-ipay",
+    "downloads": 115,
+    "version": "2.0.0",
+    "version_created_at": "2024-11-29 03:45:25 UTC",
+    "authors": "tianlu1677",
+    "info": "A simple Wechat pay ruby gem in api V3.",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/wechat-ipay",
+    "homepage_uri": null,
+    "source_code_uri": null,
+    "changelog_uri": null,
+    "dependencies": {
+      "development": [
+        {
+          "name": "rake",
+          "requirements": "~> 13.0, >= 13.0.3"
+        },
+        {
+          "name": "rspec",
+          "requirements": "~> 3.10.0"
+        },
+        {
+          "name": "rubocop",
+          "requirements": "~> 1.14.0"
+        }
+      ],
+      "runtime": [
+        {
+          "name": "rest-client",
+          "requirements": "~> 2.0, >= 2.0.0"
+        }
+      ]
+    }
+  },
+  {
+    "name": "active-query",
+    "downloads": 113,
+    "version": "0.1.0",
+    "version_created_at": "2024-11-28 19:25:00 UTC",
+    "authors": "Matias Asis",
+    "info": "This is active-query",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/active-query",
+    "homepage_uri": null,
+    "source_code_uri": null,
+    "changelog_uri": null,
+    "dependencies": {
+      "development": [],
+      "runtime": []
+    }
+  },
+  {
+    "name": "defra_ruby_companies_house",
+    "downloads": 108,
+    "version": "1.0.0",
+    "version_created_at": "2024-11-28 16:28:09 UTC",
+    "authors": "Defra",
+    "info": "Single point of access to the Companies House API with associated error handling, used in Defra Rails based digital services",
+    "licenses": [
+      "The Open Government Licence (OGL) Version 3"
+    ],
+    "project_uri": "https://rubygems.org/gems/defra_ruby_companies_house",
+    "homepage_uri": null,
+    "source_code_uri": null,
+    "changelog_uri": null,
+    "dependencies": {
+      "development": [],
+      "runtime": [
+        {
+          "name": "i18n",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "rest-client",
+          "requirements": "~> 2.0"
+        }
+      ]
+    }
+  },
+  {
+    "name": "another-ldap-proxy",
+    "downloads": 112,
+    "version": "0.1.0",
+    "version_created_at": "2024-11-28 15:42:49 UTC",
+    "authors": "Thomas Tych",
+    "info": "Another Ldap Proxy implementation for search query.",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/another-ldap-proxy",
+    "homepage_uri": "https://gitlab.com/ttych/another-ldap-proxy.rb",
+    "source_code_uri": "https://gitlab.com/ttych/another-ldap-proxy.rb.git",
+    "changelog_uri": null,
+    "dependencies": {
+      "development": [
+        {
+          "name": "bump",
+          "requirements": "~> 0.10.0"
+        },
+        {
+          "name": "bundler",
+          "requirements": "~> 2.5.6"
+        },
+        {
+          "name": "byebug",
+          "requirements": "~> 11.1, >= 11.1.3"
+        },
+        {
+          "name": "minitest",
+          "requirements": "~> 5.16"
+        },
+        {
+          "name": "rake",
+          "requirements": "~> 13.0"
+        },
+        {
+          "name": "reek",
+          "requirements": "~> 6.1, >= 6.1.4"
+        },
+        {
+          "name": "rubocop",
+          "requirements": "~> 1.56"
+        },
+        {
+          "name": "rubocop-minitest",
+          "requirements": "~> 0.36.0"
+        },
+        {
+          "name": "rubocop-rake",
+          "requirements": "~> 0.6.0"
+        },
+        {
+          "name": "simplecov",
+          "requirements": "~> 0.22.0"
+        }
+      ],
+      "runtime": [
+        {
+          "name": "gli",
+          "requirements": "~> 2.22"
+        },
+        {
+          "name": "net-ldap",
+          "requirements": "~> 0.19.0"
+        },
+        {
+          "name": "ruby-ldapserver",
+          "requirements": "~> 0.7.0"
+        }
+      ]
+    }
+  },
+  {
+    "name": "rggen-veryl",
+    "downloads": 113,
+    "version": "0.1.0",
+    "version_created_at": "2024-11-28 14:06:37 UTC",
+    "authors": "Taichi Ishitani",
+    "info": "Veryl writer plugin for RgGen",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/rggen-veryl",
+    "homepage_uri": null,
+    "source_code_uri": "https://github.com/rggen/rggen-vhdl",
+    "changelog_uri": null,
+    "dependencies": {
+      "development": [],
+      "runtime": [
+        {
+          "name": "rggen-systemverilog",
+          "requirements": ">= 0.33.1"
+        }
+      ]
+    }
+  },
+  {
+    "name": "gitlab-active-context",
+    "downloads": 107,
+    "version": "0.0.1",
+    "version_created_at": "2024-11-28 09:29:07 UTC",
+    "authors": "GitLab",
+    "info": "Abstraction for indexing and searching vectors",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/gitlab-active-context",
+    "homepage_uri": null,
+    "source_code_uri": null,
+    "changelog_uri": null,
+    "dependencies": {
+      "development": [],
+      "runtime": [
+        {
+          "name": "zeitwerk",
+          "requirements": ">= 0"
+        }
+      ]
+    }
+  },
+  {
+    "name": "magic-support",
+    "downloads": 161,
+    "version": "0.1.0",
+    "version_created_at": "2024-11-28 02:22:19 UTC",
+    "authors": "Alexander Senko",
+    "info": "Utility classes and Ruby extensions beyond Active Support.",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/magic-support",
+    "homepage_uri": null,
+    "source_code_uri": "https://github.com/Alexander-Senko/magic-support",
+    "changelog_uri": "https://github.com/Alexander-Senko/magic-support/blob/v0.1.0/CHANGELOG.md",
+    "dependencies": {
+      "development": [],
+      "runtime": [
+        {
+          "name": "activesupport",
+          "requirements": ">= 0"
+        }
+      ]
+    }
+  },
+  {
+    "name": "aws-sdk-observabilityadmin",
+    "downloads": 10472,
+    "version": "1.0.0",
+    "version_created_at": "2024-11-27 20:05:40 UTC",
+    "authors": "Amazon Web Services",
+    "info": "Official AWS Ruby gem for CloudWatch Observability Admin Service. This gem is part of the AWS SDK for Ruby.",
+    "licenses": [
+      "Apache-2.0"
+    ],
+    "project_uri": "https://rubygems.org/gems/aws-sdk-observabilityadmin",
+    "homepage_uri": null,
+    "source_code_uri": "https://github.com/aws/aws-sdk-ruby/tree/version-3/gems/aws-sdk-observabilityadmin",
+    "changelog_uri": "https://github.com/aws/aws-sdk-ruby/tree/version-3/gems/aws-sdk-observabilityadmin/CHANGELOG.md",
+    "dependencies": {
+      "development": [],
+      "runtime": [
+        {
+          "name": "aws-sdk-core",
+          "requirements": "~> 3, >= 3.210.0"
+        },
+        {
+          "name": "aws-sigv4",
+          "requirements": "~> 1.5"
+        }
+      ]
+    }
+  },
+  {
+    "name": "rass",
+    "downloads": 113,
+    "version": "0.1.0",
+    "version_created_at": "2024-11-27 09:58:42 UTC",
+    "authors": "Adam Ladachowski",
+    "info": "RASS",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/rass",
+    "homepage_uri": "https://github.com/aladac/rass",
+    "source_code_uri": "https://github.com/aladac/rass",
+    "changelog_uri": "https://github.com/aladac/rass/blob/main/CHANGELOG.md",
+    "dependencies": {
+      "development": [],
+      "runtime": []
+    }
+  },
+  {
+    "name": "solidus_open_pay",
+    "downloads": 116,
+    "version": "1.0.0",
+    "version_created_at": "2024-11-27 02:37:18 UTC",
+    "authors": "Jonathan, Tapia",
+    "info": "Solidus Engine for Openpay Mexican Payment Gateway",
+    "licenses": [
+      "BSD-3-Clause"
+    ],
+    "project_uri": "https://rubygems.org/gems/solidus_open_pay",
+    "homepage_uri": "http://github.com/jtapia/solidus_open_pay",
+    "source_code_uri": "https://github.com/jtapia/solidus_open_pay",
+    "changelog_uri": "https://github.com/jtapia/solidus_open_pay/blob/master/CHANGELOG.md",
+    "dependencies": {
+      "development": [
+        {
+          "name": "rails-controller-testing",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "solidus_dev_support",
+          "requirements": "~> 2.5"
+        }
+      ],
+      "runtime": [
+        {
+          "name": "deface",
+          "requirements": "~> 1.5"
+        },
+        {
+          "name": "openpay",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "solidus_core",
+          "requirements": ">= 3.0, < 5.0"
+        },
+        {
+          "name": "solidus_support",
+          "requirements": ">= 0.8.0"
+        }
+      ]
+    }
+  },
+  {
+    "name": "panda_core",
+    "downloads": 97,
+    "version": "0.1.0",
+    "version_created_at": "2024-11-26 22:57:25 UTC",
+    "authors": "Panda Software Limited, James Inman",
+    "info": "Shared development tools, configurations, and utilities for Panda CMS and its related projects",
+    "licenses": [
+      "BSD-3-Clause"
+    ],
+    "project_uri": "https://rubygems.org/gems/panda_core",
+    "homepage_uri": "https://github.com/tastybamboo/panda_core",
+    "source_code_uri": "https://github.com/tastybamboo/panda_core",
+    "changelog_uri": "https://github.com/tastybamboo/panda_core/blob/main/CHANGELOG.md",
+    "dependencies": {
+      "development": [
+        {
+          "name": "annotaterb",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "better_errors",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "binding_of_caller",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "brakeman",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "bullet",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "bundler-audit",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "capybara",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "cuprite",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "danger",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "danger-reek",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "danger-rubocop",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "danger-simplecov_json",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "danger-todoist",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "erb_lint",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "factory_bot_rails",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "faker",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "fasterer",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "generator_spec",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "listen",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "pg",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "puma",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "rake",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "redis",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "rspec-github",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "rspec-rails",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "ruby-lsp",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "shoulda-matchers",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "simplecov",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "simplecov-json",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "simplecov_json_formatter",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "simplecov-lcov",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "simplecov_lcov_formatter",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "standard",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "standard-rails",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "undercover",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "view_component",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "yamllint",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "yard-activerecord",
+          "requirements": ">= 0"
+        }
+      ],
+      "runtime": [
+        {
+          "name": "activestorage-office-previewer",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "awesome_nested_set",
+          "requirements": "~> 3.7"
+        },
+        {
+          "name": "aws-sdk-s3",
+          "requirements": "~> 1"
+        },
+        {
+          "name": "dry-configurable",
+          "requirements": "~> 1"
+        },
+        {
+          "name": "faraday",
+          "requirements": "~> 2"
+        },
+        {
+          "name": "faraday-multipart",
+          "requirements": "~> 1"
+        },
+        {
+          "name": "faraday-retry",
+          "requirements": "~> 2"
+        },
+        {
+          "name": "image_processing",
+          "requirements": "~> 1.2"
+        },
+        {
+          "name": "importmap-rails",
+          "requirements": "~> 2"
+        },
+        {
+          "name": "lookbook",
+          "requirements": "~> 2"
+        },
+        {
+          "name": "omniauth",
+          "requirements": "~> 2.1"
+        },
+        {
+          "name": "omniauth-github",
+          "requirements": "~> 2.0"
+        },
+        {
+          "name": "omniauth-google-oauth2",
+          "requirements": "~> 1.1"
+        },
+        {
+          "name": "omniauth-microsoft_graph",
+          "requirements": "~> 2.0"
+        },
+        {
+          "name": "omniauth-rails_csrf_protection",
+          "requirements": "~> 1.0"
+        },
+        {
+          "name": "paper_trail",
+          "requirements": "~> 15"
+        },
+        {
+          "name": "pg",
+          "requirements": "~> 1.5"
+        },
+        {
+          "name": "propshaft",
+          "requirements": "~> 1.1"
+        },
+        {
+          "name": "rails",
+          "requirements": ">= 7.1"
+        },
+        {
+          "name": "silencer",
+          "requirements": "~> 2.0"
+        },
+        {
+          "name": "stimulus-rails",
+          "requirements": "~> 1.3"
+        },
+        {
+          "name": "tailwindcss-rails",
+          "requirements": "~> 3"
+        },
+        {
+          "name": "turbo-rails",
+          "requirements": "~> 2.0"
+        },
+        {
+          "name": "view_component",
+          "requirements": "~> 3"
+        }
+      ]
+    }
+  },
+  {
+    "name": "iron_trail",
+    "downloads": 177,
+    "version": "0.0.1",
+    "version_created_at": "2024-11-26 20:56:36 UTC",
+    "authors": "André Diego Piske",
+    "info": "Creates a trail strong as iron",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/iron_trail",
+    "homepage_uri": null,
+    "source_code_uri": null,
+    "changelog_uri": null,
+    "dependencies": {
+      "development": [
+        {
+          "name": "appraisal",
+          "requirements": "~> 2.5"
+        },
+        {
+          "name": "debug",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "json",
+          "requirements": "~> 2.8"
+        },
+        {
+          "name": "pg",
+          "requirements": "~> 1.2"
+        },
+        {
+          "name": "pg_party",
+          "requirements": "~> 1.8"
+        },
+        {
+          "name": "rake",
+          "requirements": "~> 13.2"
+        },
+        {
+          "name": "rspec-rails",
+          "requirements": "~> 7.1"
+        },
+        {
+          "name": "rubocop",
+          "requirements": "~> 1.69"
+        },
+        {
+          "name": "sidekiq",
+          "requirements": "~> 7.2"
+        }
+      ],
+      "runtime": [
+        {
+          "name": "rails",
+          "requirements": ">= 7.1"
+        },
+        {
+          "name": "request_store",
+          "requirements": "~> 1.5"
+        }
+      ]
+    }
+  },
+  {
+    "name": "converted",
+    "downloads": 117,
+    "version": "0.1.0",
+    "version_created_at": "2024-11-26 18:25:47 UTC",
+    "authors": "Ian R. McKenzie",
+    "info": "Convert media like images, video, audio, and text that are in commonly used formats into other commonly used formats.",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/converted",
+    "homepage_uri": "https://github.com/curiousmarkingsco/converted",
+    "source_code_uri": "https://github.com/curiousmarkingsco/converted",
+    "changelog_uri": "https://github.com/curiousmarkingsco/converted/blob/main/CHANGELOG.md",
+    "dependencies": {
+      "development": [],
+      "runtime": [
+        {
+          "name": "fileutils",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "minitest",
+          "requirements": ">= 0"
+        }
+      ]
+    }
+  },
+  {
+    "name": "puma-plugin-shellscript",
+    "downloads": 118,
+    "version": "0.1.0",
+    "version_created_at": "2024-11-26 11:49:51 UTC",
+    "authors": "jiikko",
+    "info": "This rubygem does not have a description or summary.",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/puma-plugin-shellscript",
+    "homepage_uri": "https://github.com/jiikko/puma-plugin-shellscript",
+    "source_code_uri": "https://github.com/jiikko/puma-plugin-shellscript",
+    "changelog_uri": "https://github.com/jiikko/puma-plugin-shellscript/blob/master/CHANGELOG.md",
+    "dependencies": {
+      "development": [],
+      "runtime": [
+        {
+          "name": "puma",
+          "requirements": ">= 0"
+        }
+      ]
+    }
+  },
+  {
+    "name": "puppet-lint-hiera_functions-check",
+    "downloads": 124,
+    "version": "1.0.0",
+    "version_created_at": "2024-11-26 01:01:58 UTC",
+    "authors": "Christopher Bowman",
+    "info": "    A puppet-lint plugin to check for deprecated hieras function usage.\n\n    The legacy Hiera functions (hiera, hiera_array, hiera_hash, and hiera_include) should be replaced with lookup()\n",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/puppet-lint-hiera_functions-check",
+    "homepage_uri": null,
+    "source_code_uri": null,
+    "changelog_uri": null,
+    "dependencies": {
+      "development": [
+        {
+          "name": "rake",
+          "requirements": "~> 13.0"
+        },
+        {
+          "name": "rspec",
+          "requirements": "~> 3.0"
+        },
+        {
+          "name": "rspec-collection_matchers",
+          "requirements": "~> 1.0"
+        },
+        {
+          "name": "rspec-its",
+          "requirements": "~> 2.0"
+        },
+        {
+          "name": "rspec-json_expectations",
+          "requirements": "~> 2.2"
+        },
+        {
+          "name": "voxpupuli-rubocop",
+          "requirements": "~> 3.0"
+        }
+      ],
+      "runtime": [
+        {
+          "name": "puppet-lint",
+          "requirements": ">= 1.1, < 5.0"
+        }
+      ]
+    }
+  },
+  {
+    "name": "junit_timing_splitter",
+    "downloads": 130,
+    "version": "1.0.0",
+    "version_created_at": "2024-11-26 00:00:10 UTC",
+    "authors": "Kim Yu Ng",
+    "info": "A tool to optimize parallel test execution by analyzing JUnit XML results and distributing test files across buckets.",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/junit_timing_splitter",
+    "homepage_uri": null,
+    "source_code_uri": null,
+    "changelog_uri": null,
+    "dependencies": {
+      "development": [],
+      "runtime": [
+        {
+          "name": "json",
+          "requirements": "~> 2.1, >= 2.1.0"
+        },
+        {
+          "name": "nokogiri",
+          "requirements": ">= 1.15, < 2.0"
+        },
+        {
+          "name": "thor",
+          "requirements": "~> 1.0"
+        },
+        {
+          "name": "zeitwerk",
+          "requirements": ">= 2.4, < 3.0"
+        }
+      ]
+    }
+  },
+  {
+    "name": "ballet",
+    "downloads": 131,
+    "version": "0.1.0",
+    "version_created_at": "2024-11-25 17:36:16 UTC",
+    "authors": "Kevin Sylvestre",
+    "info": "A set of components.",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/ballet",
+    "homepage_uri": "https://github.com/ksylvest/ballet",
+    "source_code_uri": "https://github.com/ksylvest/ballet",
+    "changelog_uri": "https://github.com/ksylvest/ballet",
+    "dependencies": {
+      "development": [],
+      "runtime": []
+    }
+  },
+  {
+    "name": "appex",
+    "downloads": 122,
+    "version": "0.0.2",
+    "version_created_at": "2024-11-25 17:02:36 UTC",
+    "authors": "Gedean Dias",
+    "info": "Hi order internal lib",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/appex",
+    "homepage_uri": null,
+    "source_code_uri": null,
+    "changelog_uri": null,
+    "dependencies": {
+      "development": [],
+      "runtime": [
+        {
+          "name": "json",
+          "requirements": "~> 2"
+        }
+      ]
+    }
+  },
+  {
+    "name": "govuk_web_banners",
+    "downloads": 139,
+    "version": "0.1.0",
+    "version_created_at": "2024-11-25 14:46:07 UTC",
+    "authors": "GOV.UK Dev",
+    "info": "A gem to support banners on GOV.UK frontend applications",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/govuk_web_banners",
+    "homepage_uri": "https://github.com/alphagov/govuk_web_banners",
+    "source_code_uri": "https://www.github.com/alphagov/govuk_web_banners",
+    "changelog_uri": "https://www.github.com/alphagov/govuk_web_banners/CHANGELOG.md",
+    "dependencies": {
+      "development": [
+        {
+          "name": "byebug",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "govuk_test",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "rainbow",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "rspec-rails",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "rubocop-govuk",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "simplecov",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "webmock",
+          "requirements": ">= 0"
+        }
+      ],
+      "runtime": [
+        {
+          "name": "govuk_publishing_components",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "rails",
+          "requirements": ">= 7"
+        }
+      ]
+    }
+  },
+  {
+    "name": "async-discord",
+    "downloads": 127,
+    "version": "0.1.0",
+    "version_created_at": "2024-11-25 12:26:57 UTC",
+    "authors": "Samuel Williams",
+    "info": "Build Discord bots and use real time messaging.",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/async-discord",
+    "homepage_uri": null,
+    "source_code_uri": "https://github.com/socketry/async-discord.git",
+    "changelog_uri": null,
+    "dependencies": {
+      "development": [],
+      "runtime": [
+        {
+          "name": "async-rest",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "async-websocket",
+          "requirements": ">= 0"
+        }
+      ]
+    }
+  },
+  {
+    "name": "automation-overwatch",
+    "downloads": 127,
+    "version": "0.1.0",
+    "version_created_at": "2024-11-25 10:43:24 UTC",
+    "authors": "avengers",
+    "info": "Automation for Overwatch support for tracings",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/automation-overwatch",
+    "homepage_uri": "https://gitlab.its/avengers/automation-overwatch",
+    "source_code_uri": "https://gitlab.its/avengers/automation-overwatch",
+    "changelog_uri": "https://gitlab.its/avengers/automation-overwatch/CHANGELOG.md",
+    "dependencies": {
+      "development": [],
+      "runtime": []
+    }
+  },
+  {
+    "name": "automation-shared-support",
+    "downloads": 124,
+    "version": "0.1.0",
+    "version_created_at": "2024-11-25 10:38:21 UTC",
+    "authors": "avengers",
+    "info": "collection is helper for automating telecom related tasks",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/automation-shared-support",
+    "homepage_uri": "https://gitlab.its/avengers/automation-shared_support",
+    "source_code_uri": "https://gitlab.its/avengers/automation-shared_support",
+    "changelog_uri": "https://gitlab.its/avengers/automation-shared_support/CHANGELOG.md",
+    "dependencies": {
+      "development": [],
+      "runtime": []
+    }
+  },
+  {
+    "name": "automation-wwtc",
+    "downloads": 146,
+    "version": "0.1.0",
+    "version_created_at": "2024-11-25 09:49:23 UTC",
+    "authors": "avengers",
+    "info": "Library for automating various tasks in Avengers WWTC including a WWTC client",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/automation-wwtc",
+    "homepage_uri": "https://gitlab.its/avengers-wwtc/automation-wwtc",
+    "source_code_uri": "https://gitlab.its/avengers-wwtc/automation-wwtc",
+    "changelog_uri": "https://gitlab.its/avengers-wwtc/automation-wwtc/CHANGELOG.md",
+    "dependencies": {
+      "development": [],
+      "runtime": []
+    }
+  },
+  {
+    "name": "google_search_engine",
+    "downloads": 119,
+    "version": "0.0.1",
+    "version_created_at": "2024-11-24 08:40:11 UTC",
+    "authors": "Gedean Dias",
+    "info": "Wrapper for Google Search Engine API",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/google_search_engine",
+    "homepage_uri": null,
+    "source_code_uri": null,
+    "changelog_uri": null,
+    "dependencies": {
+      "development": [],
+      "runtime": [
+        {
+          "name": "json",
+          "requirements": "~> 2"
+        },
+        {
+          "name": "rest-client",
+          "requirements": "~> 2"
+        }
+      ]
+    }
+  },
+  {
+    "name": "action_validator",
+    "downloads": 130,
+    "version": "0.1.0",
+    "version_created_at": "2024-11-24 02:08:50 UTC",
+    "authors": "Darin Haener",
+    "info": "Validate your Rails forms remotely in real time using ActionCable. Also validate client side using native HTML validations and present them in a much 'prettier' format.",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/action_validator",
+    "homepage_uri": "https://www.github.com/dphaener/action_validator",
+    "source_code_uri": "https://www.github.com/dphaener/action_validator",
+    "changelog_uri": "https://www.github.com/dphaener/action_validator/CHANGELOG.md",
+    "dependencies": {
+      "development": [
+        {
+          "name": "importmap-rails",
+          "requirements": "~> 1.1.5"
+        },
+        {
+          "name": "puma",
+          "requirements": "~> 5.0"
+        },
+        {
+          "name": "rubocop",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "sassc-rails",
+          "requirements": "~> 2.1"
+        },
+        {
+          "name": "stimulus-rails",
+          "requirements": "~> 1.1.1"
+        },
+        {
+          "name": "turbo-rails",
+          "requirements": "~> 1.3.2"
+        }
+      ],
+      "runtime": [
+        {
+          "name": "rails",
+          "requirements": ">= 7.0.4"
+        }
+      ]
+    }
+  },
+  {
+    "name": "landy_os",
+    "downloads": 125,
+    "version": "0.1.0",
+    "version_created_at": "2024-11-22 23:32:49 UTC",
+    "authors": "Julio Budal",
+    "info": "A Ruby gem for managing OpenAI GPT assistants with Rails integration",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/landy_os",
+    "homepage_uri": null,
+    "source_code_uri": null,
+    "changelog_uri": null,
+    "dependencies": {
+      "development": [
+        {
+          "name": "rspec",
+          "requirements": "~> 3.0"
+        },
+        {
+          "name": "vcr",
+          "requirements": "~> 6.0"
+        },
+        {
+          "name": "webmock",
+          "requirements": "~> 3.0"
+        }
+      ],
+      "runtime": [
+        {
+          "name": "activerecord",
+          "requirements": ">= 6.0"
+        },
+        {
+          "name": "activesupport",
+          "requirements": ">= 6.0"
+        },
+        {
+          "name": "ruby-openai",
+          "requirements": "~> 5.0"
+        }
+      ]
+    }
+  },
+  {
+    "name": "huginn_github_autosync_fork_agent",
+    "downloads": 123,
+    "version": "0.1.0",
+    "version_created_at": "2024-11-22 22:56:54 UTC",
+    "authors": "Nicolas Germain",
+    "info": "Write a longer description or delete this line.",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/huginn_github_autosync_fork_agent",
+    "homepage_uri": null,
+    "source_code_uri": null,
+    "changelog_uri": null,
+    "dependencies": {
+      "development": [
+        {
+          "name": "bundler",
+          "requirements": ">= 2.1.0"
+        },
+        {
+          "name": "rake",
+          "requirements": "~> 12.3.3"
+        }
+      ],
+      "runtime": [
+        {
+          "name": "huginn_agent",
+          "requirements": ">= 0"
+        }
+      ]
+    }
+  },
+  {
+    "name": "huginn_github_received_events_agent",
+    "downloads": 124,
+    "version": "0.1.10",
+    "version_created_at": "2024-11-22 20:56:12 UTC",
+    "authors": "Nicolas Germain",
+    "info": "Write a longer description or delete this line.",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/huginn_github_received_events_agent",
+    "homepage_uri": null,
+    "source_code_uri": null,
+    "changelog_uri": null,
+    "dependencies": {
+      "development": [
+        {
+          "name": "bundler",
+          "requirements": ">= 2.1.0"
+        },
+        {
+          "name": "rake",
+          "requirements": "~> 12.3.3"
+        }
+      ],
+      "runtime": [
+        {
+          "name": "huginn_agent",
+          "requirements": ">= 0"
+        }
+      ]
+    }
+  },
+  {
+    "name": "aws-sdk-bcmpricingcalculator",
+    "downloads": 29258,
+    "version": "1.0.0",
+    "version_created_at": "2024-11-22 20:10:23 UTC",
+    "authors": "Amazon Web Services",
+    "info": "Official AWS Ruby gem for AWS Billing and Cost Management Pricing Calculator. This gem is part of the AWS SDK for Ruby.",
+    "licenses": [
+      "Apache-2.0"
+    ],
+    "project_uri": "https://rubygems.org/gems/aws-sdk-bcmpricingcalculator",
+    "homepage_uri": null,
+    "source_code_uri": "https://github.com/aws/aws-sdk-ruby/tree/version-3/gems/aws-sdk-bcmpricingcalculator",
+    "changelog_uri": "https://github.com/aws/aws-sdk-ruby/tree/version-3/gems/aws-sdk-bcmpricingcalculator/CHANGELOG.md",
+    "dependencies": {
+      "development": [],
+      "runtime": [
+        {
+          "name": "aws-sdk-core",
+          "requirements": "~> 3, >= 3.210.0"
+        },
+        {
+          "name": "aws-sigv4",
+          "requirements": "~> 1.5"
+        }
+      ]
+    }
+  },
+  {
+    "name": "urbit-aura",
+    "downloads": 150,
+    "version": "0.1.0",
+    "version_created_at": "2024-11-22 19:37:28 UTC",
+    "authors": "Matthew LeVan",
+    "info": "Parsing, conversion, and validation for dates, phonetic names, and numbers.",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/urbit-aura",
+    "homepage_uri": "https://github.com/urbit/aura-rb",
+    "source_code_uri": "https://github.com/urbit/aura-rb",
+    "changelog_uri": "https://github.com/urbit/aura-rb/blob/master/CHANGELOG.md",
+    "dependencies": {
+      "development": [],
+      "runtime": [
+        {
+          "name": "murmurhash3",
+          "requirements": "~> 0.1.7"
+        }
+      ]
+    }
+  },
+  {
+    "name": "warbler_updated",
+    "downloads": 125,
+    "version": "2.1.0",
+    "version_created_at": "2024-11-22 18:03:29 UTC",
+    "authors": "Nick Sieger",
+    "info": "Warbler is a gem to make a Java jar or war file out of any Ruby,\nRails, or Rack application. Warbler provides a minimal, flexible, Ruby-like way to\nbundle up all of your application files for deployment to a Java environment.",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/warbler_updated",
+    "homepage_uri": null,
+    "source_code_uri": null,
+    "changelog_uri": null,
+    "dependencies": {
+      "development": [
+        {
+          "name": "jbundler",
+          "requirements": "~> 0.9"
+        },
+        {
+          "name": "rspec",
+          "requirements": "~> 3.0"
+        }
+      ],
+      "runtime": [
+        {
+          "name": "jruby-jars",
+          "requirements": ">= 9.0.0"
+        },
+        {
+          "name": "jruby-rack",
+          "requirements": ">= 1.1.1, < 1.3"
+        },
+        {
+          "name": "rake",
+          "requirements": ">= 13.0.3"
+        },
+        {
+          "name": "rubyzip",
+          "requirements": ">= 1.0.0"
+        }
+      ]
+    }
+  },
+  {
+    "name": "stripay",
+    "downloads": 11,
+    "version": "0.1.0",
+    "version_created_at": "2024-11-22 17:37:18 UTC",
+    "authors": "Your Name",
+    "info": "A Rails generator to quickly integrate Stripe payments with basic checkout flow.",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/stripay",
+    "homepage_uri": null,
+    "source_code_uri": null,
+    "changelog_uri": null,
+    "dependencies": {
+      "development": [],
+      "runtime": [
+        {
+          "name": "rails",
+          "requirements": "~> 8.0"
+        },
+        {
+          "name": "stripe",
+          "requirements": "~> 8.0"
+        }
+      ]
+    }
+  },
+  {
+    "name": "phishGuard-theme",
+    "downloads": 139,
+    "version": "0.1.0",
+    "version_created_at": "2024-11-22 07:00:35 UTC",
+    "authors": "dnwldla",
+    "info": "This is a custom theme for OSS project",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/phishGuard-theme",
+    "homepage_uri": null,
+    "source_code_uri": null,
+    "changelog_uri": null,
+    "dependencies": {
+      "development": [],
+      "runtime": [
+        {
+          "name": "jekyll",
+          "requirements": "~> 4.3"
+        }
+      ]
+    }
+  },
+  {
+    "name": "arivuppu",
+    "downloads": 162,
+    "version": "1.0.0",
+    "version_created_at": "2024-11-22 04:12:20 UTC",
+    "authors": "Karthi S, Sivan+andam R, Vigneshwaran S",
+    "info": "Manage notification API's for your rails application made easier. Notify through SMS, Whatsapp, Email, Web and Mobile push notification.",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/arivuppu",
+    "homepage_uri": null,
+    "source_code_uri": null,
+    "changelog_uri": null,
+    "dependencies": {
+      "development": [],
+      "runtime": []
+    }
+  },
+  {
+    "name": "ip2location_io_rails",
+    "downloads": 136,
+    "version": "1.0.0",
+    "version_created_at": "2024-11-22 01:19:16 UTC",
+    "authors": "ip2location",
+    "info": "This IP2Location.io Ruby on Rails library allows user to query for an enriched data set based on IP address. It enables user to query for an enriched data set, such as country, region, district, city, latitude & longitude, ZIP code, time zone, ASN, ISP, domain, net speed, IDD code, area code, weather station data, MNC, MCC, mobile brand, elevation, usage type, address type, advertisement category and proxy data with an IP address. It supports both IPv4 and IPv6 address lookup. This module requires API key to function. You may sign up for a free API key at https://www.ip2location.io/pricing.",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/ip2location_io_rails",
+    "homepage_uri": null,
+    "source_code_uri": null,
+    "changelog_uri": null,
+    "dependencies": {
+      "development": [],
+      "runtime": [
+        {
+          "name": "ip2location_io_ruby",
+          "requirements": ">= 1.0.1"
+        }
+      ]
+    }
+  },
+  {
+    "name": "ip2proxy_rails",
+    "downloads": 138,
+    "version": "1.0.0",
+    "version_created_at": "2024-11-22 00:58:17 UTC",
+    "authors": "ip2location",
+    "info": "This IP2Proxy Ruby on Rails library allows user to reverse search of IP address to detect VPN servers, open proxies, web proxies, Tor exit nodes, search engine robots, data center ranges, residential proxies, consumer privacy networks, and enterprise private networks using IP2Proxy BIN database. Other information available includes proxy type, country, state, city, ISP, domain name, usage type, AS number, AS name, threats, last seen date and provider names. It lookup the proxy IP address from IP2Proxy BIN Data file.",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/ip2proxy_rails",
+    "homepage_uri": null,
+    "source_code_uri": null,
+    "changelog_uri": null,
+    "dependencies": {
+      "development": [],
+      "runtime": [
+        {
+          "name": "ip2proxy_ruby",
+          "requirements": ">= 3.3.1"
+        }
+      ]
+    }
+  },
+  {
+    "name": "spot_feel",
+    "downloads": 137,
+    "version": "0.0.1",
+    "version_created_at": "2024-11-22 00:48:19 UTC",
+    "authors": "Connected Bits",
+    "info": "...",
+    "licenses": [
+      "MIT"
+    ],
+    "project_uri": "https://rubygems.org/gems/spot_feel",
+    "homepage_uri": "https://www.connectedbits.com",
+    "source_code_uri": "https://github.com/connectedbits/feel",
+    "changelog_uri": null,
+    "dependencies": {
+      "development": [
+        {
+          "name": "guard",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "guard-minitest",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "minitest-focus",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "minitest-reporters",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "minitest-spec",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "pry",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "pry-byebug",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "pry-doc",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "rake",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "rubocop",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "rubocop-performance",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "solargraph",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "treetop",
+          "requirements": ">= 0"
+        }
+      ],
+      "runtime": [
+        {
+          "name": "activemodel",
+          "requirements": ">= 7.0.2.3"
+        },
+        {
+          "name": "activesupport",
+          "requirements": ">= 7.0.2.3"
+        },
+        {
+          "name": "awesome_print",
+          "requirements": "~> 1.9"
+        },
+        {
+          "name": "treetop",
+          "requirements": ">= 0"
+        },
+        {
+          "name": "xmlhasher",
+          "requirements": "~> 1.0.7"
+        }
+      ]
+    }
+  }
+]

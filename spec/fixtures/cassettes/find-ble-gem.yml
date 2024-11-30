@@ -1,0 +1,101 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://rubygems.org/api/v1/gems/ble.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Gems 1.3.0
+      - Ruby
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - '30'
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1099'
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cross-Origin-Opener-Policy:
+      - same-origin
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - max-age=60, public
+      Content-Security-Policy:
+      - 'default-src ''self''; font-src ''self'' https://fonts.gstatic.com; img-src
+        ''self'' data: https://secure.gaug.es https://gravatar.com https://www.gravatar.com
+        https://secure.gravatar.com https://*.fastly-insights.com https://avatars.githubusercontent.com;
+        object-src ''none''; script-src ''self'' ''sha256-xlpvqdZ5/hVDKsyanT3N+RasZlYKC+bYQ/4furku1bA=''
+        https://secure.gaug.es https://www.fastly-insights.com ''nonce-1c592da20fa9bde515736a46b77fa7a7'';
+        style-src ''self'' ''unsafe-inline'' https://fonts.googleapis.com; connect-src
+        ''self'' https://s3-us-west-2.amazonaws.com/rubygems-dumps/ https://*.fastly-insights.com
+        https://fastly-insights.com https://api.github.com http://localhost:*; form-action
+        ''self'' https://github.com/login/oauth/authorize; frame-ancestors ''self'';
+        base-uri ''self''; report-uri https://csp-report.browser-intake-datadoghq.com/api/v2/logs?dd-api-key=pub852fa3e2312391fafa5640b60784e660&dd-evp-origin=content-security-policy&ddsource=csp-report&ddtags=service%3Arubygems.org%2Cversion%3Ae5b0e6e2a54de1f86ad532a2e86d4c2524d09794%2Cenv%3Aproduction%2Ctrace_id%3A182572702747839359'
+      X-Request-Id:
+      - a8d65d37-159e-483c-842c-11c9e45d4ac1
+      X-Runtime:
+      - '0.017974'
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Backend:
+      - F_Rails 54.68.67.63:443
+      Accept-Ranges:
+      - bytes
+      Age:
+      - '3714'
+      Date:
+      - Sun, 01 Dec 2024 00:56:50 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-pao-kpao1770069-PAO
+      X-Cache:
+      - HIT
+      X-Cache-Hits:
+      - '0'
+      X-Timer:
+      - S1733014610.398424,VS0,VE1
+      Vary:
+      - Accept-Encoding
+      Server:
+      - RubyGems.org
+    body:
+      encoding: ASCII-8BIT
+      string: '{"name":"ble","downloads":13812,"version":"1.0.0","version_created_at":"2018-09-11T07:14:36.396Z","version_downloads":3468,"platform":"ruby","authors":"Stephane
+        D''Alu","info":"Allow access to Bluetooth Low Energy device from ruby","licenses":["MIT"],"metadata":{},"yanked":false,"sha":"c55f24dc1932a27d3271f9c93fb730accfaf8391cf8660ffa7acbba48d4b630b","spec_sha":"50c978e11f4e7b769b7faa02abe29bacee02076c66b35f73128c5656c9789d70","project_uri":"https://rubygems.org/gems/ble","gem_uri":"https://rubygems.org/gems/ble-1.0.0.gem","homepage_uri":"http://gitlab.com/sdalu/ruby-ble","wiki_uri":null,"documentation_uri":"https://www.rubydoc.info/gems/ble/1.0.0","mailing_list_uri":null,"source_code_uri":null,"bug_tracker_uri":null,"changelog_uri":null,"funding_uri":null,"dependencies":{"development":[{"name":"github-markup","requirements":"\u003e=
+        0"},{"name":"rake","requirements":"\u003e= 0"},{"name":"redcarpet","requirements":"\u003e=
+        0"},{"name":"yard","requirements":"\u003e= 0"}],"runtime":[{"name":"concurrent-ruby","requirements":"\u003e=
+        0"},{"name":"ruby-dbus","requirements":"\u003e= 0"}]}}'
+  recorded_at: Sun, 01 Dec 2024 00:56:50 GMT
+recorded_with: VCR 6.3.1
