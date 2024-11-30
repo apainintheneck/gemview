@@ -1,8 +1,6 @@
 # frozen_string_literal: true
 
 require "dry-struct"
-require "gems"
-require "strings"
 
 module Gemview
   class Gem < Dry::Struct
@@ -65,37 +63,56 @@ module Gemview
 
     # @return [String]
     def header_str
-      <<~HEADER
-        [#{version}] #{name}
+      header = <<~HEADER
+        ## [#{version}] #{name}
         
         #{Strings.wrap(info, 80).chomp}
 
-        +#{"-" * 78}+
-        | Updated at       : #{version_created_at}
-        | Total Downloads  : #{humanized_downloads}
-        | Authors          : #{authors}
-        | Licenses         : #{licenses}
-        | Project URI      : #{project_uri}
-        +#{"-" * 78}+
+        | Updated at       | #{version_created_at}  |
+        | Total Downloads  | #{humanized_downloads} |
+        | Authors          | #{authors}             |
+        | Licenses         | #{licenses}            |
+        | Project URI      | #{project_uri}         |
       HEADER
+
+      begin
+        TTY::Markdown.parse(header)
+      rescue # Return the raw markdown if parsing fails
+        header
+      end
     end
 
     # @return [String]
     def dependencies_str
-      runtime_deps_str = dependencies.runtime.map { _1.to_str.prepend("- ") }.join("\n")
-      runtime_deps_str = "(none)" if runtime_deps_str.empty?
-      dev_deps_str = dependencies.development.map { _1.to_str.prepend("- ") }.join("\n")
-      dev_deps_str = "(none)" if dev_deps_str.empty?
+      runtime_deps_str = dependencies.runtime.join("\n").strip
+      runtime_deps_str = if runtime_deps_str.empty?
+        "(none)"
+      else
+        "```rb\n#{runtime_deps_str}\n```"
+      end
 
-      <<~DEPENDENCIES
-        [Dependencies]
+      dev_deps_str = dependencies.development.join("\n").strip
+      dev_deps_str = if dev_deps_str.empty?
+        "(none)"
+      else
+        "```rb\n#{dev_deps_str}\n```"
+      end
 
-        Runtime Dependencies:
+      dependencies = <<~DEPENDENCIES
+        ## [Dependencies]
+
+        ### Runtime Dependencies:
         #{runtime_deps_str}
 
-        Development Dependencies:
+        ### Development Dependencies:
         #{dev_deps_str}
       DEPENDENCIES
+
+      begin
+        TTY::Markdown.parse(dependencies)
+      rescue # Return the raw markdown if parsing fails
+        dependencies
+      end
     end
 
     # @return [Array<String>]

@@ -34,8 +34,9 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency "gems", "~> 1.3.0"
-  spec.add_dependency "tty-prompt", "~> 0.21.0"
+  spec.add_dependency "tty-prompt", "~> 0.23.1"
   spec.add_dependency "tty-pager", "~> 0.14.0"
+  spec.add_dependency "tty-markdown", "~> 0.7.2"
   spec.add_dependency "dry-cli", "~> 1.2.0"
   spec.add_dependency "dry-struct", "~> 1.6.0"
   spec.add_dependency "strings", "~> 0.2.1"

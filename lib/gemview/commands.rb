@@ -11,13 +11,27 @@ module Gemview
 
       argument :name, type: :string, required: true, desc: "Gem name"
 
+      option :version, type: :string, desc: "Gem version"
+
       example %w[rubocop bundler]
 
-      def call(name:, **)
-        gem = Gem.find(name: name, version: nil)
+      def call(name:, version: nil, **)
+        begin
+          gem = Gem.find(name: name, version: version)
+        rescue Gems::NotFound
+          if version
+            warn("Error: No gem found with the name: #{name} and version: #{version}")
+            exit(1) unless TTY::Prompt.new.yes?("Search for the most recent version?")
+            begin
+              gem = Gem.find(name: name, version: nil)
+            rescue Gems::NotFound
+              abort("Error: No gem found with the name: #{name}")
+            end
+          else
+            abort("Error: No gem found with the name: #{name}")
+          end
+        end
         View.info(gem: gem)
-      rescue Gems::NotFound
-        abort("Error: No gem found with the name: #{name}")
       end
     end
 

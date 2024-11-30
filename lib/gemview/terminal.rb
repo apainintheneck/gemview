@@ -4,7 +4,6 @@ module Gemview
   module Terminal
     # @param content [String]
     def self.page(content)
-      require "tty-pager"
       TTY::Pager.page(content)
     end
 
@@ -27,7 +26,6 @@ module Gemview
     # the ability to gracefully exit the prompt.
     class Selector
       def initialize
-        require "tty-prompt"
         @prompt = TTY::Prompt.new(
           quiet: true,
           track_history: false,
