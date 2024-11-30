@@ -33,13 +33,13 @@ Gem::Specification.new do |spec|
   spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "gems", "~> 1.3.0"
-  spec.add_dependency "tty-prompt", "~> 0.23.1"
-  spec.add_dependency "tty-pager", "~> 0.14.0"
-  spec.add_dependency "tty-markdown", "~> 0.7.2"
   spec.add_dependency "dry-cli", "~> 1.2.0"
   spec.add_dependency "dry-struct", "~> 1.6.0"
+  spec.add_dependency "gems", "~> 1.3.0"
   spec.add_dependency "strings", "~> 0.2.1"
+  spec.add_dependency "tty-markdown", "~> 0.7.2"
+  spec.add_dependency "tty-pager", "~> 0.14.0"
+  spec.add_dependency "tty-prompt", "~> 0.23.1"
 
   # For more information and examples about making a new gem, check out our
   # guide at: https://bundler.io/guides/creating_gem.html
