@@ -87,11 +87,7 @@ module Gemview
         | Project URI      | #{project_uri}         |
       HEADER
 
-      begin
-        TTY::Markdown.parse(header)
-      rescue # Return the raw markdown if parsing fails
-        header
-      end
+      Terminal.prettify_markdown(header)
     end
 
     # @return [String]
@@ -120,11 +116,7 @@ module Gemview
         #{dev_deps_str}
       DEPENDENCIES
 
-      begin
-        TTY::Markdown.parse(dependencies)
-      rescue # Return the raw markdown if parsing fails
-        dependencies
-      end
+      Terminal.prettify_markdown(dependencies)
     end
 
     # @return [Array<String>]

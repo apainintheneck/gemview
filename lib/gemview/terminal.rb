@@ -16,6 +16,14 @@ module Gemview
       end
     end
 
+    def self.prettify_markdown(text)
+      begin
+        TTY::Markdown.parse(text, color: (ENV["NO_COLOR"] ? :never : :auto))
+      rescue # Return the raw markdown if parsing fails
+        text
+      end
+    end
+
     # @return [Selector]
     def self.selector
       @selector ||= Selector.new

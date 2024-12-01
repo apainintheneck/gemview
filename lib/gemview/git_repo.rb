@@ -117,11 +117,7 @@ module Gemview
       response = Net::HTTP.get_response(URI(url))
       if response.is_a?(Net::HTTPSuccess)
         body = response.body.force_encoding("UTF-8")
-        begin
-          TTY::Markdown.parse(body)
-        rescue # Return raw body on any parsing errors
-          body
-        end
+        Terminal.prettify_markdown(body)
       end
     rescue Net::HTTPError
       nil
