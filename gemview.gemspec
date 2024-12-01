@@ -33,6 +33,7 @@ Gem::Specification.new do |spec|
   spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
+  # Direct dependencies
   spec.add_dependency "dry-cli", "~> 1.2.0"
   spec.add_dependency "dry-struct", "~> 1.6.0"
   spec.add_dependency "gems", "~> 1.3.0"
@@ -40,4 +41,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency "tty-markdown", "~> 0.7.2"
   spec.add_dependency "tty-pager", "~> 0.14.0"
   spec.add_dependency "tty-prompt", "~> 0.23.1"
+
+  # Transitive dependencies
+  spec.add_dependency "zeitwerk", "< 2.7"
 end
