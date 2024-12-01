@@ -1,39 +1,38 @@
-[36;1;4mruby-ble[0m
+ruby-ble
 Bluetooth Low Energy for Ruby
-[90m(Gem Version - https://badge.fury.io/rb/ble.svg)[0m » [33;4mhttps://badge.fury.io/rb/ble[0m
+(Gem Version - https://badge.fury.io/rb/ble.svg) » https://badge.fury.io/rb/ble
 
-  [36;1mRequirements[0m
-  [33m●[0m ruby >= 2.3
-  [33m●[0m Dbus
-  [33m●[0m bluez >= 5.36 (available on debian testing)
-  [33m●[0m [38;5;230mbluetoothd[39m started with option [38;5;230m-E[39m (experimental)
+  Requirements
+  ● ruby >= 2.3
+  ● Dbus
+  ● bluez >= 5.36 (available on debian testing)
+  ● bluetoothd started with option -E (experimental)
 
-  [36;1mExamples[0m
-  [38;5;67;04m# Selecter adapter[39;00m[38;5;230m[39m
-  [38;5;230m[39m[38;5;153;01m$a[39;00m[38;5;230m [39m[38;5;87;01m=[39;00m[38;5;230m [39m[38;5;155;01mBLE[39;00m[38;5;87;01m::[39;00m[38;5;155;01mAdapter[39;00m[38;5;87m.[39m[38;5;153mnew[39m[38;5;87m([39m[38;5;229;01m'hci0'[39;00m[38;5;87m)[39m[38;5;230m[39m
-  [38;5;230m[39m[01mputs[00m[38;5;230m [39m[38;5;229;01m"Info: [39;00m[38;5;87;01m#{[39;00m[38;5;153;01m$a[39;00m[38;5;87m.[39m[38;5;153miface[39m[38;5;87;01m}[39;00m[38;5;229;01m [39;00m[38;5;87;01m#{[39;00m[38;5;153;01m$a[39;00m[38;5;87m.[39m[38;5;153maddress[39m[38;5;87;01m}[39;00m[38;5;229;01m [39;00m[38;5;87;01m#{[39;00m[38;5;153;01m$a[39;00m[38;5;87m.[39m[38;5;153mname[39m[38;5;87;01m}[39;00m[38;5;229;01m"[39;00m[38;5;230m[39m
-  [38;5;230m[39m
-  [38;5;230m[39m[38;5;67;04m# Run discovery[39;00m[38;5;230m[39m
-  [38;5;230m[39m[38;5;153;01m$a[39;00m[38;5;87m.[39m[38;5;153mstart_discovery[39m[38;5;230m[39m
-  [38;5;230m[39m[01msleep[00m[38;5;87m([39m[38;5;212;01m2[39;00m[38;5;87m)[39m[38;5;230m[39m
-  [38;5;230m[39m[38;5;153;01m$a[39;00m[38;5;87m.[39m[38;5;153mstop_discovery[39m[38;5;230m[39m
-  [38;5;230m[39m
-  [38;5;230m[39m[38;5;67;04m# Get device and connect to it[39;00m[38;5;230m[39m
-  [38;5;230m[39m[38;5;153;01m$d[39;00m[38;5;230m [39m[38;5;87;01m=[39;00m[38;5;230m [39m[38;5;153;01m$a[39;00m[38;5;87m[[39m[38;5;229;01m'F4:AD:CB:FB:B4:85'[39;00m[38;5;87m][39m[38;5;230m[39m
-  [38;5;230m[39m[38;5;153;01m$d[39;00m[38;5;87m.[39m[38;5;153mconnect[39m[38;5;230m[39m
-  [38;5;230m[39m
-  [38;5;230m[39m[38;5;67;04m# Get temperature from the environmental sensing service[39;00m[38;5;230m[39m
-  [38;5;230m[39m[38;5;153;01m$d[39;00m[38;5;87m[[39m[38;5;212;01m:environmental_sensing[39;00m[38;5;87m,[39m[38;5;230m [39m[38;5;212;01m:temperature[39;00m[38;5;87m][39m[38;5;230m[39m
-  [38;5;230m[39m
-  [38;5;230m[39m[38;5;67;04m# Dump device information[39;00m[38;5;230m[39m
-  [38;5;230m[39m[38;5;230msrv[39m[38;5;230m [39m[38;5;87;01m=[39;00m[38;5;230m [39m[38;5;212;01m:device_information[39;00m[38;5;230m[39m
-  [38;5;230m[39m[38;5;153;01m$d[39;00m[38;5;87m.[39m[38;5;153mcharacteristics[39m[38;5;87m([39m[38;5;230msrv[39m[38;5;87m).[39m[38;5;153meach[39m[38;5;230m [39m[38;5;87m{[39m[38;5;87;01m|[39;00m[38;5;230muuid[39m[38;5;87;01m|[39;00m[38;5;230m[39m
-  [38;5;230m    [39m[38;5;230minfo[39m[38;5;230m  [39m[38;5;87;01m=[39;00m[38;5;230m [39m[38;5;155;01mBLE[39;00m[38;5;87;01m::[39;00m[38;5;155;01mCharacteristic[39;00m[38;5;87m[[39m[38;5;230muuid[39m[38;5;87m][39m[38;5;230m[39m
-  [38;5;230m    [39m[01mname[00m[38;5;230m  [39m[38;5;87;01m=[39;00m[38;5;230m [39m[38;5;230minfo[39m[38;5;87m.[39m[38;5;153mnil?[39m[38;5;230m [39m[38;5;87m?[39m[38;5;230m [39m[38;5;230muuid[39m[38;5;230m [39m[38;5;87m:[39m[38;5;230m [39m[38;5;230minfo[39m[38;5;87m[[39m[38;5;212;01m:name[39;00m[38;5;87m][39m[38;5;230m[39m
-  [38;5;230m    [39m[38;5;230mvalue[39m[38;5;230m [39m[38;5;87;01m=[39;00m[38;5;230m [39m[38;5;153;01m$d[39;00m[38;5;87m[[39m[38;5;230msrv[39m[38;5;87m,[39m[38;5;230m [39m[38;5;230muuid[39m[38;5;87m][39m[38;5;230m [39m[38;5;221;01mrescue[39;00m[38;5;230m [39m[38;5;229;01m'/!\\ not-readable /!\\'[39;00m[38;5;230m[39m
-  [38;5;230m    [39m[01mputs[00m[38;5;230m [39m[38;5;229;01m"%-30s: %s"[39;00m[38;5;230m [39m[38;5;87;01m%[39;00m[38;5;230m [39m[38;5;87m[[39m[38;5;230m [39m[01mname[00m[38;5;87m,[39m[38;5;230m [39m[38;5;230mvalue[39m[38;5;230m [39m[38;5;87m][39m[38;5;230m[39m
-  [38;5;230m[39m[38;5;87m}[39m[38;5;230m[39m
-  [38;5;230m[39m
-  [38;5;230m[39m
-  [36;1mContributors[0m
-  [33m●[0m Oliver Valls (tramuntanal): Bug fixes / BLE Notification support
+  Examples
+  # Selecter adapter
+  $a = BLE::Adapter.new('hci0')
+  puts "Info: #{$a.iface} #{$a.address} #{$a.name}"
+  
+  # Run discovery
+  $a.start_discovery
+  sleep(2)
+  $a.stop_discovery
+  
+  # Get device and connect to it
+  $d = $a['F4:AD:CB:FB:B4:85']
+  $d.connect
+  
+  # Get temperature from the environmental sensing service
+  $d[:environmental_sensing, :temperature]
+  
+  # Dump device information
+  srv = :device_information
+  $d.characteristics(srv).each {|uuid|
+      info  = BLE::Characteristic[uuid]
+      name  = info.nil? ? uuid : info[:name]
+      value = $d[srv, uuid] rescue '/!\\ not-readable /!\\'
+      puts "%-30s: %s" % [ name, value ]
+  }
+  
+  Contributors
+  ● Oliver Valls (tramuntanal): Bug fixes / BLE Notification support

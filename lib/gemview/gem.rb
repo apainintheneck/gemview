@@ -75,10 +75,15 @@ module Gemview
 
     # @return [String]
     def header_str
+      info_lines = Strings.wrap(info, 80).lines.map(&:strip)
+      info_lines = info_lines.take(3).append("...") if info_lines.size > 3
+
       header = <<~HEADER
         ## [#{version}] #{name}
         
-        #{Strings.wrap(info, 80).chomp}
+        ```
+        #{info_lines.join("\n")}
+        ```
 
         | Updated at       | #{version_created_at}  |
         | Total Downloads  | #{humanized_downloads} |
@@ -87,11 +92,7 @@ module Gemview
         | Project URI      | #{project_uri}         |
       HEADER
 
-      begin
-        TTY::Markdown.parse(header)
-      rescue # Return the raw markdown if parsing fails
-        header
-      end
+      Terminal.prettify_markdown(header)
     end
 
     # @return [String]
@@ -120,11 +121,7 @@ module Gemview
         #{dev_deps_str}
       DEPENDENCIES
 
-      begin
-        TTY::Markdown.parse(dependencies)
-      rescue # Return the raw markdown if parsing fails
-        dependencies
-      end
+      Terminal.prettify_markdown(dependencies)
     end
 
     # @return [Array<String>]
