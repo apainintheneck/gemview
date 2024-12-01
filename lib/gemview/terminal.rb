@@ -16,9 +16,18 @@ module Gemview
       end
     end
 
+    TTY_COLOR = ENV["NO_COLOR"] ? :never : :auto
+    TTY_WIDTH = 80
+    private_constant :TTY_COLOR, :TTY_WIDTH
+
+    # A best effort attempt to format and highlight markdown text.
+    # If it's unsuccessful, it will return the original text.
+    #
+    # @param text [String]
+    # @return [String]
     def self.prettify_markdown(text)
       begin
-        TTY::Markdown.parse(text, color: (ENV["NO_COLOR"] ? :never : :auto))
+        TTY::Markdown.parse(text, color: TTY_COLOR, width: TTY_WIDTH)
       rescue # Return the raw markdown if parsing fails
         text
       end

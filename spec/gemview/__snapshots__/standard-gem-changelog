@@ -9,12 +9,13 @@ Changelog
   1.42.0
 
   ● Updates rubocop to 1.68.0 » https://github.com/rubocop/rubocop/tree/v1.68.0
-  ● Inherit from [38;5;230mRuboCop::Cop::Base[39m fixing deprecation warnings.
+  ● Inherit from RuboCop::Cop::Base fixing deprecation warnings.
   ● Add new cops
 
   1.41.1
 
-  ● Adds a stub method to the Ruby LSP add-on to avoid a potential runtime exception
+  ● Adds a stub method to the Ruby LSP add-on to avoid a potential runtime 
+  exception
   for range formatting requests #655 » https://github.com/standardrb/standard/pull/655
 
   1.41.0
@@ -36,7 +37,7 @@ Changelog
 
   1.39.1
 
-  ● Fix LSP when [38;5;230mformat[39m is set #638 » https://github.com/standardrb/standard/issues/638
+  ● Fix LSP when format is set #638 » https://github.com/standardrb/standard/issues/638
   ● Fix LSP when todo is present (I think) vscode-standard-ruby#26 » https://github.com/standardrb/vscode-standard-ruby/issues/26
 
   1.39.0
@@ -102,23 +103,25 @@ Changelog
 
   1.30.1
 
-  ● Just kidding about about [38;5;230mStandard::PluginSupport[39m. Moving it to [38;5;230mLintRoller::Support[39m
+  ● Just kidding about about Standard::PluginSupport. Moving it to LintRoller::Support
   to avoid circular dependencies between Standard Ruby and its plugins
 
   1.30.0
 
-  ● Add [38;5;230mStandard::PluginSupport[39m module of classes designed to make it a little
-  easier to author plugins. [38;5;230mMergesUpstreamMetadata#merge[39m will allow a minimal
-  YAML config (say, [38;5;230mstandard-sorbet[39m’s, which only contains [38;5;230mEnabled[39m values for
-  each rule) to merge in any other defaults from a source YAML (e.g.[38;5;230mrubocop-sorbet[39m’s which includes [38;5;230mDescription[39m, [38;5;230mVersionAdded[39m, and so on).
-  This way that metadata is neither absent at runtime nor duplicated in a standard
+  ● Add Standard::PluginSupport module of classes designed to make it a little
+  easier to author plugins. MergesUpstreamMetadata#merge will allow a minimal
+  YAML config (say, standard-sorbet’s, which only contains Enabled values for
+  each rule) to merge in any other defaults from a source YAML (e.g.rubocop-sorbet’s which includes Description, VersionAdded, and so on).
+  This way that metadata is neither absent at runtime nor duplicated in a 
+  standard
   plugin that mirrors a rubocop extension
 
   1.29.0
 
   ● Updates standard-performance to 1.1.0 » https://github.com/standardrb/standard-performance/releases/tag/v1.1.0
   ● Updates rubocop to 1.52.0 » https://github.com/rubocop/rubocop/releases/tag/v1.52.0
-    ● Enables Style/ExactRegexpMatch, Style/RedundantArrayConstructor, Style/RedundantFilterChain, Style/RedundantRegexpConstructor
+    ● Enables Style/ExactRegexpMatch, Style/RedundantArrayConstructor, 
+    Style/RedundantFilterChain, Style/RedundantRegexpConstructor
 
   1.28.5
 
@@ -141,8 +144,8 @@ Changelog
 
   1.28.1
 
-  ● Fixes plugin behavior caused by setting [38;5;230mDisabledByDefault: true[39m in [38;5;230mAllCops[39m
-  Effectively, a single lint_roller plugin whose [38;5;230mrules[39m were of type [38;5;230m:object[39m
+  ● Fixes plugin behavior caused by setting DisabledByDefault: true in AllCops
+  Effectively, a single lint_roller plugin whose rules were of type :object
   would inadvertently mark all previously-defined rules as invalid.#557 » https://github.com/standardrb/standard/pull/557
 
   1.28.0
@@ -150,13 +153,13 @@ Changelog
   ● Refactor Standard into 3 gems and convert all built-in configuration intolint_roller » https://github.com/standardrb/lint_roller plugins. See:
     ● standard-performance » https://github.com/standardrb/standard-performance
     ● standard-custom » https://github.com/standardrb/standard-custom
-  ● Standard’s behavior when merging multiple [38;5;230mextend_config[39m that change the same
+  ● Standard’s behavior when merging multiple extend_config that change the same
   set of rules has been fixed to be first-in-wins, as opposed to last-in-wins.
   This ensures a consistent behavior across plugins and extended configurations,
   namely that the first thing to configure a given rule effectively locks it
   from subsequent changes
-  ● Enable [38;5;230mDisabledByDefault: true[39m. This shouldn’t impact anyone, but might
-  change the behavior of some [38;5;230mextend_config[39m users. Because Standard specifies
+  ● Enable DisabledByDefault: true. This shouldn’t impact anyone, but might
+  change the behavior of some extend_config users. Because Standard specifies
   every rule in rubocop and rubocop-performance, this configuration’s absence
   wasn’t felt until we went to the plugin system, where it makes much more sense
   for plugins to opt-in to the cops they want to configure, as opposed to just
@@ -169,12 +172,12 @@ Changelog
 
   1.26.0
 
-  ● Introduce [38;5;230m--fix-unsafely[39m and [38;5;230mrake standard:fix_unsafely[39m for running
+  ● Introduce --fix-unsafely and rake standard:fix_unsafely for running
   unsafe corrections. Improve output about fix suggestions, as well#545 » https://github.com/testdouble/standard/pull/545
 
   1.25.5
 
-  ● Temporarily disable registration of [38;5;230mexecuteCommand[39m to prevent conflict with
+  ● Temporarily disable registration of executeCommand to prevent conflict with
   the VS Code extension’s client-side registration of the same name#544 » https://github.com/testdouble/standard/pull/544
 
   1.25.4
@@ -183,7 +186,7 @@ Changelog
 
   1.25.3
 
-  ● Relax the version specifier on [38;5;230mrubocop[39m and [38;5;230mrubocop-performance[39m to allow
+  ● Relax the version specifier on rubocop and rubocop-performance to allow
   patch-level updates
 
   1.25.2
@@ -194,7 +197,7 @@ Changelog
 
   1.25.1
 
-  ● When in [38;5;230mstdin[39m mode, don’t invoke the RuboCop runner with [38;5;230mparallel: true[39m to
+  ● When in stdin mode, don’t invoke the RuboCop runner with parallel: true to
   avoid an interaction that breaks auto-fixing#530 » https://github.com/testdouble/standard/issues/530,#536 » https://github.com/testdouble/standard/issues/536
 
   1.25.0
@@ -206,19 +209,19 @@ Changelog
 
   1.24.3
 
-  ● Further further further improve [38;5;230m--lsp[39m server to ignore files correctly
+  ● Further further further improve --lsp server to ignore files correctly
 
   1.24.2
 
-  ● Further further improve [38;5;230m--lsp[39m server to always respond to requests
+  ● Further further improve --lsp server to always respond to requests
 
   1.24.1
 
-  ● Further improve [38;5;230m--lsp[39m server to better support commands used by VS Code
+  ● Further improve --lsp server to better support commands used by VS Code
 
   1.24.0
 
-  ● Improve [38;5;230m--lsp[39m server to better support the commands used by VS Code
+  ● Improve --lsp server to better support the commands used by VS Code
 
   1.23.0
 
@@ -226,13 +229,13 @@ Changelog
 
   1.22.1
 
-  ● Improve the behavior of [38;5;230mextend_config[39m to more accurately reflect how Rubocop
-  extensions would behave when loaded via the [38;5;230mrubocop[39m CLI (by capturing any
+  ● Improve the behavior of extend_config to more accurately reflect how Rubocop
+  extensions would behave when loaded via the rubocop CLI (by capturing any
   mutations to RuboCop’s default configuration)#512 » https://github.com/testdouble/standard/pull/512
 
   1.22.0
 
-  ● Add [38;5;230mextend_config[39m option #506 » https://github.com/testdouble/standard/pull/506
+  ● Add extend_config option #506 » https://github.com/testdouble/standard/pull/506
 
   1.21.1
 
@@ -249,11 +252,11 @@ Changelog
 
   1.19.1
 
-  ● Loosen dependency on [38;5;230mlanguage_server-protocol[39m
+  ● Loosen dependency on language_server-protocol
 
   1.19.0
 
-  ● Add a language server protocol (LSP) server via the new [38;5;230mstandardrb --lsp[39m
+  ● Add a language server protocol (LSP) server via the new standardrb --lsp
   command line mode. All credit to @will » https://github.com/!#475 » https://github.com/testdouble/standard/pull/475
 
   1.18.1
@@ -313,7 +316,7 @@ Changelog
 
   1.9.0
 
-  ● Rule change to [38;5;230mLayout/CaseIndentation[39m to have the [38;5;230mwhen[39m and [38;5;230min[39ms inside a case statement aligned with the [38;5;230mend[39m of the case. The [38;5;230mend[39m will be aligned with a variable instead of the [38;5;230mcase[39m keyword if applicable.
+  ● Rule change to Layout/CaseIndentation to have the when and ins inside a case statement aligned with the end of the case. The end will be aligned with a variable instead of the case keyword if applicable.
 
   1.8.0
 
@@ -349,7 +352,7 @@ Changelog
   1.4.0
 
   ● Update rubocop from 1.19.1 to 1.22.3 » https://github.com/rubocop-hq/rubocop/releases/tag/v1.22.3
-  ● Remove [38;5;230mStyle/NegatedIf[39m » https://github.com/TODO
+  ● Remove Style/NegatedIf » https://github.com/TODO
 
   1.3.0
 
@@ -372,7 +375,7 @@ Changelog
 
   ● Update rubocop from 1.18.2 to 1.18.3 » https://github.com/rubocop-hq/rubocop/releases/tag/v1.18.3
   ● Update rubocop-performance from 1.11.3 to 1.11.4 » https://github.com/rubocop-hq/rubocop-performance/releases/tag/v1.11.4
-  ● Disabled [38;5;230mPerformance/DeletePrefix[39m because it was marked as unsafe.
+  ● Disabled Performance/DeletePrefix because it was marked as unsafe.
 
   1.1.4
 
@@ -397,15 +400,15 @@ Changelog
   ● Update rubocop from 1.12.1 to 1.13.0 » https://github.com/rubocop-hq/rubocop/releases/tag/v1.13.0
   ● Update rubocop-performance from 1.9.2 to 1.11.1 » https://github.com/rubocop-hq/rubocop-performance/releases/tag/v1.11.1
   ● Enabled the following rules:
-    ● [38;5;230mPerformance/RedundantSplitRegexpArgument[39m » https://github.com/rubocop/rubocop-performance/pull/190
-    ● [38;5;230mStyle/IfWithBooleanLiteralBranches[39m » https://github.com/rubocop-hq/rubocop/pull/9396
-    ● [38;5;230mLint/TripleQuotes[39m » https://github.com/rubocop-hq/rubocop/pull/9402
-    ● [38;5;230mLint/SymbolConversion[39m » https://github.com/rubocop/rubocop/pull/9362
-    ● [38;5;230mLint/OrAssignmentToConstant[39m » https://github.com/rubocop-hq/rubocop/pull/9363
-    ● [38;5;230mLint/NumberedParameterAssignment[39m » https://github.com/rubocop-hq/rubocop/pull/9326
-    ● [38;5;230mStyle/HashConversion[39m » https://github.com/rubocop-hq/rubocop/pull/9478
-    ● [38;5;230mGemspec/DateAssignment[39m » https://github.com/rubocop-hq/rubocop/pull/9496
-    ● [38;5;230mStyle/StringChars[39m » https://github.com/rubocop/rubocop/pull/9615
+    ● Performance/RedundantSplitRegexpArgument » https://github.com/rubocop/rubocop-performance/pull/190
+    ● Style/IfWithBooleanLiteralBranches » https://github.com/rubocop-hq/rubocop/pull/9396
+    ● Lint/TripleQuotes » https://github.com/rubocop-hq/rubocop/pull/9402
+    ● Lint/SymbolConversion » https://github.com/rubocop/rubocop/pull/9362
+    ● Lint/OrAssignmentToConstant » https://github.com/rubocop-hq/rubocop/pull/9363
+    ● Lint/NumberedParameterAssignment » https://github.com/rubocop-hq/rubocop/pull/9326
+    ● Style/HashConversion » https://github.com/rubocop-hq/rubocop/pull/9478
+    ● Gemspec/DateAssignment » https://github.com/rubocop-hq/rubocop/pull/9496
+    ● Style/StringChars » https://github.com/rubocop/rubocop/pull/9615
 
   1.0.5
 
@@ -437,52 +440,52 @@ Changelog
   ● Relax multi-line block rules, moving away from enforcing semantic blocks to
   instead allowing code to adhere to whatever multi-line format the author deems
   best #263 » https://github.com/testdouble/standard/pull/263
-  ● Allow a [38;5;230mstandard:disable[39m comment directive in addition to [38;5;230mrubocop:disable[39m#186 » https://github.com/testdouble/standard/pull/186
+  ● Allow a standard:disable comment directive in addition to rubocop:disable#186 » https://github.com/testdouble/standard/pull/186
   ● Remove the banner text that standard outputs after failure#264 » https://github.com/testdouble/standard/pull/264
 
   0.13.0
 
   ● Update rubocop from 1.7.0 to 1.10.0 » https://github.com/rubocop-hq/rubocop/releases/tag/v1.10.0 enabling:
-    ● [38;5;230mLint/AmbiguousAssignment[39m » https://github.com/rubocop-hq/rubocop/issues/9223
-    ● [38;5;230mStyle/HashExcept[39m » https://github.com/rubocop-hq/rubocop/pull/9283
-    ● [38;5;230mLint/DeprecatedConstants[39m » https://github.com/rubocop-hq/rubocop/pull/9324
+    ● Lint/AmbiguousAssignment » https://github.com/rubocop-hq/rubocop/issues/9223
+    ● Style/HashExcept » https://github.com/rubocop-hq/rubocop/pull/9283
+    ● Lint/DeprecatedConstants » https://github.com/rubocop-hq/rubocop/pull/9324
 
   0.12.0
 
   ● Update rubocop from 1.7.0 to 1.8.1 » https://github.com/rubocop-hq/rubocop/releases/tag/v1.8.1
-  ● Enabled [38;5;230mStyle/SlicingWithRange[39m » https://github.com/testdouble/standard/issues/175
+  ● Enabled Style/SlicingWithRange » https://github.com/testdouble/standard/issues/175
 
   0.11.0
 
   ● Update rubocop-performance from 1.9.1 to 1.9.2 » https://github.com/rubocop-hq/rubocop-performance/releases/tag/v1.9.2
   ● Update rubocop from 1.4.2 to 1.7.0 » https://github.com/rubocop-hq/rubocop/releases/tag/v1.7.0
-  ● Changed [38;5;230mStyle/NegatedIf[39m to [38;5;230mpostfix[39m
+  ● Changed Style/NegatedIf to postfix
 
   0.10.2
 
-  ● Remove[38;5;230mLint/DuplicateBranch[39m » https://github.com/testdouble/standard/pull/228
+  ● RemoveLint/DuplicateBranch » https://github.com/testdouble/standard/pull/228
 
   0.10.1
 
-  ● Remove [38;5;230mPerformance/ArraySemiInfiniteRangeSlice[39m » https://github.com/testdouble/standard/pull/225#discussion_r532678908
+  ● Remove Performance/ArraySemiInfiniteRangeSlice » https://github.com/testdouble/standard/pull/225#discussion_r532678908
 
   0.10.0
 
   ● Update rubocop-performance from 1.8.1 to 1.9.1 » https://github.com/rubocop-hq/rubocop-performance/releases/tag/v1.9.1 enabling:
-    ● [38;5;230mPerformance/BlockGivenWithExplicitBlock[39m » https://github.com/rubocop-hq/rubocop-performance/pull/173
-    ● [38;5;230mPerformance/ConstantRegexp[39m » https://github.com/rubocop-hq/rubocop-performance/pull/174
-    ● [38;5;230mPerformance/ArraySemiInfiniteRangeSlice[39m » https://github.com/rubocop-hq/rubocop-performance/pull/175
+    ● Performance/BlockGivenWithExplicitBlock » https://github.com/rubocop-hq/rubocop-performance/pull/173
+    ● Performance/ConstantRegexp » https://github.com/rubocop-hq/rubocop-performance/pull/174
+    ● Performance/ArraySemiInfiniteRangeSlice » https://github.com/rubocop-hq/rubocop-performance/pull/175
   ● Update rubocop from 1.2.0 to 1.4.2 » https://github.com/rubocop-hq/rubocop/releases/tag/v1.4.2 enabling:
-    ● [38;5;230mStyle/NilLambda[39m » https://github.com/rubocop-hq/rubocop/pull/9020
-    ● [38;5;230mLint/DuplicateBranch[39m » https://github.com/rubocop-hq/rubocop/pull/8404
+    ● Style/NilLambda » https://github.com/rubocop-hq/rubocop/pull/9020
+    ● Lint/DuplicateBranch » https://github.com/rubocop-hq/rubocop/pull/8404
 
   0.9.0
 
   ● Update rubocop from 1.0.0 to 1.2.0 » https://github.com/rubocop-hq/rubocop/releases/tag/v1.2.0 enabling:
-    ● [38;5;230mLint/DuplicateRegexpCharacterClassElement[39m » https://github.com/rubocop-hq/rubocop/pull/8896
-    ● [38;5;230mStyle/ArgumentsForwarding[39m » https://github.com/rubocop-hq/rubocop/pull/7646
-  ● Don’t find offense in [38;5;230mStyle/SemanticBlocks[39m when a top-level [38;5;230mrescue[39m is used
-  in a [38;5;230mdo[39m/[38;5;230mend[39m functional block, fixing#205 » https://github.com/testdouble/standard/issues/205
+    ● Lint/DuplicateRegexpCharacterClassElement » https://github.com/rubocop-hq/rubocop/pull/8896
+    ● Style/ArgumentsForwarding » https://github.com/rubocop-hq/rubocop/pull/7646
+  ● Don’t find offense in Style/SemanticBlocks when a top-level rescue is used
+  in a do/end functional block, fixing#205 » https://github.com/testdouble/standard/issues/205
 
   0.8.1
 
@@ -492,8 +495,9 @@ Changelog
 
   ● Update rubocop from 0.93.1 to 1.0.0 » https://github.com/rubocop-hq/rubocop/releases/tag/v1.0.0
   ● Update rubocop from 0.92 to0.93 » https://github.com/rubocop-hq/rubocop/releases/tag/v0.93 to0.93.1 » https://github.com/rubocop-hq/rubocop/releases/tag/v0.93.1 enabling:
-    ● [38;5;230mStyle/ClassEqualityComparison[39m » https://github.com/rubocop-hq/rubocop/pull/8833
-  ● Disable [38;5;230mPerformance/Sum[39m because #208 and the lack of actual auto-correcting is also causing more trouble
+    ● Style/ClassEqualityComparison » https://github.com/rubocop-hq/rubocop/pull/8833
+  ● Disable Performance/Sum because #208 and the lack of actual auto-correcting is also causing more 
+  trouble
 
   0.7
 
@@ -503,37 +507,37 @@ Changelog
 
   ● Update rubocop from 0.91 to0.91.1 » https://github.com/rubocop-hq/rubocop/releases/tag/v0.91.1
   ● Update rubocop-performance from 1.8.0 to 1.8.1:
-    ● Enable [38;5;230mPerformance/Sum[39m
+    ● Enable Performance/Sum
 
   0.6.1
 
   ● Update Rubocop from0.90 » https://github.com/rubocop-hq/rubocop/releases/tag/v0.90.0
   to0.91 » https://github.com/rubocop-hq/rubocop/releases/tag/v0.91.0,
   enabling:
-    ● [38;5;230mLint/UselessTimes[39m » https://github.com/rubocop-hq/rubocop/pull/8702
-    ● [38;5;230mLayout/BeginEndAlignment[39m » https://github.com/rubocop-hq/rubocop/pull/8628
-    ● [38;5;230mLint/ConstantDefinitionInBlock[39m » https://github.com/rubocop-hq/rubocop/pull/8707
-    ● [38;5;230mLint/IdentityComparison[39m » https://github.com/rubocop-hq/rubocop/pull/8699/
+    ● Lint/UselessTimes » https://github.com/rubocop-hq/rubocop/pull/8702
+    ● Layout/BeginEndAlignment » https://github.com/rubocop-hq/rubocop/pull/8628
+    ● Lint/ConstantDefinitionInBlock » https://github.com/rubocop-hq/rubocop/pull/8707
+    ● Lint/IdentityComparison » https://github.com/rubocop-hq/rubocop/pull/8699/
     re-enabling after bug fixes:
-    ● [38;5;230mBundler/DuplicatedGem[39m » https://github.com/rubocop-hq/rubocop/pull/8666
-    ● [38;5;230mNaming/BinaryOperatorParameterName[39m » https://github.com/rubocop-hq/rubocop/issues/8664
+    ● Bundler/DuplicatedGem » https://github.com/rubocop-hq/rubocop/pull/8666
+    ● Naming/BinaryOperatorParameterName » https://github.com/rubocop-hq/rubocop/issues/8664
 
   0.6.0
 
   ● Update Rubocop from0.89.1 » https://github.com/rubocop-hq/rubocop/releases/tag/v0.89.1
   to0.90 » https://github.com/rubocop-hq/rubocop/releases/tag/v0.90.0,
   enabling:
-    ● [38;5;230mStyle/KeywordParametersOrder[39m » https://github.com/rubocop-hq/rubocop/pull/8563
-    ● [38;5;230mLint/DuplicateRequire[39m » https://github.com/rubocop-hq/rubocop/pull/8474
-    ● [38;5;230mLint/TrailingCommaInAttributeDeclaration[39m » https://github.com/rubocop-hq/rubocop/pull/8549
-  ● Update [38;5;230mStyle/Alias[39m to prefer [38;5;230malias_method[39m » https://github.com/testdouble/standard/pull/196
+    ● Style/KeywordParametersOrder » https://github.com/rubocop-hq/rubocop/pull/8563
+    ● Lint/DuplicateRequire » https://github.com/rubocop-hq/rubocop/pull/8474
+    ● Lint/TrailingCommaInAttributeDeclaration » https://github.com/rubocop-hq/rubocop/pull/8549
+  ● Update Style/Alias to prefer alias_method » https://github.com/testdouble/standard/pull/196
   ● Update rubocop-performance from 1.7.1 to 1.8.0:
-    ● Plan to enable [38;5;230mPerformance/Sum[39m » https://github.com/rubocop-hq/rubocop-performance/pull/137 in the future, but there is currently a bug in the implementation
-  ● Add [38;5;230mruby-2.3.yml[39m to add support for 2.3.
+    ● Plan to enable Performance/Sum » https://github.com/rubocop-hq/rubocop-performance/pull/137 in the future, but there is currently a bug in the implementation
+  ● Add ruby-2.3.yml to add support for 2.3.
 
   0.5.2
 
-  ● Turned off [38;5;230mLint/MissingSuper[39m, because it effectively bans a common idiom in
+  ● Turned off Lint/MissingSuper, because it effectively bans a common idiom in
   Sorbet (#195 » https://github.com/testdouble/standard/issues/195) and might
   be a bit too heavy-handed/opinionated for cases where a class is designed
   intentionally to not run its parent’s initializer (like abstract superclasses
@@ -541,35 +545,35 @@ Changelog
 
   0.5.1
 
-  ● Enabled [38;5;230mStyle/MultilineWhenThen[39m
+  ● Enabled Style/MultilineWhenThen
 
   0.5.0
 
   ● Update Rubocop from0.85.0 » https://github.com/rubocop-hq/rubocop/blob/master/CHANGELOG.md#0850-2020-06-01
   to0.89.1 » https://github.com/rubocop-hq/rubocop/releases/tag/v0.89.1,
   enabling:
-    ● [38;5;230mLint/BinaryOperatorWithIdenticalOperands[39m
-    ● [38;5;230mLint/DuplicateElsifCondition[39m
-    ● [38;5;230mLint/DuplicateRescueException[39m
-    ● [38;5;230mLint/FloatComparison[39m
-    ● [38;5;230mLint/MissingSuper[39m
-    ● [38;5;230mLint/OutOfRangeRegexpRef[39m
-    ● [38;5;230mLint/RedundantRequireStatement[39m
-    ● [38;5;230mLint/RedundantSplatExpansion[39m
-    ● [38;5;230mLint/SafeNavigationWithEmpty[39m
-    ● [38;5;230mLint/SelfAssignment[39m
-    ● [38;5;230mLint/TopLevelReturnWithArgument[39m
-    ● [38;5;230mStyle/GlobalStdStream[39m
-    ● [38;5;230mStyle/RedundantAssignment[39m
-    ● [38;5;230mStyle/RedundantFetchBlock[39m
-    ● [38;5;230mStyle/RedundantFileExtensionInRequire[39m
+    ● Lint/BinaryOperatorWithIdenticalOperands
+    ● Lint/DuplicateElsifCondition
+    ● Lint/DuplicateRescueException
+    ● Lint/FloatComparison
+    ● Lint/MissingSuper
+    ● Lint/OutOfRangeRegexpRef
+    ● Lint/RedundantRequireStatement
+    ● Lint/RedundantSplatExpansion
+    ● Lint/SafeNavigationWithEmpty
+    ● Lint/SelfAssignment
+    ● Lint/TopLevelReturnWithArgument
+    ● Style/GlobalStdStream
+    ● Style/RedundantAssignment
+    ● Style/RedundantFetchBlock
+    ● Style/RedundantFileExtensionInRequire
   ● Update rubocop-performance from 1.6.0 to 1.7.1, enabling:
-    ● [38;5;230mPerformance/BigDecimalWithNumericArgument[39m
-    ● [38;5;230mPerformance/RedundantSortBlock[39m
-    ● [38;5;230mPerformance/RedundantStringChars[39m
-    ● [38;5;230mPerformance/ReverseFirst[39m
-    ● [38;5;230mPerformance/SortReverse[39m
-    ● [38;5;230mPerformance/Squeeze[39m
+    ● Performance/BigDecimalWithNumericArgument
+    ● Performance/RedundantSortBlock
+    ● Performance/RedundantStringChars
+    ● Performance/ReverseFirst
+    ● Performance/SortReverse
+    ● Performance/Squeeze
 
   0.4.7
 
@@ -588,19 +592,19 @@ Changelog
 
   0.4.6
 
-  ● Disable [38;5;230mNaming/BinaryOperatorParameterName[39m because (when non-ascii method
-  names are used), it incorrectly identifies them as being [38;5;230m+()[39m operator
+  ● Disable Naming/BinaryOperatorParameterName because (when non-ascii method
+  names are used), it incorrectly identifies them as being +() operator
   overrides (overly aggressive)
 
   0.4.5
 
-  ● Disable [38;5;230mNaming/AsciiIdentifiers[39m for the same reason as mentioned below in
+  ● Disable Naming/AsciiIdentifiers for the same reason as mentioned below in
   0.4.4 (specifically to allow programs written in non-Latin languages to define
   identifiers)
 
   0.4.4
 
-  ● Disable [38;5;230mNaming/MethodName[39m cop. While [38;5;230msnake_case[39m is the conventional way to
+  ● Disable Naming/MethodName cop. While snake_case is the conventional way to
   name a Ruby method, the cop is too restrictive in that it also prevents
   non-ASCII characters from being included in method names
 
@@ -612,17 +616,17 @@ Changelog
 
   ● Track Rubocop0.83.0 » https://github.com/rubocop-hq/rubocop/blob/master/CHANGELOG.md#0830-2020-05-11
     ● Update our default to allow trailing whitespace in heredocs
-    ● Disable auto-correct for a cop that changed [38;5;230m:true[39m to [38;5;230mtrue[39m, as that’s not
+    ● Disable auto-correct for a cop that changed :true to true, as that’s not
     safe
-    ● Allow comments in empty [38;5;230mwhen[39m blocks
+    ● Allow comments in empty when blocks
 
   0.4.1
 
-  ● add given/given! as [38;5;230m{}[39m friendly blocks #172 » https://github.com/testdouble/standard/pull/172
+  ● add given/given! as {} friendly blocks #172 » https://github.com/testdouble/standard/pull/172
 
   0.4.0
 
-  ● Add [38;5;230m--todo[39m mode for incremental adoption of Standard to a project (PR » https://github.com/testdouble/standard/pull/155 by @mrbiggred » https://github.com/mrbiggred)
+  ● Add --todo mode for incremental adoption of Standard to a project (PR » https://github.com/testdouble/standard/pull/155 by @mrbiggred » https://github.com/mrbiggred)
 
   0.3.0
 
