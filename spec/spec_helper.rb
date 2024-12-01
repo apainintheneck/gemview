@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 # To prevent problems on CI.
-ENV.delete("NO_COLOR")
+ENV["NO_COLOR"] = "1"
 
 require "gemview"
 require "json"
