@@ -1,5 +1,8 @@
 # frozen_string_literal: true
 
+# To prevent problems on CI.
+ENV.delete("NO_COLOR")
+
 require "gemview"
 require "json"
 require "vcr"
