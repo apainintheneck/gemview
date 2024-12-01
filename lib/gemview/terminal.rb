@@ -26,11 +26,9 @@ module Gemview
     # @param text [String]
     # @return [String]
     def self.prettify_markdown(text)
-      begin
-        TTY::Markdown.parse(text, color: TTY_COLOR, width: TTY_WIDTH)
-      rescue # Return the raw markdown if parsing fails
-        text
-      end
+      TTY::Markdown.parse(text, color: TTY_COLOR, width: TTY_WIDTH)
+    rescue # Return the raw markdown if parsing fails
+      text
     end
 
     # @return [Selector]
