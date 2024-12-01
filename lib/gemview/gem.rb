@@ -75,10 +75,15 @@ module Gemview
 
     # @return [String]
     def header_str
+      info_lines = Strings.wrap(info, 80).lines.map(&:strip)
+      info_lines = info_lines.take(3).append("...") if info_lines.size > 3
+
       header = <<~HEADER
         ## [#{version}] #{name}
         
-        #{Strings.wrap(info, 80).chomp}
+        ```
+        #{info_lines.join("\n")}
+        ```
 
         | Updated at       | #{version_created_at}  |
         | Total Downloads  | #{humanized_downloads} |

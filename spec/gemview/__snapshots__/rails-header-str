@@ -1,10 +1,8 @@
   [8.0.0] rails
 
-  Ruby on Rails is a full-stack web framework optimized for programmer 
-  happiness 
-  and sustainable productivity. It encourages beautiful code by favoring 
+  Ruby on Rails is a full-stack web framework optimized for programmer happiness
+  and sustainable productivity. It encourages beautiful code by favoring
   convention over configuration.
-
   ┌─────────────────┬─────────────────────────────────┐
   │ Updated at      │ 2024-11-07 22:30:42 UTC         │ 
   ├─────────────────┼─────────────────────────────────┤
