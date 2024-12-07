@@ -53,6 +53,22 @@ module Gemview
       end
     end
 
+    class Author < Dry::CLI::Command
+      desc "Find gems by rubygems.org username"
+
+      argument :username, type: :string, required: true, desc: "rubygems.org username"
+
+      def call(username:, **)
+        gems = Gem.author(username: username)
+
+        if gems.empty?
+          abort("Error: No gems found for the rubygems.org username: #{username}")
+        end
+
+        View.list(gems: gems)
+      end
+    end
+
     class Releases < Dry::CLI::Command
       desc "List the most recent new gem releases"
 
@@ -91,6 +107,7 @@ module Gemview
 
     register "info", Info
     register "search", Search
+    register "author", Author
     register "releases", Releases
     register "updates", Updates
     register "version", Version, aliases: ["v", "-v", "--version"]

@@ -201,4 +201,16 @@ RSpec.describe Gemview::Gem do
       end
     end
   end
+
+  describe ".author" do
+    it "returns all gems owned by the author" do
+      VCR.use_cassette("gems-by-author-bbatsov") do
+        gems = described_class.author(username: "bbatsov")
+
+        expect(gems.size).to eq 12
+        expect(gems).to all(be_a(described_class))
+        expect(JSON.pretty_generate(gems.map(&:to_h))).to match_snapshot("gems-by-author-bbatsov")
+      end
+    end
+  end
 end
