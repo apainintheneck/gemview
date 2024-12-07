@@ -9,7 +9,7 @@ module Gemview
         More info:
       PROMPT
 
-      Terminal.choose(prompt, %w[Readme Changelog Dependencies]) do |choice|
+      Terminal.choose(prompt, %w[Readme Changelog Dependencies Versions]) do |choice|
         case choice
         when "Readme"
           Terminal.page([gem.header_str, gem.fetch_readme].join("\n"))
@@ -17,6 +17,8 @@ module Gemview
           Terminal.page([gem.header_str, gem.fetch_changelog].join("\n"))
         when "Dependencies"
           Terminal.page([gem.header_str, gem.dependencies_str].join("\n"))
+        when "Versions"
+          Terminal.page([gem.header_str, gem.versions_str].join("\n"))
         else
           raise ArgumentError, "Unknown choice: #{choice}"
         end

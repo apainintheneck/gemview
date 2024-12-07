@@ -52,17 +52,25 @@ module Gemview
       attribute :runtime, Types::Strict::Array.of(Dependency)
     end
 
+    class Version < Dry::Struct
+      transform_keys(&:to_sym)
+
+      attribute :number, Types::Strict::String
+      alias_method :version, :number
+
+      attribute :downloads_count, Types::Strict::Integer
+      alias_method :downloads, :downloads_count
+
+      attribute :created_at, Types::Params::Time
+
+      # @return [Date]
+      def release_date = created_at.to_date
+    end
+
     # Ex. 1234567890 -> "1,234,567,890"
     # @return [String]
     def humanized_downloads
-      downloads
-        .to_s
-        .chars
-        .reverse
-        .each_slice(3)
-        .map(&:join)
-        .join(",")
-        .reverse
+      Number.humanized_integer(downloads)
     end
 
     # @return [String]
@@ -124,6 +132,23 @@ module Gemview
       Terminal.prettify_markdown(dependencies)
     end
 
+    def versions_str
+      rows = self.class.versions(name: name).map do |version|
+        pretty_downloads = Number.humanized_integer(version.downloads)
+        "| #{version.release_date} | #{version.version} | #{pretty_downloads} |"
+      end
+
+      table = <<~TABLE
+        ## [Versions]
+
+        | *Release Date* | *Version* | *Downloads* |
+        |----------------|-----------|-------------|
+        #{rows.join("\n")}
+      TABLE
+
+      Terminal.prettify_markdown(table)
+    end
+
     # @return [Array<String>]
     def urls
       [
@@ -152,44 +177,33 @@ module Gemview
       @find ||= {}
       @find[[name, version]] ||= new case version
                                  when String
-                                   client_v2.info(name, version)
+                                   Client.v2.info(name, version)
                                  else
-                                   client_v1.info(name)
+                                   Client.v1.info(name)
                                  end
     end
 
     # @param term [String] search term
     # @return [Array<Gemview::Gem>]
     def self.search(term:)
-      client_v1.search(term).map { |gem_hash| new gem_hash }
+      Client.v1.search(term).map { |gem_hash| new gem_hash }
     end
 
     # @return [Array<Gemview::Gem>]
     def self.latest
-      client_v1.latest.map { |gem_hash| new gem_hash }
+      Client.v1.latest.map { |gem_hash| new gem_hash }
     end
 
     # @return [Array<Gemview::Gem>]
     def self.just_updated
-      client_v1.just_updated.map { |gem_hash| new gem_hash }
+      Client.v1.just_updated.map { |gem_hash| new gem_hash }
     end
 
-    # Create a client manually so that we don't accidentally pick up credentials.
-    def self.client_v1
-      @client_v1 ||= Gems::V1::Client.new(
-        username: nil,
-        password: nil,
-        key: nil
-      )
-    end
-
-    # Create a client manually so that we don't accidentally pick up credentials.
-    def self.client_v2
-      @client_v2 ||= Gems::V2::Client.new(
-        username: nil,
-        password: nil,
-        key: nil
-      )
+    # @param name [String] gem name
+    # @return [Array<Gemview::Gem::Version>]
+    def self.versions(name:)
+      @versions ||= {}
+      @versions[name] ||= Client.v1.versions(name).map { |gem_hash| Version.new gem_hash }
     end
   end
 end
