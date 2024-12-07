@@ -189,4 +189,16 @@ RSpec.describe Gemview::Gem do
       end
     end
   end
+
+  describe ".versions" do
+    it "returns the version information for a gem" do
+      VCR.use_cassette("gem-versions-for-dry-struct") do
+        versions = described_class.versions(name: "dry-struct")
+
+        expect(versions.size).to eq 22
+        expect(versions).to all(be_a(described_class::Version))
+        expect(JSON.pretty_generate(versions.map(&:to_h))).to match_snapshot("gem-versions-for-dry-struct")
+      end
+    end
+  end
 end

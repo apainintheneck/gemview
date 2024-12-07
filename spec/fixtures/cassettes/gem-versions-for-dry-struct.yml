@@ -1,0 +1,182 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://rubygems.org/api/v1/versions/dry-struct.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Gems 1.3.0
+      - Ruby
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - '30'
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '14835'
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cross-Origin-Opener-Policy:
+      - same-origin
+      Last-Modified:
+      - Sat, 30 Sep 2023 12:50:55 GMT
+      Cache-Control:
+      - max-age=60, public
+      Content-Security-Policy:
+      - 'default-src ''self''; font-src ''self'' https://fonts.gstatic.com; img-src
+        ''self'' data: https://secure.gaug.es https://gravatar.com https://www.gravatar.com
+        https://secure.gravatar.com https://*.fastly-insights.com https://avatars.githubusercontent.com;
+        object-src ''none''; script-src ''self'' ''sha256-xlpvqdZ5/hVDKsyanT3N+RasZlYKC+bYQ/4furku1bA=''
+        https://secure.gaug.es https://www.fastly-insights.com ''nonce-bb52d97ee0fb84fa8f881abfdf02973e'';
+        style-src ''self'' ''unsafe-inline'' https://fonts.googleapis.com; connect-src
+        ''self'' https://s3-us-west-2.amazonaws.com/rubygems-dumps/ https://*.fastly-insights.com
+        https://fastly-insights.com https://api.github.com http://localhost:*; form-action
+        ''self'' https://github.com/login/oauth/authorize; frame-ancestors ''self'';
+        base-uri ''self''; report-uri https://csp-report.browser-intake-datadoghq.com/api/v2/logs?dd-api-key=pub852fa3e2312391fafa5640b60784e660&dd-evp-origin=content-security-policy&ddsource=csp-report&ddtags=service%3Arubygems.org%2Cversion%3Aeda971a60e354514c538cbaa1e3d5c1d4503ea1f%2Cenv%3Aproduction%2Ctrace_id%3A4457115126100816695'
+      X-Request-Id:
+      - 0c3b00ac-584e-4b8b-b1cb-35893224a858
+      X-Runtime:
+      - '0.013370'
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Backend:
+      - F_Rails 52.43.190.113:443
+      Accept-Ranges:
+      - bytes
+      Age:
+      - '0'
+      Date:
+      - Sat, 07 Dec 2024 17:57:11 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-pao-kpao1770053-PAO
+      X-Cache:
+      - HIT
+      X-Cache-Hits:
+      - '0'
+      X-Timer:
+      - S1733594231.076697,VS0,VE31
+      Vary:
+      - Accept-Encoding
+      Etag:
+      - '"bc1db7d967ca1279f698a827a50e8ee0"'
+      Server:
+      - RubyGems.org
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"authors":"Piotr Solnica","built_at":"2022-11-04T00:00:00.000Z","created_at":"2022-11-04T17:52:19.380Z","description":"Typed
+        structs and value objects","downloads_count":7496385,"metadata":{"changelog_uri":"https://github.com/dry-rb/dry-struct/blob/main/CHANGELOG.md","bug_tracker_uri":"https://github.com/dry-rb/dry-struct/issues","source_code_uri":"https://github.com/dry-rb/dry-struct","allowed_push_host":"https://rubygems.org"},"number":"1.6.0","summary":"Typed
+        structs and value objects","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
+        2.7.0","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"3737025b3a6cd50fd4e6f42883cbb8d5e0d07680bc8310f7dc0db8c8897dd4e6","spec_sha":"825189354f9d0a35ff51ed381223c38260ca6871927ce45844cd5fa79f3c183e"},{"authors":"Piotr
+        Solnica","built_at":"2022-10-19T00:00:00.000Z","created_at":"2022-10-19T08:43:17.225Z","description":"Typed
+        structs and value objects","downloads_count":4062223,"metadata":{"changelog_uri":"https://github.com/dry-rb/dry-struct/blob/main/CHANGELOG.md","bug_tracker_uri":"https://github.com/dry-rb/dry-struct/issues","source_code_uri":"https://github.com/dry-rb/dry-struct","allowed_push_host":"https://rubygems.org"},"number":"1.5.2","summary":"Typed
+        structs and value objects","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
+        2.7.0","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"c471e8d481ea4515d3a8aba2f6a2fa3e53149ab392145f19401b6a39a9dcf29c","spec_sha":"8cd94cb9bd2fe242ca12f1a19f12e0a0b28137e07eea740c2cd9c878a972a3ff"},{"authors":"Piotr
+        Solnica","built_at":"2022-10-17T00:00:00.000Z","created_at":"2022-10-17T14:11:44.201Z","description":"Typed
+        structs and value objects","downloads_count":33012,"metadata":{"changelog_uri":"https://github.com/dry-rb/dry-struct/blob/main/CHANGELOG.md","bug_tracker_uri":"https://github.com/dry-rb/dry-struct/issues","source_code_uri":"https://github.com/dry-rb/dry-struct","allowed_push_host":"https://rubygems.org"},"number":"1.5.1","summary":"Typed
+        structs and value objects","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
+        2.7.0","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"4377134720c338c939eb80c758554e91acfb6637aba553922ec0692721351bea","spec_sha":"0506d0d06addd42734c2eb193e3c1e9ed15bda6f6d485f07c685e1a6b1eb15a1"},{"authors":"Piotr
+        Solnica","built_at":"2022-10-15T00:00:00.000Z","created_at":"2022-10-15T05:40:04.057Z","description":"Typed
+        structs and value objects","downloads_count":3388,"metadata":{"changelog_uri":"https://github.com/dry-rb/dry-struct/blob/main/CHANGELOG.md","bug_tracker_uri":"https://github.com/dry-rb/dry-struct/issues","source_code_uri":"https://github.com/dry-rb/dry-struct","allowed_push_host":"https://rubygems.org"},"number":"1.5.0","summary":"Typed
+        structs and value objects","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
+        2.7.0","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"73623f2483f46e2ee10969f7f62c5139cc36c61ab9abff66b4913f45844b9e82","spec_sha":"ea766a5aad72b68ee79c0eeef598df915bc64f33922a9bf5ea0e0a0257d83358"},{"authors":"Piotr
+        Solnica","built_at":"2021-01-21T00:00:00.000Z","created_at":"2021-01-21T18:59:57.332Z","description":"Typed
+        structs and value objects","downloads_count":8190875,"metadata":{"changelog_uri":"https://github.com/dry-rb/dry-struct/blob/master/CHANGELOG.md","bug_tracker_uri":"https://github.com/dry-rb/dry-struct/issues","source_code_uri":"https://github.com/dry-rb/dry-struct","allowed_push_host":"https://rubygems.org"},"number":"1.4.0","summary":"Typed
+        structs and value objects","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
+        2.5.0","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"63c1ac6c11ee70a893212d84fd45d167588943bf00c09bbbe5dddb5a2a0f4cf3","spec_sha":"aca85834cef17cc0c44b60803a584efcc667b86d03bb4589eecb7339efb3b885"},{"authors":"Piotr
+        Solnica","built_at":"2020-02-10T00:00:00.000Z","created_at":"2020-02-10T14:58:39.511Z","description":"Typed
+        structs and value objects","downloads_count":4171242,"metadata":{"changelog_uri":"https://github.com/dry-rb/dry-struct/blob/master/CHANGELOG.md","bug_tracker_uri":"https://github.com/dry-rb/dry-struct/issues","source_code_uri":"https://github.com/dry-rb/dry-struct","allowed_push_host":"https://rubygems.org"},"number":"1.3.0","summary":"Typed
+        structs and value objects","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
+        2.4.0","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"36cb3aec94226a4fd43685e5f20aff817b97e6340a8e67caaa4472e3ef49b88a","spec_sha":"4cc13f02189c52bf80a50fa8640593e4da37aa2e2f01aa058e8bfafaac1513cb"},{"authors":"Piotr
+        Solnica","built_at":"2019-12-20T00:00:00.000Z","created_at":"2019-12-20T08:50:48.096Z","description":"Typed
+        structs and value objects.","downloads_count":1317595,"metadata":{"changelog_uri":"https://github.com/dry-rb/dry-struct/blob/master/CHANGELOG.md","source_code_uri":"https://github.com/dry-rb/dry-struct","allowed_push_host":"https://rubygems.org"},"number":"1.2.0","summary":"Typed
+        structs and value objects.","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.4.0","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"5dc8f7ad66d91f58aadec57d9368bffbac732e9561e8b8d61f8ce79c582c4eb5","spec_sha":"d1c997efdb75b53eaf0fdab09cca667f1409bb459718e142d02e8364d39c3cbb"},{"authors":"Piotr
+        Solnica","built_at":"2019-10-13T00:00:00.000Z","created_at":"2019-10-13T11:14:16.735Z","description":"Typed
+        structs and value objects.","downloads_count":2274245,"metadata":{"changelog_uri":"https://github.com/dry-rb/dry-struct/blob/master/CHANGELOG.md","source_code_uri":"https://github.com/dry-rb/dry-struct","allowed_push_host":"https://rubygems.org"},"number":"1.1.1","summary":"Typed
+        structs and value objects.","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.4.0","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"39ee1dd680bed945e35c742e2763f7ce312c05d1226873c8b9448c9fdcb8f789","spec_sha":"8fdefcf9b418a5c16655c7fd6f5f284fbad7f8d945f326db5876dff0552d9d1b"},{"authors":"Piotr
+        Solnica","built_at":"2019-10-07T00:00:00.000Z","created_at":"2019-10-07T09:21:30.616Z","description":"Typed
+        structs and value objects.","downloads_count":33203,"metadata":{"changelog_uri":"https://github.com/dry-rb/dry-struct/blob/master/CHANGELOG.md","source_code_uri":"https://github.com/dry-rb/dry-struct","allowed_push_host":"https://rubygems.org"},"number":"1.1.0","summary":"Typed
+        structs and value objects.","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.4.0","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"02ef124134389f543fe91c8e7db603be57d5336584b5c602d1238dbb499e50eb","spec_sha":"614d96462df0b83b56c0341ab8351ae2ae516ee6e68c13979d4556ae917a298e"},{"authors":"Piotr
+        Solnica","built_at":"2019-04-23T00:00:00.000Z","created_at":"2019-04-23T15:43:45.325Z","description":"Typed
+        structs and value objects.","downloads_count":1300165,"metadata":{"changelog_uri":"https://github.com/dry-rb/dry-struct/blob/master/CHANGELOG.md","source_code_uri":"https://github.com/dry-rb/dry-struct","allowed_push_host":"https://rubygems.org"},"number":"1.0.0","summary":"Typed
+        structs and value objects.","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.4.0","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"5a85d94ca00d8e92913fc573045759de44da7874c4926bec8c93b06b6fbe92b7","spec_sha":"6e0592651fbfff9b67e07cd1be1b3bef9cc2f2a0851c54d8d6d0fb1dff3ed561"},{"authors":"Piotr
+        Solnica","built_at":"2019-03-22T00:00:00.000Z","created_at":"2019-03-22T13:54:13.098Z","description":"Typed
+        structs and value objects.","downloads_count":669886,"metadata":{"changelog_uri":"https://github.com/dry-rb/dry-struct/blob/master/CHANGELOG.md","source_code_uri":"https://github.com/dry-rb/dry-struct","allowed_push_host":"https://rubygems.org"},"number":"0.7.0","summary":"Typed
+        structs and value objects.","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.3.0","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"65c3375e4efbba2967e03ef6fb97ee457dd03a1f4624839d32d7e5160baafbe4","spec_sha":"8c28ad6e0d528884dcb5a2461ed644b837bae0e027310bf7bcf8765cc182e960"},{"authors":"Piotr
+        Solnica","built_at":"2018-10-24T00:00:00.000Z","created_at":"2018-10-24T08:37:28.622Z","description":"Typed
+        structs and value objects.","downloads_count":2239203,"metadata":{"changelog_uri":"https://github.com/dry-rb/dry-struct/blob/master/CHANGELOG.md","source_code_uri":"https://github.com/dry-rb/dry-struct","allowed_push_host":"https://rubygems.org"},"number":"0.6.0","summary":"Typed
+        structs and value objects.","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 0","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"b9d87c20a67223123ee9eecf11563b1746d7b833df1c125d34a13fb511f7f154","spec_sha":"079cd1bcb111f81515eae3f02affb01dbb858db6c444da5a044b36acca35ab55"},{"authors":"Piotr
+        Solnica","built_at":"2018-08-11T00:00:00.000Z","created_at":"2018-08-11T11:47:24.771Z","description":"Typed
+        structs and value objects.","downloads_count":615227,"metadata":{"allowed_push_host":"https://rubygems.org"},"number":"0.5.1","summary":"Typed
+        structs and value objects.","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 0","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"5a1bf93a057e7fd50e1db44069fe0baff75652aeb70be1171a7724d2cacb787d","spec_sha":"3949c4815ac1ef2cce2c284d66dabd572a6c7ed59104f1bbcea18de5c8f5a5a0"},{"authors":"Piotr
+        Solnica","built_at":"2018-05-03T00:00:00.000Z","created_at":"2018-05-03T14:48:15.701Z","description":"Typed
+        structs and value objects.","downloads_count":320650,"metadata":{"allowed_push_host":"https://rubygems.org"},"number":"0.5.0","summary":"Typed
+        structs and value objects.","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 0","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"4fe929d90b797a62480280518f2674733cab6745a7a2e3f17abdaf24f32750c7","spec_sha":"7eacb8fc8d645a6e8f10d6fbca581deab5b3d1690d6ae9d2cda7555765791232"},{"authors":"Piotr
+        Solnica","built_at":"2017-11-04T00:00:00.000Z","created_at":"2017-11-04T17:30:47.442Z","description":"Typed
+        structs and value objects.","downloads_count":1070735,"metadata":{"allowed_push_host":"https://rubygems.org"},"number":"0.4.0","summary":"Typed
+        structs and value objects.","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 0","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"173fb4584853576e4aa2bea32786947fd846cced3da31c5963e93ba714150436","spec_sha":"46ab3eaafa076b16bcaa3dad30e462566870adfec6c7d913915450131a9c39f3"},{"authors":"Piotr
+        Solnica","built_at":"2017-06-30T00:00:00.000Z","created_at":"2017-06-30T10:03:35.313Z","description":"Typed
+        structs and value objects.","downloads_count":924916,"metadata":{"allowed_push_host":"https://rubygems.org"},"number":"0.3.1","summary":"Typed
+        structs and value objects.","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 0","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"22bee9a563e30f4f9b7d63508f30e183599fc9bdb4a81790a3110e3c0c100343","spec_sha":"da359b962559a33a1691352a74f313a84b3afa8921e85d9ed22c82cd6c8088cc"},{"authors":"Piotr
+        Solnica","built_at":"2017-05-05T00:00:00.000Z","created_at":"2017-05-05T09:00:44.995Z","description":"Typed
+        structs and value objects.","downloads_count":95748,"metadata":{"allowed_push_host":"https://rubygems.org"},"number":"0.3.0","summary":"Typed
+        structs and value objects.","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 0","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"189b6cb51306a4eaba9c3d86963dedd03c83afa33fa4aa022e47f7dee2168d83","spec_sha":"49ee1b5ee9a68bdaee4a2df8f7929db20790a7af669062703759db063a8847e0"},{"authors":"Piotr
+        Solnica","built_at":"2017-02-27T00:00:00.000Z","created_at":"2017-02-27T22:02:43.322Z","description":"Typed
+        structs and value objects.","downloads_count":222226,"metadata":{"allowed_push_host":"https://rubygems.org"},"number":"0.2.1","summary":"Typed
+        structs and value objects.","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 0","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"8b6bf400a9f46c2f2eab4b0d63b634f77637f83eb568aad99220dde03e66f396","spec_sha":"15cafdc3a6ffea4cecf050f2482fb115922f3016c668e6f184c8378ed44be5b2"},{"authors":"Piotr
+        Solnica","built_at":"2017-02-26T00:00:00.000Z","created_at":"2017-02-26T16:15:21.889Z","description":"Typed
+        structs and value objects.","downloads_count":2953,"metadata":{"allowed_push_host":"https://rubygems.org"},"number":"0.2.0","summary":"Typed
+        structs and value objects.","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 0","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"4e9130dc4427ade24fb4e496b8c37064eb204f620ec949cb2e04e743f11005f5","spec_sha":"86599b5b4ef97084eee8aa9920430032edc3f36c36ccde560a105860f927d05e"},{"authors":"Piotr
+        Solnica","built_at":"2016-11-13T00:00:00.000Z","created_at":"2016-11-13T12:31:47.823Z","description":"Typed
+        structs and value objects.","downloads_count":881809,"metadata":{"allowed_push_host":"https://rubygems.org"},"number":"0.1.1","summary":"Typed
+        structs and value objects.","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 0","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"1ce80293980332c04b53a504d0df5f503b50368f957a0ac1d1d4139a9eec22c0","spec_sha":"f530f8139da64f4f24a0afe510d3889a5d002438b71571b84c73fff4b781ccba"},{"authors":"Piotr
+        Solnica","built_at":"2016-09-22T00:00:00.000Z","created_at":"2016-09-22T00:11:24.290Z","description":"Typed
+        structs and value objects.","downloads_count":25330,"metadata":{"allowed_push_host":"https://rubygems.org"},"number":"0.1.0","summary":"Typed
+        structs and value objects.","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 0","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"bbc91cc18f956c11fb95db754b27c89cb0b987479e8cffeb30e15977aa2c179b","spec_sha":"5c442d2ce946d05d68ded83becb6716ca52b1127ddf6bda3454e9957591f6084"},{"authors":"Piotr
+        Solnica","built_at":"2016-07-17T00:00:00.000Z","created_at":"2016-07-17T03:26:30.791Z","description":"Typed
+        structs and value objects.","downloads_count":12314,"metadata":{"allowed_push_host":"https://rubygems.org"},"number":"0.0.1","summary":"Typed
+        structs and value objects.","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 0","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"f679030210a757742ed2fb1302c04f42dcccdc40f0262538a334981a298f9a0f","spec_sha":"c4dfac2cf53e1cb17ea945ed0e47ecead696e73c2186b90247999f1bfa503dfd"}]'
+  recorded_at: Sat, 07 Dec 2024 17:57:11 GMT
+recorded_with: VCR 6.3.1
