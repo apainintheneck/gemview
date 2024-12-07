@@ -189,6 +189,12 @@ module Gemview
       Client.v1.search(term).map { |gem_hash| new gem_hash }
     end
 
+    # @param username [String] rubygems.org username
+    # @return [Array<Gemview::Gem>]
+    def self.author(username:)
+      Client.v1.gems(username).map { |gem_hash| new gem_hash }
+    end
+
     # @return [Array<Gemview::Gem>]
     def self.latest
       Client.v1.latest.map { |gem_hash| new gem_hash }
