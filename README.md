@@ -1,6 +1,6 @@
 # Gemview
 
-An unofficial CLI interface for querying information from rubygems.org.
+An unofficial CLI interface for querying information from rubygems.org. It uses the [gems](https://rubygems.org/gems/gems) gem internally.
 
 ## Features
 - Search for gems by name
