@@ -14,13 +14,15 @@ An unofficial CLI interface for querying information from rubygems.org.
 TODO: Write installation instructions here
 
 ## Usage
+
 ```
 Commands:
-  gemview info NAME             # Show gem info
-  gemview releases              # List the most recent new gem releases
-  gemview search TERM           # Search for gems
-  gemview updates               # List the most recent gem updates
-  gemview version               # Print version
+  gemview author USERNAME             # Find gems by rubygems.org username
+  gemview info NAME                   # Show gem info
+  gemview releases                    # List the most recent new gem releases
+  gemview search TERM                 # Search for gems
+  gemview updates                     # List the most recent gem updates
+  gemview version                     # Print version
 ```
 
 ## Development
