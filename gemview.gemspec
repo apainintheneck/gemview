@@ -5,7 +5,7 @@ require_relative "lib/gemview/version"
 Gem::Specification.new do |spec|
   spec.name = "gemview"
   spec.version = Gemview::VERSION
-  spec.authors = ["apainintheneck"]
+  spec.authors = ["Kevin Robell"]
   spec.email = ["apainintheneck@gmail.com"]
 
   spec.summary = "An unofficial CLI interface to browse rubygems.org"
