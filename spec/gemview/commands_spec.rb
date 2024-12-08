@@ -155,12 +155,101 @@ RSpec.describe Gemview::Commands do
   end
 
   describe "author" do
+    let(:rubocop_selector) do
+      "rubocop [1.69.1]\n  -- RuboCop is a Ruby code style checking and code formatting tool. It aims t…\n"
+    end
+    let(:rubocop_gem) do
+      Gemview::Gem.new({
+        "name": "rubocop",
+        "downloads": 480421146,
+        "version": "1.69.1",
+        "version_created_at": "2024-12-03T09:03:08.778Z",
+        "version_downloads": 279434,
+        "platform": "ruby",
+        "authors": "Bozhidar Batsov, Jonas Arvidsson, Yuji Nakayama",
+        "info": "RuboCop is a Ruby code style checking and code formatting tool.\nIt aims to enforce the community-driven Ruby Style Guide.\n",
+        "licenses": [
+          "MIT"
+        ],
+        "metadata": {
+          "homepage_uri": "https://rubocop.org/",
+          "changelog_uri": "https://github.com/rubocop/rubocop/releases/tag/v1.69.1",
+          "bug_tracker_uri": "https://github.com/rubocop/rubocop/issues",
+          "source_code_uri": "https://github.com/rubocop/rubocop/",
+          "documentation_uri": "https://docs.rubocop.org/rubocop/1.69/",
+          "rubygems_mfa_required": "true"
+        },
+        "yanked": false,
+        "sha": "339d1b884f5c86be9c70a24c635988679f129996d14048e9ffcde8924a14a2e8",
+        "spec_sha": "a27328f4627ae89eece81606e32c6fe05098bb16472e23bb5cffdeb39ab3c21e",
+        "project_uri": "https://rubygems.org/gems/rubocop",
+        "gem_uri": "https://rubygems.org/gems/rubocop-1.69.1.gem",
+        "homepage_uri": "https://rubocop.org/",
+        "wiki_uri": nil,
+        "documentation_uri": "https://docs.rubocop.org/rubocop/1.69/",
+        "mailing_list_uri": nil,
+        "source_code_uri": "https://github.com/rubocop/rubocop/",
+        "bug_tracker_uri": "https://github.com/rubocop/rubocop/issues",
+        "changelog_uri": "https://github.com/rubocop/rubocop/releases/tag/v1.69.1",
+        "funding_uri": nil,
+        "dependencies": {
+          "development": [],
+          "runtime": [
+            {
+              "name": "json",
+              "requirements": "~> 2.3"
+            },
+            {
+              "name": "language_server-protocol",
+              "requirements": ">= 3.17.0"
+            },
+            {
+              "name": "parallel",
+              "requirements": "~> 1.10"
+            },
+            {
+              "name": "parser",
+              "requirements": ">= 3.3.0.2"
+            },
+            {
+              "name": "rainbow",
+              "requirements": ">= 2.2.2, < 4.0"
+            },
+            {
+              "name": "regexp_parser",
+              "requirements": ">= 2.9.3, < 3.0"
+            },
+            {
+              "name": "rubocop-ast",
+              "requirements": ">= 1.36.2, < 2.0"
+            },
+            {
+              "name": "ruby-progressbar",
+              "requirements": "~> 1.7"
+            },
+            {
+              "name": "unicode-display_width",
+              "requirements": ">= 2.4.0, < 4.0"
+            }
+          ]
+        }
+      })
+    end
+
     it "shows gems for an author" do
       expect(Gemview::Terminal)
         .to receive(:choose)
         .with(
           message: "What gem would you like to look at?",
-          choices: an_instance_of(Hash)
+          choices: hash_including(rubocop_selector => rubocop_gem)
+        )
+        .and_yield(rubocop_gem)
+
+      expect(Gemview::Terminal)
+        .to receive(:choose)
+        .with(
+          message: match_snapshot("rubocop-gem-header"),
+          choices: %w[Readme Changelog Dependencies Versions]
         )
 
       VCR.use_cassette("gems-by-author-bbatsov") do

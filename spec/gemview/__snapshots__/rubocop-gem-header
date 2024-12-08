@@ -1,0 +1,17 @@
+  [1.69.1] rubocop
+
+  RuboCop is a Ruby code style checking and code formatting tool.
+  It aims to enforce the community-driven Ruby Style Guide.
+  ┌─────────────────┬─────────────────────────────────────────────────┐
+  │ Updated at      │ 2024-12-03 09:03:08 UTC                         │ 
+  ├─────────────────┼─────────────────────────────────────────────────┤
+  │ Total Downloads │ 480,421,146                                     │ 
+  ├─────────────────┼─────────────────────────────────────────────────┤
+  │ Authors         │ Bozhidar Batsov, Jonas Arvidsson, Yuji Nakayama │ 
+  ├─────────────────┼─────────────────────────────────────────────────┤
+  │ Licenses        │ [“MIT”]                                         │ 
+  ├─────────────────┼─────────────────────────────────────────────────┤
+  │ Project URI     │ https://rubygems.org/gems/rubocop               │ 
+  └─────────────────┴─────────────────────────────────────────────────┘
+
+More info:
