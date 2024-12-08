@@ -1,0 +1,19 @@
+  [0.9.6] birdbrain
+
+  This Ruby library allows students to use Ruby to read sensors and set motors
+  and LEDs with the Birdbrain Technologies Hummingbird Bit and Finch 2. To use
+  Ruby with the Hummingbird Bit or Finch 2, you must connect via bluetooth with
+  ...
+  ┌─────────────────┬─────────────────────────────────────┐
+  │ Updated at      │ 2021-02-16 00:15:13 UTC             │ 
+  ├─────────────────┼─────────────────────────────────────┤
+  │ Total Downloads │ 13,347                              │ 
+  ├─────────────────┼─────────────────────────────────────┤
+  │ Authors         │ fmorton                             │ 
+  ├─────────────────┼─────────────────────────────────────┤
+  │ Licenses        │ [“MIT”]                             │ 
+  ├─────────────────┼─────────────────────────────────────┤
+  │ Project URI     │ https://rubygems.org/gems/birdbrain │ 
+  └─────────────────┴─────────────────────────────────────┘
+
+More info:
