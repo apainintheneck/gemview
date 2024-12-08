@@ -95,15 +95,63 @@ RSpec.describe Gemview::Commands do
   end
 
   describe "search" do
+    it "completes search" do
+      expect(Gemview::Terminal)
+        .to receive(:choose)
+        .with(
+          message: "What gem would you like to look at?",
+          choices: an_instance_of(Hash)
+        )
+
+      VCR.use_cassette("search-for-bluetooth") do
+        described_class.start(arguments: %w[search bluetooth])
+      end
+    end
   end
 
   describe "author" do
+    it "shows gems for an author" do
+      expect(Gemview::Terminal)
+        .to receive(:choose)
+        .with(
+          message: "What gem would you like to look at?",
+          choices: an_instance_of(Hash)
+        )
+
+      VCR.use_cassette("gems-by-author-bbatsov") do
+        described_class.start(arguments: %w[author bbatsov])
+      end
+    end
   end
 
   describe "releases" do
+    it "shows recently released gems" do
+      expect(Gemview::Terminal)
+        .to receive(:choose)
+        .with(
+          message: "What gem would you like to look at?",
+          choices: an_instance_of(Hash)
+        )
+
+      VCR.use_cassette("latest-gems") do
+        described_class.start(arguments: %w[releases])
+      end
+    end
   end
 
   describe "updates" do
+    it "shows recently updated gems" do
+      expect(Gemview::Terminal)
+        .to receive(:choose)
+        .with(
+          message: "What gem would you like to look at?",
+          choices: an_instance_of(Hash)
+        )
+
+      VCR.use_cassette("just-updated-gems") do
+        described_class.start(arguments: %w[updates])
+      end
+    end
   end
 
   describe "version" do
