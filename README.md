@@ -27,16 +27,23 @@ Commands:
 
 ## Development
 
+### Testing & Linting
+
+```console
+$ rake
+```
+
 ### Testing
 
 ```console
-$ bundle exec rspec
+$ rake spec
 ```
 
 ### Linting
 
 ```console
-$ bundle exec standardrb
+$ rake standard
+$ rake standard:fix
 ```
 
 ## Contributing
