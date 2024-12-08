@@ -8,9 +8,9 @@ module Gemview
     end
 
     # @param prompt [String]
-    # @param choices [Array<String>] where all choices are unique
+    # @param choices [Array<String>] or [Hash<String, String>] where all choices are unique
     # @yield [String] yields until the user exits the prompt gracefully
-    def self.choose(message, choices, per_page: 6)
+    def self.choose(message:, choices:, per_page: 6)
       while (choice = selector.select(message, choices, per_page))
         yield choice
       end

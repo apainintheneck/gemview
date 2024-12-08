@@ -1,0 +1,505 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://rubygems.org/api/v1/versions/standard.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Gems 1.3.0
+      - Ruby
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - '30'
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '80372'
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cross-Origin-Opener-Policy:
+      - same-origin
+      Last-Modified:
+      - Tue, 19 Nov 2024 00:56:54 GMT
+      Cache-Control:
+      - max-age=60, public
+      Content-Security-Policy:
+      - 'default-src ''self''; font-src ''self'' https://fonts.gstatic.com; img-src
+        ''self'' data: https://secure.gaug.es https://gravatar.com https://www.gravatar.com
+        https://secure.gravatar.com https://*.fastly-insights.com https://avatars.githubusercontent.com;
+        object-src ''none''; script-src ''self'' ''sha256-xlpvqdZ5/hVDKsyanT3N+RasZlYKC+bYQ/4furku1bA=''
+        https://secure.gaug.es https://www.fastly-insights.com ''nonce-46dae02f61721eb76ef1039fa9749a4b'';
+        style-src ''self'' ''unsafe-inline'' https://fonts.googleapis.com; connect-src
+        ''self'' https://s3-us-west-2.amazonaws.com/rubygems-dumps/ https://*.fastly-insights.com
+        https://fastly-insights.com https://api.github.com http://localhost:*; form-action
+        ''self'' https://github.com/login/oauth/authorize; frame-ancestors ''self'';
+        base-uri ''self''; report-uri https://csp-report.browser-intake-datadoghq.com/api/v2/logs?dd-api-key=pub852fa3e2312391fafa5640b60784e660&dd-evp-origin=content-security-policy&ddsource=csp-report&ddtags=service%3Arubygems.org%2Cversion%3Aeda971a60e354514c538cbaa1e3d5c1d4503ea1f%2Cenv%3Aproduction%2Ctrace_id%3A208041143904651457'
+      X-Request-Id:
+      - 789ebc89-4bc2-4f4b-abb4-0ab1e48081ba
+      X-Runtime:
+      - '0.028133'
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Backend:
+      - F_Rails 52.43.190.113:443
+      Accept-Ranges:
+      - bytes
+      Age:
+      - '1842'
+      Date:
+      - Sun, 08 Dec 2024 01:46:29 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-pao-kpao1770024-PAO
+      X-Cache:
+      - HIT
+      X-Cache-Hits:
+      - '0'
+      X-Timer:
+      - S1733622390.912600,VS0,VE1
+      Vary:
+      - Accept-Encoding
+      Etag:
+      - '"3957dd5fc92c6473b12f84d21487aa77"'
+      Server:
+      - RubyGems.org
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"authors":"Justin Searls","built_at":"2024-11-19T00:00:00.000Z","created_at":"2024-11-19T00:56:52.880Z","description":null,"downloads_count":205466,"metadata":{"homepage_uri":"https://github.com/standardrb/standard","changelog_uri":"https://github.com/standardrb/standard/blob/main/CHANGELOG.md","source_code_uri":"https://github.com/standardrb/standard","rubygems_mfa_required":"true"},"number":"1.42.1","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 3.0.0","prerelease":false,"licenses":[],"requirements":[],"sha":"5ae80bb45d56b71d225ff086cd894af05db228c8b6efce73549cefe90b329a2e","spec_sha":"46b9bd31d425582083d338943167a0dffa4084c69445b2944a25aeafc3458eec"},{"authors":"Justin
+        Searls","built_at":"2024-11-12T00:00:00.000Z","created_at":"2024-11-12T21:05:38.433Z","description":null,"downloads_count":63517,"metadata":{"homepage_uri":"https://github.com/standardrb/standard","changelog_uri":"https://github.com/standardrb/standard/blob/main/CHANGELOG.md","source_code_uri":"https://github.com/standardrb/standard","rubygems_mfa_required":"true"},"number":"1.42.0","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 3.0.0","prerelease":false,"licenses":[],"requirements":[],"sha":"ed59d1f07d878bb30ae77b68273efdea8067ea5bfb398bd9a83afedfa37a1a88","spec_sha":"7680ef9e705adc5536ffc8f26472d5f91232ff63b0fa9fed3d11aca328bd4108"},{"authors":"Justin
+        Searls","built_at":"2024-10-17T00:00:00.000Z","created_at":"2024-10-17T14:06:59.550Z","description":null,"downloads_count":280610,"metadata":{"homepage_uri":"https://github.com/standardrb/standard","changelog_uri":"https://github.com/standardrb/standard/blob/main/CHANGELOG.md","source_code_uri":"https://github.com/standardrb/standard","rubygems_mfa_required":"true"},"number":"1.41.1","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 3.0.0","prerelease":false,"licenses":[],"requirements":[],"sha":"ac244a770e1ede2630ebb501877cb2089cb626a837bd80e7487ed8f21099e12b","spec_sha":"f3f590941b6654501283d018e7faaa484457c41c40c3c3558750a98019eb9a66"},{"authors":"Justin
+        Searls","built_at":"2024-10-08T00:00:00.000Z","created_at":"2024-10-08T19:29:36.184Z","description":null,"downloads_count":100762,"metadata":{"homepage_uri":"https://github.com/standardrb/standard","changelog_uri":"https://github.com/standardrb/standard/blob/main/CHANGELOG.md","source_code_uri":"https://github.com/standardrb/standard","rubygems_mfa_required":"true"},"number":"1.41.0","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 3.0.0","prerelease":false,"licenses":[],"requirements":[],"sha":"202d099d9e2958d8c1fbf268303079e7b634b3686cab8fa590211dbc2ada5d16","spec_sha":"0c7042cde814f50d838312b12c10a827db7983e4478e68125cf5e2a815a9f0d2"},{"authors":"Justin
+        Searls","built_at":"2024-10-03T00:00:00.000Z","created_at":"2024-10-03T17:31:00.874Z","description":null,"downloads_count":45662,"metadata":{"homepage_uri":"https://github.com/standardrb/standard","changelog_uri":"https://github.com/standardrb/standard/blob/main/CHANGELOG.md","source_code_uri":"https://github.com/standardrb/standard","rubygems_mfa_required":"true"},"number":"1.40.1","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 3.0.0","prerelease":false,"licenses":[],"requirements":[],"sha":"99a3bac2b5898abba1a6e5c08d47cd71b7e346cd8d982dea40fdee83ff5a0377","spec_sha":"fd1ca2bb198aac7173526f16430181880ef491db42fd03d0cdd92adc5286a519"},{"authors":"Justin
+        Searls","built_at":"2024-08-13T00:00:00.000Z","created_at":"2024-08-13T19:09:56.534Z","description":null,"downloads_count":769266,"metadata":{"homepage_uri":"https://github.com/standardrb/standard","changelog_uri":"https://github.com/standardrb/standard/blob/main/CHANGELOG.md","source_code_uri":"https://github.com/standardrb/standard","rubygems_mfa_required":"true"},"number":"1.40.0","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 3.0.0","prerelease":false,"licenses":[],"requirements":[],"sha":"56b47ad8b9a1073f092636a101cfe80e695e9b558bf557b02b4e7731040d1f72","spec_sha":"aff8e8b7afebd9118db0797636259dd9f925dd2e3744a0e9d41bc5ce8c5cbd12"},{"authors":"Justin
+        Searls","built_at":"2024-07-16T00:00:00.000Z","created_at":"2024-07-16T18:35:42.647Z","description":null,"downloads_count":489625,"metadata":{"homepage_uri":"https://github.com/standardrb/standard","changelog_uri":"https://github.com/standardrb/standard/blob/main/CHANGELOG.md","source_code_uri":"https://github.com/standardrb/standard","rubygems_mfa_required":"true"},"number":"1.39.2","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 3.0.0","prerelease":false,"licenses":[],"requirements":[],"sha":"a327312ea9057da468cf1bdbec7479479fa2ad64ffbef7304747a6f8f86cabf9","spec_sha":"108ac5cdd5a85f8913d57c83026b246f4055768e65a5a7392449ee24dfd8b5b6"},{"authors":"Justin
+        Searls","built_at":"2024-07-02T00:00:00.000Z","created_at":"2024-07-02T19:11:40.965Z","description":null,"downloads_count":194969,"metadata":{"homepage_uri":"https://github.com/standardrb/standard","changelog_uri":"https://github.com/standardrb/standard/blob/main/CHANGELOG.md","source_code_uri":"https://github.com/standardrb/standard","rubygems_mfa_required":"true"},"number":"1.39.1","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 3.0.0","prerelease":false,"licenses":[],"requirements":[],"sha":"8f4dd9414e8d0f1605c374904d3ee20c32f6a33bbd1a40ae634c81870a1cbbb6","spec_sha":"696c1507432028c860a9a233aa101a085bdc05e2d6d3a62649671ac0a688c0b4"},{"authors":"Justin
+        Searls","built_at":"2024-06-24T00:00:00.000Z","created_at":"2024-06-24T03:02:50.514Z","description":null,"downloads_count":203281,"metadata":{"homepage_uri":"https://github.com/standardrb/standard","changelog_uri":"https://github.com/standardrb/standard/blob/main/CHANGELOG.md","source_code_uri":"https://github.com/standardrb/standard","rubygems_mfa_required":"true"},"number":"1.39.0","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 3.0.0","prerelease":false,"licenses":[],"requirements":[],"sha":"d484aea4c2671ddf4cd1956be4723816fbd6e329a1074f8956c9933b62cff14c","spec_sha":"310e8962b9f08e95e131bd820d919a1fafb0fcafb98df1577dfd8394a672a3f8"},{"authors":"Justin
+        Searls","built_at":"2024-06-23T00:00:00.000Z","created_at":"2024-06-23T15:36:06.468Z","description":null,"downloads_count":6092,"metadata":{"homepage_uri":"https://github.com/standardrb/standard","changelog_uri":"https://github.com/standardrb/standard/blob/main/CHANGELOG.md","source_code_uri":"https://github.com/standardrb/standard","rubygems_mfa_required":"true"},"number":"1.38.0","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 3.0.0","prerelease":false,"licenses":[],"requirements":[],"sha":"faa3436b2275dc3f18bf248fdc8ed6df805f7fa236d1fc5c3bc754eb56241ea5","spec_sha":"93b9e8fd50e381595150d856a8334d2a05b43ddc59cc14f53e9d53b10dc514c2"},{"authors":"Justin
+        Searls","built_at":"2024-06-11T00:00:00.000Z","created_at":"2024-06-11T19:09:16.284Z","description":null,"downloads_count":180997,"metadata":{"homepage_uri":"https://github.com/standardrb/standard","changelog_uri":"https://github.com/standardrb/standard/blob/main/CHANGELOG.md","source_code_uri":"https://github.com/standardrb/standard","rubygems_mfa_required":"true"},"number":"1.37.0","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.6.0","prerelease":false,"licenses":[],"requirements":[],"sha":"accc9df5c67ca7c6599c244d57c3e352b3146663fdbba527128be48f5a6ec4fc","spec_sha":"59d99b6f97458ea9750b8fff9f748c54fa33fbe18c49fed56b0d903fcb6ce024"},{"authors":"Justin
+        Searls","built_at":"2024-05-14T00:00:00.000Z","created_at":"2024-05-14T19:28:31.240Z","description":null,"downloads_count":402602,"metadata":{"homepage_uri":"https://github.com/standardrb/standard","changelog_uri":"https://github.com/standardrb/standard/blob/main/CHANGELOG.md","source_code_uri":"https://github.com/standardrb/standard","rubygems_mfa_required":"true"},"number":"1.36.0","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.6.0","prerelease":false,"licenses":[],"requirements":[],"sha":"b7ee047c6fee031e11b086313d43099e9a97009f44ded07052a13359a3b86584","spec_sha":"1da6657f9a53418d388c7e500ff1fa26b01c71184b5a9cb2aacad067f83351f2"},{"authors":"Justin
+        Searls","built_at":"2024-03-12T00:00:00.000Z","created_at":"2024-03-12T18:38:30.511Z","description":null,"downloads_count":976818,"metadata":{"homepage_uri":"https://github.com/standardrb/standard","changelog_uri":"https://github.com/standardrb/standard/blob/main/CHANGELOG.md","source_code_uri":"https://github.com/standardrb/standard","rubygems_mfa_required":"true"},"number":"1.35.1","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.6.0","prerelease":false,"licenses":[],"requirements":[],"sha":"69a633610864f76e84b438d44b605fda020a3fc9b31a2d50d3487edb77a572ad","spec_sha":"e07a1ecbfd10209dad74d155478ccc14d04ebae2acbab6e66fb4bef3a8c14b1b"},{"authors":"Justin
+        Searls","built_at":"2024-03-12T00:00:00.000Z","created_at":"2024-03-12T21:06:16.377Z","description":null,"downloads_count":17780,"metadata":{"homepage_uri":"https://github.com/standardrb/standard","changelog_uri":"https://github.com/standardrb/standard/blob/main/CHANGELOG.md","source_code_uri":"https://github.com/standardrb/standard","rubygems_mfa_required":"true"},"number":"1.35.0.1","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.6.0","prerelease":false,"licenses":[],"requirements":[],"sha":"ec8992af82aede242b86755970336fe481e2264d23e96de3da7eb28101601e97","spec_sha":"e446735efa72a1ded4d0c705e47f781a2a1318e30f2a879e712ba8bc2d857305"},{"authors":"Justin
+        Searls","built_at":"2024-03-12T00:00:00.000Z","created_at":"2024-03-12T14:54:35.261Z","description":null,"downloads_count":3048,"metadata":{"homepage_uri":"https://github.com/standardrb/standard","changelog_uri":"https://github.com/standardrb/standard/blob/main/CHANGELOG.md","source_code_uri":"https://github.com/standardrb/standard","rubygems_mfa_required":"true"},"number":"1.35.0","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.6.0","prerelease":false,"licenses":[],"requirements":[],"sha":"917cc34aed48365cbf230a7a14638612947feb966a8b37e5b75858dfd3c0bcf1","spec_sha":"0bd84112b044ee7c505b0d5f92a82a626cc4aac003edfa83a7bbafe0e8e26cb7"},{"authors":"Justin
+        Searls","built_at":"2024-03-12T00:00:00.000Z","created_at":"2024-03-12T20:24:46.946Z","description":null,"downloads_count":2522,"metadata":{"homepage_uri":"https://github.com/standardrb/standard","changelog_uri":"https://github.com/standardrb/standard/blob/main/CHANGELOG.md","source_code_uri":"https://github.com/standardrb/standard","rubygems_mfa_required":"true"},"number":"1.34.0.1","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.6.0","prerelease":false,"licenses":[],"requirements":[],"sha":"6cc14edae83ca3f113d79d906f43222f57f0f631654ab54c63f1fc147965ca74","spec_sha":"984b09a9c4a6324cce2aade0e8923609698028bd1d6e44ed754c2e29801ce1d1"},{"authors":"Justin
+        Searls","built_at":"2024-02-13T00:00:00.000Z","created_at":"2024-02-13T19:54:43.517Z","description":null,"downloads_count":322844,"metadata":{"homepage_uri":"https://github.com/standardrb/standard","changelog_uri":"https://github.com/standardrb/standard/blob/main/CHANGELOG.md","source_code_uri":"https://github.com/standardrb/standard","rubygems_mfa_required":"true"},"number":"1.34.0","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.6.0","prerelease":false,"licenses":[],"requirements":[],"sha":"505fcc8c784b28789bc6731819cebb6b9185fce9265e9f8954e36b30b8944b70","spec_sha":"75dabcdd8a2d615dbdd08f78520b9fbe21de0acc47c804b3481a1662fea45348"},{"authors":"Justin
+        Searls","built_at":"2023-12-26T00:00:00.000Z","created_at":"2023-12-26T18:05:50.782Z","description":null,"downloads_count":672452,"metadata":{"homepage_uri":"https://github.com/standardrb/standard","changelog_uri":"https://github.com/standardrb/standard/blob/main/CHANGELOG.md","source_code_uri":"https://github.com/standardrb/standard","rubygems_mfa_required":"true"},"number":"1.33.0","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.6.0","prerelease":false,"licenses":[],"requirements":[],"sha":"c8e42a41a0facd7b916fdd1d2f02c8e1d264d3fcc6bd91b43e7e90b27ffd92a0","spec_sha":"720e9f64a53f0ee956cb2949e667e2173e3f9e96a546f8f694da885ff1fcb313"},{"authors":"Justin
+        Searls","built_at":"2023-12-04T00:00:00.000Z","created_at":"2023-12-04T12:22:59.659Z","description":null,"downloads_count":1100455,"metadata":{"homepage_uri":"https://github.com/standardrb/standard","changelog_uri":"https://github.com/standardrb/standard/blob/main/CHANGELOG.md","source_code_uri":"https://github.com/standardrb/standard","rubygems_mfa_required":"true"},"number":"1.32.1","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.6.0","prerelease":false,"licenses":[],"requirements":[],"sha":"2bfb8c6591fc757d96bced5bfa16a49c7781e7bef040d9ca7029d6d563aa702e","spec_sha":"c9cd067f6ab758f2e78ebddd5dda0dec2787c4a8ee18f36da96393612de38726"},{"authors":"Justin
+        Searls","built_at":"2023-11-07T00:00:00.000Z","created_at":"2023-11-07T16:06:42.458Z","description":null,"downloads_count":250915,"metadata":{"homepage_uri":"https://github.com/standardrb/standard","changelog_uri":"https://github.com/standardrb/standard/blob/main/CHANGELOG.md","source_code_uri":"https://github.com/standardrb/standard","rubygems_mfa_required":"true"},"number":"1.32.0","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.6.0","prerelease":false,"licenses":[],"requirements":[],"sha":"0de1fa34f83e080bdc5a3c58a60a16aa0bbadc97f00f70c7ea274141c165e7c3","spec_sha":"f7f8b0385d132dd32dd880340bc5e9f286c89099fdadbd29f47034099e64f76d"},{"authors":"Justin
+        Searls","built_at":"2023-10-10T00:00:00.000Z","created_at":"2023-10-10T19:06:35.854Z","description":null,"downloads_count":392946,"metadata":{"homepage_uri":"https://github.com/standardrb/standard","changelog_uri":"https://github.com/standardrb/standard/blob/main/CHANGELOG.md","source_code_uri":"https://github.com/standardrb/standard","rubygems_mfa_required":"true"},"number":"1.31.2","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.6.0","prerelease":false,"licenses":[],"requirements":[],"sha":"71dc00f5ea3c165bad3c45721f41aa76a159b1e361fd4a5beb7f00d9efcb6560","spec_sha":"70b9625283fedd334e325590ca1a99727d3dee31acb59e47f42d7191e89e1ae4"},{"authors":"Justin
+        Searls","built_at":"2023-09-08T00:00:00.000Z","created_at":"2023-09-08T17:02:42.853Z","description":null,"downloads_count":530026,"metadata":{"homepage_uri":"https://github.com/standardrb/standard","changelog_uri":"https://github.com/standardrb/standard/blob/main/CHANGELOG.md","source_code_uri":"https://github.com/standardrb/standard","rubygems_mfa_required":"true"},"number":"1.31.1","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.6.0","prerelease":false,"licenses":[],"requirements":[],"sha":"ab9b95aae927e3ab588d4d68344c3b2a22269ef0e0fe74dfbd695efee8564f7b","spec_sha":null},{"authors":"Justin
+        Searls","built_at":"2023-08-19T00:00:00.000Z","created_at":"2023-08-19T21:18:16.370Z","description":null,"downloads_count":241176,"metadata":{"homepage_uri":"https://github.com/standardrb/standard","changelog_uri":"https://github.com/standardrb/standard/blob/main/CHANGELOG.md","source_code_uri":"https://github.com/standardrb/standard","rubygems_mfa_required":"true"},"number":"1.31.0","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.6.0","prerelease":false,"licenses":[],"requirements":[],"sha":"13b7c66bf93db910919835a38e346801550837a9700c5f753b04bf91f004896b","spec_sha":"e09efefac0cd59e48a76aa976082f0b0ec244786a6197e583c31010776522b66"},{"authors":"Justin
+        Searls","built_at":"2023-07-07T00:00:00.000Z","created_at":"2023-07-07T14:09:10.032Z","description":null,"downloads_count":407150,"metadata":{"homepage_uri":"https://github.com/standardrb/standard","changelog_uri":"https://github.com/standardrb/standard/blob/main/CHANGELOG.md","source_code_uri":"https://github.com/standardrb/standard","rubygems_mfa_required":"true"},"number":"1.30.1","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.6.0","prerelease":false,"licenses":[],"requirements":[],"sha":"dd4378691541af8a416bdf78afa99b7cf0186833291bdffd16745af959f1c834","spec_sha":"7625aac80c89ba8d6c09a5dc713ff02f4a24ed01ca825736cf07560b30da2e83"},{"authors":"Justin
+        Searls","built_at":"2023-07-07T00:00:00.000Z","created_at":"2023-07-07T13:53:49.647Z","description":null,"downloads_count":679,"metadata":{"homepage_uri":"https://github.com/standardrb/standard","changelog_uri":"https://github.com/standardrb/standard/blob/main/CHANGELOG.md","source_code_uri":"https://github.com/standardrb/standard","rubygems_mfa_required":"true"},"number":"1.30.0","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.6.0","prerelease":false,"licenses":[],"requirements":[],"sha":"ff3a09a68a05d2eb515a9c49c7a769df132aab26ee74b145813790e90f8faa7b","spec_sha":"f15a53130f60a2a214bc84be430c5b1ba0d5993db1bec44a35ead77b3bc9edad"},{"authors":"Justin
+        Searls","built_at":"2023-06-02T00:00:00.000Z","created_at":"2023-06-02T18:11:41.235Z","description":null,"downloads_count":436081,"metadata":{"homepage_uri":"https://github.com/standardrb/standard","changelog_uri":"https://github.com/standardrb/standard/blob/main/CHANGELOG.md","source_code_uri":"https://github.com/standardrb/standard","rubygems_mfa_required":"true"},"number":"1.29.0","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.6.0","prerelease":false,"licenses":[],"requirements":[],"sha":"155b3629c9e8fb2c4b66a3fb49f0c80da25f8aef23e234cd41c8fefe6fe37ebc","spec_sha":"89e7d4a3547bbf550a65800f5a1dee3686b8c736ac82fa5be37d4aa942959b7d"},{"authors":"Justin
+        Searls","built_at":"2023-05-31T00:00:00.000Z","created_at":"2023-05-31T13:01:42.302Z","description":null,"downloads_count":355243,"metadata":{"homepage_uri":"https://github.com/standardrb/standard","changelog_uri":"https://github.com/standardrb/standard/blob/main/CHANGELOG.md","source_code_uri":"https://github.com/standardrb/standard","rubygems_mfa_required":"true"},"number":"1.28.5","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.6.0","prerelease":false,"licenses":[],"requirements":[],"sha":"6ac5addaa644e73ec65cd5ecd633ad123bdc4dc42420223b5b46e36a6e3e7ce1","spec_sha":"23e31cdd86ba23f09323b756e39db0b9da6c73ab52d06eee0bde2e376486ba0c"},{"authors":"Justin
+        Searls","built_at":"2023-05-26T00:00:00.000Z","created_at":"2023-05-26T20:43:05.947Z","description":null,"downloads_count":38595,"metadata":{"homepage_uri":"https://github.com/standardrb/standard","changelog_uri":"https://github.com/standardrb/standard/blob/main/CHANGELOG.md","source_code_uri":"https://github.com/standardrb/standard","rubygems_mfa_required":"true"},"number":"1.28.4","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.6.0","prerelease":false,"licenses":[],"requirements":[],"sha":"0e8a36c9bc9aec5328b3ade2da1973f9e79edff1964f1ba4d2e9adcf91c4ea14","spec_sha":"89400c166284e0dc81ca2a3a3395ca7b95613ef55485924b1975cbca237b34a9"},{"authors":"Justin
+        Searls","built_at":"2023-05-24T00:00:00.000Z","created_at":"2023-05-24T17:47:40.493Z","description":null,"downloads_count":18765,"metadata":{"homepage_uri":"https://github.com/standardrb/standard","changelog_uri":"https://github.com/standardrb/standard/blob/main/CHANGELOG.md","source_code_uri":"https://github.com/standardrb/standard","rubygems_mfa_required":"true"},"number":"1.28.3","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.6.0","prerelease":false,"licenses":[],"requirements":[],"sha":"27d3b0032335b59c49406228cb0060db7574f06445052a48cba162aacd6922f1","spec_sha":"f5d0ff838a390c6e7c80153509b11447e920b08b266c84087cd0a93361f83f2b"},{"authors":"Justin
+        Searls","built_at":"2023-05-01T00:00:00.000Z","created_at":"2023-05-01T17:51:08.838Z","description":null,"downloads_count":396879,"metadata":{"homepage_uri":"https://github.com/standardrb/standard","changelog_uri":"https://github.com/standardrb/standard/blob/main/CHANGELOG.md","source_code_uri":"https://github.com/standardrb/standard","rubygems_mfa_required":"true"},"number":"1.28.2","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.6.0","prerelease":false,"licenses":[],"requirements":[],"sha":"cd8d23544134c4fee9cf68047596bc1931ea0fe94b3dc8750b40ec453a0a5c6f","spec_sha":"726251dcf1151420f43f09003a868f2b0f7192121e819046d26c7710fe484cc1"},{"authors":"Justin
+        Searls","built_at":"2023-05-01T00:00:00.000Z","created_at":"2023-05-01T14:22:10.665Z","description":null,"downloads_count":2528,"metadata":{"homepage_uri":"https://github.com/standardrb/standard","changelog_uri":"https://github.com/standardrb/standard/blob/main/CHANGELOG.md","source_code_uri":"https://github.com/standardrb/standard","rubygems_mfa_required":"true"},"number":"1.28.1","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.6.0","prerelease":false,"licenses":[],"requirements":[],"sha":"56d14eba89e11c87af453c9c46ef222b9f5aca661f7174c6d3c5e98e622b73ae","spec_sha":"ceb787613b7583f71505a13785d694d7741d4c8efb118ef16f7b39ba9a48f703"},{"authors":"Justin
+        Searls","built_at":"2023-04-22T00:00:00.000Z","created_at":"2023-04-22T14:06:43.665Z","description":null,"downloads_count":64192,"metadata":{"homepage_uri":"https://github.com/standardrb/standard","changelog_uri":"https://github.com/standardrb/standard/blob/main/CHANGELOG.md","source_code_uri":"https://github.com/standardrb/standard","rubygems_mfa_required":"true"},"number":"1.28.0","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.6.0","prerelease":false,"licenses":[],"requirements":[],"sha":"e6e94756951d997dc389ae7527ad5d62284132dfe3b005322efb0dda0cd1b43e","spec_sha":"9122add8e410420817923b4d80c8a36717e486a5aadbdd1784a876c09d7e6f27"},{"authors":"Justin
+        Searls","built_at":"2023-04-19T00:00:00.000Z","created_at":"2023-04-19T00:23:18.393Z","description":null,"downloads_count":35103,"metadata":{"homepage_uri":"https://github.com/testdouble/standard","changelog_uri":"https://github.com/testdouble/standard/blob/main/CHANGELOG.md","source_code_uri":"https://github.com/testdouble/standard","rubygems_mfa_required":"true"},"number":"1.27.0","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.6.0","prerelease":false,"licenses":[],"requirements":[],"sha":"c466827258719c2478c9ffba731ebc2051114fcdfd203da74b781503ab5c01ac","spec_sha":"acdae91a0123eaa2394c9abcb19ff7c7e1245bdfc4d4c9fc61750e5523767f6f"},{"authors":"Justin
+        Searls","built_at":"2023-04-02T00:00:00.000Z","created_at":"2023-04-02T12:49:57.656Z","description":null,"downloads_count":300622,"metadata":{"rubygems_mfa_required":"true"},"number":"1.26.0","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.6.0","prerelease":false,"licenses":[],"requirements":[],"sha":"7408eb7a3c60624dd93ec5742a1309b86f69d355e3cc3454ad76d64e73e9f83e","spec_sha":"a1cec2b568fac7db26082786c50749a61a9dcf5070031d03011cef1b21ba1990"},{"authors":"Justin
+        Searls","built_at":"2023-04-01T00:00:00.000Z","created_at":"2023-04-01T12:12:41.178Z","description":null,"downloads_count":43713,"metadata":{"rubygems_mfa_required":"true"},"number":"1.25.5","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.6.0","prerelease":false,"licenses":[],"requirements":[],"sha":"ec49bba4bd79bbbd047f1f9f9f42289153179d3fe8c61a61d3d0b0d26b256610","spec_sha":"d6b39a307a882c7ab5f29a5a9302bf919772c32a8908378181ab31bdf4a37221"},{"authors":"Justin
+        Searls","built_at":"2023-04-01T00:00:00.000Z","created_at":"2023-04-01T11:31:39.600Z","description":null,"downloads_count":539,"metadata":{"rubygems_mfa_required":"true"},"number":"1.25.4","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.6.0","prerelease":false,"licenses":[],"requirements":[],"sha":"e46f34bc393a5fea418be0131ab8c893d1d2f1534fdc68411526762983e3a0de","spec_sha":"8044273389f8ad18ee3479347bd97be6f56f6467d99b8a462c5a3f06ab187c3b"},{"authors":"Justin
+        Searls","built_at":"2023-03-20T00:00:00.000Z","created_at":"2023-03-20T19:28:42.797Z","description":null,"downloads_count":134208,"metadata":{"rubygems_mfa_required":"true"},"number":"1.25.3","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.6.0","prerelease":false,"licenses":[],"requirements":[],"sha":"b231682da42e09d7aed5268db8652db1add284c0ca729941a0a6e7109ac71a9f","spec_sha":"1d968404ae26eec8fd2b2861e491ea3cf122d422919deff363738a18e5a12cd6"},{"authors":"Justin
+        Searls","built_at":"2023-03-19T00:00:00.000Z","created_at":"2023-03-19T18:02:05.475Z","description":null,"downloads_count":16920,"metadata":{},"number":"1.25.2","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.6.0","prerelease":false,"licenses":[],"requirements":[],"sha":"15a8a9e30c05be27ad03064bca747a3048bbe725d7bbb765c36497d8f96e4f5b","spec_sha":"aa644ed9ff27766aa1cc1548309456d23f1475f0db3de13211bfbb8f4721877b"},{"authors":"Justin
+        Searls","built_at":"2023-03-18T00:00:00.000Z","created_at":"2023-03-18T22:00:08.605Z","description":null,"downloads_count":4723,"metadata":{},"number":"1.25.1","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.6.0","prerelease":false,"licenses":[],"requirements":[],"sha":"eabb6498055eb8d0e653ede57f037d0913a06927525f50dae30b0d8887c90a27","spec_sha":"0c95420fbfbd81ecb4c5d28ee181267446faddbf86274df1faee3501436bad45"},{"authors":"Justin
+        Searls","built_at":"2023-03-16T00:00:00.000Z","created_at":"2023-03-16T10:53:42.009Z","description":null,"downloads_count":100478,"metadata":{},"number":"1.25.0","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.6.0","prerelease":false,"licenses":[],"requirements":[],"sha":"4a269e869d552801b655fd16c9e7b2fd61405a66055fe8211a7d61f428943c58","spec_sha":"f537f9cc9c547a16e7a7086c799b85d60c9d922e942641085bb361b2a0f0ce62"},{"authors":"Justin
+        Searls","built_at":"2023-02-11T00:00:00.000Z","created_at":"2023-02-11T19:28:06.049Z","description":null,"downloads_count":431628,"metadata":{},"number":"1.24.3","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.6.0","prerelease":false,"licenses":[],"requirements":[],"sha":"e2a8b85a2254a96acac4d0073e8095ee4c3c67409e0195f4057722b6935df327","spec_sha":"46d7bcb7b3408d8b39b26d4180bf165a5acdd9de7affdb215acfada1fa84dede"},{"authors":"Justin
+        Searls","built_at":"2023-02-10T00:00:00.000Z","created_at":"2023-02-10T16:31:13.013Z","description":null,"downloads_count":9354,"metadata":{},"number":"1.24.2","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.6.0","prerelease":false,"licenses":[],"requirements":[],"sha":"710544393f1abeee6f1f3fb378f74c39e54259b9466a9961c5569c8b0fada208","spec_sha":"0871e4167dc988ddab0e0e004f49cd60b7e9351f04215730014516afb673aed1"},{"authors":"Justin
+        Searls","built_at":"2023-02-10T00:00:00.000Z","created_at":"2023-02-10T15:42:11.604Z","description":null,"downloads_count":747,"metadata":{},"number":"1.24.1","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.6.0","prerelease":false,"licenses":[],"requirements":[],"sha":"865b8221374dbd6d67ae57957715510076213ca0cab6e4a7232212e3b002bfe0","spec_sha":"bcc217ea43cbce8cbd336b4536a8ea009e8cf7fff461cfe0fb4e15e3ddff5b7f"},{"authors":"Justin
+        Searls","built_at":"2023-02-09T00:00:00.000Z","created_at":"2023-02-09T17:09:14.524Z","description":null,"downloads_count":7163,"metadata":{},"number":"1.24.0","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.6.0","prerelease":false,"licenses":[],"requirements":[],"sha":"90c376e32dab19b30207cac025017449a6bbdfb6d7b47c9a10eb0d144447ad5b","spec_sha":"1559e73bfe13b0206f925dd7a190cf06c44dc62794dbae09f7b64d710ddafa8a"},{"authors":"Justin
+        Searls","built_at":"2023-02-06T00:00:00.000Z","created_at":"2023-02-06T22:06:33.621Z","description":null,"downloads_count":102935,"metadata":{},"number":"1.23.0","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.6.0","prerelease":false,"licenses":[],"requirements":[],"sha":"88ed0437372bbcd7156647ceaf76aecdaebdcaa3ebdb331319c8b886cc9aee5d","spec_sha":"71075efeced5d4d1ce44bd644e04e1691c46000696646cccf31c65e20cd8e1c0"},{"authors":"Justin
+        Searls","built_at":"2023-01-19T00:00:00.000Z","created_at":"2023-01-19T02:08:35.294Z","description":null,"downloads_count":195401,"metadata":{},"number":"1.22.1","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.6.0","prerelease":false,"licenses":[],"requirements":[],"sha":"8a2807afbef67ad9e9c0794738cbb4829c2e680dc6fc65661ee4cc5ed2475136","spec_sha":"2880079510128296627b6b4df6e597f5e79a04cfa8d698e13687e139d23364b5"},{"authors":"Justin
+        Searls","built_at":"2023-01-14T00:00:00.000Z","created_at":"2023-01-14T18:32:59.760Z","description":null,"downloads_count":55325,"metadata":{},"number":"1.22.0","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.6.0","prerelease":false,"licenses":[],"requirements":[],"sha":"7885a78699ffb8b74a371eda46402aa688c71c0626e9e90cadc1ffc4bbfc02df","spec_sha":"d9f1e98fb2183cf89c72e31da7d1d76cba372be9998d3b0e82303cff76b5c3b3"},{"authors":"Justin
+        Searls","built_at":"2023-01-04T00:00:00.000Z","created_at":"2023-01-04T15:28:27.212Z","description":null,"downloads_count":273981,"metadata":{},"number":"1.21.1","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.6.0","prerelease":false,"licenses":[],"requirements":[],"sha":"885e5ad4620f0c3ec48122945a32af29d05e9b1b1cd9b0d95be2bbeee7ad9af7","spec_sha":"5402d9e020c0d0e99a985c4a738879cf26bd098cb6cb230afc40010eb9794e7a"},{"authors":"Justin
+        Searls","built_at":"2023-01-03T00:00:00.000Z","created_at":"2023-01-03T17:29:50.892Z","description":null,"downloads_count":7620,"metadata":{},"number":"1.21.0","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.6.0","prerelease":false,"licenses":[],"requirements":[],"sha":"7d40b62ecd81f009ee04171671a6f4e18c57f8dc759b55592bb895081e0d140a","spec_sha":"760fbbc0448db9ce58a5797e98742bdedd613a707917e093dfcdf69d6fa47b23"},{"authors":"Justin
+        Searls","built_at":"2022-12-20T00:00:00.000Z","created_at":"2022-12-20T21:07:06.059Z","description":null,"downloads_count":85774,"metadata":{},"number":"1.20.0","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.6.0","prerelease":false,"licenses":[],"requirements":[],"sha":"35ca609cf963d954fcc6b20e4c9c24c88bd74f100638627efb0b6e0b8d9f1e6a","spec_sha":"3e1de5adc9d1cbe1f05e5cc52dba460b043472fa64967f63c53b937f0b527c78"},{"authors":"Justin
+        Searls","built_at":"2022-12-05T00:00:00.000Z","created_at":"2022-12-05T13:31:21.068Z","description":null,"downloads_count":536228,"metadata":{},"number":"1.19.1","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.6.0","prerelease":false,"licenses":[],"requirements":[],"sha":"f17be50174353d3ade2c0a5860087b52eb5f2738b02a1fc1eb1bda3a50910d78","spec_sha":"501434ddbf375ef9f00fa7b4b919218ac3f7d8454d0350ac0206e2c15f1e7acf"},{"authors":"Justin
+        Searls","built_at":"2022-12-03T00:00:00.000Z","created_at":"2022-12-03T19:09:30.207Z","description":null,"downloads_count":9548,"metadata":{},"number":"1.19.0","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.6.0","prerelease":false,"licenses":[],"requirements":[],"sha":"0416b0489d1c0929054de829c1f1b65e8ef9adfe1790bdf7184ca910e5a91132","spec_sha":"1534754393fd0fbbbf34484a15c60cca573eeac2940f7ec5b957b5ac7ad318d9"},{"authors":"Justin
+        Searls","built_at":"2022-11-21T00:00:00.000Z","created_at":"2022-11-21T18:26:14.008Z","description":null,"downloads_count":77723,"metadata":{},"number":"1.18.1","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.6.0","prerelease":false,"licenses":[],"requirements":[],"sha":"e2730dba6eaaf3908673baf25951eb46082459ee1772c7fed9c38e86053e16c0","spec_sha":"f3df4fa1672f1ab9db6b4d065c378823e14d80ce51f2ce029a801f6e73a3ae3b"},{"authors":"Justin
+        Searls","built_at":"2022-11-14T00:00:00.000Z","created_at":"2022-11-14T20:19:56.418Z","description":null,"downloads_count":61659,"metadata":{},"number":"1.18.0","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.6.0","prerelease":false,"licenses":[],"requirements":[],"sha":"f663bf2ad1c15acfca4f2938ccb856ac3cdb1db25e09130fd72fde6d775ccbfe","spec_sha":"0e61e82573098a9e9dbc60c7baa1dd71ff4b65b6d4dbb18ace8a5e38dae455a1"},{"authors":"Justin
+        Searls","built_at":"2022-11-10T00:00:00.000Z","created_at":"2022-11-10T20:49:26.279Z","description":null,"downloads_count":46626,"metadata":{},"number":"1.17.0","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.6.0","prerelease":false,"licenses":[],"requirements":[],"sha":"f1de355186f964d57091027b26532e77c366ec7e6bdf5e699dc86873c7512945","spec_sha":"b36bb53d9df509b4b071f11aac37f2038e36a52f99edd613956456f693dfaa70"},{"authors":"Justin
+        Searls","built_at":"2022-08-30T00:00:00.000Z","created_at":"2022-08-30T18:40:26.988Z","description":null,"downloads_count":532022,"metadata":{},"number":"1.16.1","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.6.0","prerelease":false,"licenses":[],"requirements":[],"sha":"dc07f8a02815502bb385085370e7eeccdec0769e1d3148d6bfd6c0b3355ecc59","spec_sha":"d56814744bd38042dad9ca4417873bb3a0060407dd8d784aeca7e5805d5d5542"},{"authors":"Justin
+        Searls","built_at":"2022-08-15T00:00:00.000Z","created_at":"2022-08-15T14:49:31.555Z","description":null,"downloads_count":136763,"metadata":{},"number":"1.16.0","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.6.0","prerelease":false,"licenses":[],"requirements":[],"sha":"95ca4920a185c783b338974c7e8ec4af23177cfa900d37269f7c785ffab35ae5","spec_sha":"3f1f44aef3a7ff29d63bea2b89ae92fa9db34273ddf00dcc39fdf14ddd595f0d"},{"authors":"Justin
+        Searls","built_at":"2022-08-09T00:00:00.000Z","created_at":"2022-08-09T20:55:36.800Z","description":null,"downloads_count":33598,"metadata":{},"number":"1.15.0","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.6.0","prerelease":false,"licenses":[],"requirements":[],"sha":"72629e3e7b50765a913fefdd0c11ec5788e31e88b1cc5c402ff5ac76d0c0e889","spec_sha":"36ef02389012a02092bc954f64d4082b2dcbbcae211386e712e1d610264b6b04"},{"authors":"Justin
+        Searls","built_at":"2022-07-25T00:00:00.000Z","created_at":"2022-07-25T18:27:16.151Z","description":null,"downloads_count":96149,"metadata":{},"number":"1.14.0","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.6.0","prerelease":false,"licenses":[],"requirements":[],"sha":"a8ec1d5e4e2b79266c1faff72312cb82d8583c942d6bebb76a54fab75286020d","spec_sha":"8eb27b2725edacaf5cbc2ab81d94b95b0eb7fed14362aa611e7936e6d27b2b4d"},{"authors":"Justin
+        Searls","built_at":"2022-07-20T00:00:00.000Z","created_at":"2022-07-20T18:38:41.431Z","description":null,"downloads_count":143846,"metadata":{},"number":"1.13.0","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.6.0","prerelease":false,"licenses":[],"requirements":[],"sha":"7bb66eb59caeba35df6e1099a061a11be8d35dbfd8aae7063f043080a4c5488b","spec_sha":"9e485cca2f9e861d1430706cd7980a0113b8c44acce21cfe329506235d663ae3"},{"authors":"Justin
+        Searls","built_at":"2022-05-17T00:00:00.000Z","created_at":"2022-05-17T12:51:26.766Z","description":null,"downloads_count":767831,"metadata":{},"number":"1.12.1","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.6.0","prerelease":false,"licenses":[],"requirements":[],"sha":"4f32911a97c564e6b67b1fcc66865749893c385614e932339a6128cf404d36e1","spec_sha":"0c35578d904f76721d6b5056134d8ac1aec2f3c5ee63cf0544615f267690adcc"},{"authors":"Justin
+        Searls","built_at":"2022-05-10T00:00:00.000Z","created_at":"2022-05-10T15:37:48.016Z","description":null,"downloads_count":50334,"metadata":{},"number":"1.12.0","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.6.0","prerelease":false,"licenses":[],"requirements":[],"sha":"5871176a170c3e70f88b9f34e18e05781f9969d6db653d425cd93f63e7a03efd","spec_sha":"bd278987862527e2b981bdbfdfd8020a899f1a56c2865cf415b0044d3f6b3f72"},{"authors":"Justin
+        Searls","built_at":"2022-04-25T00:00:00.000Z","created_at":"2022-04-25T21:08:07.521Z","description":null,"downloads_count":102602,"metadata":{},"number":"1.11.0","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.6.0","prerelease":false,"licenses":[],"requirements":[],"sha":"9244ada374c5f79548e12a318d34d92d70ac7fd2c53a2a53adf85b601e579c49","spec_sha":"87429fe6b9c51a6105f2ec5b3227f2aaa4452f16bf981f52ab8be34d1d42ffc6"},{"authors":"Justin
+        Searls","built_at":"2022-04-11T00:00:00.000Z","created_at":"2022-04-11T21:29:13.283Z","description":null,"downloads_count":108825,"metadata":{},"number":"1.10.0","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.6.0","prerelease":false,"licenses":[],"requirements":[],"sha":"878c78756725d94570b43962265a5849ce95e0c491fa684f30c4153f61358872","spec_sha":"2abeb407c0edb9482409994f16a7b542174cd264ba54b18af0878598f5c93533"},{"authors":"Justin
+        Searls","built_at":"2022-03-28T00:00:00.000Z","created_at":"2022-03-28T18:10:22.531Z","description":null,"downloads_count":128509,"metadata":{},"number":"1.9.1","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.6.0","prerelease":false,"licenses":[],"requirements":[],"sha":"3d2d7601a72b78691e4516f697c929a4c0582cfccc2833c7bd7fd8ccf03bae7f","spec_sha":"00702a948fb832626a693f2a2cfc98e8ab78ca0e5e54b520e5d5e96e9315fd85"},{"authors":"Justin
+        Searls","built_at":"2022-03-23T00:00:00.000Z","created_at":"2022-03-23T23:50:04.406Z","description":null,"downloads_count":56183,"metadata":{},"number":"1.9.0","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.6.0","prerelease":false,"licenses":[],"requirements":[],"sha":"6a5ac30e98bd39e35a67d7c5250fd78b0424de757cb49f24503f3ff4f72466a7","spec_sha":"25cf13140bfb58a1e41dfe86df6b2c1c5c2c83bd75206e71cd574f68c5222ba2"},{"authors":"Justin
+        Searls","built_at":"2022-03-16T00:00:00.000Z","created_at":"2022-03-16T20:57:36.690Z","description":null,"downloads_count":57789,"metadata":{},"number":"1.8.0","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.6.0","prerelease":false,"licenses":[],"requirements":[],"sha":"38dcf70589ec8b362682b3c069b0f4a23caf3579d41127822648afde1819a0cf","spec_sha":"95567b10e2420d93aa5fede14c238f2942a9ae0560207fd17d9eacbc42bab6b2"},{"authors":"Justin
+        Searls","built_at":"2022-03-11T00:00:00.000Z","created_at":"2022-03-11T19:13:55.033Z","description":null,"downloads_count":68481,"metadata":{},"number":"1.7.3","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.6.0","prerelease":false,"licenses":[],"requirements":[],"sha":"1579227e3b4510b6ca84b9378327a5c1f05a1a2379e5d16736e4ba2fdfd9c6d9","spec_sha":"146672354e2b1db80c6d5066030ff9650939d43eb3f13cfa3b9c80d88056150a"},{"authors":"Justin
+        Searls","built_at":"2022-02-14T00:00:00.000Z","created_at":"2022-02-14T15:48:33.813Z","description":null,"downloads_count":184486,"metadata":{},"number":"1.7.2","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.6.0","prerelease":false,"licenses":[],"requirements":[],"sha":"037232068cff6fee1b9e490cbcac3c5c877e5e537bdc651c1c240c2ba3ce0572","spec_sha":"b14075519e9ee6b0952f353322b4b5b09666864621bbc1fb989f0a007f20e60a"},{"authors":"Justin
+        Searls","built_at":"2022-02-09T00:00:00.000Z","created_at":"2022-02-09T19:40:51.410Z","description":null,"downloads_count":43781,"metadata":{},"number":"1.7.1","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.6.0","prerelease":false,"licenses":[],"requirements":[],"sha":"6cb1cd0b62af241a6698d09b835aa5fd23919da0f6c2b1f87c97600abe87a561","spec_sha":"c6c1989802cc37fe7c82b29e8a840636d37e46bb4345530cba828520d912cc49"},{"authors":"Justin
+        Searls","built_at":"2022-01-18T00:00:00.000Z","created_at":"2022-01-18T22:57:46.203Z","description":null,"downloads_count":614070,"metadata":{},"number":"1.7.0","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.5.0","prerelease":false,"licenses":[],"requirements":[],"sha":"a49705e40d7aff13ed0f8133dd7a8b36c79a54cd769d2897431b93395c2758c4","spec_sha":"74040d8783802115ba6b433de4f5dc08304a6ce54f22cd4ddce8f4aadb3496c3"},{"authors":"Justin
+        Searls","built_at":"2022-01-05T00:00:00.000Z","created_at":"2022-01-05T22:08:47.795Z","description":null,"downloads_count":316642,"metadata":{},"number":"1.6.0","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.5.0","prerelease":false,"licenses":[],"requirements":[],"sha":"3387d643ea9f859cf5280ae02ff543f90e84facc271bc738c0c513d5ea5b03f3","spec_sha":"a8fb13366770f20077ec6a84c58e0f2e8404441f25d1b88d291c3a4be34c066f"},{"authors":"Justin
+        Searls","built_at":"2021-12-02T00:00:00.000Z","created_at":"2021-12-02T01:24:43.783Z","description":null,"downloads_count":223562,"metadata":{},"number":"1.5.0","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.5.0","prerelease":false,"licenses":[],"requirements":[],"sha":"fdc706c3fbca06245964c6d828baffb6d372d8d213c6d4f38def87916ebdb489","spec_sha":"97c4407f9aeee52fa903343c5077d6f939e9901ae67e11f96cf0f7a08245a886"},{"authors":"Justin
+        Searls","built_at":"2021-10-29T00:00:00.000Z","created_at":"2021-10-29T00:42:27.929Z","description":null,"downloads_count":230650,"metadata":{},"number":"1.4.0","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.5.0","prerelease":false,"licenses":[],"requirements":[],"sha":"c23a38c4221da8152d9c7e7e62a2637a746e68432d0e04281e966d5b59e1c315","spec_sha":"90ddeb90df79a04c082c2adb3b87d3ae617e1ccec9a72c1654c256238f509aa2"},{"authors":"Justin
+        Searls","built_at":"2021-08-27T00:00:00.000Z","created_at":"2021-08-27T21:05:07.502Z","description":null,"downloads_count":358793,"metadata":{},"number":"1.3.0","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.5.0","prerelease":false,"licenses":[],"requirements":[],"sha":"f14b75c438cdd57b973d86a7412e0ad339228e6825650dbe1362060f6e6659dc","spec_sha":"319a083ef1a3fbfad91eb2426bbef8623a991e498a4d17e44149d24bf6f1252e"},{"authors":"Justin
+        Searls","built_at":"2021-08-23T00:00:00.000Z","created_at":"2021-08-23T21:23:37.126Z","description":null,"downloads_count":22599,"metadata":{},"number":"1.2.0","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.5.0","prerelease":false,"licenses":[],"requirements":[],"sha":"66bb6f46251e71a41d1484e04ea4a7a73c2f954eda6add194b4d418615db83aa","spec_sha":"883142c7fb33dc877f8b3436298e26f03f2bc0411a014a2e3aecd9b5dbdcefbf"},{"authors":"Justin
+        Searls","built_at":"2021-07-28T00:00:00.000Z","created_at":"2021-07-28T14:13:04.686Z","description":null,"downloads_count":2549820,"metadata":{},"number":"1.1.7","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.5.0","prerelease":false,"licenses":[],"requirements":[],"sha":"4af1d8db70d2cecdf600fc1b23f017fe6e98abd7808e2b5a155bb09512217a0c","spec_sha":"268ab27de9d2d0994bef3cae0d95c2fbe2d1e628262912584b2c214ece15d70a"},{"authors":"Justin
+        Searls","built_at":"2021-07-27T00:00:00.000Z","created_at":"2021-07-27T22:48:25.220Z","description":null,"downloads_count":4345,"metadata":{},"number":"1.1.6","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.5.0","prerelease":false,"licenses":[],"requirements":[],"sha":"3154049bcf907d489279af0f5c9342ece51ecf4680ca2ea4780b965c65ddd29f","spec_sha":"fa2c24576cf197ea1c70e3413e7867d576c808e2eba0e692a6f35c50a8f0ae83"},{"authors":"Justin
+        Searls","built_at":"2021-07-08T00:00:00.000Z","created_at":"2021-07-08T19:40:50.443Z","description":null,"downloads_count":95252,"metadata":{},"number":"1.1.5","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.5.0","prerelease":false,"licenses":[],"requirements":[],"sha":"c6265856533c2906a748607473822d8657118487103c6ca3e942fb61141639cc","spec_sha":"6d7cd6918faf6d71c614a3699a39a1aff01e6a362d7dbeca1be86e6656154995"},{"authors":"Justin
+        Searls","built_at":"2021-07-02T00:00:00.000Z","created_at":"2021-07-02T18:25:32.351Z","description":null,"downloads_count":25017,"metadata":{},"number":"1.1.4","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.5.0","prerelease":false,"licenses":[],"requirements":[],"sha":"dbbe1d9974bf63b65beb59dfab783a424705453830e585031ece1c972f4f9c1c","spec_sha":"9ea0fae040e57f3476677a2fbc9e471176f5eb50492679f2c8d0b33ac50f3bac"},{"authors":"Justin
+        Searls","built_at":"2021-06-30T00:00:00.000Z","created_at":"2021-06-30T14:05:13.393Z","description":null,"downloads_count":14079,"metadata":{},"number":"1.1.3","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.5.0","prerelease":false,"licenses":[],"requirements":[],"sha":"3b000c275f776019198fe303ec5a56c73f58d05d5dd5cacefba0a2d9e33214c0","spec_sha":"fe670c7e507196e23702c3231fb73178fb404175772942c9a4e37043383d1dc7"},{"authors":"Justin
+        Searls","built_at":"2021-06-25T00:00:00.000Z","created_at":"2021-06-25T13:08:08.520Z","description":null,"downloads_count":39330,"metadata":{},"number":"1.1.2","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.5.0","prerelease":false,"licenses":[],"requirements":[],"sha":"dcee0fa39b493f8331451001c068922fe06570a891791b3733dc49125bb6cd9d","spec_sha":"0cd0700597048bf86890c2b57db85fb2d1d3f13b71a7ecd9fa414cbbb9293ba5"},{"authors":"Justin
+        Searls","built_at":"2021-05-05T00:00:00.000Z","created_at":"2021-05-05T13:01:34.649Z","description":null,"downloads_count":288686,"metadata":{},"number":"1.1.1","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.5.0","prerelease":false,"licenses":[],"requirements":[],"sha":"86d26e1408c01714775efb3249c7f47b509c7dd98bb69fb54ab6037b03eed1d5","spec_sha":"567df5bdc7bc4dcfde5dcc595b5c568b773329574c28fba59cf058d8b640e61a"},{"authors":"Justin
+        Searls","built_at":"2021-05-04T00:00:00.000Z","created_at":"2021-05-04T13:43:47.170Z","description":null,"downloads_count":17356,"metadata":{},"number":"1.1.0","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.5.0","prerelease":false,"licenses":[],"requirements":[],"sha":"6594d3fa89354ffc5c2d7e34b7356822bb9d3c1d8989743cd36dc030738c81ec","spec_sha":"0a3ecc0878b8df4d513ad79c5ea52e033180a743d70068050adb794a54a94344"},{"authors":"Justin
+        Searls","built_at":"2021-04-14T00:00:00.000Z","created_at":"2021-04-14T15:08:52.323Z","description":null,"downloads_count":229418,"metadata":{},"number":"1.0.5","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.4.0","prerelease":false,"licenses":[],"requirements":[],"sha":"133f66e511234d9c5203023f725b70e10b87e79d4542f934bfdfff26e31a7cd9","spec_sha":"2ac627a40a2a780d9b27d2036a775eb0138867954baf2b683d149d0f72e527de"},{"authors":"Justin
+        Searls","built_at":"2021-03-06T00:00:00.000Z","created_at":"2021-03-06T17:40:05.068Z","description":null,"downloads_count":316233,"metadata":{},"number":"1.0.4","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.4.0","prerelease":false,"licenses":[],"requirements":[],"sha":"e58d0a96af9cf3a7dc5b3c05ddadbd10c2c29dfe49396b1cd351f4ece0f0b999","spec_sha":"74241fe6568682e80bb76753252a7e18ca1e18bed168f4894d82d15e8563e291"},{"authors":"Justin
+        Searls","built_at":"2021-03-06T00:00:00.000Z","created_at":"2021-03-06T01:46:27.161Z","description":null,"downloads_count":2896,"metadata":{},"number":"1.0.3","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.4.0","prerelease":false,"licenses":[],"requirements":[],"sha":"236e80e3c25691a2cbb542554f08bc880f526af4953dbdab0b280426a029a163","spec_sha":"ef3b10490f8f340979cffc07a931d1f9f79dc385af81f17ee80381db9b1c44de"},{"authors":"Justin
+        Searls","built_at":"2021-03-05T00:00:00.000Z","created_at":"2021-03-05T19:52:07.753Z","description":null,"downloads_count":3033,"metadata":{},"number":"1.0.2","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.4.0","prerelease":false,"licenses":[],"requirements":[],"sha":"d152d5110a7501440cf383b98eebea4416f76ee9f1c18fc3972e456fbc099dd8","spec_sha":"96fe2e30beb6317dec72e1549c8c4524ef595702b02dd05998ed02d4b21db3dc"},{"authors":"Justin
+        Searls","built_at":"2021-03-04T00:00:00.000Z","created_at":"2021-03-04T14:49:53.139Z","description":null,"downloads_count":12255,"metadata":{},"number":"1.0.1","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.4.0","prerelease":false,"licenses":[],"requirements":[],"sha":"4e8d853da6f124dc6b63fdd63c5f980bd8a70fd33c223aa44c6372a88a214812","spec_sha":"524e01afe57ae50445355928c8e2d5aeca34eb2e5e2e91629b12d00d3308f434"},{"authors":"Justin
+        Searls","built_at":"2021-03-03T00:00:00.000Z","created_at":"2021-03-03T23:02:12.567Z","description":null,"downloads_count":54194,"metadata":{},"number":"1.0.0","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.4.0","prerelease":false,"licenses":[],"requirements":[],"sha":"10df66e6142ad1991d760bc62bf950c18b0de6588abe64974620ce8f28402ca0","spec_sha":"f25734190bdefe611b73419fd5d29f81fe1929670af4e18647cd7228538a6d81"},{"authors":"Justin
+        Searls","built_at":"2021-02-16T00:00:00.000Z","created_at":"2021-02-16T18:16:36.675Z","description":null,"downloads_count":123582,"metadata":{},"number":"0.13.0","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.4.0","prerelease":false,"licenses":[],"requirements":[],"sha":"d406c24180be8f288832bd7fd5810c98583f515f092ef96a5fccafb1eab59a8c","spec_sha":"540f6cf53ffa4ac244b6cb5213ca204ed5e95bacee083168342714114f965e4c"},{"authors":"Justin
+        Searls","built_at":"2021-01-29T00:00:00.000Z","created_at":"2021-01-29T20:05:23.718Z","description":null,"downloads_count":54241,"metadata":{},"number":"0.12.0","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.4.0","prerelease":false,"licenses":[],"requirements":[],"sha":"e7d17fc85f59bfd662aaee3ba58b6bfc5b6ccb46c47b1d8625454a5cb6713b16","spec_sha":"286b142b01dd7a70c39d5e8acecbcd82742459e317b3e69b6e9684318b02e2c1"},{"authors":"Justin
+        Searls","built_at":"2021-01-06T00:00:00.000Z","created_at":"2021-01-06T14:42:27.287Z","description":null,"downloads_count":394580,"metadata":{},"number":"0.11.0","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.4.0","prerelease":false,"licenses":[],"requirements":[],"sha":"e5520b826da13edd5de848ada71ec5187ac024807b68118fef1c7da614211a74","spec_sha":"db7221323ba93d84fedd3dfe0b5f238c5d429c66c11cca25b47a0d1e5ab307a3"},{"authors":"Justin
+        Searls","built_at":"2020-12-04T00:00:00.000Z","created_at":"2020-12-04T01:45:59.452Z","description":null,"downloads_count":94413,"metadata":{},"number":"0.10.2","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.4.0","prerelease":false,"licenses":[],"requirements":[],"sha":"406013c9f0644aae0e5cd061b5d073606e0c091fc727f5ff359d3d379f5ba937","spec_sha":"9bae29ae014dcac96347aded2fe8bd9802dea1b31108917e292b1fa62552bafa"},{"authors":"Justin
+        Searls","built_at":"2020-11-30T00:00:00.000Z","created_at":"2020-11-30T15:43:47.340Z","description":null,"downloads_count":13243,"metadata":{},"number":"0.10.1","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.4.0","prerelease":false,"licenses":[],"requirements":[],"sha":"0ab0bc52819e794db5a2271794990cf3dbb98eeb2140477a01102a8388820e31","spec_sha":"e483d86320515c832fc002eae30ab219c4a1ea0b2326eac0b33c65caf3231e7f"},{"authors":"Justin
+        Searls","built_at":"2020-11-30T00:00:00.000Z","created_at":"2020-11-30T15:20:06.848Z","description":null,"downloads_count":1783,"metadata":{},"number":"0.10.0","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.4.0","prerelease":false,"licenses":[],"requirements":[],"sha":"bf8cd7ada6b6b58e769933c2a5de5a4d2eb88966639a6111cc0a4d7bec7f496e","spec_sha":"3fe9ad030f8307a3e6a547773d48dc7d00c69c7d1289aa3a9c121bf5272c35a9"},{"authors":"Justin
+        Searls","built_at":"2020-11-06T00:00:00.000Z","created_at":"2020-11-06T16:28:46.217Z","description":null,"downloads_count":70074,"metadata":{},"number":"0.9.0","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.4.0","prerelease":false,"licenses":[],"requirements":[],"sha":"73a1a87b3121ba00d0a5ebbe01484b33a524186ed5301dfedff41854d6a39f3c","spec_sha":"8168606aad453e1387bba9f7a797a7d7ac5b10fb75029db716281592f13bcff3"},{"authors":"Justin
+        Searls","built_at":"2020-10-26T00:00:00.000Z","created_at":"2020-10-26T13:52:04.333Z","description":null,"downloads_count":30504,"metadata":{},"number":"0.8.1","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.4.0","prerelease":false,"licenses":[],"requirements":[],"sha":"f913e47985d5d2b69d112bcd9ce412d57f67b966a3d3b1597861d71194ce78a3","spec_sha":"70f760559aa5cc4930bee8135105fdfa7847a626799bd871cf762518cb1a3fc4"},{"authors":"Justin
+        Searls","built_at":"2020-10-21T00:00:00.000Z","created_at":"2020-10-21T13:11:12.581Z","description":null,"downloads_count":14514,"metadata":{},"number":"0.8","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.4.0","prerelease":false,"licenses":[],"requirements":[],"sha":"b1b08628a786b15fe78cd66fceeda442cfdd323a3cc7c07eef53a9d2077c1f0d","spec_sha":"763bee8094991d67022fff11885bb060d7e6236a62b019a1891d84c2a1ac6ead"},{"authors":"Justin
+        Searls","built_at":"2020-09-25T00:00:00.000Z","created_at":"2020-09-25T14:09:30.576Z","description":null,"downloads_count":91892,"metadata":{},"number":"0.7","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.4.0","prerelease":false,"licenses":[],"requirements":[],"sha":"5c3a7010f861ce9ee82f62e262272edc92c22197ba6d898dd285621349fae4ef","spec_sha":"fb429c23682c3b93776c170f67eda615a095d10bc0dd7e9dc551f37f5b75835c"},{"authors":"Justin
+        Searls","built_at":"2020-09-23T00:00:00.000Z","created_at":"2020-09-23T12:41:01.139Z","description":null,"downloads_count":24618,"metadata":{},"number":"0.6.2","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.4.0","prerelease":false,"licenses":[],"requirements":[],"sha":"90ded6adcdc604bce63f7e225a0acbced9a0c3e971fde9d3ca526530d1f647da","spec_sha":"bbde8b699dd0ae086f3b905ea009544f71a94cf0ab506b0dd0d4db35d5696ab7"},{"authors":"Justin
+        Searls","built_at":"2020-09-17T00:00:00.000Z","created_at":"2020-09-17T14:10:42.863Z","description":null,"downloads_count":36817,"metadata":{},"number":"0.6.1","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.4.0","prerelease":false,"licenses":[],"requirements":[],"sha":"28fd37a18850b748db47300ed5dedabb02821997010e4c8a1628f47625949b4c","spec_sha":"244a7e665f99e8d071a55f81f85404892da68a312fac3b729fc1fab0fe09876e"},{"authors":"Justin
+        Searls","built_at":"2020-09-04T00:00:00.000Z","created_at":"2020-09-04T19:27:27.418Z","description":null,"downloads_count":42527,"metadata":{},"number":"0.6.0","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.4.0","prerelease":false,"licenses":[],"requirements":[],"sha":"382242698a335377e35932ea777e9bbe6a33f1640c737db1534e13bb9f20edcd","spec_sha":"b06b0cccc7a5e3ea4a1e7b1959d2f61d4bfeb2d9126d0728186f60c61d07eac3"},{"authors":"Justin
+        Searls","built_at":"2020-08-26T00:00:00.000Z","created_at":"2020-08-26T13:05:19.822Z","description":null,"downloads_count":32124,"metadata":{},"number":"0.5.2","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.4.0","prerelease":false,"licenses":[],"requirements":[],"sha":"cccc0e7ef91151e7838df60170fa137643f66cbb6a4914b3180344f313e27c05","spec_sha":"b0ad80ecfd9a04b069246d4f9d5e223383713e9528009494bc03d32794f601c0"},{"authors":"Justin
+        Searls","built_at":"2020-08-23T00:00:00.000Z","created_at":"2020-08-23T12:49:18.267Z","description":null,"downloads_count":42143,"metadata":{},"number":"0.5.1","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.4.0","prerelease":false,"licenses":[],"requirements":[],"sha":"c4cc8e27756cebf575a202bd4c1d0ce28f7beaae68d3c969778bb806f4d992ea","spec_sha":"4bfae971d120fcb2e3756e7289d338ab1bfdef4571c8c36d0294b5fd37d339ea"},{"authors":"Justin
+        Searls","built_at":"2020-08-22T00:00:00.000Z","created_at":"2020-08-22T23:14:37.014Z","description":null,"downloads_count":2347,"metadata":{},"number":"0.5.0","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.4.0","prerelease":false,"licenses":[],"requirements":[],"sha":"f6c0379adc2a35801b93b61fcfa2496b8857256f89458ba4d26f5394e95e4310","spec_sha":"4305f9cad2bf63f0375f13d5409188c73e6c4a355ae5fc551d71f9037d815221"},{"authors":"Justin
+        Searls","built_at":"2020-06-05T00:00:00.000Z","created_at":"2020-06-05T01:37:46.263Z","description":null,"downloads_count":454967,"metadata":{},"number":"0.4.7","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.4.0","prerelease":false,"licenses":[],"requirements":[],"sha":"822e5a46b7d450bbd1758f7bbadf3f53c39f52ddb094ae722c03e0159fd75d0c","spec_sha":"e750fe8dbd0d81ef240ad91b4f2de75a01b914907ccec47e4c0a53669f449cc4"},{"authors":"Justin
+        Searls","built_at":"2020-05-25T00:00:00.000Z","created_at":"2020-05-25T02:06:04.116Z","description":null,"downloads_count":81427,"metadata":{},"number":"0.4.6","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.4.0","prerelease":false,"licenses":[],"requirements":[],"sha":"4b876fabb51ea73bc4719d102bf0026e87e328a829ee8c1a92698eacd2f12229","spec_sha":"f02f0afbbaaa560ae4d32ab8efacef8d4834a84636bc4eeaf4b35aaa1c568e16"},{"authors":"Justin
+        Searls","built_at":"2020-05-25T00:00:00.000Z","created_at":"2020-05-25T02:00:15.356Z","description":null,"downloads_count":1635,"metadata":{},"number":"0.4.5","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.4.0","prerelease":false,"licenses":[],"requirements":[],"sha":"1193b0af08497e1b17bebb48eca4f97d05bb1a72de08031772b2d1d9fb1b6dbe","spec_sha":"255a57d7e841871e61a431f9a7b1e35e04df0fead29a8cc61b41ce28ea0147ac"},{"authors":"Justin
+        Searls","built_at":"2020-05-25T00:00:00.000Z","created_at":"2020-05-25T01:57:49.937Z","description":null,"downloads_count":1602,"metadata":{},"number":"0.4.4","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.4.0","prerelease":false,"licenses":[],"requirements":[],"sha":"8fe439f5d7a38f746e0b948e802c798808e5b438c509151f9b2155a1eaeacddf","spec_sha":"f9115c5fe6c125d8642e93caac7d4159bde4c72e7bf4e3b51fe54ba397a9d91b"},{"authors":"Justin
+        Searls","built_at":"2020-05-21T00:00:00.000Z","created_at":"2020-05-21T01:26:19.690Z","description":null,"downloads_count":11431,"metadata":{},"number":"0.4.3","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.4.0","prerelease":false,"licenses":[],"requirements":[],"sha":"e22540d3d073bf659a6370bba14cfa5f1269acb3c4a41eb7bb3714d499ab699e","spec_sha":"6d09ea59e6588287348a9682360fb779cf362c6fb7a67610fc1d554f235d8708"},{"authors":"Justin
+        Searls","built_at":"2020-05-18T00:00:00.000Z","created_at":"2020-05-18T01:55:48.579Z","description":null,"downloads_count":11257,"metadata":{},"number":"0.4.2","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 2.4.0","prerelease":false,"licenses":[],"requirements":[],"sha":"ce5f39b8f9401fad6ab8d12b3518f7b857ef7954e9f964b20c4a7acad247c08e","spec_sha":"893c536554b072ca83259263f5c88156887fabc8799a35324755d0d6c5e07f73"},{"authors":"Justin
+        Searls","built_at":"2020-05-11T00:00:00.000Z","created_at":"2020-05-11T01:51:31.403Z","description":null,"downloads_count":24138,"metadata":{},"number":"0.4.1","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 0","prerelease":false,"licenses":[],"requirements":[],"sha":"82497042c2ed02d18cc87294e05fa69e4b4aa29b2783f4ad5b0bca14e4efa1de","spec_sha":"36e0746247fa1d0dcf25054857a4993be79e369d9c6050b240e3e69ecfd34a09"},{"authors":"Justin
+        Searls","built_at":"2020-05-08T00:00:00.000Z","created_at":"2020-05-08T02:21:36.172Z","description":null,"downloads_count":5193,"metadata":{},"number":"0.4.0","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 0","prerelease":false,"licenses":[],"requirements":[],"sha":"5b2ef575206da8c0849724b3fb034128e32f2c8fcfad0e35ec21c9b26c138d2e","spec_sha":"5b84f78aab64e0fdecaf4f8a43bfdc84e0b9de3fb7bd2aebe69d98ed3593fc34"},{"authors":"Justin
+        Searls","built_at":"2020-05-04T00:00:00.000Z","created_at":"2020-05-04T08:13:54.767Z","description":null,"downloads_count":15172,"metadata":{},"number":"0.3.0","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 0","prerelease":false,"licenses":[],"requirements":[],"sha":"c1f8608eabb99062bec81d68b13c79642a5c1e238c63a32300dc68021c3885c5","spec_sha":"c2601b8dee250edd5dc1115419f74254bfa81b27fcf0c9551c1a9382ef29d608"},{"authors":"Justin
+        Searls","built_at":"2020-04-27T00:00:00.000Z","created_at":"2020-04-27T05:20:11.133Z","description":null,"downloads_count":286367,"metadata":{},"number":"0.2.5","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 0","prerelease":false,"licenses":[],"requirements":[],"sha":"bee5f2de10c1f18287a73b5cdf1ef2c6157873abac997fd3171ae59bc546e2af","spec_sha":"3bd92169c59596871fd1678c36a65299956fd1357104ee35f1bcad5b75636005"},{"authors":"Justin
+        Searls","built_at":"2020-04-21T00:00:00.000Z","created_at":"2020-04-21T02:19:21.349Z","description":null,"downloads_count":21340,"metadata":{},"number":"0.2.4","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 0","prerelease":false,"licenses":[],"requirements":[],"sha":"064146dca005c51dc29e576510c1abf7676b7de0b063f9367eee2882ca3e3c9b","spec_sha":"22d124cbefdf6170abbf1eab8aeb9783c43aa525110da011f2ebbfb33c62e921"},{"authors":"Justin
+        Searls","built_at":"2020-03-28T00:00:00.000Z","created_at":"2020-03-28T04:59:33.251Z","description":null,"downloads_count":64919,"metadata":{},"number":"0.2.3","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 0","prerelease":false,"licenses":[],"requirements":[],"sha":"ba7d4be7358d88294bb41b5556b2e1844dc26e2b91cac604ed2ad952f0c94df8","spec_sha":"dcea515b54929f5a10abfaf3e47b8913ee26ca791f3ddfb6927d79b14bbd5d1a"},{"authors":"Justin
+        Searls","built_at":"2020-03-24T00:00:00.000Z","created_at":"2020-03-24T01:14:51.900Z","description":null,"downloads_count":16081,"metadata":{},"number":"0.2.2","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 0","prerelease":false,"licenses":[],"requirements":[],"sha":"70c251384ecbf314bbd7d4243835b02b3f3ffe3b1c85ceafda0a08acd516d48e","spec_sha":"999d80ca30678fff838a5802657eece1b7a521cb1faadb0bc2c312b1963eb16e"},{"authors":"Justin
+        Searls","built_at":"2020-03-04T00:00:00.000Z","created_at":"2020-03-04T05:21:02.403Z","description":null,"downloads_count":39340,"metadata":{},"number":"0.2.1","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 0","prerelease":false,"licenses":[],"requirements":[],"sha":"232c8c6a2db9fcb8487d5b0a7f3893ae8ab673b852b22f1ef29156bc6c53654a","spec_sha":"f3ea5727c42a9e2f290bf661af733e95cec88385753e039aa2cc51fb41faabed"},{"authors":"Justin
+        Searls","built_at":"2020-02-28T00:00:00.000Z","created_at":"2020-02-28T08:09:57.616Z","description":null,"downloads_count":11483,"metadata":{},"number":"0.2.0","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 0","prerelease":false,"licenses":[],"requirements":[],"sha":"4fe4e8c46bd768990f8e0346f9c6deb5fec9d6dc446e1fcf3033931e88e435a6","spec_sha":"c3c10b43e7af91446d25100dda073851db9b484890d8d330188d928acfb953b2"},{"authors":"Justin
+        Searls","built_at":"2020-02-24T00:00:00.000Z","created_at":"2020-02-24T08:25:59.135Z","description":null,"downloads_count":16915,"metadata":{},"number":"0.1.10","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 0","prerelease":false,"licenses":[],"requirements":[],"sha":"573846627638785a5934d95802fd46fff6952b0b7b403355c1c6d37658e4408f","spec_sha":"1c7ace11634f58193754088dfcb623171eb35bba4a2c10169a95302c9edbb616"},{"authors":"Justin
+        Searls","built_at":"2020-02-16T00:00:00.000Z","created_at":"2020-02-16T01:45:13.584Z","description":null,"downloads_count":17544,"metadata":{},"number":"0.1.9","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 0","prerelease":false,"licenses":[],"requirements":[],"sha":"e8976a1598d575aeb7ceb9bc50ea4ec96af57e4bf932985bfa2968626f8b3118","spec_sha":"0744a31ab4f2daa6b73327f88fb556c7e3bfb438cf1b8d742c5af5ddb60ebef6"},{"authors":"Justin
+        Searls","built_at":"2020-02-16T00:00:00.000Z","created_at":"2020-02-16T01:11:59.153Z","description":null,"downloads_count":14916,"metadata":{},"number":"0.1.8","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 0","prerelease":false,"licenses":[],"requirements":[],"sha":"a3ff76f34c8d3d018470e62a3b04f3b95fc77fe1fbb5c7f1223076e5e72f572f","spec_sha":"6c36c34a6f1b5fd36a832f4eb62e3d96ec4c0a6762e1d82ec22e5bf1dabc8a45"},{"authors":"Justin
+        Searls","built_at":"2019-12-11T00:00:00.000Z","created_at":"2019-12-11T03:26:17.515Z","description":null,"downloads_count":139733,"metadata":{},"number":"0.1.7","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 0","prerelease":false,"licenses":[],"requirements":[],"sha":"e1ec79934a314dbbec1e22d7bd6626d25d95e4052f5f11f11b96403f44b6b6fb","spec_sha":"af06951044a0ccee7ada993edddedcc3dd42afee4a8896e6bff55b760f719add"},{"authors":"Justin
+        Searls","built_at":"2019-11-13T00:00:00.000Z","created_at":"2019-11-13T02:01:18.413Z","description":null,"downloads_count":61163,"metadata":{},"number":"0.1.6","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 0","prerelease":false,"licenses":[],"requirements":[],"sha":"18d0b23d4c263cc7d690d5a5366a153d55ca357280dfd62a4af76633447c989b","spec_sha":"82545e9428e210ab9a0706c08a381159450cbaa234b00879b9a63624607bb35f"},{"authors":"Justin
+        Searls","built_at":"2019-10-18T00:00:00.000Z","created_at":"2019-10-18T04:10:22.960Z","description":null,"downloads_count":56269,"metadata":{},"number":"0.1.5","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 0","prerelease":false,"licenses":[],"requirements":[],"sha":"84e7e762fb85d76b8cd42cf9a8bb143c324cbeb9e7b0329eb9c26f6b6da895a6","spec_sha":"98fa1600c4565945c5b558959ddbb46413a876fda3276e0924464b920211fdc3"},{"authors":"Justin
+        Searls","built_at":"2019-09-17T00:00:00.000Z","created_at":"2019-09-17T01:47:44.224Z","description":null,"downloads_count":50355,"metadata":{},"number":"0.1.4","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 0","prerelease":false,"licenses":[],"requirements":[],"sha":"ffdc2b0129ee269cc9df89da2c48a0c383d67bf004765fb9c170039e9f78a065","spec_sha":"a1149601283d0dc91a79c631e14ca135e0a76a16bbff524af161f504d06f6371"},{"authors":"Justin
+        Searls","built_at":"2019-09-03T00:00:00.000Z","created_at":"2019-09-03T06:36:54.993Z","description":null,"downloads_count":29365,"metadata":{},"number":"0.1.3","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 0","prerelease":false,"licenses":[],"requirements":[],"sha":"af6b67f2a79b2e98e8c204d1d23cf9f739627c75ee8f9bcf0b92e8e7607b841d","spec_sha":"750ba98afbb3c87dc4d9b90b3cac730b293de031b43edbcd0be240a745833abe"},{"authors":"Justin
+        Searls","built_at":"2019-08-08T00:00:00.000Z","created_at":"2019-08-08T23:46:23.526Z","description":null,"downloads_count":45957,"metadata":{},"number":"0.1.2","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 0","prerelease":false,"licenses":[],"requirements":[],"sha":"2f99c9767ce4ee25b6ff4e6c50c204dc16ee36b733d9a1fae4634dc52b1f6e01","spec_sha":"4dacb40c0708890715c67648116407cb6b75d43127f74f62738fd310863fe62d"},{"authors":"Justin
+        Searls","built_at":"2019-08-08T00:00:00.000Z","created_at":"2019-08-08T23:39:51.181Z","description":null,"downloads_count":2001,"metadata":{},"number":"0.1.1","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 0","prerelease":false,"licenses":[],"requirements":[],"sha":"742c98b1a6542fe1871c04a645909d5e63b656cdc8ace8e065580b3c0002e91e","spec_sha":"895883c6615a723b8f22c383e544a300532bc909a77611bc9b908aa24a3ea8e5"},{"authors":"Justin
+        Searls","built_at":"2019-07-09T00:00:00.000Z","created_at":"2019-07-09T21:25:18.144Z","description":null,"downloads_count":66378,"metadata":{},"number":"0.1.0","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 0","prerelease":false,"licenses":[],"requirements":[],"sha":"5b382890f6ec6675081e43d342435a2488f074ec42bc52558a9029bff445c4d9","spec_sha":"8cec29bd87b4e881e9dbc7b0e970b058d01335c3a72e172b0008c77c1d2f1a5f"},{"authors":"Justin
+        Searls","built_at":"2019-06-27T00:00:00.000Z","created_at":"2019-06-27T15:07:26.027Z","description":null,"downloads_count":36347,"metadata":{},"number":"0.0.41","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 0","prerelease":false,"licenses":[],"requirements":[],"sha":"8f0e91848139487af29ffeffdbf58b34229ccc38df7d32b4f15cf8ef8a1521a8","spec_sha":"0049967825314606d855035b433408a63d53005b6f32a78ad97ac05a75060f9c"},{"authors":"Justin
+        Searls","built_at":"2019-05-24T00:00:00.000Z","created_at":"2019-05-24T22:09:07.011Z","description":null,"downloads_count":20000,"metadata":{},"number":"0.0.40","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 0","prerelease":false,"licenses":[],"requirements":[],"sha":"c13d4318f134fa6ea7ef8f1041827f9905bdbb4679f016f016f99ba293815bab","spec_sha":"f0e914fd679f15f758e8ee3ea8a6f089418c0d59f5c0e8b252c0aa4a2d9183d7"},{"authors":"Justin
+        Searls","built_at":"2019-04-19T00:00:00.000Z","created_at":"2019-04-19T09:21:49.198Z","description":null,"downloads_count":11938,"metadata":{},"number":"0.0.39","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 0","prerelease":false,"licenses":[],"requirements":[],"sha":"40cef0a0cb800e90fe5f489467c3d22112d24408f27afab979af0d9a8bae0da0","spec_sha":"b03218d1ff4eb9d1e73b1c7d8242bc6dd499d7540326b66b1d349b02c3ca76e5"},{"authors":"Justin
+        Searls","built_at":"2019-04-18T00:00:00.000Z","created_at":"2019-04-18T05:31:17.554Z","description":null,"downloads_count":2254,"metadata":{},"number":"0.0.38","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 0","prerelease":false,"licenses":[],"requirements":[],"sha":"84b6bb8652db718ad95470f6bb34228a7ef316d4eb39d2e4524dd201153a14a1","spec_sha":"37cb668f62f4ab3f4a53c91d1a630334e1451e789bf29d34149665b7aac654b7"},{"authors":"Justin
+        Searls","built_at":"2019-04-04T00:00:00.000Z","created_at":"2019-04-04T21:24:55.283Z","description":null,"downloads_count":11925,"metadata":{},"number":"0.0.37","summary":"Ruby
+        Style Guide, with linter \u0026 automatic code fixer","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 0","prerelease":false,"licenses":[],"requirements":[],"sha":"ff745632bfe962b6b49eca1cecff8e4d0e379ff116b78416b10eb91bc2dce17d","spec_sha":"ddb0923d9af558af7110ae2a1f50c96c9a47697fbe0a7ae585e7874055ec5c8d"}]'
+  recorded_at: Sun, 08 Dec 2024 01:46:29 GMT
+recorded_with: VCR 6.3.1

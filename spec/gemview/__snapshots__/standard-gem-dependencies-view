@@ -1,0 +1,25 @@
+  [1.42.1] standard
+
+  Ruby Style Guide, with linter & automatic code fixer
+  ┌─────────────────┬────────────────────────────────────┐
+  │ Updated at      │ 2024-11-19 00:56:52 UTC            │ 
+  ├─────────────────┼────────────────────────────────────┤
+  │ Total Downloads │ 22,791,345                         │ 
+  ├─────────────────┼────────────────────────────────────┤
+  │ Authors         │ Justin Searls                      │ 
+  ├─────────────────┼────────────────────────────────────┤
+  │ Licenses        │ []                                 │ 
+  ├─────────────────┼────────────────────────────────────┤
+  │ Project URI     │ https://rubygems.org/gems/standard │ 
+  └─────────────────┴────────────────────────────────────┘
+
+  [Dependencies]
+
+    Runtime Dependencies:
+    gem "language_server-protocol", "~> 3.17.0.2"
+    gem "lint_roller", "~> 1.0"
+    gem "rubocop", "~> 1.68.0"
+    gem "standard-custom", "~> 1.0.0"
+    gem "standard-performance", "~> 1.5"
+    Development Dependencies:
+    (none)

@@ -9,7 +9,7 @@ module Gemview
         More info:
       PROMPT
 
-      Terminal.choose(prompt, %w[Readme Changelog Dependencies Versions]) do |choice|
+      Terminal.choose(message: prompt, choices: %w[Readme Changelog Dependencies Versions]) do |choice|
         case choice
         when "Readme"
           Terminal.page([gem.header_str, gem.fetch_readme].join("\n"))
@@ -30,7 +30,7 @@ module Gemview
         [gem.selector_str, gem]
       end
 
-      Terminal.choose("What gem would you like to look at?", gems_by_description) do |gem|
+      Terminal.choose(message: "What gem would you like to look at?", choices: gems_by_description) do |gem|
         info(gem: gem)
       end
     end
