@@ -20,8 +20,8 @@ module Gemview
           gem = Gem.find(name: name, version: version)
         rescue Gems::NotFound
           if version
-            warn("Error: No gem found with the name: #{name} and version: #{version}")
-            exit(1) unless TTY::Prompt.new.yes?("Search for the most recent version?")
+            warn("Error: No gem found with the name '#{name}' and the version '#{version}'")
+            exit(1) unless Terminal.confirm(question: "Search for the most recent version?")
             begin
               gem = Gem.find(name: name, version: nil)
             rescue Gems::NotFound
