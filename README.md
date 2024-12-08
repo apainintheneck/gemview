@@ -2,16 +2,7 @@
 
 An unofficial CLI interface for querying information from rubygems.org. It uses the [gems](https://rubygems.org/gems/gems) gem internally.
 
-## Features
-- Search for gems by name
-- Find recently released gems
-- Find recently updated gems
-- Read information about gems interactively
-- Read the readme and changelog for gems
-  - Note: Supported on a best effort basis
-
-## Installation
-TODO: Write installation instructions here
+Note: This gem is not directly affiliated with `rubygems.org`. It's just a hobby project.
 
 ## Usage
 
@@ -24,6 +15,10 @@ Commands:
   gemview updates                     # List the most recent gem updates
   gemview version                     # Print version
 ```
+
+## Demo
+
+![GIF demoing the info and search subcommands](./assets/gemview-v1.0.0.gif)
 
 ## Development
 

@@ -30,7 +30,7 @@ module Gemview
         [gem.selector_str, gem]
       end
 
-      Terminal.choose(message: "What gem would you like to look at?", choices: gems_by_description) do |gem|
+      Terminal.choose(message: "Choose a gem:", choices: gems_by_description) do |gem|
         info(gem: gem)
       end
     end

@@ -156,7 +156,7 @@ RSpec.describe Gemview::Commands do
       expect(Gemview::Terminal)
         .to receive(:choose)
         .with(
-          message: "What gem would you like to look at?",
+          message: "Choose a gem:",
           choices: hash_including(birdbrain_selector => birdbrain_gem)
         )
         .and_yield(birdbrain_gem)
@@ -262,7 +262,7 @@ RSpec.describe Gemview::Commands do
       expect(Gemview::Terminal)
         .to receive(:choose)
         .with(
-          message: "What gem would you like to look at?",
+          message: "Choose a gem:",
           choices: hash_including(rubocop_selector => rubocop_gem)
         )
         .and_yield(rubocop_gem)
@@ -333,7 +333,7 @@ RSpec.describe Gemview::Commands do
       expect(Gemview::Terminal)
         .to receive(:choose)
         .with(
-          message: "What gem would you like to look at?",
+          message: "Choose a gem:",
           choices: hash_including(builder_rails_cache_selector => builder_rails_cache_gem)
         )
         .and_yield(builder_rails_cache_gem)
@@ -451,7 +451,7 @@ RSpec.describe Gemview::Commands do
       expect(Gemview::Terminal)
         .to receive(:choose)
         .with(
-          message: "What gem would you like to look at?",
+          message: "Choose a gem:",
           choices: hash_including(active_model_serializers_selector => active_model_serializers_gem)
         )
         .and_yield(active_model_serializers_gem)
