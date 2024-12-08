@@ -110,10 +110,11 @@ module Gemview
     register "author", Author
     register "releases", Releases
     register "updates", Updates
-    register "version", Version, aliases: ["v", "-v", "--version"]
+    register "version", Version
 
-    def self.start
-      Dry::CLI.new(self).call
+    # @param arguments [Array<String>] defaults to ARGV
+    def self.start(arguments: ARGV)
+      Dry::CLI.new(self).call(arguments: arguments)
     end
   end
 end

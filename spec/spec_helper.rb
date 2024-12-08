@@ -104,6 +104,8 @@ RSpec.configure do |config|
   end
 end
 
+RSpec::Matchers.define_negated_matcher :not_output, :output
+
 VCR.configure do |config|
   config.default_cassette_options = {drop_unused_requests: true}
   config.cassette_library_dir = "spec/fixtures/cassettes"
