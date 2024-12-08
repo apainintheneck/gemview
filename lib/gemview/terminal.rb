@@ -2,6 +2,12 @@
 
 module Gemview
   module Terminal
+    # @param question [String]
+    # @return [Boolean]
+    def self.confirm(question:)
+      TTY::Prompt.new.yes?(question)
+    end
+
     # @param content [String]
     def self.page(content)
       TTY::Pager.page(content)
