@@ -92,6 +92,28 @@ RSpec.describe Gemview::Commands do
         end
       end
     end
+
+    it "falls back to current version" do
+      expect(Gemview::Terminal)
+        .to receive(:confirm)
+        .with(question: "Search for the most recent version?")
+        .and_return(true)
+
+      expect(Gemview::Terminal)
+        .to receive(:choose)
+        .with(
+          message: match_snapshot("rails-gem-header"),
+          choices: %w[Readme Changelog Dependencies Versions]
+        )
+
+      VCR.use_cassette("find-rails-gem") do
+        VCR.use_cassette("find-invalid-rails-gem") do
+          expect { described_class.start(arguments: %w[info rails --version 250.0.1]) }
+            .to output("Error: No gem found with the name 'rails' and the version '250.0.1'\n").to_stderr
+            .and not_output.to_stdout
+        end
+      end
+    end
   end
 
   describe "search" do
