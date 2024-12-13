@@ -149,25 +149,24 @@ module Gemview
       Terminal.prettify_markdown(table)
     end
 
-    # @return [Array<String>]
-    def urls
-      [
-        homepage_uri,
-        source_code_uri,
-        changelog_uri
-      ].compact
+    # @return [Gemview::GitRepo|nil]
+    def git_repo
+      @git_repo ||= GitRepo.from_urls(
+        homepage_uri: homepage_uri,
+        source_code_uri: source_code_uri,
+        changelog_uri: changelog_uri,
+        version: version
+      )
     end
 
     # @return [String|nil]
     def fetch_readme
-      GitRepo.from_urls(urls: urls, version: version)&.readme ||
-        "Info: Unable to find a valid readme based on available gem info"
+      git_repo&.readme || "Info: Unable to find a valid readme based on available gem info"
     end
 
     # @return [String|nil]
     def fetch_changelog
-      GitRepo.from_urls(urls: urls, version: version)&.changelog ||
-        "Info: Unable to find a valid changelog based on available gem info"
+      git_repo&.changelog || "Info: Unable to find a valid changelog based on available gem info"
     end
 
     # @param name [String]
