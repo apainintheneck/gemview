@@ -149,18 +149,14 @@ module Gemview
       Terminal.prettify_markdown(table)
     end
 
-    # @return [Array<String>]
-    def urls
-      [
-        homepage_uri,
-        source_code_uri,
-        changelog_uri
-      ].compact
-    end
-
     # @return [Gemview::GitRepo|nil]
     def git_repo
-      GitRepo.from_urls(urls: urls, version: version)
+      @git_repo ||= GitRepo.from_urls(
+        homepage_uri: homepage_uri,
+        source_code_uri: source_code_uri,
+        changelog_uri: changelog_uri,
+        version: version
+      )
     end
 
     # @return [String|nil]

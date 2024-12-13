@@ -1,0 +1,98 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://rubygems.org/api/v1/gems/json.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Gems 1.3.0
+      - Ruby
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - '30'
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1293'
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cross-Origin-Opener-Policy:
+      - same-origin
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - max-age=60, public
+      Content-Security-Policy:
+      - 'default-src ''self''; font-src ''self'' https://fonts.gstatic.com; img-src
+        ''self'' data: https://secure.gaug.es https://gravatar.com https://www.gravatar.com
+        https://secure.gravatar.com https://*.fastly-insights.com https://avatars.githubusercontent.com;
+        object-src ''none''; script-src ''self'' ''sha256-xlpvqdZ5/hVDKsyanT3N+RasZlYKC+bYQ/4furku1bA=''
+        https://secure.gaug.es https://www.fastly-insights.com ''nonce-331af70f6d20265892e202ad73034547'';
+        style-src ''self'' ''unsafe-inline'' https://fonts.googleapis.com; connect-src
+        ''self'' https://s3-us-west-2.amazonaws.com/rubygems-dumps/ https://*.fastly-insights.com
+        https://fastly-insights.com https://api.github.com http://localhost:*; form-action
+        ''self'' https://github.com/login/oauth/authorize; frame-ancestors ''self'';
+        base-uri ''self''; report-uri https://csp-report.browser-intake-datadoghq.com/api/v2/logs?dd-api-key=pub852fa3e2312391fafa5640b60784e660&dd-evp-origin=content-security-policy&ddsource=csp-report&ddtags=service%3Arubygems.org%2Cversion%3A5b8a493dd71cd2e503da849f4d474b9fc436c822%2Cenv%3Aproduction%2Ctrace_id%3A4424204558596162186'
+      X-Request-Id:
+      - 4bb7442b-37a0-4bf7-a070-f8f2350c6cb5
+      X-Runtime:
+      - '0.058303'
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Backend:
+      - F_Rails 52.43.190.113:443
+      Accept-Ranges:
+      - bytes
+      Age:
+      - '3154'
+      Date:
+      - Fri, 13 Dec 2024 04:09:15 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-pao-kpao1770043-PAO
+      X-Cache:
+      - HIT
+      X-Cache-Hits:
+      - '0'
+      X-Timer:
+      - S1734062956.559694,VS0,VE1
+      Vary:
+      - Accept-Encoding
+      Server:
+      - RubyGems.org
+    body:
+      encoding: ASCII-8BIT
+      string: '{"name":"json","downloads":922743728,"version":"2.9.0","version_created_at":"2024-12-03T08:25:11.979Z","version_downloads":1671518,"platform":"ruby","authors":"Florian
+        Frank","info":"This is a JSON implementation as a Ruby extension in C.","licenses":["Ruby"],"metadata":{"wiki_uri":"https://github.com/ruby/json/wiki","homepage_uri":"https://ruby.github.io/json","changelog_uri":"https://github.com/ruby/json/blob/master/CHANGES.md","bug_tracker_uri":"https://github.com/ruby/json/issues","source_code_uri":"https://github.com/ruby/json","documentation_uri":"https://ruby.github.io/json/doc/index.html"},"yanked":false,"sha":"7c0ebdad9d030e6d572cd6f1b4e93d1d81b32c4c7dff611c1ef7825110fc6bcf","spec_sha":"232ae59c64868c4549a2a014ef6ede3692f0e9c78118fcf7cd82402d1f2ac699","project_uri":"https://rubygems.org/gems/json","gem_uri":"https://rubygems.org/gems/json-2.9.0.gem","homepage_uri":"https://ruby.github.io/json","wiki_uri":"https://github.com/ruby/json/wiki","documentation_uri":"https://ruby.github.io/json/doc/index.html","mailing_list_uri":null,"source_code_uri":"https://github.com/ruby/json","bug_tracker_uri":"https://github.com/ruby/json/issues","changelog_uri":"https://github.com/ruby/json/blob/master/CHANGES.md","funding_uri":null,"dependencies":{"development":[],"runtime":[]}}'
+  recorded_at: Fri, 13 Dec 2024 04:09:15 GMT
+recorded_with: VCR 6.3.1

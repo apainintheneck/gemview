@@ -142,6 +142,21 @@ RSpec.describe Gemview::Gem do
       end
     end
 
+    # non CHANGELOG.md filename listed in metadata
+    context "with unusual filename" do
+      it "fetches changelog" do
+        gem = VCR.use_cassette("find-json-gem") do
+          described_class.find(name: "json")
+        end
+
+        expect(gem.changelog_uri).to eq("https://github.com/ruby/json/blob/master/CHANGES.md")
+
+        VCR.use_cassette("standard-json-changelog") do
+          expect(gem.fetch_changelog).to match_snapshot("standard-json-changelog")
+        end
+      end
+    end
+
     context "when it's missing" do
       it "returns an error message" do
         gem = VCR.use_cassette("find-ble-gem") do
