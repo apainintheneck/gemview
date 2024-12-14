@@ -40,13 +40,22 @@ module Gemview
 
       argument :term, type: :string, required: true, desc: "Search term"
 
-      example %w[cli json]
+      option :downloads, values: %w[total version], desc: "Sort results by most downloads"
 
-      def call(term:, **)
+      example ["cli", "json --downloads=total"]
+
+      def call(term:, downloads: nil, **)
         gems = Gem.search(term: term)
 
         if gems.empty?
           abort("Error: No gems found for the search term: #{term}")
+        end
+
+        case downloads
+        when "total"
+          gems.sort_by! { |gem| -gem.downloads }
+        when "version"
+          gems.sort_by! { |gem| -gem.version_downloads }
         end
 
         View.list(gems: gems)

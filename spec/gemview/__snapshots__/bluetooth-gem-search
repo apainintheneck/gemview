@@ -3,6 +3,7 @@
     "name": "bluetooth",
     "downloads": 6382,
     "version": "1.0",
+    "version_downloads": 6382,
     "authors": "Eric Hodel, Jeremie Castagna, Esteve Fernandez",
     "info": "A bluetooth library for ruby",
     "licenses": [],
@@ -15,6 +16,7 @@
     "name": "tamashii-bluetooth",
     "downloads": 2993,
     "version": "0.1.0.beta.2",
+    "version_downloads": 1514,
     "authors": "蒼時弦也",
     "info": "The bluetooth implement for tamashii",
     "licenses": [],
@@ -27,6 +29,7 @@
     "name": "ruby-bluetooth",
     "downloads": 2202,
     "version": "0.0.1.1",
+    "version_downloads": 2195,
     "authors": "ruby-bluetooth",
     "info": "description - ruby-bluetooth - work in progress",
     "licenses": [
@@ -41,6 +44,7 @@
     "name": "cmus-bt",
     "downloads": 7285,
     "version": "0.1.3",
+    "version_downloads": 2117,
     "authors": "Hirosho Kuwagata",
     "info": "Bluetooth AVRCP wrapper for cmus.",
     "licenses": [
@@ -55,6 +59,7 @@
     "name": "ble",
     "downloads": 13812,
     "version": "1.0.0",
+    "version_downloads": 3468,
     "authors": "Stephane D'Alu",
     "info": "Allow access to Bluetooth Low Energy device from ruby",
     "licenses": [
@@ -69,6 +74,7 @@
     "name": "sphero_pwn",
     "downloads": 4937,
     "version": "0.0.1",
+    "version_downloads": 2940,
     "authors": "Victor Costan",
     "info": "This library is currently focused on reverse-engineering\n      the undocumented parts of Sphero",
     "licenses": [
@@ -83,6 +89,7 @@
     "name": "bluebutton",
     "downloads": 9212,
     "version": "0.2.1",
+    "version_downloads": 5100,
     "authors": "Samoilenko Yuri",
     "info": "Simple daemon that allows you to execute action when bluetooth button shutter pressed. So you can control your PC by low energy button device and few scripts.\n",
     "licenses": [
@@ -97,6 +104,7 @@
     "name": "bluejam",
     "downloads": 2100,
     "version": "0.0.1",
+    "version_downloads": 2100,
     "authors": "Francesco Palumbo",
     "info": "Use bluetooth speaker with bluez-alsa and snd-aloop",
     "licenses": [
@@ -111,6 +119,7 @@
     "name": "shutter3",
     "downloads": 7549,
     "version": "0.1.3",
+    "version_downloads": 2495,
     "authors": "James Robertson",
     "info": "Uses the command `hcidump --raw` (see bluez-hcidump) to detect the bluetooth button events for a wireless bluetooth remote control shutter button.",
     "licenses": [
@@ -125,6 +134,7 @@
     "name": "sb-ble",
     "downloads": 2427,
     "version": "0.5.0",
+    "version_downloads": 2427,
     "authors": "Fred Mitchell &amp; Sensorberg",
     "info": "This supports LE Advertising",
     "licenses": [
@@ -139,6 +149,7 @@
     "name": "syncope",
     "downloads": 3826,
     "version": "0.0.0",
+    "version_downloads": 3826,
     "authors": "Isam",
     "info": "Syncope lets your apps knock out when you do",
     "licenses": [],
@@ -151,6 +162,7 @@
     "name": "hcitools_wrapper",
     "downloads": 24114,
     "version": "0.2.2",
+    "version_downloads": 3769,
     "authors": "James Robertson",
     "info": "Uses hcitool lescan + hcidump --raw to fetch the RSSI values from a Bluetooth device address.",
     "licenses": [
@@ -165,6 +177,7 @@
     "name": "lego-nxt",
     "downloads": 5358,
     "version": "0.3.0",
+    "version_downloads": 1710,
     "authors": "Nathan Kleyn",
     "info": "Ruby LEGO Mindstorms NXT 2.0 control via Bluetooth and USB. See http://github.com/nathankleyn/lego-nxt for more information.",
     "licenses": [
@@ -179,6 +192,7 @@
     "name": "hue_ble",
     "downloads": 1755,
     "version": "0.1.0",
+    "version_downloads": 1755,
     "authors": "NeoCat",
     "info": "Control color temperature, brightness, and color of Hue light bulbs which supports Bluetooth LE.",
     "licenses": [
@@ -193,6 +207,7 @@
     "name": "dozen",
     "downloads": 4076,
     "version": "1.1.0",
+    "version_downloads": 4075,
     "authors": "Rob Fletcher",
     "info": "A simple tool to pair your Sixaxis controller with any Bluetooth device. Derived from the sixpair.c source.",
     "licenses": [
@@ -207,6 +222,7 @@
     "name": "shutter3_morsecode",
     "downloads": 4135,
     "version": "0.1.1",
+    "version_downloads": 2471,
     "authors": "James Robertson",
     "info": "Uses a Shutter3 bluetooth device to publish SimplePubSub (SPS) messages using morse code.",
     "licenses": [
@@ -221,6 +237,7 @@
     "name": "ld3w",
     "downloads": 12567,
     "version": "0.2.2",
+    "version_downloads": 2098,
     "authors": "James Robertson",
     "info": "Reads the GPS data from a Nokia LD-3W GPS bluetooth receiver using the system command rfcomm.",
     "licenses": [
@@ -235,6 +252,7 @@
     "name": "rubyeddystoneurl",
     "downloads": 2237,
     "version": "1.0.0",
+    "version_downloads": 2237,
     "authors": "Ferdinand E. Silva",
     "info": "Ruby C Extension To Scan Eddystone-URL Bluetooth Low Energy Beacons",
     "licenses": [],
@@ -247,6 +265,7 @@
     "name": "bluez-profile",
     "downloads": 3466,
     "version": "1.1.2",
+    "version_downloads": 1662,
     "authors": "Clive Andrews",
     "info": "Create Custom Bluez Bluetooth Profiles",
     "licenses": [
@@ -261,6 +280,7 @@
     "name": "home_assistant-ble",
     "downloads": 47134,
     "version": "1.4.2",
+    "version_downloads": 2011,
     "authors": "Grégoire Seux",
     "info": "home-assistant does not cope well with bluetooth on raspberry pi. This gem sends event to HA.",
     "licenses": [],
@@ -273,6 +293,7 @@
     "name": "mi100",
     "downloads": 20818,
     "version": "1.0.0",
+    "version_downloads": 2954,
     "authors": "Masami Yamakawa",
     "info": "A ruby gem for controlling MI100 of monoxit through bluetooth virtual serial port.",
     "licenses": [
@@ -287,6 +308,7 @@
     "name": "hybridgroup-sphero",
     "downloads": 37712,
     "version": "1.5.2",
+    "version_downloads": 3488,
     "authors": "The Hybrid Group",
     "info": "A ruby gem for controlling your Sphero ball.  Sends commands over the TTY\nprovided by the bluetooth connection.",
     "licenses": [],
@@ -299,6 +321,7 @@
     "name": "sphero",
     "downloads": 19094,
     "version": "1.5.3",
+    "version_downloads": 4484,
     "authors": "The Hybrid Group",
     "info": "A ruby gem for controlling your Sphero ball.  Sends commands over the TTY\nprovided by the bluetooth connection.",
     "licenses": [],
@@ -311,6 +334,7 @@
     "name": "bluemoon",
     "downloads": 3991,
     "version": "0.0.1",
+    "version_downloads": 3991,
     "authors": "Nathaniel Jones",
     "info": "Enable or disable bluetooth on OS X based on your current location",
     "licenses": [
@@ -325,6 +349,7 @@
     "name": "robobuilder",
     "downloads": 6428,
     "version": "0.3.1",
+    "version_downloads": 3156,
     "authors": "Jan Wedekind",
     "info": "This Ruby extension defines the Robobuilder class for communicating a Robobuilder via the serial port or a Bluetooth serial connection.",
     "licenses": [],
@@ -337,6 +362,7 @@
     "name": "hybridgroup-mindset",
     "downloads": 6340,
     "version": "0.4",
+    "version_downloads": 3665,
     "authors": "mkfs",
     "info": "This module reads all data transmitted by a Neurosky\nMindset, which must already be paired in Bluetooth and have a Bluetooth serial\n(SPP) socket open. The gem provides the module and a command line utility for\nreading packets and either printing them to STDOUT in realtime, or serializing \nthem to STDOUT in JSON on exit.",
     "licenses": [
@@ -351,6 +377,7 @@
     "name": "wii4r",
     "downloads": 4120,
     "version": "0.5.0",
+    "version_downloads": 4120,
     "authors": "KzMz, BuZz",
     "info": "Ruby C Extension for controlling Wii Remote devices via bluetooth connection. Binding of C wiiuse library (www.wiiuse.net) ",
     "licenses": [],
@@ -363,6 +390,7 @@
     "name": "louis",
     "downloads": 86123,
     "version": "2.3.7",
+    "version_downloads": 2548,
     "authors": "Sam Stelfox",
     "info": "There is a public registry maintained by the IANA that is required to be used by all vendors operating in certains spaces. Ethernet, Bluetooth, and Wireless device manufacturers are all assigned unique prefixes. This database is available publicly online and can be used to identify the manufacturer of these devices. This library provides an easy mechanism to perform these lookups.",
     "licenses": [
@@ -377,6 +405,7 @@
     "name": "birdbrain",
     "downloads": 13313,
     "version": "0.9.6",
+    "version_downloads": 2514,
     "authors": "fmorton",
     "info": "This Ruby library allows students to use Ruby to read sensors and set motors and LEDs with the Birdbrain Technologies Hummingbird Bit and Finch 2. To use Ruby with the Hummingbird Bit or Finch 2, you must connect via bluetooth with the BlueBird Connector.",
     "licenses": [
@@ -391,6 +420,7 @@
     "name": "ruble",
     "downloads": 250,
     "version": "0.0.3.alpha",
+    "version_downloads": 250,
     "authors": "Mike Vastola",
     "info": "RuBLE is a ruby interface to the SimpleBLE library, providing a cross-platform DSL for interacting with Bluetooth Low Energy (BLE) devices.",
     "licenses": [
