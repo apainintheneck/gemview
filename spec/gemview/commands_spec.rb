@@ -146,7 +146,7 @@ RSpec.describe Gemview::Commands do
         mailing_list_uri: nil,
         name: "birdbrain",
         wiki_uri: nil,
-        version_downloads: 2520,
+        version_downloads: 2514,
         info: "This Ruby library allows students to use Ruby to read sensors and set motors and LEDs with the Birdbrain Technologies Hummingbird Bit and Finch 2. To use Ruby with the Hummingbird Bit or Finch 2, you must connect via bluetooth with the BlueBird Connector.",
         authors: "fmorton"
       })

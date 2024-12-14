@@ -24,6 +24,7 @@ module Gemview
     attribute :name, Types::Strict::String
     attribute :downloads, Types::Strict::Integer
     attribute :version, Types::Strict::String
+    attribute :version_downloads, Types::Strict::Integer
     # Note: This is not returned by `Gems.search`.
     attribute? :version_created_at, Types::Params::Time
     attribute :authors, Types::Strict::String
