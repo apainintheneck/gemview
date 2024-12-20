@@ -342,7 +342,12 @@ RSpec.describe Gemview::Commands do
         .to receive(:choose)
         .with(
           message: match_snapshot("builder-rails-cache-gem-header"),
-          choices: %w[Readme Changelog Dependencies Versions]
+          choices: [
+            {name: "Readme", disabled: "(missing)"},
+            {name: "Changelog", disabled: "(missing)"},
+            "Dependencies",
+            "Versions"
+          ]
         )
 
       VCR.use_cassette("latest-gems") do
