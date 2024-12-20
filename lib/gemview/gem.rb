@@ -56,6 +56,17 @@ module Gemview
     class Version < Dry::Struct
       transform_keys(&:to_sym)
 
+      # resolve default types on nil
+      transform_types do |type|
+        if type.default?
+          type.constructor do |value|
+            value.nil? ? Dry::Types::Undefined : value
+          end
+        else
+          type
+        end
+      end
+
       attribute :number, Types::Strict::String
       alias_method :version, :number
 
@@ -63,6 +74,8 @@ module Gemview
       alias_method :downloads, :downloads_count
 
       attribute :created_at, Types::Params::Time
+
+      attribute :ruby_version, Types::String.optional.default("(unknown)")
 
       # @return [Date]
       def release_date = created_at.to_date
@@ -136,14 +149,14 @@ module Gemview
     def versions_str
       rows = self.class.versions(name: name).map do |version|
         pretty_downloads = Number.humanized_integer(version.downloads)
-        "| #{version.release_date} | #{version.version} | #{pretty_downloads} |"
+        "| #{version.release_date} | #{version.version} | #{pretty_downloads} | #{version.ruby_version}"
       end
 
       table = <<~TABLE
         ## [Versions]
 
-        | *Release Date* | *Version* | *Downloads* |
-        |----------------|-----------|-------------|
+        | *Release Date* | *Gem Version* | *Downloads* | *Ruby Version* |
+        |----------------|---------------|-------------|----------------|
         #{rows.join("\n")}
       TABLE
 
