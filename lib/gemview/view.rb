@@ -41,8 +41,8 @@ module Gemview
         [gem.selector_str, gem]
       end
 
-      Terminal.choose(message: "Choose a gem:", choices: gems_by_description) do |gem|
-        info(gem: gem)
+      Terminal.choose(message: "Choose a gem:", choices: gems_by_description.keys) do |description|
+        info(gem: gems_by_description.fetch(description))
       end
     end
   end

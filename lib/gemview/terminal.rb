@@ -14,11 +14,12 @@ module Gemview
     end
 
     # @param prompt [String]
-    # @param choices [Array<String>] or [Hash<String, String>] where all choices are unique
+    # @param choices [Array<String>] where all choices are unique
     # @yield [String] yields until the user exits the prompt gracefully
     def self.choose(message:, choices:, per_page: 6)
-      while (choice = selector.select(message, choices, per_page))
-        yield choice
+      previous_choice = nil
+      while (choice = selector.select(message, choices, previous_choice, per_page))
+        yield (previous_choice = choice)
       end
     end
 
@@ -83,16 +84,19 @@ module Gemview
 
       # @param prompt [String]
       # @param choices [Array<String>] where all choices are unique
+      # @param previous_choice [String|nil] defaults to first element
       # @param per_page [Integer] results per page
       # @return [String|nil]
-      def select(message, choices, per_page)
+      def select(message, choices, previous_choice, per_page)
         choice = @prompt.select(
           message,
           choices,
           per_page: per_page,
           help: "(Press Enter to select and Escape to leave)",
-          show_help: :always
+          show_help: :always,
+          default: previous_choice
         )
+
         choice unless @exit
       ensure
         @exit = false
