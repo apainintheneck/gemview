@@ -16,16 +16,21 @@ module Gemview
     # @param content [String]
     def self.page(content)
       # Override the default pager so that it is top justified to match the choice menus.
-      ENV["PAGER"] = "less -c -r"
+      ENV["PAGER"] = "less -c -r +gg"
       TTY::Pager.page(content)
     end
 
     # @param prompt [String]
-    # @param choices [Array<String>] where all choices are unique
+    # @param choices [Array<String, Hash>, Proc] where all choices are unique
     # @yield [String] yields until the user exits the prompt gracefully
     def self.choose(message:, choices:, per_page: 6)
       previous_choice = nil
-      while (choice = selector.select(message, choices, previous_choice, per_page))
+
+      loop do
+        choice_list = choices.is_a?(Proc) ? choices.call : choices
+        choice = selector.select(message, choice_list, previous_choice, per_page)
+        break unless choice
+
         yield (previous_choice = choice)
       end
     end
@@ -90,11 +95,13 @@ module Gemview
       end
 
       # @param prompt [String]
-      # @param choices [Array<String>] where all choices are unique
-      # @param previous_choice [String|nil] defaults to first element
+      # @param choices [Array<String, Hash>] where all choices are unique
+      # @param previous_choice [String, nil] defaults to first element
       # @param per_page [Integer] results per page
-      # @return [String|nil]
+      # @return [String, nil]
       def select(message, choices, previous_choice, per_page)
+        previous_choice = nil if disabled_choice?(previous_choice, choices)
+
         choice = @prompt.select(
           message,
           choices,
@@ -107,6 +114,17 @@ module Gemview
         choice unless @exit
       ensure
         @exit = false
+      end
+
+      private
+
+      # @param choice [String, nil]
+      # @param choices [Array<String, Hash>]
+      # @return [Boolean]
+      def disabled_choice?(choice, choices)
+        choices.any? do |possible_choice|
+          possible_choice in {name: ^choice, disabled: String}
+        end
       end
     end
     private_constant :Selector

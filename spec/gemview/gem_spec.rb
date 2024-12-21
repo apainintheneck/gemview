@@ -111,19 +111,7 @@ RSpec.describe Gemview::Gem do
         end
 
         VCR.use_cassette("ble-gem-readme") do
-          expect(gem.fetch_readme).to match_snapshot("ble-gem-readme")
-        end
-      end
-    end
-
-    context "when it's missing" do
-      it "returns an error message" do
-        gem = VCR.use_cassette("find-json-pointer-gem") do
-          described_class.find(name: "json-pointer")
-        end
-
-        VCR.use_cassette("json-pointer-gem-readme") do
-          expect(gem.fetch_changelog).to eq("Info: Unable to find a valid changelog based on available gem info")
+          expect(gem.readme).to match_snapshot("ble-gem-readme")
         end
       end
     end
@@ -137,7 +125,7 @@ RSpec.describe Gemview::Gem do
         end
 
         VCR.use_cassette("standard-gem-changelog") do
-          expect(gem.fetch_changelog).to match_snapshot("standard-gem-changelog")
+          expect(gem.changelog).to match_snapshot("standard-gem-changelog")
         end
       end
     end
@@ -151,8 +139,8 @@ RSpec.describe Gemview::Gem do
 
         expect(gem.changelog_uri).to eq("https://github.com/ruby/json/blob/master/CHANGES.md")
 
-        VCR.use_cassette("standard-json-changelog") do
-          expect(gem.fetch_changelog).to match_snapshot("standard-json-changelog")
+        VCR.use_cassette("json-gem-changelog") do
+          expect(gem.changelog).to match_snapshot("json-gem-changelog")
         end
       end
     end
@@ -164,7 +152,7 @@ RSpec.describe Gemview::Gem do
         end
 
         VCR.use_cassette("ble-gem-changelog") do
-          expect(gem.fetch_changelog).to eq("Info: Unable to find a valid changelog based on available gem info")
+          expect(gem.changelog).to be_nil
         end
       end
     end

@@ -9,24 +9,22 @@ module Gemview
         More info:
       PROMPT
 
-      choices = if gem.git_repo?
-        %w[Readme Changelog Dependencies Versions]
-      else
+      choices_proc = proc do
         [
-          {name: "Readme", disabled: "(missing)"},
-          {name: "Changelog", disabled: "(missing)"},
+          {name: "Readme", disabled: gem.readme? ? nil : "(missing)"},
+          {name: "Changelog", disabled: gem.changelog? ? nil : "(missing)"},
           "Dependencies",
           "Versions"
         ]
       end
 
       Terminal.clear_screen
-      Terminal.choose(message: prompt, choices: choices) do |choice|
+      Terminal.choose(message: prompt, choices: choices_proc) do |choice|
         case choice
         when "Readme"
-          Terminal.page([gem.header_str, gem.fetch_readme].join("\n"))
+          Terminal.page([gem.header_str, gem.readme].join("\n")) if gem.readme
         when "Changelog"
-          Terminal.page([gem.header_str, gem.fetch_changelog].join("\n"))
+          Terminal.page([gem.header_str, gem.changelog].join("\n")) if gem.changelog
         when "Dependencies"
           Terminal.page([gem.header_str, gem.dependencies_str].join("\n"))
         when "Versions"

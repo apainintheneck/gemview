@@ -7,11 +7,11 @@ module Gemview
       GITLAB = :gitlab
     ].freeze
 
-    # @param homepage_uri [String|nil]
-    # @param source_code_uri [String|nil]
-    # @param changelog_uri [String|nil]
+    # @param homepage_uri [String, nil]
+    # @param source_code_uri [String, nil]
+    # @param changelog_uri [String, nil]
     # @param version [String]
-    # @return [Gemview::GitRepo|nil]
+    # @return [Gemview::GitRepo, nil]
     def self.from_urls(homepage_uri:, source_code_uri:, changelog_uri:, version:)
       [homepage_uri, source_code_uri, changelog_uri].compact.each do |uri|
         base_uri, git_host = parse_base_uri(uri)
@@ -42,7 +42,7 @@ module Gemview
     attr_reader :base_uri, :changelog_uri, :git_host, :version
 
     # @param base_uri [String] base Git repo uri for `HOSTS`
-    # @param changelog_uri [String|nil] from the gem metadata
+    # @param changelog_uri [String, nil] from the gem metadata
     # @param git_host [Symbol] from `HOSTS`
     # @param version [String]
     def initialize(base_uri:, changelog_uri:, git_host:, version:)
@@ -54,14 +54,20 @@ module Gemview
       @version = version.dup.freeze
     end
 
-    # @return [String|nil]
+    # @return [Boolean]
+    def readme? = !defined?(@readme) || !readme.nil?
+
+    # @return [String, nil]
     def readme
       return @readme if defined?(@readme)
 
       @readme = fetch_raw_file("README.md")
     end
 
-    # @return [String|nil]
+    # @return [Boolean]
+    def changelog? = !defined?(@changelog) || !changelog.nil?
+
+    # @return [String, nil]
     def changelog
       return @changelog if defined?(@changelog)
 
@@ -86,7 +92,7 @@ module Gemview
     end
 
     # @param filename [String]
-    # @return [String|nil]
+    # @return [String, nil]
     def fetch_raw_file(filename)
       case @git_host
       when GITHUB then github_raw_file(filename)
@@ -95,7 +101,7 @@ module Gemview
     end
 
     # @param filename [String]
-    # @return [String|nil]
+    # @return [String, nil]
     def github_raw_file(filename)
       # From: `https://github.com/charmbracelet/bubbles`
       # To: `https://raw.githubusercontent.com/charmbracelet/bubbles/refs/tags/v0.20.0/README.md`
@@ -112,7 +118,7 @@ module Gemview
     end
 
     # @param filename [String]
-    # @return [String|nil]
+    # @return [String, nil]
     def gitlab_raw_file(filename)
       # From: `https://gitlab.com/gitlab-org/gitlab`
       # To: `https://gitlab.com/gitlab-org/gitlab/-/raw/v17.5.1-ee/README.md?ref_type=tags&inline=false`
@@ -129,7 +135,7 @@ module Gemview
     end
 
     # @param uri [String]
-    # @return [String|nil]
+    # @return [String, nil]
     def fetch(uri)
       response = Net::HTTP.get_response(URI(uri))
       if response.is_a?(Net::HTTPSuccess)
