@@ -165,13 +165,18 @@ module Gemview
 
     # @return [Gemview::GitRepo|nil]
     def git_repo
-      @git_repo ||= GitRepo.from_urls(
+      return @git_repo if defined? @git_repo
+
+      @git_repo = GitRepo.from_urls(
         homepage_uri: homepage_uri,
         source_code_uri: source_code_uri,
         changelog_uri: changelog_uri,
         version: version
       )
     end
+
+    # @return [Boolean]
+    def git_repo? = !git_repo.nil?
 
     # @return [String|nil]
     def fetch_readme

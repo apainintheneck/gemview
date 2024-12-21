@@ -98,9 +98,11 @@ RSpec.configure do |config|
   # Add snapshot testing from the `snapshot_testing` gem.
   config.include SnapshotTesting::RSpec
 
-  # Make terminal width consistent on CI.
   config.before do
+    # Make terminal width consistent on CI.
     allow(TTY::Screen).to receive(:width).and_return(80)
+    # Prevent clearing the screen in tests.
+    allow(Gemview::Terminal).to receive(:clear_screen)
   end
 end
 
