@@ -2,6 +2,11 @@
 
 module Gemview
   module Terminal
+    # Clears the screen using escape codes.
+    def self.clear_screen
+      print "\e[2J\e[f"
+    end
+
     # @param question [String]
     # @return [Boolean]
     def self.confirm(question:)
@@ -10,6 +15,8 @@ module Gemview
 
     # @param content [String]
     def self.page(content)
+      # Override the default pager so that it is top justified to match the choice menus.
+      ENV["PAGER"] = "less -c -r"
       TTY::Pager.page(content)
     end
 

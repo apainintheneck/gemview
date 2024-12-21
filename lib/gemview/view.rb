@@ -20,6 +20,7 @@ module Gemview
         ]
       end
 
+      Terminal.clear_screen
       Terminal.choose(message: prompt, choices: choices) do |choice|
         case choice
         when "Readme"
@@ -41,6 +42,7 @@ module Gemview
         [gem.selector_str, gem]
       end
 
+      Terminal.clear_screen
       Terminal.choose(message: "Choose a gem:", choices: gems_by_description.keys) do |description|
         info(gem: gems_by_description.fetch(description))
       end

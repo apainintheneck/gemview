@@ -4,6 +4,7 @@
 - Add ability to sort search results by total and version downloads
 - Add ruby version to gem version output
 - Save last position in TUI selector
+- Consistently align TUI at the top of the screen
 
 ## [1.0.0] - 2024-12-08
 
