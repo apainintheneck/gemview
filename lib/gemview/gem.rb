@@ -146,6 +146,7 @@ module Gemview
       Terminal.prettify_markdown(dependencies)
     end
 
+    # @return [String]
     def versions_str
       rows = self.class.versions(name: name).map do |version|
         pretty_downloads = Number.humanized_integer(version.downloads)
@@ -163,7 +164,7 @@ module Gemview
       Terminal.prettify_markdown(table)
     end
 
-    # @return [Gemview::GitRepo|nil]
+    # @return [Gemview::GitRepo, nil]
     def git_repo
       return @git_repo if defined? @git_repo
 
@@ -178,18 +179,20 @@ module Gemview
     # @return [Boolean]
     def git_repo? = !git_repo.nil?
 
-    # @return [String|nil]
-    def fetch_readme
-      git_repo&.readme || "Info: Unable to find a valid readme based on available gem info"
-    end
+    # @return [Boolean]
+    def readme? = git_repo? && git_repo.readme?
 
-    # @return [String|nil]
-    def fetch_changelog
-      git_repo&.changelog || "Info: Unable to find a valid changelog based on available gem info"
-    end
+    # @return [String, nil]
+    def readme = git_repo&.readme
+
+    # @return [Boolean]
+    def changelog? = git_repo? && git_repo.changelog?
+
+    # @return [String, nil]
+    def changelog = git_repo&.changelog
 
     # @param name [String]
-    # @param version [String|nil] will default to latest if not provided
+    # @param version [String, nil] will default to latest if not provided
     # @return [Gemview::Gem]
     def self.find(name:, version: nil)
       @find ||= {}
