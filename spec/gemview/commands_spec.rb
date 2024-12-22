@@ -7,7 +7,7 @@ RSpec.describe Gemview::Commands do
         .to receive(:choose)
         .with(
           message: match_snapshot("standard-gem-header"),
-          choices: %w[Readme Changelog Dependencies Versions]
+          choices: an_instance_of(Proc)
         )
 
       VCR.use_cassette("find-standard-gem") do
@@ -20,7 +20,7 @@ RSpec.describe Gemview::Commands do
         .to receive(:choose)
         .with(
           message: match_snapshot("standard-gem-header"),
-          choices: %w[Readme Changelog Dependencies Versions]
+          choices: an_instance_of(Proc)
         )
         .and_yield("Readme")
 
@@ -40,7 +40,7 @@ RSpec.describe Gemview::Commands do
         .to receive(:choose)
         .with(
           message: match_snapshot("standard-gem-header"),
-          choices: %w[Readme Changelog Dependencies Versions]
+          choices: an_instance_of(Proc)
         )
         .and_yield("Changelog")
 
@@ -60,7 +60,7 @@ RSpec.describe Gemview::Commands do
         .to receive(:choose)
         .with(
           message: match_snapshot("standard-gem-header"),
-          choices: %w[Readme Changelog Dependencies Versions]
+          choices: an_instance_of(Proc)
         )
         .and_yield("Dependencies")
 
@@ -78,7 +78,7 @@ RSpec.describe Gemview::Commands do
         .to receive(:choose)
         .with(
           message: match_snapshot("standard-gem-header"),
-          choices: %w[Readme Changelog Dependencies Versions]
+          choices: an_instance_of(Proc)
         )
         .and_yield("Versions")
 
@@ -103,7 +103,7 @@ RSpec.describe Gemview::Commands do
         .to receive(:choose)
         .with(
           message: match_snapshot("rails-gem-header"),
-          choices: %w[Readme Changelog Dependencies Versions]
+          choices: an_instance_of(Proc)
         )
 
       VCR.use_cassette("find-rails-gem") do
@@ -165,7 +165,7 @@ RSpec.describe Gemview::Commands do
         .to receive(:choose)
         .with(
           message: match_snapshot("birdbrain-gem-header"),
-          choices: %w[Readme Changelog Dependencies Versions]
+          choices: an_instance_of(Proc)
         )
 
       VCR.use_cassette("search-for-bluetooth") do
@@ -271,7 +271,7 @@ RSpec.describe Gemview::Commands do
         .to receive(:choose)
         .with(
           message: match_snapshot("rubocop-gem-header"),
-          choices: %w[Readme Changelog Dependencies Versions]
+          choices: an_instance_of(Proc)
         )
 
       VCR.use_cassette("gems-by-author-bbatsov") do
@@ -342,12 +342,7 @@ RSpec.describe Gemview::Commands do
         .to receive(:choose)
         .with(
           message: match_snapshot("builder-rails-cache-gem-header"),
-          choices: [
-            {name: "Readme", disabled: "(missing)"},
-            {name: "Changelog", disabled: "(missing)"},
-            "Dependencies",
-            "Versions"
-          ]
+          choices: an_instance_of(Proc)
         )
 
       VCR.use_cassette("latest-gems") do
@@ -465,7 +460,7 @@ RSpec.describe Gemview::Commands do
         .to receive(:choose)
         .with(
           message: match_snapshot("active-model-serializers-gem-header"),
-          choices: %w[Readme Changelog Dependencies Versions]
+          choices: an_instance_of(Proc)
         )
 
       VCR.use_cassette("just-updated-gems") do
