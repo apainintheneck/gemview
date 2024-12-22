@@ -137,13 +137,12 @@ module Gemview
     # @param uri [String]
     # @return [String, nil]
     def fetch(uri)
-      response = Net::HTTP.get_response(URI(uri))
-      if response.is_a?(Net::HTTPSuccess)
-        body = response.body.force_encoding("UTF-8")
-        Terminal.prettify_markdown(body)
-      end
-    rescue Net::HTTPError, URI::Error
-      nil
+      require "open-uri"
+      response = URI(uri).open(open_timeout: 3, read_timeout: 3).read
+      body = response.force_encoding("UTF-8")
+      Terminal.prettify_markdown(body)
+    rescue OpenURI::HTTPError, Net::OpenTimeout, Net::ReadTimeout
+      nil # this is best effort so we silence network errors here
     end
   end
 end
