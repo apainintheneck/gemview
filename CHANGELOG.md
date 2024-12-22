@@ -3,9 +3,11 @@
 - Add better support for showing the changelog
 - Add ability to sort search results by total and version downloads
 - Add ruby version to gem version output
-- Save last position in TUI selector
-- Consistently align TUI at the top of the screen
-- Disable readme and changelog viewing if they are unreachable
+- Add ability last position in TUI selector
+- Add ability to isable readme and changelog viewing if they are unreachable
+
+- Change pager to align TUI at the top of the screen
+- Change default pager to use less for consistent paging
 
 ## [1.0.0] - 2024-12-08
 
