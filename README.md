@@ -2,7 +2,7 @@
 
 [![Gem Version](https://badge.fury.io/rb/gemview.svg)](https://badge.fury.io/rb/gemview)
 
-An unofficial CLI interface for querying information from rubygems.org. It uses the [gems](https://rubygems.org/gems/gems) gem internally.
+An unofficial TUI interface for querying information from rubygems.org. It uses the [gems](https://rubygems.org/gems/gems) gem internally. It requires the presence of the `less` pager and is tested on macOS and Linux.
 
 Note: This gem is not directly affiliated with `rubygems.org`. It's just a hobby project.
 

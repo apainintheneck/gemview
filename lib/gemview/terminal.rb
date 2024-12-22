@@ -15,9 +15,8 @@ module Gemview
 
     # @param content [String]
     def self.page(content)
-      # Override the default pager so that it is top justified to match the choice menus.
-      ENV["PAGER"] = "less -c -r +gg"
-      TTY::Pager.page(content)
+      # Override the default pager command so that it is top justified to match the choice menus.
+      TTY::Pager::SystemPager.new(command: "less -c -r +gg").page(content)
     end
 
     # @param prompt [String]
