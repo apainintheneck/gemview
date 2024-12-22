@@ -19,9 +19,6 @@ end
 # External
 autoload :Gems, "gems"
 autoload :Strings, "strings"
-module Net
-  autoload :HTTP, "net/http"
-end
 
 module TTY
   autoload :Markdown, "tty-markdown"
