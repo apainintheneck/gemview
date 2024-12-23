@@ -4,7 +4,8 @@ module Gemview
   class GitRepo
     HOSTS = [
       GITHUB = :github,
-      GITLAB = :gitlab
+      GITLAB = :gitlab,
+      CODEBERG = :codeberg
     ].freeze
 
     # @param homepage_uri [String, nil]
@@ -34,7 +35,10 @@ module Gemview
       return [github_base_uri, GITHUB] if github_base_uri
 
       gitlab_base_uri = uri[%r{^https?://gitlab\.com/[^/]+/[^/]+}, 0]
-      [gitlab_base_uri, GITLAB] if gitlab_base_uri
+      return [gitlab_base_uri, GITLAB] if gitlab_base_uri
+
+      codeberg_base_uri = uri[%r{^https?://codeberg\.org/[^/]+/[^/]+}, 0]
+      [codeberg_base_uri, CODEBERG] if codeberg_base_uri
     end
 
     private_class_method :new
@@ -97,6 +101,7 @@ module Gemview
       case @git_host
       when GITHUB then github_raw_file(filename)
       when GITLAB then gitlab_raw_file(filename)
+      when CODEBERG then codeberg_raw_file(filename)
       end
     end
 
@@ -127,6 +132,23 @@ module Gemview
       [
         "https://gitlab.com#{path}/-/raw/v#{@version}/#{filename}?ref_type=tags&inline=false",
         "https://gitlab.com#{path}/-/raw/#{@version}/#{filename}?ref_type=tags&inline=false"
+      ].each do |uri|
+        content = fetch(uri)
+        return content if content
+      end
+      nil
+    end
+
+    # @param filename [String]
+    # @return [String, nil]
+    def codeberg_raw_file(filename)
+      # From: `https://codeberg.org/bendangelo/wiktionary_api`
+      # To: `https://codeberg.org/bendangelo/wiktionary_api/raw/tag/v0.1.1/README.md`
+      path = @base_uri.sub(%r{^https?://codeberg\.org}, "")
+
+      [
+        "https://codeberg.org#{path}/raw/tag/v#{@version}/#{filename}",
+        "https://codeberg.org#{path}/raw/tag/#{@version}/#{filename}"
       ].each do |uri|
         content = fetch(uri)
         return content if content

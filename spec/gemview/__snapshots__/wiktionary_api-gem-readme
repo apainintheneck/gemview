@@ -1,0 +1,50 @@
+Wiktionary API
+
+A ruby gem to interface with the Wiktionary API » https://en.wiktionary.org/api/rest_v1/.
+
+  Installation
+
+  gem install wiktionary_api
+  Usage
+
+  # Initialize the client
+  client = WiktionaryAPI::Client.new
+  
+  # Look up a word
+  results = client.lookup('hello')
+  
+  # Access the first result
+  word = results.first
+  
+  # Get basic information
+  puts word.part_of_speech        # => "Interjection"
+  
+  # Get all definitions
+  word.definitions.each do |definition|
+    puts definition # => "A greeting (salutation) said when meeting someone or 
+  acknowledging someone’s arrival or presence."
+  end
+  
+  # Get examples
+  puts word.examples        # => ["Hello, everyone.", ...]
+  
+  # Works with multi-word phrases too
+  results = client.lookup('give up')
+  
+  # Works with words with apostrophes
+  results = client.lookup("I'll")
+  Development
+
+  After checking out the repo, run bin/setup to install dependencies. Then, run rake spec to run the tests. You can also run bin/console for an interactive prompt that will allow you to experiment.
+
+  To install this gem onto your local machine, run bundle exec rake install. To release a new version, update the version number in version.rb, and then run bundle exec rake release, which will create a git tag for the version, push git commits and the 
+  created tag, and push the .gem file to rubygems.org » https://rubygems.org.
+
+  Contributing
+
+  Bug reports and pull requests are welcome on Codeberg at 
+  https://codeberg.org/bendangelo/wiktionary_api.
+
+  License
+
+  The gem is available as open source under the terms of the MIT License » https://opensource.org/licenses/MIT.

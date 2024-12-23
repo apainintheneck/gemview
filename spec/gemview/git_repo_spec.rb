@@ -31,5 +31,20 @@ RSpec.describe Gemview::GitRepo do
         version: "0.0.40"
       )
     end
+
+    it "parses codeberg urls" do
+      git_repo = described_class.from_urls(
+        homepage_uri: "https://codeberg.org/bendangelo/wiktionary_api",
+        source_code_uri: "https://codeberg.org/bendangelo/wiktionary_api",
+        changelog_uri: nil,
+        version: "0.1.1"
+      )
+      expect(git_repo).to have_attributes(
+        base_uri: "https://codeberg.org/bendangelo/wiktionary_api",
+        changelog_uri: nil,
+        git_host: :codeberg,
+        version: "0.1.1"
+      )
+    end
   end
 end
