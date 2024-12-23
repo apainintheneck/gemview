@@ -105,7 +105,7 @@ RSpec.describe Gemview::Gem do
 
   describe "#readme" do
     context "when it exists" do
-      it "fetches readme" do
+      it "fetches readme from Gitlab" do
         gem = VCR.use_cassette("find-ble-gem") do
           described_class.find(name: "ble")
         end
@@ -114,12 +114,22 @@ RSpec.describe Gemview::Gem do
           expect(gem.readme).to match_snapshot("ble-gem-readme")
         end
       end
+
+      it "fetches readme from Codeberg" do
+        gem = VCR.use_cassette("find-wiktionary_api-gem") do
+          described_class.find(name: "wiktionary_api")
+        end
+
+        VCR.use_cassette("wiktionary_api-gem-readme") do
+          expect(gem.readme).to match_snapshot("wiktionary_api-gem-readme")
+        end
+      end
     end
   end
 
   describe "#changelog" do
     context "when it exists" do
-      it "fetches changelog" do
+      it "fetches changelog from Github" do
         gem = VCR.use_cassette("find-standard-gem") do
           described_class.find(name: "standard", version: "1.42.1")
         end

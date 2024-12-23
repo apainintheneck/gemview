@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://codeberg.org/bendangelo/wiktionary_api/raw/tag/v0.1.1/README.md
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Expose-Headers:
+      - Content-Disposition
+      Cache-Control:
+      - private, max-age=300
+      Content-Disposition:
+      - inline; filename="README.md"; filename*=UTF-8''README.md
+      Content-Type:
+      - text/plain; charset=utf-8
+      Etag:
+      - W/"82627c2e6e68c5b0ab08719f803c7e08826ffad1"
+      Last-Modified:
+      - Fri, 20 Dec 2024 21:55:16 GMT
+      Set-Cookie:
+      - _csrf=kjVTNUhXDqPgVAZESLg4JP599C46MTczNDkyNjc0MDYzMzY5NjI5MQ; Path=/; Max-Age=86400;
+        HttpOnly; Secure; SameSite=Lax; Secure; SameSite=Lax
+      - i_like_gitea=46ade7a1183f2a3e; Path=/; HttpOnly; Secure; SameSite=Lax; Secure;
+        SameSite=Lax
+      Date:
+      - Mon, 23 Dec 2024 04:05:40 GMT
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains; preload
+      Permissions-Policy:
+      - interest-cohort=()
+      X-Frame-Options:
+      - sameorigin
+      X-Content-Type-Options:
+      - nosniff
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        IyBXaWt0aW9uYXJ5IEFQSQoKQSBydWJ5IGdlbSB0byBpbnRlcmZhY2Ugd2l0aCB0aGUgW1dpa3Rpb25hcnkgQVBJXShodHRwczovL2VuLndpa3Rpb25hcnkub3JnL2FwaS9yZXN0X3YxLykuCgojIyBJbnN0YWxsYXRpb24KCmBgYApnZW0gaW5zdGFsbCB3aWt0aW9uYXJ5X2FwaQpgYGAKCiMjIFVzYWdlCgpgYGAKIyBJbml0aWFsaXplIHRoZSBjbGllbnQKY2xpZW50ID0gV2lrdGlvbmFyeUFQSTo6Q2xpZW50Lm5ldwoKIyBMb29rIHVwIGEgd29yZApyZXN1bHRzID0gY2xpZW50Lmxvb2t1cCgnaGVsbG8nKQoKIyBBY2Nlc3MgdGhlIGZpcnN0IHJlc3VsdAp3b3JkID0gcmVzdWx0cy5maXJzdAoKIyBHZXQgYmFzaWMgaW5mb3JtYXRpb24KcHV0cyB3b3JkLnBhcnRfb2Zfc3BlZWNoICAgICAgICAjID0+ICJJbnRlcmplY3Rpb24iCgojIEdldCBhbGwgZGVmaW5pdGlvbnMKd29yZC5kZWZpbml0aW9ucy5lYWNoIGRvIHxkZWZpbml0aW9ufAogIHB1dHMgZGVmaW5pdGlvbiAjID0+ICJBIGdyZWV0aW5nIChzYWx1dGF0aW9uKSBzYWlkIHdoZW4gbWVldGluZyBzb21lb25lIG9yIGFja25vd2xlZGdpbmcgc29tZW9uZeKAmXMgYXJyaXZhbCBvciBwcmVzZW5jZS4iCmVuZAoKIyBHZXQgZXhhbXBsZXMKcHV0cyB3b3JkLmV4YW1wbGVzICAgICAgICAjID0+IFsiSGVsbG8sIGV2ZXJ5b25lLiIsIC4uLl0KCiMgV29ya3Mgd2l0aCBtdWx0aS13b3JkIHBocmFzZXMgdG9vCnJlc3VsdHMgPSBjbGllbnQubG9va3VwKCdnaXZlIHVwJykKCiMgV29ya3Mgd2l0aCB3b3JkcyB3aXRoIGFwb3N0cm9waGVzCnJlc3VsdHMgPSBjbGllbnQubG9va3VwKCJJJ2xsIikKYGBgCgojIyBEZXZlbG9wbWVudAoKQWZ0ZXIgY2hlY2tpbmcgb3V0IHRoZSByZXBvLCBydW4gYGJpbi9zZXR1cGAgdG8gaW5zdGFsbCBkZXBlbmRlbmNpZXMuIFRoZW4sIHJ1biBgcmFrZSBzcGVjYCB0byBydW4gdGhlIHRlc3RzLiBZb3UgY2FuIGFsc28gcnVuIGBiaW4vY29uc29sZWAgZm9yIGFuIGludGVyYWN0aXZlIHByb21wdCB0aGF0IHdpbGwgYWxsb3cgeW91IHRvIGV4cGVyaW1lbnQuCgpUbyBpbnN0YWxsIHRoaXMgZ2VtIG9udG8geW91ciBsb2NhbCBtYWNoaW5lLCBydW4gYGJ1bmRsZSBleGVjIHJha2UgaW5zdGFsbGAuIFRvIHJlbGVhc2UgYSBuZXcgdmVyc2lvbiwgdXBkYXRlIHRoZSB2ZXJzaW9uIG51bWJlciBpbiBgdmVyc2lvbi5yYmAsIGFuZCB0aGVuIHJ1biBgYnVuZGxlIGV4ZWMgcmFrZSByZWxlYXNlYCwgd2hpY2ggd2lsbCBjcmVhdGUgYSBnaXQgdGFnIGZvciB0aGUgdmVyc2lvbiwgcHVzaCBnaXQgY29tbWl0cyBhbmQgdGhlIGNyZWF0ZWQgdGFnLCBhbmQgcHVzaCB0aGUgYC5nZW1gIGZpbGUgdG8gW3J1YnlnZW1zLm9yZ10oaHR0cHM6Ly9ydWJ5Z2Vtcy5vcmcpLgoKIyMgQ29udHJpYnV0aW5nCgpCdWcgcmVwb3J0cyBhbmQgcHVsbCByZXF1ZXN0cyBhcmUgd2VsY29tZSBvbiBDb2RlYmVyZyBhdCBodHRwczovL2NvZGViZXJnLm9yZy9iZW5kYW5nZWxvL3dpa3Rpb25hcnlfYXBpLgoKIyMgTGljZW5zZQoKVGhlIGdlbSBpcyBhdmFpbGFibGUgYXMgb3BlbiBzb3VyY2UgdW5kZXIgdGhlIHRlcm1zIG9mIHRoZSBbTUlUIExpY2Vuc2VdKGh0dHBzOi8vb3BlbnNvdXJjZS5vcmcvbGljZW5zZXMvTUlUKS4K
+  recorded_at: Mon, 23 Dec 2024 04:05:40 GMT
+recorded_with: VCR 6.3.1
