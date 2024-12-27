@@ -8,6 +8,8 @@ module Gemview
       CODEBERG = :codeberg
     ].freeze
 
+    HTTPS_PORT = 443
+
     # @param homepage_uri [String, nil]
     # @param source_code_uri [String, nil]
     # @param changelog_uri [String, nil]
@@ -112,31 +114,37 @@ module Gemview
       # To: `https://raw.githubusercontent.com/charmbracelet/bubbles/refs/tags/v0.20.0/README.md`
       path = @base_uri.sub(%r{^https?://github\.com}, "")
 
-      [
-        "https://raw.githubusercontent.com#{path}/refs/tags/v#{@version}/#{filename}",
-        "https://raw.githubusercontent.com#{path}/refs/tags/#{@version}/#{filename}"
-      ].each do |uri|
-        content = fetch(uri)
-        return content if content
-      end
-      nil
+      fetch_markdown(
+        host: "raw.githubusercontent.com",
+        tag_paths: [
+          "#{path}/refs/tags/v#{@version}/#{filename}",
+          "#{path}/refs/tags/#{@version}/#{filename}"
+        ],
+        head_paths: [
+          "#{path}/refs/heads/main/#{filename}",
+          "#{path}/refs/heads/master/#{filename}"
+        ]
+      )
     end
 
     # @param filename [String]
     # @return [String, nil]
     def gitlab_raw_file(filename)
       # From: `https://gitlab.com/gitlab-org/gitlab`
-      # To: `https://gitlab.com/gitlab-org/gitlab/-/raw/v17.5.1-ee/README.md?ref_type=tags&inline=false`
+      # To: `https://gitlab.com/gitlab-org/gitlab/-/raw/v17.5.1-ee/README.md`
       path = @base_uri.sub(%r{^https?://gitlab\.com}, "")
 
-      [
-        "https://gitlab.com#{path}/-/raw/v#{@version}/#{filename}?ref_type=tags&inline=false",
-        "https://gitlab.com#{path}/-/raw/#{@version}/#{filename}?ref_type=tags&inline=false"
-      ].each do |uri|
-        content = fetch(uri)
-        return content if content
-      end
-      nil
+      fetch_markdown(
+        host: "gitlab.com",
+        tag_paths: [
+          "#{path}/-/raw/v#{@version}/#{filename}",
+          "#{path}/-/raw/#{@version}/#{filename}"
+        ],
+        head_paths: [
+          "#{path}/-/raw/main/#{filename}",
+          "#{path}/-/raw/master/#{filename}"
+        ]
+      )
     end
 
     # @param filename [String]
@@ -146,24 +154,52 @@ module Gemview
       # To: `https://codeberg.org/bendangelo/wiktionary_api/raw/tag/v0.1.1/README.md`
       path = @base_uri.sub(%r{^https?://codeberg\.org}, "")
 
-      [
-        "https://codeberg.org#{path}/raw/tag/v#{@version}/#{filename}",
-        "https://codeberg.org#{path}/raw/tag/#{@version}/#{filename}"
-      ].each do |uri|
-        content = fetch(uri)
-        return content if content
-      end
-      nil
+      fetch_markdown(
+        host: "codeberg.org",
+        tag_paths: [
+          "#{path}/raw/tag/v#{@version}/#{filename}",
+          "#{path}/raw/tag/#{@version}/#{filename}"
+        ],
+        head_paths: [
+          "#{path}/raw/branch/main/#{filename}",
+          "#{path}/raw/branch/master/#{filename}"
+        ]
+      )
     end
 
-    # @param uri [String]
+    # @param host [String]
+    # @param tag_paths [Array<String>]
+    # @param head_paths [Array<String>]
     # @return [String, nil]
-    def fetch(uri)
-      require "open-uri"
-      response = URI(uri).open(open_timeout: 3, read_timeout: 3).read
-      body = response.force_encoding("UTF-8")
-      Terminal.prettify_markdown(body)
-    rescue OpenURI::HTTPError, Net::OpenTimeout, Net::ReadTimeout
+    def fetch_markdown(host:, tag_paths:, head_paths:)
+      body = nil
+
+      Net::HTTP.start(host, HTTPS_PORT, use_ssl: true, open_timeout: 2, read_timeout: 2) do |http|
+        tag_paths.each do |path|
+          response = http.get(path)
+          if response.is_a?(Net::HTTPSuccess)
+            body = response.body.force_encoding("UTF-8")
+            break
+          end
+        end
+
+        unless body
+          head_paths.each do |path|
+            response = http.get(path)
+            if response.is_a?(Net::HTTPSuccess)
+              body = <<~BODY
+                *FYI*: This was fetched from the HEAD branch of the Git repository.
+
+                #{response.body.force_encoding("UTF-8")}
+              BODY
+              break
+            end
+          end
+        end
+      end
+
+      Terminal.prettify_markdown(body) if body
+    rescue Net::OpenTimeout, Net::ReadTimeout
       nil # this is best effort so we silence network errors here
     end
   end

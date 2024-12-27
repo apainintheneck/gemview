@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://gitlab.com/sdalu/ruby-ble/-/raw/v1.0.0/README.md?inline=false&ref_type=tags
+    uri: https://gitlab.com/sdalu/ruby-ble/-/raw/v1.0.0/README.md
     body:
       encoding: US-ASCII
       string: ''
@@ -13,23 +13,21 @@ http_interactions:
       - "*/*"
       User-Agent:
       - Ruby
-      Host:
-      - gitlab.com
   response:
     status:
       code: 200
       message: OK
     headers:
       Date:
-      - Sat, 21 Dec 2024 04:28:34 GMT
+      - Fri, 27 Dec 2024 02:20:43 GMT
       Content-Type:
-      - application/octet-stream
+      - text/plain; charset=utf-8
       Content-Length:
       - '974'
       Connection:
       - keep-alive
       Cf-Ray:
-      - 8f55204b2ee5ce54-SJC
+      - 8f85d5420aeb2518-SJC
       Cf-Cache-Status:
       - MISS
       Accept-Ranges:
@@ -38,7 +36,7 @@ http_interactions:
       - max-age=60, public, must-revalidate, stale-while-revalidate=60, stale-if-error=300,
         s-maxage=60
       Content-Disposition:
-      - attachment; filename="README.md"; filename*=UTF-8''README.md
+      - inline
       Etag:
       - '"a25662db48b1b6072e7f5bf14eabc562"'
       Strict-Transport-Security:
@@ -62,13 +60,13 @@ http_interactions:
         ''none''; report-uri https://new-sentry.gitlab.net/api/4/security/?sentry_key=f5573e26de8f4293b285e556c35dfd6e&sentry_environment=gprd;
         script-src ''strict-dynamic'' ''self'' ''unsafe-inline'' ''unsafe-eval'' https://www.google.com/recaptcha/
         https://www.gstatic.com/recaptcha/ https://www.recaptcha.net/ https://apis.google.com
-        https://*.zuora.com/apps/PublicHostedPageLite.do ''nonce-zmL2RZzAW/+eLwvuzpB6Aw=='';
+        https://*.zuora.com/apps/PublicHostedPageLite.do ''nonce-hVa2LHmyA1TEAx9GCTsr0A=='';
         style-src ''self'' ''unsafe-inline''; worker-src ''self'' https://gitlab.com/assets/
         blob: data:'
       Gitlab-Lb:
-      - haproxy-main-44-lb-gprd
+      - haproxy-main-30-lb-gprd
       Gitlab-Sv:
-      - web-gke-us-east1-d
+      - web-gke-us-east1-b
       Permissions-Policy:
       - interest-cohort=()
       Referrer-Policy:
@@ -80,23 +78,23 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Gitlab-Meta:
-      - '{"correlation_id":"01JFKQJTSC1EV14WQ9KN4JM6R0","version":"1"}'
+      - '{"correlation_id":"01JG2YN1C63PM656414XJ27Z6W","version":"1"}'
       X-Permitted-Cross-Domain-Policies:
       - none
       X-Request-Id:
-      - 01JFKQJTSC1EV14WQ9KN4JM6R0
+      - 01JG2YN1C63PM656414XJ27Z6W
       X-Runtime:
-      - '0.109993'
+      - '0.077610'
       X-Ua-Compatible:
       - IE=edge
       X-Xss-Protection:
       - 1; mode=block
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=RVaEzcfyvA0JKExciGR4SVeY9ibpeZEtEJ3y4h8W3NDUj18xWX9QpR9dGWFCO%2Bh1TXBUQKcjC61iSAbfvevq5stILHGlAAvbB6z551QRr3qZzUjV3sCl60We2Yc%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=PQ1cDtU2Kmjuq6TkaMU6bjbxc6SagEdRXg%2FHCvf9InyYZb%2Fh8anSKOjE1JYD3edH2QNpEpCODwShQVnuUKnJTithMXpZzARNyTVX9T7075ztV5yt4ahIpe0%2Bvno%3D"}],"group":"cf-nel","max_age":604800}'
       Nel:
       - '{"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}'
       Set-Cookie:
-      - _cfuvid=UbLkN_NmB3MAYzapIO30Hpn3vESv9HyZ_xVLdxYUfdM-1734755314636-0.0.1.1-604800000;
+      - _cfuvid=hTagvzSPpLPK.rjxxytb6y90dZDWAxn8sHCx0gqO.T0-1735266043393-0.0.1.1-604800000;
         path=/; domain=.gitlab.com; HttpOnly; Secure; SameSite=None
       Server:
       - cloudflare
@@ -144,5 +142,5 @@ http_interactions:
 
         ## Contributors
         * Oliver Valls (tramuntanal): Bug fixes / BLE Notification support
-  recorded_at: Sat, 21 Dec 2024 04:28:34 GMT
+  recorded_at: Fri, 27 Dec 2024 02:20:43 GMT
 recorded_with: VCR 6.3.1
