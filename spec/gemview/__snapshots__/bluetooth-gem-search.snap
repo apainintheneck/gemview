@@ -1,0 +1,504 @@
+---
+- !ruby/object:Gemview::Gem
+  name: bluetooth
+  downloads: 6382
+  version: '1.0'
+  version_downloads: 6382
+  version_created_at:
+  authors: Eric Hodel, Jeremie Castagna, Esteve Fernandez
+  info: A bluetooth library for ruby
+  licenses: []
+  project_uri: https://rubygems.org/gems/bluetooth
+  homepage_uri: http://github.com/yaksnrainbows/ruby-bluetooth
+  source_code_uri:
+  changelog_uri:
+  development_dependencies:
+  runtime_dependencies:
+- !ruby/object:Gemview::Gem
+  name: tamashii-bluetooth
+  downloads: 2993
+  version: 0.1.0.beta.2
+  version_downloads: 1514
+  version_created_at:
+  authors: 蒼時弦也
+  info: The bluetooth implement for tamashii
+  licenses: []
+  project_uri: https://rubygems.org/gems/tamashii-bluetooth
+  homepage_uri: https://tamashii.io
+  source_code_uri:
+  changelog_uri:
+  development_dependencies:
+  runtime_dependencies:
+- !ruby/object:Gemview::Gem
+  name: ruby-bluetooth
+  downloads: 2202
+  version: 0.0.1.1
+  version_downloads: 2195
+  version_created_at:
+  authors: ruby-bluetooth
+  info: description - ruby-bluetooth - work in progress
+  licenses:
+  - GPL-3.0
+  project_uri: https://rubygems.org/gems/ruby-bluetooth
+  homepage_uri: https://ruby-bluetooth.work-in-progress
+  source_code_uri:
+  changelog_uri:
+  development_dependencies:
+  runtime_dependencies:
+- !ruby/object:Gemview::Gem
+  name: cmus-bt
+  downloads: 7285
+  version: 0.1.3
+  version_downloads: 2117
+  version_created_at:
+  authors: Hirosho Kuwagata
+  info: Bluetooth AVRCP wrapper for cmus.
+  licenses:
+  - MIT
+  project_uri: https://rubygems.org/gems/cmus-bt
+  homepage_uri: https://github.com/kwgt/cmus-bt
+  source_code_uri:
+  changelog_uri:
+  development_dependencies:
+  runtime_dependencies:
+- !ruby/object:Gemview::Gem
+  name: ble
+  downloads: 13812
+  version: 1.0.0
+  version_downloads: 3468
+  version_created_at:
+  authors: Stephane D'Alu
+  info: Allow access to Bluetooth Low Energy device from ruby
+  licenses:
+  - MIT
+  project_uri: https://rubygems.org/gems/ble
+  homepage_uri: http://gitlab.com/sdalu/ruby-ble
+  source_code_uri:
+  changelog_uri:
+  development_dependencies:
+  runtime_dependencies:
+- !ruby/object:Gemview::Gem
+  name: sphero_pwn
+  downloads: 4937
+  version: 0.0.1
+  version_downloads: 2940
+  version_created_at:
+  authors: Victor Costan
+  info: |-
+    This library is currently focused on reverse-engineering
+          the undocumented parts of Sphero
+  licenses:
+  - MIT
+  project_uri: https://rubygems.org/gems/sphero_pwn
+  homepage_uri: http://github.com/pwnall/sphero_pwn
+  source_code_uri:
+  changelog_uri:
+  development_dependencies:
+  runtime_dependencies:
+- !ruby/object:Gemview::Gem
+  name: bluebutton
+  downloads: 9212
+  version: 0.2.1
+  version_downloads: 5100
+  version_created_at:
+  authors: Samoilenko Yuri
+  info: 'Simple daemon that allows you to execute action when bluetooth button shutter
+    pressed. So you can control your PC by low energy button device and few scripts.
+
+    '
+  licenses:
+  - GPL-3.0
+  project_uri: https://rubygems.org/gems/bluebutton
+  homepage_uri: https://github.com/kinnalru/bluebutton
+  source_code_uri:
+  changelog_uri:
+  development_dependencies:
+  runtime_dependencies:
+- !ruby/object:Gemview::Gem
+  name: bluejam
+  downloads: 2100
+  version: 0.0.1
+  version_downloads: 2100
+  version_created_at:
+  authors: Francesco Palumbo
+  info: Use bluetooth speaker with bluez-alsa and snd-aloop
+  licenses:
+  - CC0
+  project_uri: https://rubygems.org/gems/bluejam
+  homepage_uri: https://gitlab.com/phranz/no_pulseaudio
+  source_code_uri:
+  changelog_uri:
+  development_dependencies:
+  runtime_dependencies:
+- !ruby/object:Gemview::Gem
+  name: shutter3
+  downloads: 7549
+  version: 0.1.3
+  version_downloads: 2495
+  version_created_at:
+  authors: James Robertson
+  info: Uses the command `hcidump --raw` (see bluez-hcidump) to detect the bluetooth
+    button events for a wireless bluetooth remote control shutter button.
+  licenses:
+  - MIT
+  project_uri: https://rubygems.org/gems/shutter3
+  homepage_uri: https://github.com/jrobertson/shutter3
+  source_code_uri:
+  changelog_uri:
+  development_dependencies:
+  runtime_dependencies:
+- !ruby/object:Gemview::Gem
+  name: sb-ble
+  downloads: 2427
+  version: 0.5.0
+  version_downloads: 2427
+  version_created_at:
+  authors: Fred Mitchell &amp; Sensorberg
+  info: This supports LE Advertising
+  licenses:
+  - MIT
+  project_uri: https://rubygems.org/gems/sb-ble
+  homepage_uri: http://github.com/flajann2/ruby-ble
+  source_code_uri:
+  changelog_uri:
+  development_dependencies:
+  runtime_dependencies:
+- !ruby/object:Gemview::Gem
+  name: syncope
+  downloads: 3826
+  version: 0.0.0
+  version_downloads: 3826
+  version_created_at:
+  authors: Isam
+  info: Syncope lets your apps knock out when you do
+  licenses: []
+  project_uri: https://rubygems.org/gems/syncope
+  homepage_uri: http://rubygems.org/gems/syncope
+  source_code_uri:
+  changelog_uri:
+  development_dependencies:
+  runtime_dependencies:
+- !ruby/object:Gemview::Gem
+  name: hcitools_wrapper
+  downloads: 24114
+  version: 0.2.2
+  version_downloads: 3769
+  version_created_at:
+  authors: James Robertson
+  info: Uses hcitool lescan + hcidump --raw to fetch the RSSI values from a Bluetooth
+    device address.
+  licenses:
+  - MIT
+  project_uri: https://rubygems.org/gems/hcitools_wrapper
+  homepage_uri: https://github.com/jrobertson/hcitools_wrapper
+  source_code_uri:
+  changelog_uri:
+  development_dependencies:
+  runtime_dependencies:
+- !ruby/object:Gemview::Gem
+  name: lego-nxt
+  downloads: 5358
+  version: 0.3.0
+  version_downloads: 1710
+  version_created_at:
+  authors: Nathan Kleyn
+  info: Ruby LEGO Mindstorms NXT 2.0 control via Bluetooth and USB. See http://github.com/nathankleyn/lego-nxt
+    for more information.
+  licenses:
+  - MIT
+  project_uri: https://rubygems.org/gems/lego-nxt
+  homepage_uri: http://github.com/nathankleyn/lego-nxt
+  source_code_uri:
+  changelog_uri:
+  development_dependencies:
+  runtime_dependencies:
+- !ruby/object:Gemview::Gem
+  name: hue_ble
+  downloads: 1755
+  version: 0.1.0
+  version_downloads: 1755
+  version_created_at:
+  authors: NeoCat
+  info: Control color temperature, brightness, and color of Hue light bulbs which
+    supports Bluetooth LE.
+  licenses:
+  - MIT
+  project_uri: https://rubygems.org/gems/hue_ble
+  homepage_uri: https://github.com/NeoCat/ruby_hue_ble
+  source_code_uri: https://github.com/NeoCat/ruby_hue_ble
+  changelog_uri:
+  development_dependencies:
+  runtime_dependencies:
+- !ruby/object:Gemview::Gem
+  name: dozen
+  downloads: 4076
+  version: 1.1.0
+  version_downloads: 4075
+  version_created_at:
+  authors: Rob Fletcher
+  info: A simple tool to pair your Sixaxis controller with any Bluetooth device. Derived
+    from the sixpair.c source.
+  licenses:
+  - MIT
+  project_uri: https://rubygems.org/gems/dozen
+  homepage_uri: https://github.com/terraflubb/dozen
+  source_code_uri:
+  changelog_uri:
+  development_dependencies:
+  runtime_dependencies:
+- !ruby/object:Gemview::Gem
+  name: shutter3_morsecode
+  downloads: 4135
+  version: 0.1.1
+  version_downloads: 2471
+  version_created_at:
+  authors: James Robertson
+  info: Uses a Shutter3 bluetooth device to publish SimplePubSub (SPS) messages using
+    morse code.
+  licenses:
+  - MIT
+  project_uri: https://rubygems.org/gems/shutter3_morsecode
+  homepage_uri: https://github.com/jrobertson/shutter3_morsecode
+  source_code_uri:
+  changelog_uri:
+  development_dependencies:
+  runtime_dependencies:
+- !ruby/object:Gemview::Gem
+  name: ld3w
+  downloads: 12567
+  version: 0.2.2
+  version_downloads: 2098
+  version_created_at:
+  authors: James Robertson
+  info: Reads the GPS data from a Nokia LD-3W GPS bluetooth receiver using the system
+    command rfcomm.
+  licenses:
+  - MIT
+  project_uri: https://rubygems.org/gems/ld3w
+  homepage_uri: https://github.com/jrobertson/ld3w
+  source_code_uri:
+  changelog_uri:
+  development_dependencies:
+  runtime_dependencies:
+- !ruby/object:Gemview::Gem
+  name: rubyeddystoneurl
+  downloads: 2237
+  version: 1.0.0
+  version_downloads: 2237
+  version_created_at:
+  authors: Ferdinand E. Silva
+  info: Ruby C Extension To Scan Eddystone-URL Bluetooth Low Energy Beacons
+  licenses: []
+  project_uri: https://rubygems.org/gems/rubyeddystoneurl
+  homepage_uri: http://ferdinandsilva.com
+  source_code_uri:
+  changelog_uri:
+  development_dependencies:
+  runtime_dependencies:
+- !ruby/object:Gemview::Gem
+  name: bluez-profile
+  downloads: 3466
+  version: 1.1.2
+  version_downloads: 1662
+  version_created_at:
+  authors: Clive Andrews
+  info: Create Custom Bluez Bluetooth Profiles
+  licenses:
+  - MIT
+  project_uri: https://rubygems.org/gems/bluez-profile
+  homepage_uri: https://github.com/realbite/bluez-profile
+  source_code_uri:
+  changelog_uri:
+  development_dependencies:
+  runtime_dependencies:
+- !ruby/object:Gemview::Gem
+  name: home_assistant-ble
+  downloads: 47134
+  version: 1.4.2
+  version_downloads: 2011
+  version_created_at:
+  authors: Grégoire Seux
+  info: home-assistant does not cope well with bluetooth on raspberry pi. This gem
+    sends event to HA.
+  licenses: []
+  project_uri: https://rubygems.org/gems/home_assistant-ble
+  homepage_uri: https://github.com/kamaradclimber/home_assistant-ble
+  source_code_uri:
+  changelog_uri:
+  development_dependencies:
+  runtime_dependencies:
+- !ruby/object:Gemview::Gem
+  name: mi100
+  downloads: 20818
+  version: 1.0.0
+  version_downloads: 2954
+  version_created_at:
+  authors: Masami Yamakawa
+  info: A ruby gem for controlling MI100 of monoxit through bluetooth virtual serial
+    port.
+  licenses:
+  - MIT
+  project_uri: https://rubygems.org/gems/mi100
+  homepage_uri: https://github.com/monoxit/mi100
+  source_code_uri:
+  changelog_uri:
+  development_dependencies:
+  runtime_dependencies:
+- !ruby/object:Gemview::Gem
+  name: hybridgroup-sphero
+  downloads: 37712
+  version: 1.5.2
+  version_downloads: 3488
+  version_created_at:
+  authors: The Hybrid Group
+  info: |-
+    A ruby gem for controlling your Sphero ball.  Sends commands over the TTY
+    provided by the bluetooth connection.
+  licenses: []
+  project_uri: https://rubygems.org/gems/hybridgroup-sphero
+  homepage_uri: http://github.com/hybridgroup/sphero
+  source_code_uri:
+  changelog_uri:
+  development_dependencies:
+  runtime_dependencies:
+- !ruby/object:Gemview::Gem
+  name: sphero
+  downloads: 19094
+  version: 1.5.3
+  version_downloads: 4484
+  version_created_at:
+  authors: The Hybrid Group
+  info: |-
+    A ruby gem for controlling your Sphero ball.  Sends commands over the TTY
+    provided by the bluetooth connection.
+  licenses: []
+  project_uri: https://rubygems.org/gems/sphero
+  homepage_uri: http://github.com/hybridgroup/sphero
+  source_code_uri:
+  changelog_uri:
+  development_dependencies:
+  runtime_dependencies:
+- !ruby/object:Gemview::Gem
+  name: bluemoon
+  downloads: 3991
+  version: 0.0.1
+  version_downloads: 3991
+  version_created_at:
+  authors: Nathaniel Jones
+  info: Enable or disable bluetooth on OS X based on your current location
+  licenses:
+  - MIT
+  project_uri: https://rubygems.org/gems/bluemoon
+  homepage_uri: http://github.com/nthj/bluemoon
+  source_code_uri:
+  changelog_uri:
+  development_dependencies:
+  runtime_dependencies:
+- !ruby/object:Gemview::Gem
+  name: robobuilder
+  downloads: 6428
+  version: 0.3.1
+  version_downloads: 3156
+  version_created_at:
+  authors: Jan Wedekind
+  info: This Ruby extension defines the Robobuilder class for communicating a Robobuilder
+    via the serial port or a Bluetooth serial connection.
+  licenses: []
+  project_uri: https://rubygems.org/gems/robobuilder
+  homepage_uri: http://wedesoft.github.com/robobuilder/
+  source_code_uri:
+  changelog_uri:
+  development_dependencies:
+  runtime_dependencies:
+- !ruby/object:Gemview::Gem
+  name: hybridgroup-mindset
+  downloads: 6340
+  version: '0.4'
+  version_downloads: 3665
+  version_created_at:
+  authors: mkfs
+  info: "This module reads all data transmitted by a Neurosky\nMindset, which must
+    already be paired in Bluetooth and have a Bluetooth serial\n(SPP) socket open.
+    The gem provides the module and a command line utility for\nreading packets and
+    either printing them to STDOUT in realtime, or serializing \nthem to STDOUT in
+    JSON on exit."
+  licenses:
+  - BSD
+  project_uri: https://rubygems.org/gems/hybridgroup-mindset
+  homepage_uri: https://github.com/mkfs/mindset
+  source_code_uri:
+  changelog_uri:
+  development_dependencies:
+  runtime_dependencies:
+- !ruby/object:Gemview::Gem
+  name: wii4r
+  downloads: 4120
+  version: 0.5.0
+  version_downloads: 4120
+  version_created_at:
+  authors: KzMz, BuZz
+  info: 'Ruby C Extension for controlling Wii Remote devices via bluetooth connection.
+    Binding of C wiiuse library (www.wiiuse.net) '
+  licenses: []
+  project_uri: https://rubygems.org/gems/wii4r
+  homepage_uri: http://github.com/KzMz/wii4r
+  source_code_uri:
+  changelog_uri:
+  development_dependencies:
+  runtime_dependencies:
+- !ruby/object:Gemview::Gem
+  name: louis
+  downloads: 86123
+  version: 2.3.7
+  version_downloads: 2548
+  version_created_at:
+  authors: Sam Stelfox
+  info: There is a public registry maintained by the IANA that is required to be used
+    by all vendors operating in certains spaces. Ethernet, Bluetooth, and Wireless
+    device manufacturers are all assigned unique prefixes. This database is available
+    publicly online and can be used to identify the manufacturer of these devices.
+    This library provides an easy mechanism to perform these lookups.
+  licenses:
+  - AGPL-3.0
+  project_uri: https://rubygems.org/gems/louis
+  homepage_uri: https://github.com/sstelfox/louis
+  source_code_uri:
+  changelog_uri:
+  development_dependencies:
+  runtime_dependencies:
+- !ruby/object:Gemview::Gem
+  name: birdbrain
+  downloads: 13313
+  version: 0.9.6
+  version_downloads: 2514
+  version_created_at:
+  authors: fmorton
+  info: This Ruby library allows students to use Ruby to read sensors and set motors
+    and LEDs with the Birdbrain Technologies Hummingbird Bit and Finch 2. To use Ruby
+    with the Hummingbird Bit or Finch 2, you must connect via bluetooth with the BlueBird
+    Connector.
+  licenses:
+  - MIT
+  project_uri: https://rubygems.org/gems/birdbrain
+  homepage_uri: https://github.com/fmorton/BirdBrain-Ruby-Library
+  source_code_uri: https://github.com/fmorton/BirdBrain-Ruby-Library
+  changelog_uri: https://github.com/fmorton/BirdBrain-Ruby-Library/CHANGELOG.md
+  development_dependencies:
+  runtime_dependencies:
+- !ruby/object:Gemview::Gem
+  name: ruble
+  downloads: 250
+  version: 0.0.3.alpha
+  version_downloads: 250
+  version_created_at:
+  authors: Mike Vastola
+  info: RuBLE is a ruby interface to the SimpleBLE library, providing a cross-platform
+    DSL for interacting with Bluetooth Low Energy (BLE) devices.
+  licenses:
+  - MIT
+  project_uri: https://rubygems.org/gems/ruble
+  homepage_uri: https://github.com/mvastola/RuBLE
+  source_code_uri: https://github.com/mvastola/RuBLE
+  changelog_uri: https://github.com/mvastola/RuBLE/blob/master/CHANGELOG.md
+  development_dependencies:
+  runtime_dependencies:

@@ -1,84 +1,76 @@
 # frozen_string_literal: true
 
-require "dry-struct"
-
 module Gemview
-  class Gem < Dry::Struct
-    module Types
-      include Dry.Types()
+  class Gem
+    attr_reader(
+      :name,
+      :downloads,
+      :version,
+      :version_downloads,
+      :version_created_at,
+      :authors,
+      :info,
+      :licenses,
+      :project_uri,
+      :homepage_uri,
+      :source_code_uri,
+      :changelog_uri,
+      :development_dependencies,
+      :runtime_dependencies
+    )
+
+    # @param options [Hash]
+    def initialize(options)
+      @name = options.fetch("name")
+      @downloads = options.fetch("downloads")
+      @version = options.fetch("version")
+      @version_downloads = options.fetch("version_downloads")
+      # Note: This is not returned by `Gems.search`.
+      @version_created_at = options["version_created_at"]
+        &.then { |time| Time.parse(time) }
+      @authors = options.fetch("authors")
+      @info = options.fetch("info")
+      # Note: This is occasionally nil so a default value is required.
+      @licenses = (options.fetch("licenses") || []).freeze
+      @project_uri = options.fetch("project_uri")
+      @homepage_uri = options.fetch("homepage_uri")
+      @source_code_uri = options.fetch("source_code_uri")
+      @changelog_uri = options.fetch("changelog_uri")
+      # Note: Dependencies are not returned by `Gems.search`.
+      @development_dependencies = options
+        .dig("dependencies", "development")
+        &.map { |hash| Dependency.new(hash).freeze }
+        &.freeze
+      @runtime_dependencies = options
+        .dig("dependencies", "runtime")
+        &.map { |hash| Dependency.new(hash).freeze }
+        &.freeze
     end
 
-    transform_keys(&:to_sym)
+    class Dependency
+      attr_reader :name, :requirements
 
-    # resolve default types on nil
-    transform_types do |type|
-      if type.default?
-        type.constructor do |value|
-          value.nil? ? Dry::Types::Undefined : value
-        end
-      else
-        type
+      # @param options [Hash]
+      def initialize(options)
+        @name = options.fetch("name")
+        @requirements = options.fetch("requirements")
       end
-    end
-
-    attribute :name, Types::Strict::String
-    attribute :downloads, Types::Strict::Integer
-    attribute :version, Types::Strict::String
-    attribute :version_downloads, Types::Strict::Integer
-    # Note: This is not returned by `Gems.search`.
-    attribute? :version_created_at, Types::Params::Time
-    attribute :authors, Types::Strict::String
-    attribute :info, Types::Strict::String
-    # Note: This is occasionally nil so a default value is required.
-    attribute :licenses, Types::Array.of(Types::Strict::String).default([].freeze)
-    attribute :project_uri, Types::Strict::String
-    attribute :homepage_uri, Types::String.optional
-    attribute :source_code_uri, Types::String.optional
-    attribute :changelog_uri, Types::String.optional
-
-    class Dependency < Dry::Struct
-      transform_keys(&:to_sym)
-
-      attribute :name, Types::Strict::String
-      attribute :requirements, Types::Strict::String
 
       def to_str
         %(gem "#{name}", "#{requirements}")
       end
     end
 
-    # Note: This is not returned by `Gems.search`.
-    attribute? :dependencies do
-      attribute :development, Types::Strict::Array.of(Dependency)
-      attribute :runtime, Types::Strict::Array.of(Dependency)
-    end
+    class Version
+      attr_reader :version, :downloads, :release_date, :ruby_version
 
-    class Version < Dry::Struct
-      transform_keys(&:to_sym)
-
-      # resolve default types on nil
-      transform_types do |type|
-        if type.default?
-          type.constructor do |value|
-            value.nil? ? Dry::Types::Undefined : value
-          end
-        else
-          type
-        end
+      # @param options [Hash]
+      def initialize(options)
+        @version = options.fetch("number")
+        @downloads = options.fetch("downloads_count")
+        @release_date = Date.parse(options.fetch("created_at"))
+        @ruby_version = options.fetch("ruby_version") || "(unknown)"
       end
-
-      attribute :number, Types::Strict::String
-      alias_method :version, :number
-
-      attribute :downloads_count, Types::Strict::Integer
-      alias_method :downloads, :downloads_count
-
-      attribute :created_at, Types::Params::Time
-
-      attribute :ruby_version, Types::String.optional.default("(unknown)")
-
-      # @return [Date]
-      def release_date = created_at.to_date
     end
 
     # Ex. 1234567890 -> "1,234,567,890"
@@ -117,16 +109,21 @@ module Gemview
       Terminal.prettify_markdown(header)
     end
 
+    # @return [Boolean]
+    def dependencies?
+      !runtime_dependencies.nil? && !development_dependencies.nil?
+    end
+
     # @return [String]
     def dependencies_str
-      runtime_deps_str = dependencies.runtime.join("\n").strip
+      runtime_deps_str = runtime_dependencies.join("\n").strip
       runtime_deps_str = if runtime_deps_str.empty?
         "(none)"
       else
         "```rb\n#{runtime_deps_str}\n```"
       end
 
-      dev_deps_str = dependencies.development.join("\n").strip
+      dev_deps_str = development_dependencies.join("\n").strip
       dev_deps_str = if dev_deps_str.empty?
         "(none)"
       else
@@ -207,30 +204,30 @@ module Gemview
     # @param term [String] search term
     # @return [Array<Gemview::Gem>]
     def self.search(term:)
-      Client.v1.search(term).map { |gem_hash| new gem_hash }
+      Client.v1.search(term).map { |gem_hash| new(gem_hash) }
     end
 
     # @param username [String] rubygems.org username
     # @return [Array<Gemview::Gem>]
     def self.author(username:)
-      Client.v1.gems(username).map { |gem_hash| new gem_hash }
+      Client.v1.gems(username).map { |gem_hash| new(gem_hash) }
     end
 
     # @return [Array<Gemview::Gem>]
     def self.latest
-      Client.v1.latest.map { |gem_hash| new gem_hash }
+      Client.v1.latest.map { |gem_hash| new(gem_hash) }
     end
 
     # @return [Array<Gemview::Gem>]
     def self.just_updated
-      Client.v1.just_updated.map { |gem_hash| new gem_hash }
+      Client.v1.just_updated.map { |gem_hash| new(gem_hash) }
     end
 
     # @param name [String] gem name
     # @return [Array<Gemview::Gem::Version>]
     def self.versions(name:)
       @versions ||= {}
-      @versions[name] ||= Client.v1.versions(name).map { |gem_hash| Version.new gem_hash }
+      @versions[name] ||= Client.v1.versions(name).map { |gem_hash| Version.new(gem_hash).freeze }.freeze
     end
   end
 end

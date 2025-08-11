@@ -3,7 +3,7 @@
 module Gemview
   module View
     def self.info(gem:)
-      gem = Gem.find(name: gem.name, version: gem.version) if gem.dependencies.nil?
+      gem = Gem.find(name: gem.name, version: gem.version) unless gem.dependencies?
       prompt = <<~PROMPT.chomp
         #{gem.header_str}
         More info:

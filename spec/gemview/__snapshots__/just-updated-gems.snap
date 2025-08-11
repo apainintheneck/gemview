@@ -1,0 +1,1595 @@
+---
+- !ruby/object:Gemview::Gem
+  name: active_model_serializers
+  downloads: 102108393
+  version: 0.10.15
+  version_downloads: 0
+  version_created_at: 2024-12-01 00:56:35.774000000 Z
+  authors: Steve Klabnik
+  info: ActiveModel::Serializers allows you to generate your JSON in an object-oriented
+    and convention-driven manner.
+  licenses:
+  - MIT
+  project_uri: https://rubygems.org/gems/active_model_serializers
+  homepage_uri: https://github.com/rails-api/active_model_serializers
+  source_code_uri: http://github.com/rails-api/active_model_serializers
+  changelog_uri:
+  development_dependencies:
+  - !ruby/object:Gemview::Gem::Dependency
+    name: activerecord
+    requirements: ">= 4.1"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: bundler
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: grape
+    requirements: ">= 0.13"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: json_schema
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: kaminari
+    requirements: "~> 0.16.3"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: minitest
+    requirements: "~> 5.0, < 5.11"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: railties
+    requirements: ">= 4.1"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: rake
+    requirements: ">= 10.0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: timecop
+    requirements: "~> 0.7"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: will_paginate
+    requirements: "~> 3.0, >= 3.0.7"
+  runtime_dependencies:
+  - !ruby/object:Gemview::Gem::Dependency
+    name: actionpack
+    requirements: ">= 4.1"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: activemodel
+    requirements: ">= 4.1"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: case_transform
+    requirements: ">= 0.2"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: jsonapi-renderer
+    requirements: ">= 0.1.1.beta1, < 0.3"
+- !ruby/object:Gemview::Gem
+  name: jipcode
+  downloads: 866500
+  version: 3.1.6
+  version_downloads: 6
+  version_created_at: 2024-12-01 00:43:21.768000000 Z
+  authors: rinkei
+  info: A gem for Japan Post's official zipcode data search & update.
+  licenses:
+  - MIT
+  project_uri: https://rubygems.org/gems/jipcode
+  homepage_uri: https://github.com/rinkei/jipcode
+  source_code_uri:
+  changelog_uri:
+  development_dependencies:
+  - !ruby/object:Gemview::Gem::Dependency
+    name: bump
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: bundler
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: rake
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: rspec
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: rubyzip
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: vcr
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: webmock
+    requirements: ">= 0"
+  runtime_dependencies:
+  - !ruby/object:Gemview::Gem::Dependency
+    name: csv
+    requirements: ">= 0"
+- !ruby/object:Gemview::Gem
+  name: foobara-util
+  downloads: 1264
+  version: 0.0.7
+  version_downloads: 13
+  version_created_at: 2024-12-01 00:40:50.626000000 Z
+  authors: Miles Georgi
+  info: Utility functions used across various Foobara projects
+  licenses:
+  - Apache-2.0
+  - MIT
+  project_uri: https://rubygems.org/gems/foobara-util
+  homepage_uri: https://github.com/foobara/util
+  source_code_uri: https://github.com/foobara/util
+  changelog_uri: https://github.com/foobara/util/blob/main/CHANGELOG.md
+  development_dependencies: []
+  runtime_dependencies: []
+- !ruby/object:Gemview::Gem
+  name: cocoapods-spm
+  downloads: 4560
+  version: 0.1.8
+  version_downloads: 11
+  version_created_at: 2024-12-01 00:38:44.667000000 Z
+  authors: Thuyen Trinh
+  info: CocoaPods plugin to add SPM dependencies to CocoaPods targets
+  licenses:
+  - MIT
+  project_uri: https://rubygems.org/gems/cocoapods-spm
+  homepage_uri: https://github.com/trinhngocthuyen/cocoapods-spm
+  source_code_uri:
+  changelog_uri:
+  development_dependencies: []
+  runtime_dependencies:
+  - !ruby/object:Gemview::Gem::Dependency
+    name: xcodeproj
+    requirements: ">= 1.23.0"
+- !ruby/object:Gemview::Gem
+  name: email_data
+  downloads: 628538
+  version: 1733013134.0.0
+  version_downloads: 18
+  version_created_at: 2024-12-01 00:32:39.831000000 Z
+  authors: Nando Vieira
+  info: This project is a compilation of datasets related to emails. Includes disposable
+    emails, disposable domains, and free email services.
+  licenses:
+  - MIT
+  project_uri: https://rubygems.org/gems/email_data
+  homepage_uri: https://github.com/fnando/email_data
+  source_code_uri: https://github.com/fnando/email_data/tree/v1733013134.0.0
+  changelog_uri:
+  development_dependencies:
+  - !ruby/object:Gemview::Gem::Dependency
+    name: activerecord
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: aitch
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: bundler
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: minitest
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: minitest-utils
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: pg
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: pry-meta
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: rake
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: root_domain
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: rubocop
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: rubocop-fnando
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: simplecov
+    requirements: ">= 0"
+  runtime_dependencies: []
+- !ruby/object:Gemview::Gem
+  name: ding_sdk
+  downloads: 14276
+  version: 0.10.4
+  version_downloads: 24
+  version_created_at: 2024-12-01 00:26:10.726000000 Z
+  authors: Ding
+  info: Ding Ruby SDK
+  licenses:
+  - Apache-2.0
+  project_uri: https://rubygems.org/gems/ding_sdk
+  homepage_uri: https://github.com/ding-live/ding-ruby.git
+  source_code_uri: https://github.com/ding-live/ding-ruby.git
+  changelog_uri:
+  development_dependencies:
+  - !ruby/object:Gemview::Gem::Dependency
+    name: minitest
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: rubocop
+    requirements: "~> 1.60.2"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: sorbet
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: tapioca
+    requirements: ">= 0"
+  runtime_dependencies:
+  - !ruby/object:Gemview::Gem::Dependency
+    name: faraday
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: faraday-multipart
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: rack
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: rake
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: sorbet-runtime
+    requirements: ">= 0"
+- !ruby/object:Gemview::Gem
+  name: visualruby
+  downloads: 124003
+  version: 3.6.9
+  version_downloads: 31
+  version_created_at: 2024-11-30 23:59:25.982000000 Z
+  authors: Eric Cunningham
+  info: |-
+    Visualruby is a complete IDE for making graphical user interfaces with ruby.  It utilizes glade interface designer to create windows, and uses a library of GUI helpers to make coding GTK+ programs easy.  The IDE really helps you organize your files and your thoughts because it names your ruby files and glade files by a naming convention.  You files take on the names MyClass.rb, and MyClass.glade.  Then you can easily edit the GUI (glade file) by right clicking on your class's file.
+      It also creates .gemspec files for you, then you can right-click on the .gemspec file to install it, or upload it to rubygems.org.  You can also yank your gems with one click.
+
+    To install, get instructions from our github page at https://github.com/Beagle123/visualruby
+  licenses:
+  - MIT
+  project_uri: https://rubygems.org/gems/visualruby
+  homepage_uri: ''
+  source_code_uri: https://github.com/Beagle123/visualruby
+  changelog_uri:
+  development_dependencies: []
+  runtime_dependencies:
+  - !ruby/object:Gemview::Gem::Dependency
+    name: gtk3
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: gtksourceview4
+    requirements: ">= 0"
+- !ruby/object:Gemview::Gem
+  name: historiographer
+  downloads: 23081
+  version: 4.1.8
+  version_downloads: 35
+  version_created_at: 2024-11-30 23:56:14.908000000 Z
+  authors: brettshollenberger
+  info: Append-only histories + chained snapshots of your ActiveRecord tables
+  licenses:
+  - MIT
+  project_uri: https://rubygems.org/gems/historiographer
+  homepage_uri: http://github.com/brettshollenberger/historiographer
+  source_code_uri:
+  changelog_uri:
+  development_dependencies:
+  - !ruby/object:Gemview::Gem::Dependency
+    name: bundler
+    requirements: "~> 1.0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: jeweler
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: mysql2
+    requirements: "= 0.5"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: paranoia
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: pg
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: pry
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: rdoc
+    requirements: "~> 3.12"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: simplecov
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: standalone_migrations
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: timecop
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: zeitwerk
+    requirements: ">= 0"
+  runtime_dependencies:
+  - !ruby/object:Gemview::Gem::Dependency
+    name: activerecord
+    requirements: ">= 6"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: activerecord-import
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: activesupport
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: rails
+    requirements: ">= 6"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: rollbar
+    requirements: ">= 0"
+- !ruby/object:Gemview::Gem
+  name: vagrant_utm
+  downloads: 666
+  version: 0.1.0
+  version_downloads: 35
+  version_created_at: 2024-11-30 23:54:03.791000000 Z
+  authors: Naveenraj M
+  info: Vagrant UTM provider that allows you to manage UTM virtual machines.
+  licenses:
+  - MIT
+  project_uri: https://rubygems.org/gems/vagrant_utm
+  homepage_uri: https://naveenrajm7.github.io/vagrant_utm/
+  source_code_uri: https://github.com/naveenrajm7/vagrant_utm
+  changelog_uri: https://github.com/naveenrajm7/vagrant_utm/blob/main/CHANGELOG.md
+  development_dependencies: []
+  runtime_dependencies: []
+- !ruby/object:Gemview::Gem
+  name: fli_video
+  downloads: 1018
+  version: 0.1.4
+  version_downloads: 40
+  version_created_at: 2024-11-30 23:02:47.278000000 Z
+  authors: David Cruwys
+  info: "    FliVideo - Video Asset Management for Content Creators\n"
+  licenses:
+  - MIT
+  project_uri: https://rubygems.org/gems/fli_video
+  homepage_uri: http://appydave.com/gems/fli_video
+  source_code_uri: https://github.com/appydave/fli_video
+  changelog_uri: https://github.com/appydave/fli_video/blob/main/CHANGELOG.md
+  development_dependencies: []
+  runtime_dependencies:
+  - !ruby/object:Gemview::Gem::Dependency
+    name: k_log
+    requirements: "~> 0"
+- !ruby/object:Gemview::Gem
+  name: fli_video
+  downloads: 1018
+  version: 0.1.3
+  version_downloads: 33
+  version_created_at: 2024-11-30 22:58:48.952000000 Z
+  authors: David Cruwys
+  info: "    FliVideo - Video Asset Management for Content Creators\n"
+  licenses:
+  - MIT
+  project_uri: https://rubygems.org/gems/fli_video
+  homepage_uri: http://appydave.com/gems/fli_video
+  source_code_uri: https://github.com/appydave/fli_video
+  changelog_uri: https://github.com/appydave/fli_video/blob/main/CHANGELOG.md
+  development_dependencies: []
+  runtime_dependencies:
+  - !ruby/object:Gemview::Gem::Dependency
+    name: k_log
+    requirements: "~> 0"
+- !ruby/object:Gemview::Gem
+  name: fli_video
+  downloads: 1018
+  version: 0.1.2
+  version_downloads: 38
+  version_created_at: 2024-11-30 22:50:49.127000000 Z
+  authors: David Cruwys
+  info: "    FliVideo - Video Asset Management for Content Creators\n"
+  licenses:
+  - MIT
+  project_uri: https://rubygems.org/gems/fli_video
+  homepage_uri: http://appydave.com/gems/fli_video
+  source_code_uri: https://github.com/klueless-io/fli_video
+  changelog_uri: https://github.com/klueless-io/fli_video/blob/main/CHANGELOG.md
+  development_dependencies: []
+  runtime_dependencies:
+  - !ruby/object:Gemview::Gem::Dependency
+    name: k_log
+    requirements: "~> 0"
+- !ruby/object:Gemview::Gem
+  name: makit
+  downloads: 2487
+  version: 0.0.29
+  version_downloads: 46
+  version_created_at: 2024-11-30 22:20:29.262000000 Z
+  authors: Lou Parslow
+  info: CI/CD tools for Ruby developers.
+  licenses:
+  - MIT
+  project_uri: https://rubygems.org/gems/makit
+  homepage_uri: https://gitlab.com/gems-rb/makit
+  source_code_uri: https://gitlab.com/gems-rb/makit
+  changelog_uri: https://gitlab.com/gems-rb/makit/CHANGELOG.md
+  development_dependencies: []
+  runtime_dependencies:
+  - !ruby/object:Gemview::Gem::Dependency
+    name: clamp
+    requirements: "~> 1.3"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: colorize
+    requirements: "~> 1.1"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: google-protobuf
+    requirements: "~> 4.28.3"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: grpc
+    requirements: "~> 1.67"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: grpc-tools
+    requirements: "~> 1.67"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: logger
+    requirements: "~> 1.6.1"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: rubyzip
+    requirements: "~> 2.3"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: sorted_set
+    requirements: "~> 1.0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: yaml
+    requirements: "~> 0.3"
+- !ruby/object:Gemview::Gem
+  name: hotwire_native_rails
+  downloads: 207
+  version: 0.3.1
+  version_downloads: 51
+  version_created_at: 2024-11-30 22:00:47.681000000 Z
+  authors: Yaro Shm
+  info: Generate Hotwire Native Rails helpers and bridge components
+  licenses:
+  - MIT
+  project_uri: https://rubygems.org/gems/hotwire_native_rails
+  homepage_uri: https://github.com/yshmarov/hotwire_native_rails
+  source_code_uri: https://github.com/yshmarov/hotwire_native_rails
+  changelog_uri: https://github.com/yshmarov/hotwire_native_rails/blob/main/CHANGELOG.md
+  development_dependencies: []
+  runtime_dependencies: []
+- !ruby/object:Gemview::Gem
+  name: hotwire_native_rails
+  downloads: 207
+  version: 0.3.0
+  version_downloads: 42
+  version_created_at: 2024-11-30 21:50:01.468000000 Z
+  authors: Yaro Shm
+  info: Generate Hotwire Native Rails helpers and bridge components
+  licenses:
+  - MIT
+  project_uri: https://rubygems.org/gems/hotwire_native_rails
+  homepage_uri: https://github.com/yshmarov/hotwire_native_rails
+  source_code_uri: https://github.com/yshmarov/hotwire_native_rails
+  changelog_uri: https://github.com/yshmarov/hotwire_native_rails/blob/main/CHANGELOG.md
+  development_dependencies: []
+  runtime_dependencies: []
+- !ruby/object:Gemview::Gem
+  name: checkoff
+  downloads: 147789
+  version: 0.206.0
+  version_downloads: 59
+  version_created_at: 2024-11-30 21:42:46.965000000 Z
+  authors: Vince Broz
+  info: Command-line and gem client for Asana (unofficial)
+  licenses:
+  - MIT license
+  project_uri: https://rubygems.org/gems/checkoff
+  homepage_uri: https://github.com/apiology/checkoff
+  source_code_uri:
+  changelog_uri:
+  development_dependencies: []
+  runtime_dependencies:
+  - !ruby/object:Gemview::Gem::Dependency
+    name: activesupport
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: asana
+    requirements: "> 0.10.0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: cache_method
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: gli
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: mime-types
+    requirements: ">= 0"
+- !ruby/object:Gemview::Gem
+  name: foobara-sh-cli-connector
+  downloads: 1513
+  version: 0.0.9
+  version_downloads: 53
+  version_created_at: 2024-11-30 21:03:52.622000000 Z
+  authors: Miles Georgi
+  info: Command-line connector for Foobara
+  licenses:
+  - Apache-2.0
+  - MIT
+  project_uri: https://rubygems.org/gems/foobara-sh-cli-connector
+  homepage_uri: https://github.com/foobara/sh-cli-connector
+  source_code_uri: https://github.com/foobara/sh-cli-connector
+  changelog_uri: https://github.com/foobara/sh-cli-connector/blob/main/CHANGELOG.md
+  development_dependencies: []
+  runtime_dependencies:
+  - !ruby/object:Gemview::Gem::Dependency
+    name: foobara
+    requirements: ">= 0"
+- !ruby/object:Gemview::Gem
+  name: foobara-sh-cli-connector
+  downloads: 1513
+  version: 0.0.8
+  version_downloads: 40
+  version_created_at: 2024-11-30 20:57:24.574000000 Z
+  authors: Miles Georgi
+  info: Command-line connector for Foobara
+  licenses:
+  - Apache-2.0
+  - MIT
+  project_uri: https://rubygems.org/gems/foobara-sh-cli-connector
+  homepage_uri: https://github.com/foobara/sh-cli-connector
+  source_code_uri: https://github.com/foobara/sh-cli-connector
+  changelog_uri: https://github.com/foobara/sh-cli-connector/blob/main/CHANGELOG.md
+  development_dependencies: []
+  runtime_dependencies:
+  - !ruby/object:Gemview::Gem::Dependency
+    name: foobara
+    requirements: ">= 0"
+- !ruby/object:Gemview::Gem
+  name: effective_mentorships
+  downloads: 601
+  version: 0.2.3
+  version_downloads: 61
+  version_created_at: 2024-11-30 20:51:24.482000000 Z
+  authors: Code and Effect
+  info: Mentorship matching for mentors and mentees rails engine
+  licenses:
+  - MIT
+  project_uri: https://rubygems.org/gems/effective_mentorships
+  homepage_uri:
+  source_code_uri:
+  changelog_uri:
+  development_dependencies:
+  - !ruby/object:Gemview::Gem::Dependency
+    name: devise
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: effective_developer
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: effective_roles
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: haml-rails
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: pry-byebug
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: psych
+    requirements: "< 4"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: sqlite3
+    requirements: ">= 0"
+  runtime_dependencies:
+  - !ruby/object:Gemview::Gem::Dependency
+    name: effective_bootstrap
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: effective_datatables
+    requirements: ">= 4.0.0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: effective_email_templates
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: effective_resources
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: rails
+    requirements: ">= 6.0.0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: wicked
+    requirements: ">= 0"
+- !ruby/object:Gemview::Gem
+  name: hotwire_native_rails
+  downloads: 207
+  version: 0.2.0
+  version_downloads: 47
+  version_created_at: 2024-11-30 20:39:45.297000000 Z
+  authors: Yaro Shm
+  info: Generate Hotwire Native Rails helpers and bridge components
+  licenses:
+  - MIT
+  project_uri: https://rubygems.org/gems/hotwire_native_rails
+  homepage_uri: https://github.com/yshmarov/hotwire_native_rails
+  source_code_uri: https://github.com/yshmarov/hotwire_native_rails
+  changelog_uri: https://github.com/yshmarov/hotwire_native_rails/blob/main/CHANGELOG.md
+  development_dependencies: []
+  runtime_dependencies: []
+- !ruby/object:Gemview::Gem
+  name: foobara-sh-cli-connector
+  downloads: 1513
+  version: 0.0.7
+  version_downloads: 48
+  version_created_at: 2024-11-30 20:33:56.832000000 Z
+  authors: Miles Georgi
+  info: Command-line connector for Foobara
+  licenses:
+  - Apache-2.0
+  - MIT
+  project_uri: https://rubygems.org/gems/foobara-sh-cli-connector
+  homepage_uri: https://github.com/foobara/sh-cli-connector
+  source_code_uri: https://github.com/foobara/sh-cli-connector
+  changelog_uri: https://github.com/foobara/sh-cli-connector/blob/main/CHANGELOG.md
+  development_dependencies: []
+  runtime_dependencies:
+  - !ruby/object:Gemview::Gem::Dependency
+    name: foobara
+    requirements: ">= 0"
+- !ruby/object:Gemview::Gem
+  name: makit
+  downloads: 2487
+  version: 0.0.28
+  version_downloads: 56
+  version_created_at: 2024-11-30 20:31:11.281000000 Z
+  authors: Lou Parslow
+  info: CI/CD tools for Ruby developers.
+  licenses:
+  - MIT
+  project_uri: https://rubygems.org/gems/makit
+  homepage_uri: https://gitlab.com/gems-rb/makit
+  source_code_uri: https://gitlab.com/gems-rb/makit
+  changelog_uri: https://gitlab.com/gems-rb/makit/CHANGELOG.md
+  development_dependencies: []
+  runtime_dependencies:
+  - !ruby/object:Gemview::Gem::Dependency
+    name: clamp
+    requirements: "~> 1.3"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: colorize
+    requirements: "~> 1.1"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: google-protobuf
+    requirements: "~> 4.28.3"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: grpc
+    requirements: "~> 1.67"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: grpc-tools
+    requirements: "~> 1.67"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: logger
+    requirements: "~> 1.6.1"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: rubyzip
+    requirements: "~> 2.3"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: sorted_set
+    requirements: "~> 1.0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: yaml
+    requirements: "~> 0.3"
+- !ruby/object:Gemview::Gem
+  name: foobara-rubocop-rules
+  downloads: 1026
+  version: 0.0.5
+  version_downloads: 61
+  version_created_at: 2024-11-30 20:29:36.062000000 Z
+  authors: Miles Georgi
+  info: Common rubocop rules used in various foobara projects.
+  licenses:
+  - Apache-2.0
+  - MIT
+  project_uri: https://rubygems.org/gems/foobara-rubocop-rules
+  homepage_uri: https://github.com/foobara/rubocop-rules
+  source_code_uri: https://github.com/foobara/rubocop-rules
+  changelog_uri: https://github.com/foobara/rubocop-rules/blob/main/CHANGELOG.md
+  development_dependencies: []
+  runtime_dependencies:
+  - !ruby/object:Gemview::Gem::Dependency
+    name: rubocop
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: rubocop-rspec
+    requirements: ">= 0"
+- !ruby/object:Gemview::Gem
+  name: checkoff
+  downloads: 147789
+  version: 0.205.0
+  version_downloads: 54
+  version_created_at: 2024-11-30 20:23:49.694000000 Z
+  authors: Vince Broz
+  info: Command-line and gem client for Asana (unofficial)
+  licenses:
+  - MIT license
+  project_uri: https://rubygems.org/gems/checkoff
+  homepage_uri: https://github.com/apiology/checkoff
+  source_code_uri:
+  changelog_uri:
+  development_dependencies: []
+  runtime_dependencies:
+  - !ruby/object:Gemview::Gem::Dependency
+    name: activesupport
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: asana
+    requirements: "> 0.10.0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: cache_method
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: gli
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: mime-types
+    requirements: ">= 0"
+- !ruby/object:Gemview::Gem
+  name: foobara
+  downloads: 3232
+  version: 0.0.19
+  version_downloads: 57
+  version_created_at: 2024-11-30 20:21:10.305000000 Z
+  authors: Miles Georgi
+  info: Implements command pattern for encapsulating and managing domain complexity
+    as well as many supporting libraries including entities.
+  licenses:
+  - MPL-2.0
+  project_uri: https://rubygems.org/gems/foobara
+  homepage_uri: https://foobara.com
+  source_code_uri: https://foobara.com
+  changelog_uri: https://foobara.com/blob/main/CHANGELOG.md
+  development_dependencies: []
+  runtime_dependencies:
+  - !ruby/object:Gemview::Gem::Dependency
+    name: foobara-util
+    requirements: ">= 0"
+- !ruby/object:Gemview::Gem
+  name: foobara-redis-crud-driver
+  downloads: 270
+  version: 0.0.3
+  version_downloads: 61
+  version_created_at: 2024-11-30 19:58:13.449000000 Z
+  authors: Miles Georgi
+  info: Provides support for entity CRUD in Redis for Foobara
+  licenses:
+  - MPL-2.0
+  project_uri: https://rubygems.org/gems/foobara-redis-crud-driver
+  homepage_uri: https://github.com/foobara/redis-crud-driver
+  source_code_uri: https://github.com/foobara/redis-crud-driver
+  changelog_uri: https://github.com/foobara/redis-crud-driver/blob/main/CHANGELOG.md
+  development_dependencies: []
+  runtime_dependencies:
+  - !ruby/object:Gemview::Gem::Dependency
+    name: foobara
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: redis
+    requirements: ">= 0"
+- !ruby/object:Gemview::Gem
+  name: foobara
+  downloads: 3232
+  version: 0.0.18
+  version_downloads: 53
+  version_created_at: 2024-11-30 19:50:19.935000000 Z
+  authors: Miles Georgi
+  info: Implements command pattern for encapsulating and managing domain complexity
+    as well as many supporting libraries including entities.
+  licenses:
+  - MPL-2.0
+  project_uri: https://rubygems.org/gems/foobara
+  homepage_uri: https://foobara.com
+  source_code_uri: https://foobara.com
+  changelog_uri: https://foobara.com/blob/main/CHANGELOG.md
+  development_dependencies: []
+  runtime_dependencies:
+  - !ruby/object:Gemview::Gem::Dependency
+    name: foobara-util
+    requirements: ">= 0"
+- !ruby/object:Gemview::Gem
+  name: checkoff
+  downloads: 147789
+  version: 0.204.0
+  version_downloads: 54
+  version_created_at: 2024-11-30 19:38:45.163000000 Z
+  authors: Vince Broz
+  info: Command-line and gem client for Asana (unofficial)
+  licenses:
+  - MIT license
+  project_uri: https://rubygems.org/gems/checkoff
+  homepage_uri: https://github.com/apiology/checkoff
+  source_code_uri:
+  changelog_uri:
+  development_dependencies: []
+  runtime_dependencies:
+  - !ruby/object:Gemview::Gem::Dependency
+    name: activesupport
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: asana
+    requirements: "> 0.10.0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: cache_method
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: gli
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: mime-types
+    requirements: ">= 0"
+- !ruby/object:Gemview::Gem
+  name: checkoff
+  downloads: 147789
+  version: 0.203.0
+  version_downloads: 50
+  version_created_at: 2024-11-30 19:34:42.601000000 Z
+  authors: Vince Broz
+  info: Command-line and gem client for Asana (unofficial)
+  licenses:
+  - MIT license
+  project_uri: https://rubygems.org/gems/checkoff
+  homepage_uri: https://github.com/apiology/checkoff
+  source_code_uri:
+  changelog_uri:
+  development_dependencies: []
+  runtime_dependencies:
+  - !ruby/object:Gemview::Gem::Dependency
+    name: activesupport
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: asana
+    requirements: "> 0.10.0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: cache_method
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: gli
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: mime-types
+    requirements: ">= 0"
+- !ruby/object:Gemview::Gem
+  name: brick
+  downloads: 134789
+  version: 1.0.221
+  version_downloads: 63
+  version_created_at: 2024-11-30 19:27:43.098000000 Z
+  authors: Lorin Thwaits
+  info: 'Auto-create models, views, controllers, and routes with this slick Rails
+    extension
+
+    '
+  licenses:
+  - MIT
+  project_uri: https://rubygems.org/gems/brick
+  homepage_uri: https://github.com/lorint/brick
+  source_code_uri:
+  changelog_uri:
+  development_dependencies:
+  - !ruby/object:Gemview::Gem::Dependency
+    name: appraisal
+    requirements: "~> 2.2"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: ffaker
+    requirements: "~> 2.11"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: generator_spec
+    requirements: "~> 0.9.4"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: memory_profiler
+    requirements: "~> 0.9.14"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: pg
+    requirements: ">= 0.18, < 2.0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: pry-byebug
+    requirements: "~> 3.7.0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: rake
+    requirements: "~> 13.0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: rspec-rails
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: rubocop
+    requirements: "~> 0.93"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: rubocop-rspec
+    requirements: "~> 1.42.0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: sqlite3
+    requirements: "~> 2.3.0"
+  runtime_dependencies:
+  - !ruby/object:Gemview::Gem::Dependency
+    name: activerecord
+    requirements: ">= 3.1.1"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: fancy_gets
+    requirements: ">= 0"
+- !ruby/object:Gemview::Gem
+  name: playwright-ruby-client
+  downloads: 542555
+  version: 1.48.1
+  version_downloads: 117
+  version_created_at: 2024-11-30 19:07:44.672000000 Z
+  authors: YusukeIwaki
+  info: The Ruby binding of playwright driver 1.48.2
+  licenses:
+  - MIT
+  project_uri: https://rubygems.org/gems/playwright-ruby-client
+  homepage_uri: https://github.com/YusukeIwaki/playwright-ruby-client
+  source_code_uri:
+  changelog_uri:
+  development_dependencies:
+  - !ruby/object:Gemview::Gem::Dependency
+    name: bundler
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: chunky_png
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: dry-inflector
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: faye-websocket
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: pry-byebug
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: puma
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: rack
+    requirements: "< 3"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: rake
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: rspec
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: rubocop-rspec
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: sinatra
+    requirements: ">= 0"
+  runtime_dependencies:
+  - !ruby/object:Gemview::Gem::Dependency
+    name: concurrent-ruby
+    requirements: ">= 1.1.6"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: mime-types
+    requirements: ">= 3.0"
+- !ruby/object:Gemview::Gem
+  name: non-digest-assets
+  downloads: 925225
+  version: 2.5.0
+  version_downloads: 77
+  version_created_at: 2024-11-30 17:42:50.752000000 Z
+  authors: Alex Speller, Matijs van Zuijlen
+  info: |2
+        Rails provides no option to generate both digest and non-digest
+        assets. Installing this gem automatically creates both digest and
+        non-digest assets which are useful for many reasons.
+
+        Currently supports sprockets only.
+  licenses:
+  - MIT
+  project_uri: https://rubygems.org/gems/non-digest-assets
+  homepage_uri: http://github.com/mvz/non-digest-assets
+  source_code_uri:
+  changelog_uri:
+  development_dependencies:
+  - !ruby/object:Gemview::Gem::Dependency
+    name: appraisal
+    requirements: "~> 2.3"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: aruba
+    requirements: "~> 2.0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: rails
+    requirements: ">= 6.0, < 8.1"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: rake
+    requirements: "~> 13.0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: rspec
+    requirements: "~> 3.10"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: rubocop
+    requirements: "~> 1.52"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: rubocop-packaging
+    requirements: "~> 0.5.2"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: rubocop-performance
+    requirements: "~> 1.18"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: rubocop-rails
+    requirements: "~> 2.19"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: rubocop-rake
+    requirements: "~> 0.6.0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: rubocop-rspec
+    requirements: "~> 3.0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: sprockets-rails
+    requirements: "~> 3.0"
+  runtime_dependencies:
+  - !ruby/object:Gemview::Gem::Dependency
+    name: activesupport
+    requirements: ">= 6.0, < 8.1"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: sprockets
+    requirements: "~> 4.0"
+- !ruby/object:Gemview::Gem
+  name: plutonium
+  downloads: 11655
+  version: 0.15.23
+  version_downloads: 82
+  version_created_at: 2024-11-30 17:17:56.453000000 Z
+  authors: Stefan Froelich
+  info: Plutonium extends Rails' capabilities with a powerful, generator-driven toolkit
+    designed to supercharge your development process. It transforms the way you build
+    applications with Rails, optimizing for rapid application development.
+  licenses:
+  - MIT
+  project_uri: https://rubygems.org/gems/plutonium
+  homepage_uri: https://radioactive-labs.github.io/plutonium-core/
+  source_code_uri: https://github.com/radioactive-labs/plutonium-core
+  changelog_uri:
+  development_dependencies:
+  - !ruby/object:Gemview::Gem::Dependency
+    name: appraisal
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: brakeman
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: bundle-audit
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: combustion
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: minitest
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: minitest-reporters
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: rake
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: standard
+    requirements: ">= 0"
+  runtime_dependencies:
+  - !ruby/object:Gemview::Gem::Dependency
+    name: action_policy
+    requirements: "~> 0.7.0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: dry-initializer
+    requirements: "~> 3.1"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: listen
+    requirements: "~> 3.8"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: pagy
+    requirements: "~> 9.0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: phlex
+    requirements: "~> 1.11"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: phlexi-display
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: phlexi-form
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: phlexi-table
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: phlex-rails
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: phlex-slotable
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: phlex-tabler_icons
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: rabl
+    requirements: "~> 0.16.1"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: rails
+    requirements: ">= 7.1, < 8.0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: redcarpet
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: semantic_range
+    requirements: "~> 3.0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: simple_form
+    requirements: "~> 5.3"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: tailwind_merge
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: tty-prompt
+    requirements: "~> 0.23.1"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: view_component
+    requirements: "~> 3"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: zeitwerk
+    requirements: ">= 0"
+- !ruby/object:Gemview::Gem
+  name: zen-engine-ruby
+  downloads: 964
+  version: 0.0.3
+  version_downloads: 106
+  version_created_at: 2024-11-30 17:07:25.647000000 Z
+  authors: Alex Matchneer
+  info: Ruby FFI bindings for the Zen library
+  licenses:
+  - MIT
+  project_uri: https://rubygems.org/gems/zen-engine-ruby
+  homepage_uri:
+  source_code_uri:
+  changelog_uri:
+  development_dependencies:
+  - !ruby/object:Gemview::Gem::Dependency
+    name: minitest
+    requirements: "~> 5.25"
+  runtime_dependencies:
+  - !ruby/object:Gemview::Gem::Dependency
+    name: ffi
+    requirements: "~> 1.17"
+- !ruby/object:Gemview::Gem
+  name: zen-engine-ruby
+  downloads: 964
+  version: 0.0.3
+  version_downloads: 66
+  version_created_at: 2024-11-30 17:07:07.994000000 Z
+  authors: Alex Matchneer
+  info: Ruby FFI bindings for the Zen library
+  licenses:
+  - MIT
+  project_uri: https://rubygems.org/gems/zen-engine-ruby
+  homepage_uri:
+  source_code_uri:
+  changelog_uri:
+  development_dependencies:
+  - !ruby/object:Gemview::Gem::Dependency
+    name: minitest
+    requirements: "~> 5.25"
+  runtime_dependencies:
+  - !ruby/object:Gemview::Gem::Dependency
+    name: ffi
+    requirements: "~> 1.17"
+- !ruby/object:Gemview::Gem
+  name: zen-engine-ruby
+  downloads: 964
+  version: 0.0.3
+  version_downloads: 66
+  version_created_at: 2024-11-30 17:06:57.744000000 Z
+  authors: Alex Matchneer
+  info: Ruby FFI bindings for the Zen library
+  licenses:
+  - MIT
+  project_uri: https://rubygems.org/gems/zen-engine-ruby
+  homepage_uri:
+  source_code_uri:
+  changelog_uri:
+  development_dependencies:
+  - !ruby/object:Gemview::Gem::Dependency
+    name: minitest
+    requirements: "~> 5.25"
+  runtime_dependencies:
+  - !ruby/object:Gemview::Gem::Dependency
+    name: ffi
+    requirements: "~> 1.17"
+- !ruby/object:Gemview::Gem
+  name: zen-engine-ruby
+  downloads: 964
+  version: 0.0.3
+  version_downloads: 63
+  version_created_at: 2024-11-30 17:06:47.057000000 Z
+  authors: Alex Matchneer
+  info: Ruby FFI bindings for the Zen library
+  licenses:
+  - MIT
+  project_uri: https://rubygems.org/gems/zen-engine-ruby
+  homepage_uri:
+  source_code_uri:
+  changelog_uri:
+  development_dependencies:
+  - !ruby/object:Gemview::Gem::Dependency
+    name: minitest
+    requirements: "~> 5.25"
+  runtime_dependencies:
+  - !ruby/object:Gemview::Gem::Dependency
+    name: ffi
+    requirements: "~> 1.17"
+- !ruby/object:Gemview::Gem
+  name: zen-engine-ruby
+  downloads: 964
+  version: 0.0.3
+  version_downloads: 67
+  version_created_at: 2024-11-30 17:06:36.570000000 Z
+  authors: Alex Matchneer
+  info: Ruby FFI bindings for the Zen library
+  licenses:
+  - MIT
+  project_uri: https://rubygems.org/gems/zen-engine-ruby
+  homepage_uri:
+  source_code_uri:
+  changelog_uri:
+  development_dependencies:
+  - !ruby/object:Gemview::Gem::Dependency
+    name: minitest
+    requirements: "~> 5.25"
+  runtime_dependencies:
+  - !ruby/object:Gemview::Gem::Dependency
+    name: ffi
+    requirements: "~> 1.17"
+- !ruby/object:Gemview::Gem
+  name: zen-engine-ruby
+  downloads: 964
+  version: 0.0.2
+  version_downloads: 57
+  version_created_at: 2024-11-30 16:52:34.150000000 Z
+  authors: Alex Matchneer
+  info: Ruby FFI bindings for the Zen library
+  licenses:
+  - MIT
+  project_uri: https://rubygems.org/gems/zen-engine-ruby
+  homepage_uri:
+  source_code_uri:
+  changelog_uri:
+  development_dependencies:
+  - !ruby/object:Gemview::Gem::Dependency
+    name: minitest
+    requirements: "~> 5.25"
+  runtime_dependencies:
+  - !ruby/object:Gemview::Gem::Dependency
+    name: ffi
+    requirements: "~> 1.17"
+- !ruby/object:Gemview::Gem
+  name: zen-engine-ruby
+  downloads: 964
+  version: 0.0.2
+  version_downloads: 46
+  version_created_at: 2024-11-30 16:52:30.551000000 Z
+  authors: Alex Matchneer
+  info: Ruby FFI bindings for the Zen library
+  licenses:
+  - MIT
+  project_uri: https://rubygems.org/gems/zen-engine-ruby
+  homepage_uri:
+  source_code_uri:
+  changelog_uri:
+  development_dependencies:
+  - !ruby/object:Gemview::Gem::Dependency
+    name: minitest
+    requirements: "~> 5.25"
+  runtime_dependencies:
+  - !ruby/object:Gemview::Gem::Dependency
+    name: ffi
+    requirements: "~> 1.17"
+- !ruby/object:Gemview::Gem
+  name: zen-engine-ruby
+  downloads: 964
+  version: 0.0.2
+  version_downloads: 46
+  version_created_at: 2024-11-30 16:52:26.285000000 Z
+  authors: Alex Matchneer
+  info: Ruby FFI bindings for the Zen library
+  licenses:
+  - MIT
+  project_uri: https://rubygems.org/gems/zen-engine-ruby
+  homepage_uri:
+  source_code_uri:
+  changelog_uri:
+  development_dependencies:
+  - !ruby/object:Gemview::Gem::Dependency
+    name: minitest
+    requirements: "~> 5.25"
+  runtime_dependencies:
+  - !ruby/object:Gemview::Gem::Dependency
+    name: ffi
+    requirements: "~> 1.17"
+- !ruby/object:Gemview::Gem
+  name: zen-engine-ruby
+  downloads: 964
+  version: 0.0.2
+  version_downloads: 46
+  version_created_at: 2024-11-30 16:52:20.876000000 Z
+  authors: Alex Matchneer
+  info: Ruby FFI bindings for the Zen library
+  licenses:
+  - MIT
+  project_uri: https://rubygems.org/gems/zen-engine-ruby
+  homepage_uri:
+  source_code_uri:
+  changelog_uri:
+  development_dependencies:
+  - !ruby/object:Gemview::Gem::Dependency
+    name: minitest
+    requirements: "~> 5.25"
+  runtime_dependencies:
+  - !ruby/object:Gemview::Gem::Dependency
+    name: ffi
+    requirements: "~> 1.17"
+- !ruby/object:Gemview::Gem
+  name: zen-engine-ruby
+  downloads: 964
+  version: 0.0.2
+  version_downloads: 64
+  version_created_at: 2024-11-30 16:52:15.599000000 Z
+  authors: Alex Matchneer
+  info: Ruby FFI bindings for the Zen library
+  licenses:
+  - MIT
+  project_uri: https://rubygems.org/gems/zen-engine-ruby
+  homepage_uri:
+  source_code_uri:
+  changelog_uri:
+  development_dependencies:
+  - !ruby/object:Gemview::Gem::Dependency
+    name: minitest
+    requirements: "~> 5.25"
+  runtime_dependencies:
+  - !ruby/object:Gemview::Gem::Dependency
+    name: ffi
+    requirements: "~> 1.17"
+- !ruby/object:Gemview::Gem
+  name: phlexi-form
+  downloads: 3616
+  version: 0.5.11
+  version_downloads: 77
+  version_created_at: 2024-11-30 16:50:31.295000000 Z
+  authors: Stefan Froelich
+  info: A better way to customize and build forms for your Rails application
+  licenses:
+  - MIT
+  project_uri: https://rubygems.org/gems/phlexi-form
+  homepage_uri: https://github.com/radioactive-labs/phlexi-form
+  source_code_uri: https://github.com/radioactive-labs/phlexi-form
+  changelog_uri: https://github.com/radioactive-labs/phlexi-form
+  development_dependencies:
+  - !ruby/object:Gemview::Gem::Dependency
+    name: appraisal
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: bundle-audit
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: combustion
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: minitest
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: minitest-reporters
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: phlex-testing-capybara
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: rake
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: standard
+    requirements: ">= 0"
+  runtime_dependencies:
+  - !ruby/object:Gemview::Gem::Dependency
+    name: activesupport
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: phlex
+    requirements: "~> 1.11"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: phlexi-field
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: zeitwerk
+    requirements: ">= 0"
+- !ruby/object:Gemview::Gem
+  name: scripref
+  downloads: 34474
+  version: 1.1.1
+  version_downloads: 73
+  version_created_at: 2024-11-30 16:47:07.234000000 Z
+  authors: Jan Friedrich
+  info: Library for parsing scripture references in real texts.
+  licenses:
+  - MIT
+  project_uri: https://rubygems.org/gems/scripref
+  homepage_uri: https://github.com/janfri/scripref
+  source_code_uri: https://github.com/janfri/scripref
+  changelog_uri:
+  development_dependencies:
+  - !ruby/object:Gemview::Gem::Dependency
+    name: rake
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: regtest
+    requirements: "~> 2"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: rim
+    requirements: "~> 3.0"
+  runtime_dependencies: []
+- !ruby/object:Gemview::Gem
+  name: hotwire_native_rails
+  downloads: 207
+  version: 0.1.0
+  version_downloads: 67
+  version_created_at: 2024-11-30 16:36:57.993000000 Z
+  authors: Yaro Shm
+  info: Generate Hotwire Native Rails helpers and bridge components
+  licenses:
+  - MIT
+  project_uri: https://rubygems.org/gems/hotwire_native_rails
+  homepage_uri: https://github.com/yshmarov/hotwire_native_rails
+  source_code_uri: https://github.com/yshmarov/hotwire_native_rails
+  changelog_uri: https://github.com/yshmarov/hotwire_native_rails/blob/main/CHANGELOG.md
+  development_dependencies: []
+  runtime_dependencies: []
+- !ruby/object:Gemview::Gem
+  name: phlexi-field
+  downloads: 1679
+  version: 0.0.11
+  version_downloads: 79
+  version_created_at: 2024-11-30 16:29:33.787000000 Z
+  authors: Stefan Froelich
+  info: Base fields for the Phlexi libraries
+  licenses:
+  - MIT
+  project_uri: https://rubygems.org/gems/phlexi-field
+  homepage_uri: https://github.com/radioactive-labs/phlexi-field
+  source_code_uri: https://github.com/radioactive-labs/phlexi-field
+  changelog_uri: https://github.com/radioactive-labs/phlexi-field
+  development_dependencies:
+  - !ruby/object:Gemview::Gem::Dependency
+    name: appraisal
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: bundle-audit
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: combustion
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: minitest
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: minitest-reporters
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: phlex-testing-capybara
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: rake
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: standard
+    requirements: ">= 0"
+  runtime_dependencies:
+  - !ruby/object:Gemview::Gem::Dependency
+    name: activesupport
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: fiber-local
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: phlex
+    requirements: "~> 1.11"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: zeitwerk
+    requirements: ">= 0"
+- !ruby/object:Gemview::Gem
+  name: phlexi-form
+  downloads: 3616
+  version: 0.5.10
+  version_downloads: 55
+  version_created_at: 2024-11-30 16:22:36.013000000 Z
+  authors: Stefan Froelich
+  info: A better way to customize and build forms for your Rails application
+  licenses:
+  - MIT
+  project_uri: https://rubygems.org/gems/phlexi-form
+  homepage_uri: https://github.com/radioactive-labs/phlexi-form
+  source_code_uri: https://github.com/radioactive-labs/phlexi-form
+  changelog_uri: https://github.com/radioactive-labs/phlexi-form
+  development_dependencies:
+  - !ruby/object:Gemview::Gem::Dependency
+    name: appraisal
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: bundle-audit
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: combustion
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: minitest
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: minitest-reporters
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: phlex-testing-capybara
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: rake
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: standard
+    requirements: ">= 0"
+  runtime_dependencies:
+  - !ruby/object:Gemview::Gem::Dependency
+    name: activesupport
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: phlex
+    requirements: "~> 1.11"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: phlexi-field
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: zeitwerk
+    requirements: ">= 0"
+- !ruby/object:Gemview::Gem
+  name: whisper.cpp
+  downloads: 1122
+  version: 0.3.4
+  version_downloads: 73
+  version_created_at: 2024-11-30 16:14:02.261000000 Z
+  authors: Braulio Oliveira
+  info: A Ruby gem that provides bindings to the whisper.cpp library for speech transcription.
+  licenses:
+  - MIT
+  project_uri: https://rubygems.org/gems/whisper.cpp
+  homepage_uri:
+  source_code_uri:
+  changelog_uri:
+  development_dependencies:
+  - !ruby/object:Gemview::Gem::Dependency
+    name: pry
+    requirements: ">= 0"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: rake-compiler
+    requirements: ">= 0"
+  runtime_dependencies:
+  - !ruby/object:Gemview::Gem::Dependency
+    name: ffi
+    requirements: "~> 1.15"
+- !ruby/object:Gemview::Gem
+  name: boba
+  downloads: 2320
+  version: 0.0.12
+  version_downloads: 77
+  version_created_at: 2024-11-30 15:49:12.231000000 Z
+  authors: Angellist
+  info: Custom Tapioca compilers
+  licenses:
+  - MIT
+  project_uri: https://rubygems.org/gems/boba
+  homepage_uri: https://github.com/angellist/boba
+  source_code_uri: https://github.com/angellist/boba/tree/0.0.12
+  changelog_uri: https://github.com/angellist/boba/blob/0.0.12/History.md
+  development_dependencies: []
+  runtime_dependencies:
+  - !ruby/object:Gemview::Gem::Dependency
+    name: sorbet-static-and-runtime
+    requirements: "~> 0.5"
+  - !ruby/object:Gemview::Gem::Dependency
+    name: tapioca
+    requirements: "<= 0.16.5"
