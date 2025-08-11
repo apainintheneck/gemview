@@ -10,24 +10,22 @@ RSpec.describe Gemview::Gem do
           expect(gem).to have_attributes(
             authors: "David Heinemeier Hansson",
             changelog_uri: "https://github.com/rails/rails/releases/tag/v8.0.0",
-            dependencies: have_attributes(
-              development: [],
-              runtime: [
-                have_attributes(name: "actioncable", requirements: "= 8.0.0"),
-                have_attributes(name: "actionmailbox", requirements: "= 8.0.0"),
-                have_attributes(name: "actionmailer", requirements: "= 8.0.0"),
-                have_attributes(name: "actionpack", requirements: "= 8.0.0"),
-                have_attributes(name: "actiontext", requirements: "= 8.0.0"),
-                have_attributes(name: "actionview", requirements: "= 8.0.0"),
-                have_attributes(name: "activejob", requirements: "= 8.0.0"),
-                have_attributes(name: "activemodel", requirements: "= 8.0.0"),
-                have_attributes(name: "activerecord", requirements: "= 8.0.0"),
-                have_attributes(name: "activestorage", requirements: "= 8.0.0"),
-                have_attributes(name: "activesupport", requirements: "= 8.0.0"),
-                have_attributes(name: "bundler", requirements: ">= 1.15.0"),
-                have_attributes(name: "railties", requirements: "= 8.0.0")
-              ]
-            ),
+            development_dependencies: [],
+            runtime_dependencies: [
+              have_attributes(name: "actioncable", requirements: "= 8.0.0"),
+              have_attributes(name: "actionmailbox", requirements: "= 8.0.0"),
+              have_attributes(name: "actionmailer", requirements: "= 8.0.0"),
+              have_attributes(name: "actionpack", requirements: "= 8.0.0"),
+              have_attributes(name: "actiontext", requirements: "= 8.0.0"),
+              have_attributes(name: "actionview", requirements: "= 8.0.0"),
+              have_attributes(name: "activejob", requirements: "= 8.0.0"),
+              have_attributes(name: "activemodel", requirements: "= 8.0.0"),
+              have_attributes(name: "activerecord", requirements: "= 8.0.0"),
+              have_attributes(name: "activestorage", requirements: "= 8.0.0"),
+              have_attributes(name: "activesupport", requirements: "= 8.0.0"),
+              have_attributes(name: "bundler", requirements: ">= 1.15.0"),
+              have_attributes(name: "railties", requirements: "= 8.0.0")
+            ],
             downloads: 567406953,
             homepage_uri: "https://rubyonrails.org",
             info: "Ruby on Rails is a full-stack web framework optimized for programmer happiness and sustainable productivity. It encourages beautiful code by favoring convention over configuration.",
@@ -64,16 +62,14 @@ RSpec.describe Gemview::Gem do
           expect(gem).to have_attributes(
             authors: "Justin Searls",
             changelog_uri: "https://github.com/standardrb/standard/blob/main/CHANGELOG.md",
-            dependencies: have_attributes(
-              development: [],
-              runtime: [
-                have_attributes(name: "language_server-protocol", requirements: "~> 3.17.0.2"),
-                have_attributes(name: "lint_roller", requirements: "~> 1.0"),
-                have_attributes(name: "rubocop", requirements: "~> 1.68.0"),
-                have_attributes(name: "standard-custom", requirements: "~> 1.0.0"),
-                have_attributes(name: "standard-performance", requirements: "~> 1.5")
-              ]
-            ),
+            development_dependencies: [],
+            runtime_dependencies: [
+              have_attributes(name: "language_server-protocol", requirements: "~> 3.17.0.2"),
+              have_attributes(name: "lint_roller", requirements: "~> 1.0"),
+              have_attributes(name: "rubocop", requirements: "~> 1.68.0"),
+              have_attributes(name: "standard-custom", requirements: "~> 1.0.0"),
+              have_attributes(name: "standard-performance", requirements: "~> 1.5")
+            ],
             downloads: 22791345,
             homepage_uri: "https://github.com/standardrb/standard",
             info: "Ruby Style Guide, with linter & automatic code fixer",
@@ -174,7 +170,7 @@ RSpec.describe Gemview::Gem do
         gems = described_class.search(term: "bluetooth")
 
         expect(gems.size).to eq 30
-        expect(JSON.pretty_generate(gems.map(&:to_h))).to match_snapshot("bluetooth-gem-search")
+        expect(gems).to match_snapshot("bluetooth-gem-search")
       end
     end
   end
@@ -186,7 +182,7 @@ RSpec.describe Gemview::Gem do
 
         expect(gems.size).to eq 50
         expect(gems).to all(be_a(described_class))
-        expect(JSON.pretty_generate(gems.map(&:to_h))).to match_snapshot("latest-gems")
+        expect(gems).to match_snapshot("latest-gems")
       end
     end
   end
@@ -198,7 +194,7 @@ RSpec.describe Gemview::Gem do
 
         expect(gems.size).to eq 50
         expect(gems).to all(be_a(described_class))
-        expect(JSON.pretty_generate(gems.map(&:to_h))).to match_snapshot("just-updated-gems")
+        expect(gems).to match_snapshot("just-updated-gems")
       end
     end
   end
@@ -210,7 +206,7 @@ RSpec.describe Gemview::Gem do
 
         expect(versions.size).to eq 22
         expect(versions).to all(be_a(described_class::Version))
-        expect(JSON.pretty_generate(versions.map(&:to_h))).to match_snapshot("gem-versions-for-dry-struct")
+        expect(versions).to match_snapshot("gem-versions-for-dry-struct")
       end
     end
   end
@@ -222,7 +218,7 @@ RSpec.describe Gemview::Gem do
 
         expect(gems.size).to eq 12
         expect(gems).to all(be_a(described_class))
-        expect(JSON.pretty_generate(gems.map(&:to_h))).to match_snapshot("gems-by-author-bbatsov")
+        expect(gems).to match_snapshot("gems-by-author-bbatsov")
       end
     end
   end
