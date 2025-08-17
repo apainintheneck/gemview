@@ -18,6 +18,12 @@ Commands:
   gemview version                     # Print version
 ```
 
+## Navigation
+
+For menus the arrow keys and j/k can be used for movement. Press enter to select a choice and escape or q to return to the previous menu or quit.
+
+For paged content `less` is used internally so all the normal navigation commands work as expected.
+
 ## Demo
 
 ![GIF demoing the info and search subcommands](./assets/gemview-v1.0.0.gif)
