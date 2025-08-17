@@ -15,8 +15,15 @@ module Gemview
 
     # @param content [String]
     def self.page(content)
-      # Override the default pager command so that it is top justified to match the choice menus.
-      TTY::Pager::SystemPager.new(command: "less -c -r --tilde").page(content)
+      command = [
+        "less",
+        "--clear-screen", # make sure everything is top-justified
+        "--RAW-CONTROL-CHARS", # correctly interpret ANSI control sequences
+        "--tilde", # don't show tildes on lines after the output
+        "--prompt='(press h for help or q to quit)'"
+      ].join(" ")
+
+      TTY::Pager::SystemPager.new(command: command).page(content)
     end
 
     # @param prompt [String]
