@@ -16,21 +16,17 @@ module Gemview
     # @param content [String]
     def self.page(content)
       # Override the default pager command so that it is top justified to match the choice menus.
-      TTY::Pager::SystemPager.new(command: "less -c -r +gg").page(content)
+      TTY::Pager::SystemPager.new(command: "less -c -r --tilde").page(content)
     end
 
     # @param prompt [String]
     # @param choices [Array<String, Hash>, Proc] where all choices are unique
     # @yield [String] yields until the user exits the prompt gracefully
     def self.choose(message:, choices:, per_page: 6)
-      previous_choice = nil
-
       loop do
         choice_list = choices.is_a?(Proc) ? choices.call : choices
-        choice = selector.select(message, choice_list, previous_choice, per_page)
-        break unless choice
-
-        yield (previous_choice = choice)
+        choice = selector.select(message, choice_list, per_page)
+        choice ? yield(choice) : break
       end
     end
 
@@ -95,19 +91,17 @@ module Gemview
 
       # @param prompt [String]
       # @param choices [Array<String, Hash>] where all choices are unique
-      # @param previous_choice [String, nil] defaults to first element
       # @param per_page [Integer] results per page
       # @return [String, nil]
-      def select(message, choices, previous_choice, per_page)
-        previous_choice = nil if disabled_choice?(previous_choice, choices)
-
+      def select(message, choices, per_page)
+        # TODO: Add support for preserving the previous selection if this ever gets fixed upstream.
+        # Issue: https://github.com/piotrmurach/tty-prompt/issues/206
         choice = @prompt.select(
           message,
           choices,
           per_page: per_page,
           help: "(Press Enter to select and Escape to leave)",
-          show_help: :always,
-          default: previous_choice
+          show_help: :always
         )
 
         choice unless @exit

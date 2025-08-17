@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+# frozen_string_literal: true"
 
 module Gemview
   class Gem
@@ -81,9 +81,11 @@ module Gemview
 
     # @return [String]
     def selector_str
+      one_line_info = info.lines.map(&:strip).reject(&:empty?).join(" ").strip
+
       <<~SELECT
         #{name} [#{version}]
-          -- #{Strings.truncate(info.lines.map(&:strip).join(" "), 75)}
+          -- #{Strings.truncate(one_line_info, 75)}
       SELECT
     end
 
