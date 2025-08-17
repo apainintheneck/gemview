@@ -1,8 +1,7 @@
   [0.10.15] active_model_serializers
 
-  ActiveModel::Serializers allows you to generate your JSON in an 
-  object-oriented
-  and convention-driven manner.
+  ActiveModel::Serializers allows you to generate your JSON in an
+  object-oriented and convention-driven manner.
   ┌─────────────────┬────────────────────────────────────────────────────┐
   │ Updated at      │ 2024-12-01 00:56:35 UTC                            │ 
   ├─────────────────┼────────────────────────────────────────────────────┤

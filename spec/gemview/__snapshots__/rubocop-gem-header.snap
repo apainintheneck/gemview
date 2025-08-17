@@ -1,7 +1,7 @@
   [1.69.1] rubocop
 
-  RuboCop is a Ruby code style checking and code formatting tool.
-  It aims to enforce the community-driven Ruby Style Guide.
+  RuboCop is a Ruby code style checking and code formatting tool. It aims to
+  enforce the community-driven Ruby Style Guide.
   ┌─────────────────┬─────────────────────────────────────────────────┐
   │ Updated at      │ 2024-12-03 09:03:08 UTC                         │ 
   ├─────────────────┼─────────────────────────────────────────────────┤

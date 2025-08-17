@@ -1,17 +1,4 @@
-  [1.42.1] standard
-
-  Ruby Style Guide, with linter & automatic code fixer
-  ┌─────────────────┬────────────────────────────────────┐
-  │ Updated at      │ 2024-11-19 00:56:52 UTC            │ 
-  ├─────────────────┼────────────────────────────────────┤
-  │ Total Downloads │ 22,791,345                         │ 
-  ├─────────────────┼────────────────────────────────────┤
-  │ Authors         │ Justin Searls                      │ 
-  ├─────────────────┼────────────────────────────────────┤
-  │ Licenses        │ []                                 │ 
-  ├─────────────────┼────────────────────────────────────┤
-  │ Project URI     │ https://rubygems.org/gems/standard │ 
-  └─────────────────┴────────────────────────────────────┘
+  [1.42.1] standard » Readme
 
 (https://user-images.githubusercontent.com/79303/233717126-9fd13e6d-9a66-4f1c-b40c-fe875cb1d1b4.png)
 
