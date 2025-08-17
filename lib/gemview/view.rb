@@ -20,15 +20,16 @@ module Gemview
 
       Terminal.clear_screen
       Terminal.choose(message: prompt, choices: choices_proc) do |choice|
+        title = gem.title_str(subsection: choice)
         case choice
         when "Readme"
-          Terminal.page([gem.header_str, gem.readme].join("\n")) if gem.readme
+          Terminal.page([title, gem.readme].join("\n")) if gem.readme
         when "Changelog"
-          Terminal.page([gem.header_str, gem.changelog].join("\n")) if gem.changelog
+          Terminal.page([title, gem.changelog].join("\n")) if gem.changelog
         when "Dependencies"
-          Terminal.page([gem.header_str, gem.dependencies_str].join("\n"))
+          Terminal.page([title, gem.dependencies_str].join("\n"))
         when "Versions"
-          Terminal.page([gem.header_str, gem.versions_str].join("\n"))
+          Terminal.page([title, gem.versions_str].join("\n"))
         else
           raise ArgumentError, "Unknown choice: #{choice}"
         end

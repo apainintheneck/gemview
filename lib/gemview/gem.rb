@@ -81,7 +81,7 @@ module Gemview
 
     # @return [String]
     def selector_str
-      one_line_info = info.lines.map(&:strip).reject(&:empty?).join(" ").strip
+      one_line_info = info.gsub(/\s+/, " ").strip
 
       <<~SELECT
         #{name} [#{version}]
@@ -90,9 +90,20 @@ module Gemview
     end
 
     # @return [String]
+    def title_str(subsection:)
+      Terminal.prettify_markdown(<<~LINE)
+        ## [#{version}] #{name} >> #{subsection}
+      LINE
+    end
+
+    # @return [String]
     def header_str
-      info_lines = Strings.wrap(info, 80).lines.map(&:strip)
-      info_lines = info_lines.take(3).append("...") if info_lines.size > 3
+      info_lines = Strings.wrap(info.gsub(/\s+/, " ").strip, 79).lines.map(&:strip)
+
+      if info_lines.size > 3
+        info_lines = info_lines.take(3)
+        info_lines.last << "…"
+      end
 
       header = <<~HEADER
         ## [#{version}] #{name}
