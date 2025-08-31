@@ -1,5 +1,12 @@
 ## [Unreleased]
 
+## [1.2.0] - 2025-08-30
+
+- Add prompt message to pager
+- Add navigation section to the readme
+
+- Remove table from info pages
+
 ## [1.1.0] - 2025-08-16
 
 - Add better support for showing the changelog
