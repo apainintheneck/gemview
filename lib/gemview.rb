@@ -12,7 +12,6 @@ module Gemview
   autoload :GitRepo, "gemview/git_repo"
   autoload :Number, "gemview/number"
   autoload :Terminal, "gemview/terminal"
-  autoload :Version, "gemview/version"
   autoload :View, "gemview/view"
 end
 
