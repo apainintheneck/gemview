@@ -26,7 +26,7 @@ For paged content `less` is used internally so all the normal navigation command
 
 ## Demo
 
-![GIF demoing the info and search subcommands](./assets/gemview-v1.0.0.gif)
+![GIF demoing the info and search subcommands](./assets/gemview-v1.2.0.gif)
 
 ## Implementation
 
